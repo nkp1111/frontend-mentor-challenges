@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --linear-gradient: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  /*(active input border)*/
+  --red: hsl(0, 100%, 66%);
+  /*(input errors)*/
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  word-spacing: 0.3em;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+}
+
+/* image at right-side */
+.front-style {
+  background-image: url('../src/images/bg-main-desktop.png');
+  width: 30vw;
+  height: 100vh;
+}
+
+/* Card image -front and back side */
+
+.card-front,
+.card-back {
+  width: 28vw;
+  position: absolute;
+  height: 13vw;
+  background-position: top;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.card-front {
+  background-image: url('../src/images/bg-card-front.png');
+  top: 22%;
+  left: 10%;
+}
+
+.card-back {
+  background-image: url('../src/images/bg-card-back.png');
+  top: 55%;
+  left: 15%;
+}
+
+.card-front .info-holder {
+  margin: 20px 30px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.card-front p {
+  margin: 2rem 0 0.8rem;
+  font-size: 1.5em;
+}
+
+.card-front .info {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form styles */
+
+/* Submit Form */
+.form-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 350px;
+  margin-left: 25vw;
+}
+
+form.error-stat input:focus {
+  outline: none !important;
+  border: 1px solid var(--red);
+  box-shadow: 1px 1px hsl(0, 100%, 66%);
+}
+
+form label {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 1.2em;
+  margin-top: 0.4em;
+  padding: 0.6em;
+  border-radius: 5px;
+  border: var(--white);
+  background-color: var(--light-grayish-violet);
+  border: 1px solid var(--dark-grayish-violet);
+}
+
+input:focus {
+  outline: none !important;
+  border-color: var(--linear-gradient);
+}
+
+.input-holder {
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: 2fr 1fr;
+}
+
+.expiry-input-holder {
+  display: flex;
+}
+
+.expiry-input-holder input {
+  width: 40%;
+  margin-right: 8px;
+}
+
+button {
+  padding: 0.7em;
+  width: 10em;
+  background-color: var(--very-dark-violet);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  margin-top: 1.8em;
+}
+
+button:hover {
+  opacity: 0.95;
+  scale: 0.99;
+}
+
+/* After submit - Continue form */
+
+.after-submit {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.after-submit img {
+  margin-bottom: 1.3em;
+}
+
+.after-submit p {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+
+.after-submit p+p {
+  font-size: 0.85rem;
+  word-spacing: 7px;
+  text-transform: none;
+  color: rgb(85, 85, 104);
+}
+
+/* Contributer */
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 8vh;
+  left: 35vw;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+/* root */
+:root {
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+}
+
+/* General styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+}
+
+/* Main section */
+main {
+  width: 50vw;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+/* img-section */
+.img-section {
+  flex: 1;
+  background: rgb(103, 37, 37);
+}
+
+/* info-section */
+.info-section {
+  flex: 1;
+}
+
+.content {
+  padding: 2vw;
+}
+
+.info-section header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* header */
+.info-section header p {
+  margin-bottom: 2vh;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+}
+
+.info-section header h1 {
+  font-size: 2.8em;
+  font-family: 'Fraunces', Arial;
+  line-height: 0.9em;
+  margin-bottom: 3vh;
+}
+
+/* p (text) */
+.info-section p {
+  margin-bottom: 3vh;
+  font-size: 1.1em;
+  color: var(--dark-grayish-blue);
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+
+.info-section .price {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-section .price span:first-child {
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  font-family: 'Fraunces',
+    Arial;
+  font-weight: 700;
+}
+
+.info-section .price span:last-child {
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+.info-section button {
+  width: 100%;
+  padding: .8em;
+  color: white;
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  border: 1px solid var(--dark-cyan);
+  margin-top: 1em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.info-section button:hover {
+  box-shadow: 1px 1px 5px var(--very-dark-blue);
+}
+
+/* Footer section */
+footer {
+  position: absolute;
+  bottom: 5vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1200px) {
+  .info-section header h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 95vw;
+    height: 95vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  footer {
+    display: none;
+  }
+}
