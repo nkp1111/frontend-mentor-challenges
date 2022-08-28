@@ -27,7 +27,7 @@ body {
 
 /* Main section */
 main {
-  width: 50vw;
+  width: 45vw;
   border-radius: 15px;
   margin: 0 auto;
   background-color: white;
@@ -38,7 +38,7 @@ main {
 /* img-section */
 .img-section {
   flex: 1;
-  background: rgb(103, 37, 37);
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/product-preview-card-component/images/image-product-desktop.jpg?raw=true') center center/cover;
 }
 
 /* info-section */
@@ -74,12 +74,12 @@ main {
 /* p (text) */
 .info-section p {
   margin-bottom: 3vh;
-  font-size: 1.1em;
   color: var(--dark-grayish-blue);
   line-height: 1.6em;
   letter-spacing: 0.1em;
 }
 
+/* Price */
 .info-section .price {
   width: 60%;
   display: flex;
@@ -100,9 +100,10 @@ main {
   color: var(--dark-grayish-blue);
 }
 
+/* button */
 .info-section button {
   width: 100%;
-  padding: .8em;
+  padding: .9em;
   color: white;
   background-color: var(--dark-cyan);
   border-radius: 8px;
@@ -110,10 +111,21 @@ main {
   margin-top: 1em;
   cursor: pointer;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.info-section button img {
+  margin-right: 15px;
 }
 
 .info-section button:hover {
+  background-color: hsl(158, 36%, 17%);
   box-shadow: 1px 1px 5px var(--very-dark-blue);
+}
+
+.info-section button:active {
+  transform: scale(0.97);
 }
 
 /* Footer section */
@@ -137,16 +149,41 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width:1000px) {
   main {
-    width: 95vw;
-    height: 95vh;
+    width: 60vw;
+  }
+
+  .info-section header h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: 90vw;
+    height: 90vh;
     border-radius: 10px;
     margin: 0 auto;
     background-color: white;
     display: flex;
     overflow: hidden;
     flex-direction: column;
+  }
+
+  .content {
+    padding: 10vw;
+  }
+
+  .img-section {
+    width: 100%;
+    background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/product-preview-card-component/images/image-product-mobile.jpg?raw=true') center center/cover;
   }
 
   footer {
