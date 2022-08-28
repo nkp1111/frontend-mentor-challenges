@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/product-preview-card-component)
-- Live Site URL: [Netlify]((https://nkp-product-preview-card-component.netlify.app/))
+- Live Site URL: [Netlify](https://nkp-product-preview-card-component.netlify.app/)
 
 ## My process
 
