@@ -12,13 +12,30 @@
 }
 
 * {
+  box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 18px
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+.display {
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/interactive-card/public/images/bg-main-desktop.png?raw=true') center center/ cover;
+  width: 30vh;
+}
+
+.mainform {
+  width: 70vh;
 }
 
 .attribution {
+  position: absolute;
+  bottom: 5vh;
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a {
