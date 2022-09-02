@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/interactive-card)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://your-live-site-url.com](https://nkp1111-interactive-card.netlify.app/)
 
 ## My process
 
