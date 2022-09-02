@@ -3,8 +3,8 @@ export const Button = ({ prop }) => {
   return (
     <>
       {submit
-        ? <button type='submit'>Continue</button>
-        : <button type='submit'>Confirm</button>
+        ? <button type='submit'>Confirm</button>
+        : <button type='submit'>Continue</button>
       }
     </>
   )
