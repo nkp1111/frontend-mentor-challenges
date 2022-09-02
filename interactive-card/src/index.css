@@ -24,11 +24,17 @@ body {
   width: 100vw;
 }
 
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 /* background Image display*/
 .display {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/interactive-card/public/images/bg-main-desktop.png?raw=true') center center/ cover;
   width: 30vw;
   color: white;
+  height: 100%;
 }
 
 /* Card Image*/
@@ -56,6 +62,7 @@ body {
 
 .front div p {
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .back {
@@ -70,9 +77,9 @@ form {
   position: absolute;
   width: 30%;
   padding: 25px;
-  box-shadow: 1px 1px 10px var(--Light-grayish-violet);
-  right: 18vw;
+  right: 15vw;
   top: 30vh;
+  min-width: 400px;
 }
 
 /*input */
@@ -92,7 +99,7 @@ label {
 }
 
 #expiry-holder input {
-  margin: .3em .3em 0.7em 0;
+  margin-right: .3em;
 }
 
 input:valid {
@@ -110,6 +117,7 @@ button[type='submit'] {
   padding: .5em;
   border-radius: 5px;
   width: 100%;
+  margin: 1em 0 0 0;
 }
 
 /* After submit form*/
@@ -133,9 +141,109 @@ button[type='submit'] {
   position: absolute;
   bottom: 5vh;
   font-size: 11px;
-  left: 100vh;
+  left: 50vw;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 320px;
+    height: 180px;
+  }
+
+  .front img {
+    margin-bottom: 15px;
+  }
+
+  .front p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .front div p {
+    font-size: 12px;
+  }
+
+  form {
+    right: 10vw;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 601px) {
+  form {
+    top: 15vh;
+    right: 5vw;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .display {
+    width: 100vw;
+    background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/interactive-card/public/images/bg-main-mobile.png?raw=true') center center /cover;
+    height: 35vh;
+  }
+
+  .back {
+    top: 3vh;
+    right: 5vw;
+  }
+
+  .front {
+    top: 17vh;
+    left: 5vh;
+  }
+
+  .mainform {
+    width: 100vw;
+    flex: 1;
+    background: white;
+  }
+
+  form {
+    top: 43vh;
+    right: 5vw;
+  }
+
+  .attribution {
+    display: none;
+  }
+
+  label {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  form {
+    min-width: 300px;
+  }
+
+  .card {
+    width: 250px;
+    height: 150px;
+  }
+
+  .front img {
+    margin-bottom: 0;
+  }
+
+  .front p {
+    font-size: 0.8em;
+  }
+
+  .front div p {
+    font-size: 0.5em;
+  }
+
+  form {
+    top: 40vh;
+    right: 5vw;
+  }
 }

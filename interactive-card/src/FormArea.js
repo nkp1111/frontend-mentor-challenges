@@ -10,8 +10,7 @@ function FormArea() {
     setSubmit(!submit)
   }
   return (
-    <div className='mainform
-    w-100'>
+    <div className='mainform'>
 
       <form onSubmit={handleSubmit}>
         <BeforeSubmit prop={{ submit }} />

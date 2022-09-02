@@ -2,7 +2,7 @@ export const Expirydate = () => {
   return (
     <div className='col'>
       <label>
-        Exp. Date (MM/YY)<br />
+        Exp.&nbsp;Date&nbsp;(MM/YY)<br />
       </label>
       <div className='d-flex' id='expiry-holder'>
         <input type='number'
