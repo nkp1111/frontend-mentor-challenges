@@ -19,23 +19,121 @@
   margin: 0;
 }
 
-#root {
+body {
   height: 100vh;
+  width: 100vw;
 }
 
+/* background Image display*/
 .display {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/interactive-card/public/images/bg-main-desktop.png?raw=true') center center/ cover;
-  width: 30vh;
+  width: 30vw;
+  color: white;
 }
 
-.mainform {
-  width: 70vh;
+/* Card Image*/
+.card {
+  width: 390px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
 }
 
+/* Card front */
+
+.front {
+  top: 20vh;
+  left: 10vw;
+  padding: 20px;
+}
+
+.front p {
+  font-size: 1.7em;
+}
+
+.front div p {
+  font-size: 14px;
+}
+
+.back {
+  background-position: top;
+  top: 55vh;
+  left: 15vw;
+}
+
+/* Form */
+
+form {
+  position: absolute;
+  width: 30%;
+  padding: 25px;
+  box-shadow: 1px 1px 10px var(--Light-grayish-violet);
+  right: 18vw;
+  top: 30vh;
+}
+
+/*input */
+input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: .3em 0 0.7em 0;
+}
+
+input:focus {
+  border: 1px solid var(--Linear-gradient);
+}
+
+label {
+  text-transform: uppercase;
+}
+
+#expiry-holder input {
+  margin: .3em .3em 0.7em 0;
+}
+
+input:valid {
+  border: 1px solid var(--Linear-gradient);
+}
+
+input:invalid {
+  border: 1px solid var(--Red);
+}
+
+/* Button */
+button[type='submit'] {
+  background-color: var(--Very-dark-violet);
+  color: white;
+  padding: .5em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* After submit form*/
+#after-submit-form img {
+  margin-bottom: 15px;
+}
+
+#after-submit-form p:first-of-type {
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+#after-submit-form p:last-of-type {
+  font-size: 0.8m;
+  color: var(--Dark-grayish-violet);
+  margin-bottom: 1.7em;
+}
+
+/* Footer */
 .attribution {
   position: absolute;
   bottom: 5vh;
   font-size: 11px;
+  left: 100vh;
 }
 
 .attribution a {
