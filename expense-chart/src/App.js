@@ -1,17 +1,18 @@
 import React from "react";
+import Header from "./Header";
+import Attribution from './Attribution'
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <>
+      <Header />
+      <Attribution />
+    </>
   );
 }
 
 export default App;
-/**  My balance
-  $921.48
-
+/**  
   Spending - Last 7 days
 
   mon

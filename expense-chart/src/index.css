@@ -1,31 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 :root {
-  /*- Dark brown: hsl(25, 47%, 15%) - Medium brown: hsl(28, 10%, 53%) - Cream: hsl(27, 66%, 92%) - Very pale orange: hsl(33, 100%, 98%)*/
-  /* - Soft red: hsl(10, 79%, 65%) - Cyan: hsl(186, 34%, 60%) */
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%)
 }
 
 * {
+  box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Root Div */
+#root {
+  width: 45vw;
+  height: 70vh;
+  background-color: white;
 }
 
+/* Header */
+.header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  background-color: var(--Soft-red);
+  color: white;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Header text */
+.header .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  ;
+}
+
+.header .header-info p:first-child {
+  font-weight: 400;
+  font-size: 0.7em;
+  word-spacing: .5em;
+}
+
+.header .header-info p:last-child {
+  font-size: 1.2em;
+  word-spacing: .5em;
+  margin-left: 5px;
+}
+
+/* Header logo */
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 40px;
+}
+
+
+
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 10vh;
+  left: 50vw;
 }
 
 .attribution a {
