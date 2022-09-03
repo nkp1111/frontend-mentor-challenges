@@ -4,7 +4,7 @@ import SVG from './SVG'
 function Main() {
   return (
     <main>
-      <h3>Spending - Last 7 days</h3>
+      <h2>Spending - Last 7 days</h2>
       <SVG />
     </main>
   )

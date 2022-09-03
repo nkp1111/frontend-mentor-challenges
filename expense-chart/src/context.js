@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
 
   const [data, setData] = React.useState('')
   const [width, setWidth] = React.useState(0)
-  const height = 270
+  const height = 220
 
   React.useEffect(() => {
     json(url)
@@ -24,7 +24,7 @@ const AppProvider = ({ children }) => {
   })
 
   // margin for svg
-  const margin = { top: 5, bottom: 5, right: 5, left: 5 }
+  const margin = { top: 50, bottom: 5, right: 5, left: 5 }
 
   // highest value for scale
   const highestVal = max(data, (d) => d.amount)
@@ -32,11 +32,11 @@ const AppProvider = ({ children }) => {
   // y-axis scale for bar height
   const yScale = scaleLinear()
     .domain([0, highestVal])
-    .range([margin.top, height - margin.bottom])
+    .range([0, height - margin.bottom - margin.top])
 
   const xScale = scaleBand()
     .domain(range(7))
-    .range([margin.left, width - margin.right])
+    .range([0, width - margin.right - margin.left])
 
   // console.log('highest:', highestVal, 'data: ', data);
   return (
@@ -47,7 +47,8 @@ const AppProvider = ({ children }) => {
         margin,
         yScale,
         height,
-        xScale
+        xScale,
+        highestVal,
       }}>
       {children}
     </AppContext.Provider>
