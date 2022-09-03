@@ -6,7 +6,7 @@
   --Cream: hsl(27, 66%, 92%);
   --Very-pale-orange: hsl(33, 100%, 98%);
   --Soft-red: hsl(10, 79%, 65%);
-  --Cyan: hsl(186, 34%, 60%)
+  --Cyan: hsl(186, 34%, 60%);
 }
 
 * {
@@ -30,7 +30,6 @@ body {
 #root {
   width: 45vw;
   height: 70vh;
-  background-color: white;
 }
 
 /* Header */
@@ -43,6 +42,7 @@ body {
   border-radius: 15px;
   justify-content: space-between;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* Header text */
@@ -50,7 +50,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  ;
 }
 
 .header .header-info p:first-child {
@@ -76,7 +75,16 @@ body {
   width: 40px;
 }
 
+/* Main */
+main {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+}
 
+/* Main SVG */
+svg {}
 
 /* Footer */
 .attribution {
