@@ -112,6 +112,49 @@ svg rect:hover {
   justify-content: center;
 }
 
+/* Underline */
+.underline {
+  width: 90%;
+  height: 2px;
+  background-color: var(--Cream);
+  margin: 1.3em auto;
+}
+
+/* Bottom text */
+
+#bottom {
+  padding: 0.1em 1.2em 1.5em;
+}
+
+#bottom p {
+  color: var(--Medium-brown);
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+#bottom div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom div p {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--Dark-brown);
+}
+
+#bottom div div:last-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+  text-align: right;
+}
+
+#bottom div div:last-child p:last-child {
+  font-weight: 400;
+  color: var(--Medium-brown);
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
