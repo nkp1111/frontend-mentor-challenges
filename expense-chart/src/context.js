@@ -1,5 +1,5 @@
 import React from "react";
-import { json, scaleLinear, max, scaleBand, range } from 'd3'
+import { json, scaleLinear, max, scaleBand, range, paddingInner, paddingOuter } from 'd3'
 
 const AppContext = React.createContext()
 
@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
 
   const [data, setData] = React.useState('')
   const [width, setWidth] = React.useState(0)
-  const height = 220
+  const height = 200
 
   React.useEffect(() => {
     json(url)
@@ -25,7 +25,7 @@ const AppProvider = ({ children }) => {
   })
 
   // margin for svg
-  const margin = { top: 50, bottom: 5, right: 0, left: 0 }
+  const margin = { top: 65, bottom: 15, right: 0, left: 0 }
 
   // highest value for scale
   const highestVal = max(data, (d) => d.amount)

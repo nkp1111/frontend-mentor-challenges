@@ -18,21 +18,3 @@ function Bottom() {
 }
 
 export default Bottom
-/**  
-  
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  
-  
-
-  
-  
-  
-   */
