@@ -44,9 +44,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - D3 library
-- [Styled Components](https://styled-components.com/) - For styles
 
 ## Author
 
