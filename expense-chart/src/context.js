@@ -20,11 +20,12 @@ const AppProvider = ({ children }) => {
 
   React.useEffect(() => {
     const el = document.getElementById('root')
-    setWidth(el.clientWidth)
+    // remove padding of 'main' parent element
+    setWidth(el.clientWidth - 50)
   })
 
   // margin for svg
-  const margin = { top: 50, bottom: 5, right: 5, left: 5 }
+  const margin = { top: 50, bottom: 5, right: 0, left: 0 }
 
   // highest value for scale
   const highestVal = max(data, (d) => d.amount)
