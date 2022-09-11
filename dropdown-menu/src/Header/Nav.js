@@ -1,19 +1,27 @@
 import React from 'react'
-import Dropdown from '../Dropdown'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
 import FeatureDropdown from '../Dropdown/FeatureDropdown'
 import ComapnyDropdown from '../Dropdown/ComapnyDropdown'
+
+const iconStyle = { fontSize: 13, marginLeft: 5 }
 
 function Nav({ sidebar }) {
 
   const [dropdownName, setDropdownName] = React.useState('')
   const [dropdown, setDropdown] = React.useState(false)
   const handleDropdown = (e) => {
-    setDropdown(true)
-    // const margin = 40
-    // const position = [e.clientX - margin, e.clientY + margin]
-    // setPosition(position)
+    setDropdown(!dropdown)
     setDropdownName(e.target.id)
+  }
+
+  // condition to activate specific dropdown 
+  const check = (value) => dropdown
+    && dropdownName === value
+
+  const checkIcon = (value) => {
+    return check(value)
+      ? <BsChevronDown style={iconStyle} />
+      : <BsChevronUp style={iconStyle} />
   }
 
   return (
@@ -23,15 +31,18 @@ function Nav({ sidebar }) {
         mt-2
         '>
         <li id='feature'
-          onMouseOver={(e) => handleDropdown(e)}
-          onMouseOut={() => setDropdown(false)}
-        >Features <BsChevronDown />
-          {dropdown && dropdownName === 'feature' && <FeatureDropdown sidebar={sidebar} />}
+          onMouseDown={(e) => handleDropdown(e)}
+        >Features
+          {checkIcon('feature')}
+          {check('feature')
+            && <FeatureDropdown sidebar={sidebar} />}
         </li>
         <li id='company'
-          onMouseOver={(e) => handleDropdown(e)}
-          onMouseOut={() => setDropdown(false)}>Company <BsChevronUp />
-          {dropdown && dropdownName === 'company' && <ComapnyDropdown sidebar={sidebar} />}
+          onMouseDown={(e) => handleDropdown(e)}
+        >Company
+          {checkIcon('company')}
+          {check('company')
+            && <ComapnyDropdown sidebar={sidebar} />}
         </li>
         <li>Careers</li>
         <li id='about'>About</li>

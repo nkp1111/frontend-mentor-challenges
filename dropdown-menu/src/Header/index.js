@@ -10,8 +10,12 @@ const resizePixel = 800
 
 function Header({ toggle, BackRef }) {
 
-  // const [position, setPosition] = React.useState([0, 0])
+  const iconStyle = { cursor: 'pointer' }
   const [showBtn, setShowBtn] = React.useState(true)
+  const [sidebar, setSidebar] = React.useState(false)
+  const handleSidebar = (sidebar) => {
+    setSidebar(!sidebar)
+  }
 
   React.useEffect(() => {
     toggle(resizePixel, setShowBtn)
@@ -20,11 +24,10 @@ function Header({ toggle, BackRef }) {
       ? BackRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
       : BackRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0)'
 
-  })
+  }, [toggle, sidebar, BackRef])
 
-  const [sidebar, setSidebar] = React.useState(false)
-  const handleSidebar = (sidebar) => {
-    setSidebar(!sidebar)
+  if (window.innerWidth > resizePixel && sidebar) {
+    setSidebar(false)
   }
 
   return (
@@ -35,7 +38,10 @@ function Header({ toggle, BackRef }) {
     align-items-center
     ">
         <div>
-          <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/logo.svg' className="App-logo" alt="logo" />
+          <img
+            src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/logo.svg'
+            className="App-logo"
+            alt="logo" />
         </div>
 
         {showBtn
@@ -48,12 +54,13 @@ function Header({ toggle, BackRef }) {
             className='d-flex
               justify-content-end
               m-2
-              fs-1'
+              fs-1
+              w-75'
             onClick={() => handleSidebar(sidebar)}
           >
             {sidebar
-              ? <GrClose />
-              : <FaBars />}
+              ? <GrClose style={iconStyle} />
+              : <FaBars style={iconStyle} />}
           </div>
         }
       </header>
