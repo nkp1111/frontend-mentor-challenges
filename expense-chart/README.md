@@ -49,4 +49,4 @@ Users should be able to:
 
 - Website - [Neeraj Parmar](https://www.your-site.com)
 - Frontend Mentor - [nkp1111](https://www.frontendmentor.io/profile/nkp1111)
-- Twitter - [@nkp11111507](https://www.twitter.com/yourusername)
+- Twitter - [@nkp11111507](https://www.twitter.com/home)
