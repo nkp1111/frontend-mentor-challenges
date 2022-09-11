@@ -1,6 +1,10 @@
 import React from 'react'
 
-function index() {
+function Main({ toggle }) {
+  const [change, setChange] = React.useState(true)
+  React.useEffect(() => {
+    toggle(550, setChange)
+  })
 
   return (
     <main className='d-flex
@@ -12,7 +16,7 @@ function index() {
         <article className='d-flex
         flex-column
         justify-content-evenly'>
-          <h1>Make<br /> remote work</h1>
+          <h1>Make{change && <br />} remote work</h1>
           <div id='text-holder'>
             <p>Get your team in sync, no matter your location. Streamline processes,
               create team rituals, and watch productivity soar.</p>
@@ -22,7 +26,6 @@ function index() {
           </div>
         </article>
         <aside className='d-flex
-        justify-content-between
         align-items-center'>
           <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-databiz.svg' alt='databiz-logo' />
           <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-audiophile.svg' alt='audio-phile-logo' />
@@ -33,7 +36,10 @@ function index() {
 
       <section className='d-flex
       justify-content-end'>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/dropdown-menu/public/images/image-hero-desktop.png?raw=true'
+        <img src={change
+          ? 'https://github.com/nkp1111/frontend-mentor-challenges/blob/main/dropdown-menu/public/images/image-hero-desktop.png?raw=true'
+          : 'https://github.com/nkp1111/frontend-mentor-challenges/blob/main/dropdown-menu/public/images/image-hero-mobile.png?raw=true'
+        }
           alt='black background with man using laptop'
           className='w-100' />
       </section>
@@ -41,4 +47,4 @@ function index() {
   )
 }
 
-export default index
+export default Main

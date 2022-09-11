@@ -1,8 +1,14 @@
 import React from 'react'
 
-function FeatureDropdown() {
+function FeatureDropdown({ sidebar }) {
   return (
-    <>
+    <div
+      style={sidebar !== undefined ? {
+        position: 'absolute',
+        top: '60',
+        left: '320'
+      } :
+        { backgroundColor: 'white' }}>
       <ul>
         <li>
           <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/7737235509ce74ca8b7e24c14d6a7ecb0c56f751/dropdown-menu/public/images/icon-todo.svg'
@@ -25,7 +31,7 @@ function FeatureDropdown() {
           Planning
         </li>
       </ul>
-    </>
+    </div>
   )
 }
 
