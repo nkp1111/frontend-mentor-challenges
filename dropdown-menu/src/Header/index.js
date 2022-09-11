@@ -11,7 +11,7 @@ function Header() {
       <div>
         <nav>
           <ul>
-            <li>Features</li>
+            <li>Features BsChevronDown BsChevronUp</li>
             <li>Company</li>
             <li>Careers</li>
             <li>About</li>
