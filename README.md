@@ -6,3 +6,4 @@ This  contains the following project:
 - product-preview-card
 - interactive-card
 - expense-chart-component
+- dropdown-menu
