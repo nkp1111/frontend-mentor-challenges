@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub]([https://your-solution-url.com](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/dropdown-menu))
-- Live Site URL: [Netlify]([https://your-live-site-url.com](https://nkp1111-dropdown-menu.netlify.app/))
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/dropdown-menu)
+- Live Site URL: [Netlify](https://nkp1111-dropdown-menu.netlify.app/)
 
 ## My process
 
