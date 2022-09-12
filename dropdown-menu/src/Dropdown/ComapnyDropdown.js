@@ -1,4 +1,5 @@
 import React from 'react'
+import { companyData } from '../data'
 
 function ComapnyDropdown({ sidebar }) {
 
@@ -11,9 +12,13 @@ function ComapnyDropdown({ sidebar }) {
       } :
         { backgroundColor: 'white' }}>
       <ul style={{ transition: 'linear 0.8s all' }}>
-        <li>History</li>
-        <li>Our Team</li>
-        <li>Blog</li>
+        {companyData.map(item => {
+          return (
+            <li key={item}>
+              {item}
+            </li>
+          )
+        })}
       </ul>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { logosData } from '../data'
 
 function Main({ toggle }) {
   const [change, setChange] = React.useState(true)
@@ -27,10 +28,14 @@ function Main({ toggle }) {
         </article>
         <aside className='d-flex
         align-items-center'>
-          <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-databiz.svg' alt='databiz-logo' />
-          <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-audiophile.svg' alt='audio-phile-logo' />
-          <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-meet.svg' alt='meet-logo' />
-          <img src='https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/b4dcf216922bb6f28428d89fd83e06d19a16bc04/dropdown-menu/public/images/client-maker.svg' alt='maker-logo' />
+          {logosData.map((item, ind) => {
+            const { src, alt } = item
+            return (
+              <img key={ind}
+                src={src}
+                alt={alt} />
+            )
+          })}
         </aside>
       </section>
 
