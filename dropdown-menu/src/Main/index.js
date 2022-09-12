@@ -11,21 +11,18 @@ function Main({ toggle }) {
     <main className='d-flex
     justify-content-evenly
     w-100'>
-      <section
-        className='w-50
-        '>
-        <article className='d-flex
+      <article className='d-flex
         flex-column
-        justify-content-evenly'>
-          <h1>Make{change && <br />} remote work</h1>
-          <div id='text-holder'>
-            <p>Get your team in sync, no matter your location. Streamline processes,
-              create team rituals, and watch productivity soar.</p>
-          </div>
-          <div className='w-50 p-0'>
-            <button>Learn more</button>
-          </div>
-        </article>
+        justify-content-evenly
+        w-50'>
+        <h1>Make{change && <br />} remote work</h1>
+        <div id='text-holder'>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+        </div>
+        <div className='w-50 p-0'>
+          <button>Learn more</button>
+        </div>
         <aside className='d-flex
         align-items-center'>
           {logosData.map((item, ind) => {
@@ -37,9 +34,8 @@ function Main({ toggle }) {
             )
           })}
         </aside>
-      </section>
-
-      <section className='d-flex
+      </article>
+      <article className='d-flex
       justify-content-end'>
         <img src={change
           ? 'https://github.com/nkp1111/frontend-mentor-challenges/blob/main/dropdown-menu/public/images/image-hero-desktop.png?raw=true'
@@ -47,7 +43,7 @@ function Main({ toggle }) {
         }
           alt='black background with man using laptop'
           className='w-100' />
-      </section>
+      </article>
     </main>
   )
 }

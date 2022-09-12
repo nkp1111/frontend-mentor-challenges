@@ -104,33 +104,33 @@ main {
   margin-top: 40px;
 }
 
-/* section :text*/
-main section:first-child {
+/* article :text*/
+main article:first-child {
   padding: 70px;
   padding-bottom: 0;
 }
 
-main section:first-child article {
+main article:first-child article {
   height: 80%;
 }
 
-main section:first-child div {
+main article:first-child div {
   width: 67%;
 }
 
-main section:first-child p {
+main article:first-child p {
   color: var(--Medium-Gray);
   font-size: 0.92em;
 }
 
-main section h1 {
+main article h1 {
   font-size: 4.2em;
   color: var(--Almost-Black);
   font-weight: 700;
   line-height: 1em;
 }
 
-main section:first-child button {
+main article:first-child button {
   padding: 10px 24px;
   background-color: var(--Almost-Black);
   color: var(--Almost-White);
@@ -138,26 +138,26 @@ main section:first-child button {
   white-space: nowrap;
 }
 
-main section:first-child button:hover {
+main article:first-child button:hover {
   background-color: var(--Almost-White);
   color: var(--Almost-Black);
 }
 
 /*4 logos at bottom*/
-main section aside {
+main article aside {
   width: 70%;
   margin-top: 50px;
   justify-content: space-between;
 }
 
-main section aside img {
+main article aside img {
   width: 62px;
   height: 18px;
   margin-right: 20px;
 }
 
-/* Section 2 image background*/
-main section:last-child img {
+/* article 2 image background*/
+main article:last-child img {
   padding-bottom: 19px;
 }
 
@@ -221,7 +221,7 @@ nav ul li div img {
 }
 
 @media screen and (max-width: 900px) {
-  main section h1 {
+  main article h1 {
     font-size: 3em;
   }
 
@@ -229,14 +229,14 @@ nav ul li div img {
     padding: 10px 25px;
   }
 
-  main section aside {
+  main article aside {
     width: 100%;
     flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 850px) {
-  main section h1 {
+  main article h1 {
     font-size: 2.5em;
   }
 
@@ -244,12 +244,12 @@ nav ul li div img {
     margin-left: 10px;
   }
 
-  main section:first-child {
+  main article:first-child {
     padding: 20px;
     padding-bottom: 0;
   }
 
-  main section aside {
+  main article aside {
     margin-right: 0;
   }
 }
@@ -266,39 +266,39 @@ nav ul li div img {
     margin: 0;
   }
 
-  main section {
+  main article {
     width: 100vh;
     height: 43vh;
   }
 
-  main section article,
-  main section article h1,
-  #text-holder,
-  main section aside {
-    width: 450px;
+  main article,
+  main article h1,
+  main article aside {
+    min-width: 450px;
     text-align: center;
   }
 
-  main section article h1 {
+  main article article h1 {
     font-size: 2em;
   }
 
   #text-holder {
+    width: 350px;
     margin: 0 auto;
-    width: 90%;
   }
 
-  main section article div:last-child {
+  main article div:last-of-type {
+    width: 100%;
     margin: auto;
   }
 
-  main section:last-child img {
+  main article:last-child img {
     padding: 0;
     object-position: left;
     object-fit: scale-down;
   }
 
-  main section aside {
+  main article aside {
     margin: 25px auto;
     justify-content: space-around;
   }
