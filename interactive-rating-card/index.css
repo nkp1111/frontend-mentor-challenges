@@ -150,6 +150,7 @@ main div+p {
   position: absolute;
   bottom: 5vh;
   right: 15vw;
+  color: white;
 }
 
 .attribution a {
