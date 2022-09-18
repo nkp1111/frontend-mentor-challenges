@@ -39,9 +39,11 @@ main {
   height: 420px;
   border-radius: 35px;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
-main img {
+main.active img {
   padding: 10px;
   border-radius: 50%;
   background-color: hsl(213, 19%, 23%);
@@ -49,6 +51,7 @@ main img {
   object-position: center;
   object-fit: contain;
   padding: 1em;
+  width: 50px;
 }
 
 main h1 {
@@ -85,11 +88,14 @@ main p,
   transition: all 0.6s;
 }
 
+#rating-holder button:focus {
+  background-color: var(--Light-Grey);
+  font-weight: 600;
+}
+
 #rating-holder button:hover {
   background-color: var(--Orange);
   font-weight: 600;
-  color: white;
-  border: none;
 }
 
 /* Submit button */
@@ -109,6 +115,34 @@ main p,
   font-weight: 700;
 }
 
+/* Main : after submit */
+main div:first-child {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+main div~p {
+  font-weight: 400;
+  color: var(--Medium-Grey);
+}
+
+#ending-heading {
+  margin: -10px 0 5px;
+  color: white;
+  font-weight: 700;
+}
+
+main div+p {
+  color: var(--Orange);
+  margin: 15px;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 5rem;
+  padding: 0.6em 0;
+  width: 75%;
+  margin: 20px auto 0;
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
@@ -120,4 +154,12 @@ main p,
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    border-radius: 15px;
+    width: 350px;
+    padding: 27px 23px;
+  }
 }
