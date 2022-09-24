@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Profile from './Profile'
 
-function index() {
+const Main = () => {
+
   return (
-    <main>
-
+    <main >
+      <Profile />
     </main>
   )
 }
 
-export default index
+export default Main
