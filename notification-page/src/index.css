@@ -18,6 +18,14 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* Header */
+header {
+  position: absolute;
+  top: 15vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
