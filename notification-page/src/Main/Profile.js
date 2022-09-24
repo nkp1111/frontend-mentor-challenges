@@ -1,5 +1,6 @@
 import React from 'react'
 import { data } from '../data'
+import SingleProfile from './SingleProfile'
 
 
 function Profile() {
@@ -13,8 +14,9 @@ function Profile() {
         <p>Mark all as read
         </p>
       </div>
-      {data.map(d => {
-        return d.name
+      {data.map(info => {
+        return <SingleProfile info={info}
+          key={info.id} />
       })}
     </>
   )
