@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
 :root {
   --Red: hsl(1, 90%, 64%);
   --Blue: hsl(219, 85%, 26%);
@@ -13,22 +15,17 @@
 
 * {
   font-size: 16px;
-
-  @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url();
-  }
-
-  font-family: 'Plus Jakarta Sans',
-  Arial,
-  Helvetica,
-  sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  left: 50vw;
+  background-color: transparent;
 }
 
 .attribution a {
