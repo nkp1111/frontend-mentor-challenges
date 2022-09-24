@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
+/* General styles */
 :root {
   --Red: hsl(1, 90%, 64%);
   --Blue: hsl(219, 85%, 26%);
@@ -16,6 +17,15 @@
 * {
   font-size: 16px;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  width: 100vw;
+  background-color: var(--Very-light-grayish-blue);
 }
 
 /* Header */
@@ -24,6 +34,74 @@ header {
   top: 15vh;
   left: 50vw;
   transform: translate(-50%, -50%);
+}
+
+/* Main */
+main {
+  width: 50%;
+  margin: 5vw auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
+  padding: 10px;
+}
+
+/* Notification */
+#notification {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+#notification span {
+  background-color: var(--Blue);
+  color: white;
+  font-size: 0.6em;
+  padding: 2px 5px;
+  margin-left: 9px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* Profile */
+.profile {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.profile.not-read {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.profile img {
+  width: 35px;
+}
+
+.profile .name {
+  font-weight: 800;
+}
+
+.profile .name:hover {
+  color: var(--Blue);
+}
+
+.profile .activity {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.9em;
+  margin: 0 5px;
+}
+
+.profile .interest {
+  color: var(--Dark-Grayish-blue);
+  font-weight: 800;
+}
+
+.profile .interest+span {
+  color: hsl(1, 90%, 64%);
+}
+
+.profile .time {
+  color: var(--Light-grayish-blue-2);
 }
 
 /* Footer */
@@ -38,4 +116,10 @@ header {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 90vw;
+  }
 }

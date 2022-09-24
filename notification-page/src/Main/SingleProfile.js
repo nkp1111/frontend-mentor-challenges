@@ -5,15 +5,15 @@ function SingleProfile({ info }) {
   const { image, name, activity, interestShown, time, message, read } = info
 
   return (
-    <div>
+    <div className={!read ? 'profile not-read' : 'profile'} >
       <img src={image} alt={name + 'image'} />
-      <span>{name}</span>
-      <span>{activity}</span>
-      <span>{interestShown}{!read && <span>*</span>}</span>
-      <br />
-      <span>{time}</span>
-      <div>{message}</div>
+      <span className='name'>{name}</span>
+      <span className='activity'>{activity}</span>
+      <span className='interest'>{interestShown}</span>
 
+      {!read && <span>*</span>}<br />
+      <span className='time'>{time}</span>
+      <div className='message-box'>{message}</div>
     </div>
   )
 }
