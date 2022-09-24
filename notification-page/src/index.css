@@ -6,16 +6,16 @@
   --Blue: hsl(219, 85%, 26%);
   --White: hsl(0, 0%, 100%);
 
-  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Very-light-grayish-blue: hsl(213, 43%, 96%);
   --Light-grayish-blue-1: hsl(211, 68%, 94%);
   --Light-grayish-blue-2: hsl(205, 33%, 90%);
-  --Grayish-blue: hsl(219, 14%, 63%);
+  --Grayish-blue: hsl(218, 10%, 55%);
   --Dark-grayish-blue: hsl(219, 12%, 42%);
   --Very-dark-blue: hsl(224, 21%, 14%);
 }
 
 * {
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -25,6 +25,8 @@
 /* Body */
 body {
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: var(--Very-light-grayish-blue);
 }
 
@@ -38,12 +40,13 @@ header {
 
 /* Main */
 main {
-  width: 50%;
-  margin: 5vw auto;
+  width: 60%;
+  margin: 3vh auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px white;
-  padding: 10px;
+  padding: 20px;
+  height: 88vh;
 }
 
 /* Notification */
@@ -56,29 +59,47 @@ main {
   background-color: var(--Blue);
   color: white;
   font-size: 0.6em;
-  padding: 2px 5px;
+  padding: 2px 9px;
   margin-left: 9px;
   border-radius: 3px;
   text-align: center;
 }
 
+#notification+p:hover {
+  color: var(--Blue);
+}
+
 /* Profile */
 .profile {
-  margin: 15px;
+  margin: 8px;
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  line-height: 1em;
 }
 
 .profile.not-read {
-  background-color: var(--Light-grayish-blue-1);
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.profile div:first-child {
+  margin: 5px 15px 0 0;
+}
+
+.profile div:nth-child(2) {
+  flex-grow: 1;
 }
 
 .profile img {
-  width: 35px;
+  width: 40px;
+  border: 2px solid;
+  border-color: var(--Light-grayish-blue-2);
+  border-radius: 50%;
 }
 
 .profile .name {
   font-weight: 800;
+  color: var(--Very-dark-blue);
 }
 
 .profile .name:hover {
@@ -87,21 +108,62 @@ main {
 
 .profile .activity {
   color: var(--Dark-grayish-blue);
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin: 0 5px;
 }
 
 .profile .interest {
-  color: var(--Dark-Grayish-blue);
+  color: var(--Grayish-blue);
   font-weight: 800;
+}
+
+.profile .interest:hover {
+  color: var(--Blue);
+}
+
+.profile .interest.sp {
+  color: var(--Blue);
 }
 
 .profile .interest+span {
   color: hsl(1, 90%, 64%);
+  margin-left: 5px;
+  font-weight: 800;
+  font-size: 1.3em;
 }
 
 .profile .time {
-  color: var(--Light-grayish-blue-2);
+  color: var(--Grayish-blue);
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: block;
+}
+
+.profile div div.message-box {
+  margin: 8px;
+  padding: 10px 12px;
+  background-color: white;
+  color: var(--Dark-grayish-blue);
+  font-size: 0.9em;
+}
+
+.profile div div.message-box:hover {
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.resp-img {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name,
+.message-box,
+.resp-img,
+.interest,
+#notification+p {
+  cursor: pointer;
 }
 
 /* Footer */
@@ -121,5 +183,47 @@ main {
 @media screen and (max-width: 900px) {
   main {
     width: 90vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  footer {
+    opacity: 0;
+  }
+
+  .interest {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  main div,
+  .profile {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: 95vw;
+    height: 95vh;
+    padding: 2px;
+  }
+
+  main div,
+  .profile {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #notification+p {
+    display: none;
   }
 }
