@@ -1,11 +1,12 @@
 import React from 'react'
 
-function SingleProfile({ info }) {
+function SingleProfile({ info, handleClick, count }) {
 
   const { image, name, activity, interestShown, time, message, read } = info
 
   return (
-    <div className={!read ? 'profile not-read' : 'profile'} >
+    <div className={!read ? 'profile not-read' : 'profile'}
+      onClick={() => handleClick(name, count)}>
       <div>
         <img src={image} alt={name + 'image'} />
       </div>

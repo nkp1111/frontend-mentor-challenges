@@ -15,7 +15,7 @@
 }
 
 * {
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -40,10 +40,10 @@ header {
 
 /* Main */
 main {
-  width: 60%;
+  width: 42vw;
   margin: 3vh auto;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 13px;
   box-shadow: 0 0 20px white;
   padding: 20px;
   height: 88vh;
@@ -141,7 +141,7 @@ main {
 
 .profile div div.message-box {
   margin: 8px;
-  padding: 10px 12px;
+  padding: 12px;
   background-color: white;
   color: var(--Dark-grayish-blue);
   font-size: 0.9em;
@@ -171,7 +171,7 @@ main {
   font-size: 11px;
   text-align: center;
   position: absolute;
-  bottom: 5vh;
+  bottom: 4vh;
   left: 50vw;
   background-color: transparent;
 }
@@ -180,20 +180,38 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   main {
-    width: 90vw;
+    width: 55vw;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 950px) {
   main {
-    width: 90vw;
-    height: 90vh;
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    width: 80vw;
   }
 
   footer {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  main {
+    width: 90vw;
+    height: 90vh;
   }
 
   .interest {
@@ -201,7 +219,7 @@ main {
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:570px) {
 
   main div,
   .profile {
@@ -209,21 +227,38 @@ main {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 510px) {
   main {
     width: 95vw;
-    height: 95vh;
-    padding: 2px;
-  }
-
-  main div,
-  .profile {
-    padding: 2px;
+    height: 94vh;
+    padding: 10px;
+    margin: 3vh auto;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
+  .profile div div.message-box {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 385px) {
   #notification+p {
-    display: none;
+    font-size: 0.8em;
+  }
+
+  .profile {
+    margin: 4px;
+  }
+
+  .profile div div.message-box {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .profile {
+    margin: 2px;
   }
 }

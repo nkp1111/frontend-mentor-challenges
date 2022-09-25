@@ -16,12 +16,23 @@ function Profile() {
 
   const [infos, setInfos] = useState(data)
 
-  const handleClick = () => {
-    setCount(0)
-    setInfos(infos.map(info => {
-      info.read = true
-      return info
-    }))
+  const handleClick = (item, count) => {
+    if (item === '') {
+      setCount(0)
+      setInfos(infos.map(info => {
+        info.read = true
+        return info
+      }))
+    }
+    if (item) {
+      setCount(count - 1)
+      setInfos(infos.map(info => {
+        if (info.name === item) {
+          info.read = true
+        }
+        return info
+      }))
+    }
   }
 
   return (
@@ -32,13 +43,15 @@ function Profile() {
           Notifications
           <span>{count}</span>
         </h2>
-        <p onClick={handleClick}>
+        <p onClick={() => handleClick('', count)}>
           Mark all as read
         </p>
       </div>
       {infos.map(info => {
         return <SingleProfile info={info}
-          key={info.id} />
+          key={info.id}
+          handleClick={handleClick}
+          count={count} />
       })}
     </>
   )
