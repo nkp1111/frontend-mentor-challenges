@@ -13,7 +13,6 @@ body {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/home/background-home-desktop.jpg?raw=true') center center/cover;
   display: flex;
   height: 100vh;
-  color: white;
 }
 
 .home div {
@@ -26,4 +25,17 @@ body {
 
 .home div:first-child {
   flex-direction: column;
+  color: white;
+}
+
+.home div:last-child span {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-transform: uppercase;
 }

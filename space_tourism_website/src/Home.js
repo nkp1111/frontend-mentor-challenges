@@ -12,7 +12,9 @@ function Home() {
           because we’ll give you a truly out of this world experience!
         </p>
       </div>
-      <div>Explore</div>
+      <div>
+        <span>Explore</span>
+      </div>
     </div>
   )
 }
