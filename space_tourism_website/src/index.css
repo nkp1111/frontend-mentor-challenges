@@ -52,6 +52,12 @@ nav ul {
   justify-content: space-evenly;
   margin: 0 30px 0 0;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li {
+  color: white;
+  text-decoration: none;
 }
 
 nav ul li span {
