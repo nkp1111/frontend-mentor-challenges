@@ -35,7 +35,7 @@ header div:nth-child(2) {
 }
 
 /* Navbar */
-nav {
+header nav {
   position: absolute;
   width: 55%;
   right: 0;
@@ -125,17 +125,19 @@ nav ul li span {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/destination/background-destination-desktop.jpg?raw=true') center center /contain;
   display: flex;
   height: 100vh;
-  padding: 0 10vw;
+  padding: 15vw 10vw;
 }
 
 .destination h2 {
-  margin-top: 25vh;
+  position: absolute;
+  top: 25vh;
   color: white;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
 }
 
 .destination h2 span {
   color: grey;
-
+  margin-right: 20px;
 }
