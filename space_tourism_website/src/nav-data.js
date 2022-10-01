@@ -1,4 +1,4 @@
-export const navData = [{ id: '00', name: 'Home' },
-{ id: '01', name: 'Destination' },
-{ id: '02', name: 'Crew' },
-{ id: '03', name: 'Technology' }]
+export const navData = [{ id: '00', name: 'home' },
+{ id: '01', name: 'destination' },
+{ id: '02', name: 'crew' },
+{ id: '03', name: 'technology' }]
