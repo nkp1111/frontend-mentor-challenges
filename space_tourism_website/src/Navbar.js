@@ -4,10 +4,10 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li>00 Home</li>
-        <li>01 Destination</li>
-        <li> 02 Crew</li>
-        <li>03 Technology</li>
+        <li><span>00</span> Home</li>
+        <li><span>01</span> Destination</li>
+        <li> <span>02</span> Crew</li>
+        <li><span>03</span> Technology</li>
       </ul>
     </nav>
   )

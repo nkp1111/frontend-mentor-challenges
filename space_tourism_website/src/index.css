@@ -14,9 +14,27 @@ body {
 /* Navbar */
 nav {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 5vh;
+  left: 45vw;
+  right: 0;
+  color: white;
+  /* background: linear-gradient(56deg, rgb(20, 20, 23) 5%, rgb(24, 68, 137) 25%, rgb(192, 216, 244), rgb(20, 78, 129), rgb(15, 76, 173)); */
+  background-color: rgb(21, 50, 114);
+  opacity: 0.7;
+}
+
+nav ul {
+  display: flex;
+  padding: 30px;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 0 30px 0 0;
+  text-transform: uppercase;
+}
+
+nav ul li span {
+  font-weight: bold;
+  margin-right: 7px;
 }
 
 /* home component */
