@@ -3,7 +3,10 @@ import React from 'react'
 function Destination() {
   return (
     <div className='destination'>
-      This is destination page
+      <p>01 Pick your destination</p>
+      <div>
+        <img></img>
+      </div>
     </div>
   )
 }
