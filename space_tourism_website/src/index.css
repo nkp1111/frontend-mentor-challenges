@@ -11,6 +11,14 @@ body {
   width: 100vw;
 }
 
+/* Navbar */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 /* home component */
 .home {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/home/background-home-desktop.jpg?raw=true') center center/cover;
