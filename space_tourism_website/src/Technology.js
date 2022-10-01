@@ -2,9 +2,9 @@ import React from 'react'
 
 function Technology() {
   return (
-    <div>
+    <section>
       This is Technology page
-    </div>
+    </section>
   )
 }
 

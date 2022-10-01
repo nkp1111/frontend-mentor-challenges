@@ -2,12 +2,12 @@ import React from 'react'
 
 function Destination() {
   return (
-    <div className='destination'>
-      <p>01 Pick your destination</p>
+    <section className='destination'>
+      <h2><span>01</span> Pick your destination</h2>
       <div>
         <img></img>
       </div>
-    </div>
+    </section>
   )
 }
 
