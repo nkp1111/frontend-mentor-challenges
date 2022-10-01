@@ -1,8 +1,11 @@
 import React from 'react'
 import data from './assets/data.json'
+import useGlobalContext from './context'
 
 function Destination() {
-  console.log(data.destinations);
+  const { destination } = useGlobalContext()
+  let destinationData = data.destinations
+  console.log(destinationData, destination);
   return (
     <section className='destination'>
       <h2><span>01</span> Pick your destination</h2>
