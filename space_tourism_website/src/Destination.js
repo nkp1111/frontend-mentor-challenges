@@ -2,7 +2,7 @@ import React from 'react'
 
 function Destination() {
   return (
-    <div>
+    <div className='destination'>
       This is destination page
     </div>
   )
