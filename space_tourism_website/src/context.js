@@ -27,6 +27,9 @@ export const AppProvider = ({ children }) => {
 
   useEffect(() => {
     handleDestination()
+    handleCrew()
+    handleTechnology()
+    handleCurrentPage()
   }, [])
 
   return (
