@@ -4,6 +4,7 @@ const AppContext = React.createContext()
 
 export const AppProvider = ({ children }) => {
 
+  const [currentPage, setCurrentPage] = useState('home')
   const [destination, setDestination] = useState('Moon')
   const [crew, setCrew] = useState('Douglas Hurley')
   const [technology, setTechnology] = useState('Launch vehicle')
@@ -20,6 +21,10 @@ export const AppProvider = ({ children }) => {
     setTechnology(newTech)
   }
 
+  const handleCurrentPage = (newPage) => {
+    setCurrentPage(newPage)
+  }
+
   useEffect(() => {
     handleDestination()
   }, [])
@@ -30,9 +35,11 @@ export const AppProvider = ({ children }) => {
         destination,
         crew,
         technology,
+        currentPage,
         handleDestination,
         handleCrew,
-        handleTechnology
+        handleTechnology,
+        handleCurrentPage
       }}>
       {children}
     </AppContext.Provider>

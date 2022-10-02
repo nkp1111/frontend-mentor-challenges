@@ -69,12 +69,21 @@ header nav {
 
 nav ul {
   display: flex;
-  padding: 30px;
   list-style-type: none;
   justify-content: space-evenly;
   margin: 0 30px 0 0;
   text-transform: uppercase;
   color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 30px;
+  height: 100%;
+}
+
+nav ul li.active {
+  border-bottom: 3px solid white;
 }
 
 nav ul li .nav-link {
