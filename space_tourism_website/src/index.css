@@ -200,3 +200,11 @@ nav ul li span {
 .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(4) {
   font-size: 1.5em;
 }
+
+/* crew */
+.crew {
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/background-crew-desktop.jpg?raw=true') center center /cover;
+  display: flex;
+  height: 100vh;
+  padding: 15vw 10vw;
+}

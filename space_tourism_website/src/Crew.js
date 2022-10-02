@@ -8,13 +8,13 @@ function Crew() {
   let newCrew = crew === undefined ? 'Douglas Hurley' : crew
 
   /* To set a particular crew */
-  let particularDes = crewData.filter(item => {
-    return item.name === newCrew ? item : null
-  })
+  // let particularDes = crewData.filter(item => {
+  //   return item.name === newCrew ? item : null
+  // })
   // console.log(crewData, crew, particularDes);
   return (
-    <section>
-      <h2><span>02</span> Meet your crew</h2>
+    <section className='crew'>
+      {/* <h2><span>02</span> Meet your crew</h2>
       <div>
         <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-moon.png?raw=true' alt='moon_image'></img>
       </div>
@@ -46,7 +46,7 @@ function Crew() {
             </article>)
           })}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
