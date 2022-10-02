@@ -30,7 +30,8 @@ function Crew() {
             <ul>
               {crewData.map(item => {
                 return <li key={item.name}
-                  onClick={() => handleCrew(item.name)}>
+                  onClick={() => handleCrew(item.name)}
+                  className={crew === item.name ? 'active' : ''}>
                 </li>
               })}
             </ul>
