@@ -2,7 +2,7 @@ import React from 'react'
 
 function DestinationImg({ particularDes }) {
   return (
-    <div>
+    <div className='des-img'>
       {particularDes.map(item => {
         return (<img
           key={item.name}

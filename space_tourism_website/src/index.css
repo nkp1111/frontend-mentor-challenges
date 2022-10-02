@@ -262,19 +262,32 @@ nav ul li span {
   padding: 15vw 10vw 5vh;
 }
 
-.destination div:first-of-type {
+.destination .des-img {
   display: flex;
   align-items: center;
   min-width: 450px;
 }
 
+@media screen and (max-width: 450px) {
+  .destination h2 {
+    top: 20vh;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .destination {
-    padding: 15vw 5vw 5vh;
+    padding: 17vw 5vw 5vh;
   }
 
-  .destination div:first-of-type {
-    min-width: 0;
+  .destination .des-img {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  .destination .des-img {
+    margin-top: 80px;
   }
 }
 
@@ -290,7 +303,7 @@ nav ul li span {
   .destination .des-info {
     margin-left: 70px;
     min-width: 55%;
-    margin-top: 100px;
+    margin-top: 25px;
   }
 }
 
@@ -300,16 +313,44 @@ nav ul li span {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 860px) {
   .destination .des-info {
-    margin-left: 10px;
+    margin-left: -60px;
+    margin-top: 100px;
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .destination .des-info {
+    margin-left: -120px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .destination .des-info {
+    margin-left: -200px;
+    margin-top: 120px;
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .destination .des-info {
+    margin-left: -350px;
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .destination .des-info {
     margin-top: 150px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .destination .des-info {
-    margin-left: -100px;
+    margin-left: -450px;
   }
 }
 
@@ -338,6 +379,13 @@ nav ul li span {
   margin: 25px 0;
 }
 
+@media screen and (max-width: 700px) {
+  .destination .des-info .des-nav-holder+div article h3 {
+    font-size: 50px;
+    margin: 20px 0;
+  }
+}
+
 .destination .des-info .des-nav-holder+div article p {
   width: 80%;
   line-height: 1.4em;
@@ -349,9 +397,15 @@ nav ul li span {
   width: 80%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 810px) {
   .destination .des-info .des-nav-holder+div article .underline {
     margin: 15px 0 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .destination .des-info .des-nav-holder+div article .underline {
+    margin: 20px 0 30px;
   }
 }
 
@@ -363,9 +417,17 @@ nav ul li span {
   row-gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
   .destination .des-info .des-nav-holder+div article div:last-child {
     grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(3),
+  .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(4) {
+    font-size: 1em;
   }
 }
 
