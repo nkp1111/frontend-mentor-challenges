@@ -5,7 +5,12 @@ import useGlobalContext from './context'
 function Destination() {
   const { destination } = useGlobalContext()
   let destinationData = data.destinations
-  console.log(destinationData, destination);
+  let particularDes = destinationData.filter(item => {
+    if (item.name === destination) {
+      return item
+    }
+  })
+  console.log(destinationData, destination, particularDes);
   return (
     <section className='destination'>
       <h2><span>01</span> Pick your destination</h2>
@@ -22,7 +27,19 @@ function Destination() {
             })}
           </ul>
         </nav>
-        <h3>Moon</h3>
+        {particularDes.map(item => {
+          return (<article key={item.name}>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <div className='underline'></div>
+            <div className='des-info'>
+              <div>Avg. distance</div>
+              <div>Est. travel time</div>
+              <div>{item.distance}</div>
+              <div>{item.travel}</div>
+            </div>
+          </article>)
+        })}
       </div>
     </section>
   )
