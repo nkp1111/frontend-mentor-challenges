@@ -27,6 +27,7 @@ body {
 main {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -254,14 +255,27 @@ nav ul li span {
 
 /* Destination */
 .destination {
-  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/destination/background-destination-desktop.jpg?raw=true') center center /contain;
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/destination/background-destination-desktop.jpg?raw=true') center center /cover;
   display: flex;
   height: 100vh;
-  padding: 15vw 10vw;
+  width: 100%;
+  padding: 15vw 10vw 5vh;
 }
 
 .destination div:first-of-type {
+  display: flex;
+  align-items: center;
   min-width: 450px;
+}
+
+@media screen and (max-width: 1200px) {
+  .destination {
+    padding: 15vw 5vw 5vh;
+  }
+
+  .destination div:first-of-type {
+    min-width: 0;
+  }
 }
 
 .destination .des-info {
@@ -269,6 +283,34 @@ nav ul li span {
   flex-direction: column;
   margin-left: 150px;
   margin-top: 0;
+  padding: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+  .destination .des-info {
+    margin-left: 70px;
+    min-width: 55%;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .destination .des-info {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .destination .des-info {
+    margin-left: 10px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .destination .des-info {
+    margin-left: -100px;
+  }
 }
 
 /* destination nav */
@@ -283,6 +325,7 @@ nav ul li span {
   height: 100%;
   padding: 20px 1px;
   opacity: 0.7;
+  margin: 0 5px;
 }
 
 /* destination info article */
@@ -298,11 +341,18 @@ nav ul li span {
 .destination .des-info .des-nav-holder+div article p {
   width: 80%;
   line-height: 1.4em;
+  white-space: wrap;
 }
 
 .destination .des-info .des-nav-holder+div article .underline {
-  margin: 25px 0;
+  margin: 25px 0 50px;
   width: 80%;
+}
+
+@media screen and (max-width: 750px) {
+  .destination .des-info .des-nav-holder+div article .underline {
+    margin: 15px 0 30px;
+  }
 }
 
 /* destination travel time and distance*/
@@ -311,6 +361,12 @@ nav ul li span {
   grid-template-columns: repeat(2, 250px);
   text-transform: uppercase;
   row-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .destination .des-info .des-nav-holder+div article div:last-child {
+    grid-template-columns: repeat(2, 200px);
+  }
 }
 
 .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(1),
