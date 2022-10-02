@@ -38,8 +38,10 @@ function Crew() {
         </div>
       </div>
       <div className='crew-img'>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-anousheh-ansari.png?raw=true'
-          alt='harley_image'></img>
+        {particularCrew.map(item => {
+          return <img src={`${item.images.png}`}
+            alt='harley_image' />
+        })}
       </div>
     </section>
   )
