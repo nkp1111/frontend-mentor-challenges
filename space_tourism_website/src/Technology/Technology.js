@@ -1,6 +1,9 @@
 import React from 'react'
 import data from '../assets/data.json'
 import useGlobalContext from '../context'
+import TechnologyImg from './TechnologyImg'
+import TechnologyInfo from './TechnologyInfo'
+import TechnologyNav from './TechnologyNav'
 
 function Technology() {
 
@@ -17,38 +20,10 @@ function Technology() {
     <section className='technology'>
       <h2><span>03</span> Space launch 101</h2>
       <div className='tech-info'>
-        <div className='tech-nav-holder'>
-          <nav>
-            <ul>
-              {technologyData.map((item, index) => {
-                return <li key={item.name}
-                  onClick={() => handleTechnology(item.name)}
-                  className={item.name === technology ? 'active' : ''}>
-                  {index}
-                </li>
-              })}
-            </ul>
-          </nav>
-        </div>
-        <div>
-          {particularTech.map(item => {
-            return (<article key={item.name}>
-              <h3>The terminology...</h3>
-              <h4>{item.name}</h4>
-              <p>{item.description}</p>
-            </article>)
-          })}
-        </div>
+        <TechnologyNav technologyData={technologyData} />
+        <TechnologyInfo particularTech={particularTech} />
       </div>
-      <div>
-        {particularTech.map(item => {
-          return (<img
-            key={item.name}
-            src={`${item.images.portrait}`}
-            alt={item.name}
-          ></img>)
-        })}
-      </div>
+      <TechnologyImg particularTech={particularTech} />
     </section>
   )
 }
