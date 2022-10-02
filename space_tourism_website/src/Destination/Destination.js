@@ -6,7 +6,7 @@ import DestinationInfo from './DestinationInfo'
 import DestinationNav from './DestinationNav'
 
 function Destination() {
-  const { destination, handleDestination } = useGlobalContext()
+  const { destination } = useGlobalContext()
   let destinationData = data.destinations
   let newDestination = destination === undefined ? 'Moon' : destination
 

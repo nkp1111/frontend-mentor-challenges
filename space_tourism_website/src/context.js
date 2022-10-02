@@ -25,12 +25,12 @@ export const AppProvider = ({ children }) => {
     setCurrentPage(newPage)
   }
 
-  useEffect(() => {
-    handleDestination()
-    handleCrew()
-    handleTechnology()
-    handleCurrentPage()
-  }, [])
+  // useEffect(() => {
+  //   handleDestination()
+  //   handleCrew()
+  //   handleTechnology()
+  //   handleCurrentPage()
+  // }, [])
 
   return (
     <AppContext.Provider

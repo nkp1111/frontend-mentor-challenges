@@ -8,7 +8,7 @@ import CrewNav from './CrewNav'
 function Crew() {
   const { crew } = useGlobalContext()
   let crewData = data.crew
-  let newCrew = crew === undefined ? 'Anousheh Ansari' : crew
+  let newCrew = crew === undefined ? 'Douglas Hurley' : crew
 
   /* To set a particular crew */
   let particularCrew = crewData.filter(item => {

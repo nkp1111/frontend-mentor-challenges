@@ -7,7 +7,7 @@ import TechnologyNav from './TechnologyNav'
 
 function Technology() {
 
-  const { technology, handleTechnology } = useGlobalContext()
+  const { technology } = useGlobalContext()
   let technologyData = data.technology
   let newTechnology = technology === undefined ? 'Launch vehicle' : technology
 
