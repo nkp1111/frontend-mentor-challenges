@@ -29,6 +29,11 @@ section h2 {
   font-size: 28px;
 }
 
+section h2 span {
+  color: grey;
+  margin-right: 20px;
+}
+
 /* Header */
 header {
   position: absolute;
@@ -138,13 +143,6 @@ nav ul li span {
   padding: 15vw 10vw;
 }
 
-
-
-.destination h2 span {
-  color: grey;
-  margin-right: 20px;
-}
-
 .destination .des-info {
   display: flex;
   flex-direction: column;
@@ -209,13 +207,13 @@ nav ul li span {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/background-crew-desktop.jpg?raw=true') center center /cover;
   display: flex;
   height: 100vh;
-  padding: 30vh 2vw 1px;
+  padding: 30vh 10vw 0;
   overflow: hidden;
 }
 
 .crew .crew-info {
   width: 55%;
-  margin-top: 15vh;
+  margin: 15vh 0 0 5vw;
 }
 
 .crew div:last-child img {
