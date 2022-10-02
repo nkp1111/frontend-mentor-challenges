@@ -6,13 +6,13 @@ function Technology() {
 
   const { technology, handleTechnology } = useGlobalContext()
   let technologyData = data.technology
-  let newTechnology = technology === undefined ? 'Moon' : technology
+  let newTechnology = technology === undefined ? 'Launch vehicle' : technology
 
   /* To set a particular technology */
   let particularTech = technologyData.filter(item => {
     return item.name === newTechnology ? item : null
   })
-  // console.log(technologyData, technology, particularTech);
+  console.log(technologyData, technology, particularTech);
   return (
     <section className='technology'>
       {/* <h2><span>03</span> Space launch 101</h2>
@@ -27,7 +27,7 @@ function Technology() {
             <ul>
               {data.technologys.map(item => {
                 return <li key={item.name}
-                  onClick={() => handletechnology(item.name)}>
+                  onClick={() => handleTechnology(item.name)}>
                   {item.name}
                 </li>
               })}

@@ -39,8 +39,10 @@ function Crew() {
       </div>
       <div className='crew-img'>
         {particularCrew.map(item => {
-          return <img src={`${item.images.http}`}
-            alt='harley_image' />
+          return <img key={item.name}
+            src={`${item.images.http}`}
+            alt={item.name}
+          />
         })}
       </div>
     </section>

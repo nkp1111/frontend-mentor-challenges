@@ -6,7 +6,7 @@ export const AppProvider = ({ children }) => {
 
   const [destination, setDestination] = useState('Moon')
   const [crew, setCrew] = useState('Douglas Hurley')
-  const [technology, setTechnology] = useState('')
+  const [technology, setTechnology] = useState('Launch vehicle')
 
   const handleDestination = (newDestination) => {
     setDestination(newDestination)
@@ -14,6 +14,10 @@ export const AppProvider = ({ children }) => {
 
   const handleCrew = (newCrew) => {
     setCrew(newCrew)
+  }
+
+  const handleTechnology = (newTech) => {
+    setTechnology(newTech)
   }
 
   useEffect(() => {
@@ -27,7 +31,8 @@ export const AppProvider = ({ children }) => {
         crew,
         technology,
         handleDestination,
-        handleCrew
+        handleCrew,
+        handleTechnology
       }}>
       {children}
     </AppContext.Provider>

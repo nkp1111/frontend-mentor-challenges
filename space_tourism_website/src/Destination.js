@@ -17,7 +17,10 @@ function Destination() {
       <h2><span>01</span> Pick your destination</h2>
       <div>
         {particularDes.map(item => {
-          return (<img src={`${item.images.http}`} alt='moon_image'></img>)
+          return (<img
+            key={item.name}
+            src={`${item.images.http}`}
+            alt={item.name}></img>)
         })}
       </div>
       <div className='des-info'>

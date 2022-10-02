@@ -261,3 +261,9 @@ nav ul li span {
   height: 100%;
   object-fit: contain;
 }
+
+/* technology */
+.technology {
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/technology/background-technology-desktop.jpg?raw=true') center center /cover;
+  height: 100vh;
+}
