@@ -11,16 +11,22 @@ function Crew() {
   let particularCrew = crewData.filter(item => {
     return item.name === newCrew ? item : null
   })
-  console.log(crewData, crew, newCrew, particularCrew);
+  // console.log(crewData, crew, newCrew, particularCrew);
   return (
     <section className='crew'>
       <h2><span>02</span> Meet your crew</h2>
-      <div>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-douglas-hurley.png?raw=true'
-          alt='harley_image'></img>
-      </div>
-      <div className='des-info'>
-        <div className='des-nav-holder'>
+      <div className='crew-info'>
+        <div>
+          {particularCrew.map(item => {
+            return (<article key={item.name}>
+              <h3>{item.name}</h3>
+              <h4>{item.role}</h4>
+              <p>{item.bio}</p>
+              <div className='underline'></div>
+            </article>)
+          })}
+        </div>
+        <div className='crew-nav-holder'>
           <nav>
             <ul>
               {crewData.map(item => {
@@ -32,17 +38,10 @@ function Crew() {
             </ul>
           </nav>
         </div>
-        <div>
-          {particularCrew.map(item => {
-            return (<article key={item.name}>
-              <h3>{item.name}</h3>
-              <h4>{item.role}</h4>
-              <p>{item.bio}</p>
-              <div className='underline'></div>
-
-            </article>)
-          })}
-        </div>
+      </div>
+      <div className='crew-img'>
+        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-douglas-hurley.png?raw=true'
+          alt='harley_image'></img>
       </div>
     </section>
   )
