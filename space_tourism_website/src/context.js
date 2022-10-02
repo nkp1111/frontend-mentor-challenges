@@ -14,7 +14,7 @@ export const AppProvider = ({ children }) => {
 
   useEffect(() => {
     handleDestination()
-  }, [])
+  })
 
   return (
     <AppContext.Provider

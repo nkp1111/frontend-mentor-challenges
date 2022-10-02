@@ -5,10 +5,13 @@ import useGlobalContext from './context'
 function Destination() {
   const { destination, handleDestination } = useGlobalContext()
   let destinationData = data.destinations
+  let newDestination = destination === undefined ? 'Moon' : destination
+
+  /* To set a particular destination */
   let particularDes = destinationData.filter(item => {
-    return item.name === destination ? item : null
+    return item.name === newDestination ? item : null
   })
-  console.log(destinationData, destination, particularDes);
+  // console.log(destinationData, destination, particularDes);
   return (
     <section className='destination'>
       <h2><span>01</span> Pick your destination</h2>
