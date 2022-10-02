@@ -265,11 +265,56 @@ nav ul li span {
 /* technology */
 .technology {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/technology/background-technology-desktop.jpg?raw=true') center center /cover;
+  display: flex;
   height: 100vh;
+  padding: 30vh 0 8vh 10vw;
+}
+
+.technology .tech-info {
+  display: flex;
+  margin: 100px 0 0 0;
+}
+
+.technology .tech-info nav ul {
+  flex-direction: column;
+  height: 250px;
+  width: 100px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.technology .tech-info nav ul li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.technology .tech-info div:nth-child(2) h3 {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.technology .tech-info div:nth-child(2) h4 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 20px 0 30px;
+}
+
+.technology .tech-info div:nth-child(2) p {
+  width: 60%;
+  line-height: 1.4em;
 }
 
 .technology img {
-  width: 500px;
   height: 100%;
   object-fit: contain;
 }
+
+.technology div:last-child {}

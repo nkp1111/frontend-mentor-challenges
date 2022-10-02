@@ -16,22 +16,14 @@ function Technology() {
   return (
     <section className='technology'>
       <h2><span>03</span> Space launch 101</h2>
-      <div>
-        {particularTech.map(item => {
-          return (<img
-            key={item.name}
-            src={`${item.images.landscape}`}
-            alt='moon_image'></img>)
-        })}
-      </div>
       <div className='tech-info'>
         <div className='tech-nav-holder'>
           <nav>
             <ul>
-              {technologyData.map(item => {
+              {technologyData.map((item, index) => {
                 return <li key={item.name}
                   onClick={() => handleTechnology(item.name)}>
-                  {item.name}
+                  {index}
                 </li>
               })}
             </ul>
@@ -43,15 +35,17 @@ function Technology() {
               <h3>The terminology...</h3>
               <h4>{item.name}</h4>
               <p>{item.description}</p>
-              <div>
-                <div>Avg. distance</div>
-                <div>Est. travel time</div>
-                <div>{item.distance}</div>
-                <div>{item.travel}</div>
-              </div>
             </article>)
           })}
         </div>
+      </div>
+      <div>
+        {particularTech.map(item => {
+          return (<img
+            key={item.name}
+            src={`${item.images.portrait}`}
+            alt='moon_image'></img>)
+        })}
       </div>
     </section>
   )
