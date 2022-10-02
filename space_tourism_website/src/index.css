@@ -18,10 +18,15 @@ body {
 
 .underline {
   height: 1px;
-  width: 39vw;
+  width: 35vw;
   background-color: white;
   margin-left: 50px;
   z-index: 2;
+}
+
+main {
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -76,6 +81,32 @@ header nav {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 1170px) {
+  header nav {
+    width: 75%;
+  }
+
+  header .underline {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  header .underline {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  header nav {
+    width: 85%;
+  }
+
+  header .underline {
+    width: 0;
+  }
+}
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -106,6 +137,7 @@ nav ul li span {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/home/background-home-desktop.jpg?raw=true') center center/cover;
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
 .home div {
@@ -131,6 +163,12 @@ nav ul li span {
   top: 210px;
 }
 
+@media screen and (max-width: 360px) {
+  .home div:first-child p:nth-child(2) {
+    top: 180px;
+  }
+}
+
 .home div:first-child h2 {
   margin-top: 60px;
   font-size: 120px;
@@ -139,9 +177,49 @@ nav ul li span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width:950px) {
+  .home div:first-child h2 {
+    font-size: 90px;
+  }
+}
+
 .home div:first-child p:nth-child(3) {
   margin-top: 15px;
   line-height: 2em;
+}
+
+@media screen and (max-width: 1240px) {
+  .home div:first-child {
+    padding: 0 75px;
+  }
+
+  .home div:first-child p:nth-child(3) {
+    margin-top: 45px;
+    line-height: 1.3em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .home div:first-child {
+    padding: 0 55px;
+  }
+
+  .home div:first-child p:nth-child(3) {
+    margin-top: 35px;
+    line-height: 1.3em;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .home div:first-child {
+    padding: 0 15px;
+  }
+
+  .home div:first-child p:nth-child(3) {
+    margin-top: 45px;
+    line-height: 1em;
+    width: 100%;
+  }
 }
 
 .home div:last-child span {
@@ -156,6 +234,22 @@ nav ul li span {
   text-transform: uppercase;
   margin-left: 30px;
   color: black;
+}
+
+@media screen and (max-width: 670px) {
+  .home div:last-child span {
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home div:last-child span {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
 }
 
 /* Destination */
