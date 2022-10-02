@@ -1,6 +1,6 @@
 import React from 'react'
-import data from './assets/data.json'
-import useGlobalContext from './context'
+import data from '../assets/data.json'
+import useGlobalContext from '../context'
 
 function Crew() {
   const { crew, handleCrew } = useGlobalContext()

@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './Header'
-import Home from './Home'
-import Destination from './Destination'
-import Crew from './Crew'
-import Technology from './Technology'
+import Header from './Header/Header'
+import Home from './Home/Home'
+import Destination from './Destination/Destination'
+import Crew from './Crew/Crew'
+import Technology from './Technology/Technology'
 
 function App() {
   return (

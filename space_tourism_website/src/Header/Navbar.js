@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { navData } from './nav-data'
-import useGlobalContext from './context'
+import useGlobalContext from '../context'
 
 function Navbar() {
 
