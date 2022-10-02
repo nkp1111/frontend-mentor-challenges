@@ -3,12 +3,10 @@ import data from './assets/data.json'
 import useGlobalContext from './context'
 
 function Destination() {
-  const { destination } = useGlobalContext()
+  const { destination, handleDestination } = useGlobalContext()
   let destinationData = data.destinations
   let particularDes = destinationData.filter(item => {
-    if (item.name === destination) {
-      return item
-    }
+    return item.name === destination ? item : null
   })
   console.log(destinationData, destination, particularDes);
   return (
@@ -22,7 +20,8 @@ function Destination() {
           <nav>
             <ul>
               {data.destinations.map(item => {
-                return <li key={item.name}>
+                return <li key={item.name}
+                  onClick={() => handleDestination(item.name)}>
                   {item.name}
                 </li>
               })}

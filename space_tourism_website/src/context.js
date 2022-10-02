@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 const AppContext = React.createContext()
 
@@ -8,12 +8,21 @@ export const AppProvider = ({ children }) => {
   const [crew, setCrew] = useState('')
   const [technology, setTechnology] = useState('')
 
+  const handleDestination = (newDestination) => {
+    setDestination(newDestination)
+  }
+
+  useEffect(() => {
+    handleDestination()
+  }, [])
+
   return (
     <AppContext.Provider
       value={{
         destination,
         crew,
-        technology
+        technology,
+        handleDestination
       }}>
       {children}
     </AppContext.Provider>
