@@ -19,8 +19,8 @@ function Crew() {
         <div>
           {particularCrew.map(item => {
             return (<article key={item.name}>
-              <h3>{item.name}</h3>
-              <h4>{item.role}</h4>
+              <h3>{item.role}</h3>
+              <h4>{item.name}</h4>
               <p>{item.bio}</p>
               <div className='underline'></div>
             </article>)
@@ -40,7 +40,7 @@ function Crew() {
         </div>
       </div>
       <div className='crew-img'>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-douglas-hurley.png?raw=true'
+        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-anousheh-ansari.png?raw=true'
           alt='harley_image'></img>
       </div>
     </section>
