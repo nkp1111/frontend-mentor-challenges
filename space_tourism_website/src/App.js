@@ -14,13 +14,13 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />}>
           </Route>
-          <Route exact path='/home' element={<Home />}>
+          <Route path='/home' element={<Home />}>
           </Route>
-          <Route exact path='/destination' element={<Destination />}>
+          <Route path='/destination' element={<Destination />}>
           </Route>
-          <Route exact path='/crew' element={<Crew />}>
+          <Route path='/crew' element={<Crew />}>
           </Route>
-          <Route exact path='/technology' element={<Technology />}>
+          <Route path='/technology' element={<Technology />}>
           </Route>
         </Routes>
       </BrowserRouter>

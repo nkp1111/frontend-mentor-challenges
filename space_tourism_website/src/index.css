@@ -166,6 +166,10 @@ nav ul li span {
   padding: 15vw 10vw;
 }
 
+.destination div:first-of-type {
+  min-width: 450px;
+}
+
 .destination .des-info {
   display: flex;
   flex-direction: column;
@@ -204,6 +208,7 @@ nav ul li span {
 
 .destination .des-info .des-nav-holder+div article .underline {
   margin: 25px 0;
+  width: 80%;
 }
 
 /* destination travel time and distance*/
