@@ -286,7 +286,7 @@ nav ul li span {
   background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/technology/background-technology-desktop.jpg?raw=true') center center /cover;
   display: flex;
   height: 100vh;
-  padding: 30vh 0 8vh 10vw;
+  padding: 25vh 0 8vh 10vw;
 }
 
 .technology .tech-info {
@@ -306,13 +306,19 @@ nav ul li span {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: white;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  background-color: black;
   font-size: 20px;
-  font-weight: bold;
+  border: 1px solid white;
+  opacity: 0.9;
+}
+
+.technology .tech-info nav ul li.active {
+  color: black;
+  background-color: white;
 }
 
 .technology .tech-info div:nth-child(2) h3 {

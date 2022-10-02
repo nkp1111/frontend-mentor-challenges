@@ -22,7 +22,8 @@ function Technology() {
             <ul>
               {technologyData.map((item, index) => {
                 return <li key={item.name}
-                  onClick={() => handleTechnology(item.name)}>
+                  onClick={() => handleTechnology(item.name)}
+                  className={item.name === technology ? 'active' : ''}>
                   {index}
                 </li>
               })}
@@ -44,7 +45,8 @@ function Technology() {
           return (<img
             key={item.name}
             src={`${item.images.portrait}`}
-            alt='moon_image'></img>)
+            alt={item.name}
+          ></img>)
         })}
       </div>
     </section>
