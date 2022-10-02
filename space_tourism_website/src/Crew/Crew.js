@@ -14,7 +14,7 @@ function Crew() {
   let particularCrew = crewData.filter(item => {
     return item.name === newCrew ? item : null
   })
-  // console.log(crewData, crew, newCrew, particularCrew);
+
   return (
     <section className='crew'>
       <h2><span>02</span> Meet your crew</h2>
