@@ -5,7 +5,7 @@ import useGlobalContext from './context'
 function Crew() {
   const { crew, handleCrew } = useGlobalContext()
   let crewData = data.crew
-  let newCrew = crew !== undefined ? 'Anousheh Ansari' : crew
+  let newCrew = crew === undefined ? 'Anousheh Ansari' : crew
 
   /* To set a particular crew */
   let particularCrew = crewData.filter(item => {
