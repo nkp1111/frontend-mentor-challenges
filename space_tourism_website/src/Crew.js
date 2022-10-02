@@ -32,7 +32,6 @@ function Crew() {
               {crewData.map(item => {
                 return <li key={item.name}
                   onClick={() => handleCrew(item.name)}>
-                  {item.name}
                 </li>
               })}
             </ul>

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
 /* General styles */
+:root {
+  --grey-shade: grey;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +34,7 @@ section h2 {
 }
 
 section h2 span {
-  color: grey;
+  color: var(--grey-shade);
   margin-right: 20px;
 }
 
@@ -194,7 +198,7 @@ nav ul li span {
 .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(2) {
   font-size: 0.7em;
   font-weight: bold;
-  color: grey;
+  color: var(--grey-shade);
 }
 
 .destination .des-info .des-nav-holder+div article div:last-child div:nth-child(3),
@@ -214,6 +218,20 @@ nav ul li span {
 .crew .crew-info {
   width: 55%;
   margin: 15vh 0 0 5vw;
+}
+
+.crew .crew-nav-holder ul {
+  justify-content: space-between;
+  padding: 0;
+  width: 15%;
+  margin-top: 50px;
+}
+
+.crew .crew-nav-holder ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .crew div:last-child img {
