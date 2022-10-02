@@ -12,6 +12,10 @@ export const AppProvider = ({ children }) => {
     setDestination(newDestination)
   }
 
+  const handleCrew = (newCrew) => {
+    setCrew(newCrew)
+  }
+
   useEffect(() => {
     handleDestination()
   }, [])
@@ -22,7 +26,8 @@ export const AppProvider = ({ children }) => {
         destination,
         crew,
         technology,
-        handleDestination
+        handleDestination,
+        handleCrew
       }}>
       {children}
     </AppContext.Provider>
