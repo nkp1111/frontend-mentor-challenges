@@ -180,3 +180,23 @@ nav ul li span {
 .destination .des-info .des-nav-holder+div article .underline {
   margin: 25px 0;
 }
+
+/* destination travel time and distance*/
+.destination .des-info .des-nav-holder+div article div:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  text-transform: uppercase;
+  row-gap: 10px;
+}
+
+.destination .des-info .des-nav-holder+div article div:last-child div:nth-child(1),
+.destination .des-info .des-nav-holder+div article div:last-child div:nth-child(2) {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: grey;
+}
+
+.destination .des-info .des-nav-holder+div article div:last-child div:nth-child(3),
+.destination .des-info .des-nav-holder+div article div:last-child div:nth-child(4) {
+  font-size: 1.5em;
+}

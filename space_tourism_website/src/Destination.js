@@ -35,7 +35,7 @@ function Destination() {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <div className='underline'></div>
-              <div >
+              <div>
                 <div>Avg. distance</div>
                 <div>Est. travel time</div>
                 <div>{item.distance}</div>
