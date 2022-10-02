@@ -1,9 +1,12 @@
 import React from 'react'
 import data from '../assets/data.json'
 import useGlobalContext from '../context'
+import CrewImg from './CrewImg'
+import CrewInfo from './CrewInfo'
+import CrewNav from './CrewNav'
 
 function Crew() {
-  const { crew, handleCrew } = useGlobalContext()
+  const { crew } = useGlobalContext()
   let crewData = data.crew
   let newCrew = crew === undefined ? 'Anousheh Ansari' : crew
 
@@ -16,36 +19,10 @@ function Crew() {
     <section className='crew'>
       <h2><span>02</span> Meet your crew</h2>
       <div className='crew-info'>
-        <div>
-          {particularCrew.map(item => {
-            return (<article key={item.name}>
-              <h3>{item.role}</h3>
-              <h4>{item.name}</h4>
-              <p>{item.bio}</p>
-            </article>)
-          })}
-        </div>
-        <div className='crew-nav-holder'>
-          <nav>
-            <ul>
-              {crewData.map(item => {
-                return <li key={item.name}
-                  onClick={() => handleCrew(item.name)}
-                  className={crew === item.name ? 'active' : ''}>
-                </li>
-              })}
-            </ul>
-          </nav>
-        </div>
+        <CrewInfo particularCrew={particularCrew} />
+        <CrewNav crewData={crewData} />
       </div>
-      <div className='crew-img'>
-        {particularCrew.map(item => {
-          return <img key={item.name}
-            src={`${item.images.http}`}
-            alt={item.name}
-          />
-        })}
-      </div>
+      <CrewImg particularCrew={particularCrew} />
     </section>
   )
 }
