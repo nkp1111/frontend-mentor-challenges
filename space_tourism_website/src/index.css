@@ -34,8 +34,6 @@ header img {
   margin-left: 50px;
 }
 
-
-
 /* Navbar */
 header nav {
   position: absolute;
@@ -144,4 +142,15 @@ nav ul li span {
   margin-right: 20px;
 }
 
-.destination div:nth-child(2) {}
+.destination div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+/* destination nav */
+.destination div:nth-child(3) .des-nav-holder nav ul {
+  justify-content: space-between;
+  padding-left: 0;
+  width: 60%;
+}
