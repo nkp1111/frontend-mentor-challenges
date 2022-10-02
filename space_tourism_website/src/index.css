@@ -145,7 +145,8 @@ nav ul li span {
 .destination .des-info {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 150px;
+  margin-top: 0;
 }
 
 /* destination nav */
@@ -161,12 +162,21 @@ nav ul li span {
   padding: 20px 1px;
 }
 
-/* destination info */
+/* destination info article */
 .destination .des-info .des-nav-holder+div article {
   color: white;
 }
 
 .destination .des-info .des-nav-holder+div article h3 {
   font-size: 65px;
+  margin: 25px 0;
+}
+
+.destination .des-info .des-nav-holder+div article p {
+  width: 80%;
+  line-height: 1.4em;
+}
+
+.destination .des-info .des-nav-holder+div article .underline {
   margin: 25px 0;
 }
