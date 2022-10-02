@@ -4,25 +4,26 @@ import useGlobalContext from './context'
 
 function Crew() {
   const { crew, handleCrew } = useGlobalContext()
-  let crewData = data.crews
+  let crewData = data.crew
   let newCrew = crew === undefined ? 'Douglas Hurley' : crew
 
   /* To set a particular crew */
-  // let particularDes = crewData.filter(item => {
-  //   return item.name === newCrew ? item : null
-  // })
-  // console.log(crewData, crew, particularDes);
+  let particularCrew = crewData.filter(item => {
+    return item.name === newCrew ? item : null
+  })
+  console.log(crewData, crew, newCrew, particularCrew);
   return (
     <section className='crew'>
-      {/* <h2><span>02</span> Meet your crew</h2>
+      <h2><span>02</span> Meet your crew</h2>
       <div>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-moon.png?raw=true' alt='moon_image'></img>
+        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/crew/image-douglas-hurley.png?raw=true'
+          alt='harley_image'></img>
       </div>
       <div className='des-info'>
         <div className='des-nav-holder'>
           <nav>
             <ul>
-              {data.crews.map(item => {
+              {crewData.map(item => {
                 return <li key={item.name}
                   onClick={() => handleCrew(item.name)}>
                   {item.name}
@@ -32,21 +33,17 @@ function Crew() {
           </nav>
         </div>
         <div>
-          {particularDes.map(item => {
+          {particularCrew.map(item => {
             return (<article key={item.name}>
               <h3>{item.name}</h3>
-              <p>{item.description}</p>
+              <h4>{item.role}</h4>
+              <p>{item.bio}</p>
               <div className='underline'></div>
-              <div>
-                <div>Avg. distance</div>
-                <div>Est. travel time</div>
-                <div>{item.distance}</div>
-                <div>{item.travel}</div>
-              </div>
+
             </article>)
           })}
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }

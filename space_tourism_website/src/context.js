@@ -5,7 +5,7 @@ const AppContext = React.createContext()
 export const AppProvider = ({ children }) => {
 
   const [destination, setDestination] = useState('Moon')
-  const [crew, setCrew] = useState('')
+  const [crew, setCrew] = useState('Douglas Hurley')
   const [technology, setTechnology] = useState('')
 
   const handleDestination = (newDestination) => {
