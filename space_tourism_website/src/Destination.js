@@ -16,7 +16,9 @@ function Destination() {
     <section className='destination'>
       <h2><span>01</span> Pick your destination</h2>
       <div>
-        <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/destination/image-moon.png?raw=true' alt='moon_image'></img>
+        {particularDes.map(item => {
+          return (<img src={`${item.images.http}`} alt='moon_image'></img>)
+        })}
       </div>
       <div className='des-info'>
         <div className='des-nav-holder'>
