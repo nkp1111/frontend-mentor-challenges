@@ -17,7 +17,7 @@ function Destination() {
       <div>
         <img src='https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/destination/image-moon.png?raw=true' alt='moon_image'></img>
       </div>
-      <div>
+      <div className='des-info'>
         <div className='des-nav-holder'>
           <nav>
             <ul>
@@ -35,7 +35,7 @@ function Destination() {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <div className='underline'></div>
-              <div className='des-info'>
+              <div >
                 <div>Avg. distance</div>
                 <div>Est. travel time</div>
                 <div>{item.distance}</div>

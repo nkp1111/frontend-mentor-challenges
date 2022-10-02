@@ -142,15 +142,31 @@ nav ul li span {
   margin-right: 20px;
 }
 
-.destination div:nth-child(3) {
+.destination .des-info {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
 }
 
 /* destination nav */
-.destination div:nth-child(3) .des-nav-holder nav ul {
+.destination .des-info .des-nav-holder nav ul {
   justify-content: space-between;
-  padding-left: 0;
-  width: 60%;
+  padding: 0;
+  width: 50%;
+}
+
+.destination .des-info .des-nav-holder nav ul li {
+  background-color: black;
+  height: 100%;
+  padding: 20px 1px;
+}
+
+/* destination info */
+.destination .des-info .des-nav-holder+div article {
+  color: white;
+}
+
+.destination .des-info .des-nav-holder+div article h3 {
+  font-size: 65px;
+  margin: 25px 0;
 }
