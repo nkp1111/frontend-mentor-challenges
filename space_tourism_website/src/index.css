@@ -42,6 +42,15 @@ section h2 span {
   margin-right: 20px;
 }
 
+nav ul li {
+  opacity: 0.8;
+}
+
+nav ul li.active {
+  border-bottom: 3px solid white;
+  opacity: 1;
+}
+
 /* Header */
 header {
   position: absolute;
@@ -80,10 +89,6 @@ nav ul {
 header nav ul li {
   padding: 30px;
   height: 100%;
-}
-
-nav ul li.active {
-  border-bottom: 3px solid white;
 }
 
 nav ul li .nav-link {
@@ -179,6 +184,7 @@ nav ul li span {
   background-color: black;
   height: 100%;
   padding: 20px 1px;
+  opacity: 0.7;
 }
 
 /* destination info article */

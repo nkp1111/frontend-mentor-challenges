@@ -29,7 +29,8 @@ function Destination() {
             <ul>
               {data.destinations.map(item => {
                 return <li key={item.name}
-                  onClick={() => handleDestination(item.name)}>
+                  onClick={() => handleDestination(item.name)}
+                  className={item.name === destination ? 'active' : ""}>
                   {item.name}
                 </li>
               })}
