@@ -178,7 +178,7 @@ header nav.menu.sideopen {
   margin-top: 250px;
   z-index: 10;
   opacity: 1;
-  padding-top: 25px;
+  padding: 25px 25px 0 0;
 }
 
 header nav.menu.sideopen ul {

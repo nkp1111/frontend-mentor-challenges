@@ -5,17 +5,22 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 function NavItem({ navData }) {
 
-  const { handleCurrentPage, currentPage, sidebar } = useGlobalContext()
+  const { handleCurrentPage, currentPage, sidebar, handleSidebar } = useGlobalContext()
   return (
     <>
-      {sidebar && <div><AiOutlineClose className='close-btn' /></div>}
+      {sidebar && <div onClick={() => handleSidebar(sidebar)}><AiOutlineClose className='close-btn' /></div>}
       {navData.map(item => {
         return (
           <li key={item.id}
-            onClick={() => handleCurrentPage(item.name)}
+            onClick={() => {
+              handleCurrentPage(item.name)
+              if (sidebar) {
+                handleSidebar(sidebar)
+              }
+            }}
             className={currentPage === item.name ? 'active' : ''}>
             <Link className='nav-link' to={`/${item.name}`}>
-              <span>{item.id}</span> {item.name}
+              <span>{item.id}</span>&nbsp;{item.name}
             </Link>
           </li>
         )
