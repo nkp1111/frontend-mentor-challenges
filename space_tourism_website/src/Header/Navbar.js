@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { navData } from './nav-data'
 import useGlobalContext from '../context'
+import { FaBars } from 'react-icons/fa'
 
 function Navbar() {
 
@@ -21,7 +22,7 @@ function Navbar() {
               </li>
             )
           })
-          : ''}
+          : <FaBars />}
       </ul>
     </nav>
   )
