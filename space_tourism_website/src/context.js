@@ -10,6 +10,7 @@ export const AppProvider = ({ children }) => {
   const [technology, setTechnology] = useState('Launch vehicle')
   const [imageMode, setImageMode] = useState(false)
   const [navbar, setNavbar] = useState(true)
+  const [sidebar, setSidebar] = useState(false)
 
   const handleDestination = (newDestination) => {
     setDestination(newDestination)
@@ -43,6 +44,10 @@ export const AppProvider = ({ children }) => {
     }
   }
 
+  const handleSidebar = (sidebar) => {
+    setSidebar(!sidebar)
+  }
+
   useEffect(() => {
     let width = window.innerWidth
     handleimageMode(width)
@@ -73,7 +78,9 @@ export const AppProvider = ({ children }) => {
         handleTechnology,
         handleCurrentPage,
         imageMode,
-        navbar
+        navbar,
+        sidebar,
+        handleSidebar
       }}>
       {children}
     </AppContext.Provider>

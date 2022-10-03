@@ -6,7 +6,8 @@ import { FaBars } from 'react-icons/fa'
 
 function Navbar() {
 
-  const { currentPage, handleCurrentPage, navbar } = useGlobalContext()
+  const { currentPage, handleCurrentPage, navbar, sidebar, handleSidebar } = useGlobalContext()
+
   return (
     <nav className={navbar ? "" : "menu"}>
       <ul>
@@ -22,7 +23,7 @@ function Navbar() {
               </li>
             )
           })
-          : <li><FaBars /></li>}
+          : <li onClick={() => handleSidebar(sidebar)}><FaBars /></li>}
       </ul>
     </nav>
   )
