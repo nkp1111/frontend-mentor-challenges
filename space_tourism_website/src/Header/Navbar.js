@@ -8,7 +8,7 @@ function Navbar() {
 
   const { currentPage, handleCurrentPage, navbar } = useGlobalContext()
   return (
-    <nav>
+    <nav className={navbar ? "" : "menu"}>
       <ul>
         {navbar ?
           navData.map(item => {
@@ -22,7 +22,7 @@ function Navbar() {
               </li>
             )
           })
-          : <FaBars />}
+          : <li><FaBars /></li>}
       </ul>
     </nav>
   )
