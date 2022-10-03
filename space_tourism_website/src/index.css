@@ -3,6 +3,7 @@
 /* General styles */
 :root {
   --grey-shade: grey;
+  --main-nav-background: rgb(21, 50, 114);
 }
 
 * {
@@ -80,7 +81,7 @@ header nav {
   width: 55%;
   right: 0;
   /* background: linear-gradient(56deg, rgb(20, 20, 23) 5%, rgb(24, 68, 137) 25%, rgb(192, 216, 244), rgb(20, 78, 129), rgb(15, 76, 173)); */
-  background-color: rgb(21, 50, 114);
+  background-color: var(--main-nav-background);
   opacity: 0.7;
 }
 
@@ -167,6 +168,29 @@ header nav.menu ul li {
 header nav.menu ul li:hover {
   transform: scale(1.1);
 }
+
+/* navbar with sidebar show */
+header nav.menu.sideopen {
+  width: 200px;
+  background-color: black;
+  height: auto;
+  margin-top: 250px;
+  z-index: 10;
+  opacity: 1;
+
+}
+
+header nav.menu.sideopen ul {
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+
+}
+
+header nav.menu.sideopen ul li {
+  font-size: 15px;
+  color: black;
+}
+
 
 /* home component */
 .home {

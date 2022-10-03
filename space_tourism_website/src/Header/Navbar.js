@@ -9,8 +9,8 @@ function Navbar() {
   const { navbar, sidebar, handleSidebar } = useGlobalContext()
   console.log(sidebar);
   return (
-    <nav className={navbar ? '' : 'menu'}>
-      <ul className={sidebar ? 'sidebar' : ''}>
+    <nav className={navbar ? '' : sidebar ? 'sideopen menu' : 'menu'}>
+      <ul>
         {navbar
           ? <NavItem navData={navData} />
           : sidebar
