@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
   const [destination, setDestination] = useState('Moon')
   const [crew, setCrew] = useState('Douglas Hurley')
   const [technology, setTechnology] = useState('Launch vehicle')
+  const [imageMode, setImageMode] = useState(false)
 
   const handleDestination = (newDestination) => {
     setDestination(newDestination)
@@ -25,12 +26,22 @@ export const AppProvider = ({ children }) => {
     setCurrentPage(newPage)
   }
 
-  // useEffect(() => {
-  //   handleDestination()
-  //   handleCrew()
-  //   handleTechnology()
-  //   handleCurrentPage()
-  // }, [])
+  const handleimageMode = (width) => {
+    if (width <= 600) {
+      setImageMode(true)
+    } else {
+      setImageMode(false)
+    }
+  }
+
+  useEffect(() => {
+    let width = window.innerWidth
+    window.addEventListener('resize', (e) => {
+      width = window.innerWidth
+      handleimageMode(width)
+    })
+    handleimageMode(width)
+  }, [])
 
   return (
     <AppContext.Provider
@@ -42,7 +53,8 @@ export const AppProvider = ({ children }) => {
         handleDestination,
         handleCrew,
         handleTechnology,
-        handleCurrentPage
+        handleCurrentPage,
+        imageMode
       }}>
       {children}
     </AppContext.Provider>
