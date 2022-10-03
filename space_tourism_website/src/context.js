@@ -37,7 +37,7 @@ export const AppProvider = ({ children }) => {
   }
 
   const handleNavbar = (width) => {
-    if (width <= 760) {
+    if (width <= 800) {
       setNavbar(false)
     } else {
       setNavbar(true)

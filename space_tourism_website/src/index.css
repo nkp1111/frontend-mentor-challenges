@@ -95,9 +95,19 @@ header nav {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 970px) {
   header .underline {
-    width: 10%;
+    width: 12%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header nav {
+    width: 85%;
+  }
+
+  header .underline {
+    width: 0;
   }
 }
 
