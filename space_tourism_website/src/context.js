@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [crew, setCrew] = useState('Douglas Hurley')
   const [technology, setTechnology] = useState('Launch vehicle')
   const [imageMode, setImageMode] = useState(false)
+  const [navbar, setNavbar] = useState(true)
 
   const handleDestination = (newDestination) => {
     setDestination(newDestination)
@@ -34,13 +35,30 @@ export const AppProvider = ({ children }) => {
     }
   }
 
+  const handleNavbar = (width) => {
+    if (width <= 760) {
+      setNavbar(false)
+    } else {
+      setNavbar(true)
+    }
+  }
+
   useEffect(() => {
     let width = window.innerWidth
+    handleimageMode(width)
     window.addEventListener('resize', (e) => {
       width = window.innerWidth
       handleimageMode(width)
     })
-    handleimageMode(width)
+  }, [])
+
+  useEffect(() => {
+    let width = window.innerWidth
+    handleNavbar(width)
+    window.addEventListener('resize', () => {
+      width = window.innerWidth
+      handleNavbar(width)
+    })
   }, [])
 
   return (
@@ -54,7 +72,8 @@ export const AppProvider = ({ children }) => {
         handleCrew,
         handleTechnology,
         handleCurrentPage,
-        imageMode
+        imageMode,
+        navbar
       }}>
       {children}
     </AppContext.Provider>

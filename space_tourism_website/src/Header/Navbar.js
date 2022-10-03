@@ -5,21 +5,23 @@ import useGlobalContext from '../context'
 
 function Navbar() {
 
-  const { currentPage, handleCurrentPage } = useGlobalContext()
+  const { currentPage, handleCurrentPage, navbar } = useGlobalContext()
   return (
     <nav>
       <ul>
-        {navData.map(item => {
-          return (
-            <li key={item.id}
-              onClick={() => handleCurrentPage(item.name)}
-              className={currentPage === item.name ? 'active' : ''}>
-              <Link className='nav-link' to={`/${item.name}`}>
-                <span>{item.id}</span> {item.name}
-              </Link>
-            </li>
-          )
-        })}
+        {navbar ?
+          navData.map(item => {
+            return (
+              <li key={item.id}
+                onClick={() => handleCurrentPage(item.name)}
+                className={currentPage === item.name ? 'active' : ''}>
+                <Link className='nav-link' to={`/${item.name}`}>
+                  <span>{item.id}</span> {item.name}
+                </Link>
+              </li>
+            )
+          })
+          : ''}
       </ul>
     </nav>
   )
