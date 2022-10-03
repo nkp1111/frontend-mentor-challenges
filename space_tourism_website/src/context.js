@@ -27,7 +27,7 @@ export const AppProvider = ({ children }) => {
   }
 
   const handleimageMode = (width) => {
-    if (width <= 600) {
+    if (width <= 660) {
       setImageMode(true)
     } else {
       setImageMode(false)
