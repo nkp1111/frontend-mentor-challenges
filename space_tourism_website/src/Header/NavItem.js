@@ -1,12 +1,14 @@
 import React from 'react'
 import useGlobalContext from '../context'
 import { Link } from 'react-router-dom'
+import { AiOutlineClose } from 'react-icons/ai'
 
 function NavItem({ navData }) {
 
-  const { handleCurrentPage, currentPage } = useGlobalContext()
+  const { handleCurrentPage, currentPage, sidebar } = useGlobalContext()
   return (
     <>
+      {sidebar && <div><AiOutlineClose className='close-btn' /></div>}
       {navData.map(item => {
         return (
           <li key={item.id}

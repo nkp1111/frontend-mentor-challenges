@@ -163,6 +163,7 @@ header nav.menu ul {
 
 header nav.menu ul li {
   font-size: 30px;
+  transition: all .3s;
 }
 
 header nav.menu ul li:hover {
@@ -177,20 +178,38 @@ header nav.menu.sideopen {
   margin-top: 250px;
   z-index: 10;
   opacity: 1;
-
+  padding-top: 25px;
 }
 
 header nav.menu.sideopen ul {
   display: grid;
   grid-template-columns: repeat(1, 150px);
-
 }
 
 header nav.menu.sideopen ul li {
   font-size: 15px;
-  color: black;
+  color: rgb(10, 10, 10);
+  border: none;
 }
 
+header nav.menu.sideopen ul li:hover {
+  text-decoration: underline;
+}
+
+header nav.menu.sideopen .close-btn {
+  position: absolute;
+  top: 15px;
+  left: 155px;
+  color: red;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  transition: all .3s;
+}
+
+header nav.menu.sideopen .close-btn:hover {
+  transform: scale(1.3);
+}
 
 /* home component */
 .home {
