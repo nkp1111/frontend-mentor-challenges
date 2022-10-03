@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/space_tourism_website)
+- Live Site URL: [Netlify](https://nkp1111-space-tourism.netlify.app/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Neeraj Parmar](https://www.your-site.com)
+- Frontend Mentor - [nkp1111](https://www.frontendmentor.io/profile/nkp1111)
+- Twitter - [@nkp11111507](https://twitter.com/home)
 
