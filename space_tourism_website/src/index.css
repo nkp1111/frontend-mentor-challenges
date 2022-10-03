@@ -41,6 +41,7 @@ section h2 {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
+  white-space: nowrap;
 }
 
 section h2 span {
@@ -452,8 +453,44 @@ nav ul li span {
   overflow: hidden;
 }
 
+@media screen and (max-width:1250px) {
+  .crew {
+    padding: 30vh 5vw 0;
+  }
+}
+
+@media screen and (max-width:1190px) {
+  .crew {
+    padding: 30vh 2vw 0;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .crew {
+    padding: 30vh 0 0;
+  }
+}
+
 .crew .crew-info {
   margin: 15vh 0 0 5vw;
+}
+
+@media screen and (max-width: 1110px) {
+  .crew .crew-info {
+    margin: 15vh 0 0 2vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .crew .crew-info {
+    margin: 12vh 0 0 2vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .crew .crew-info {
+    margin: 5vh 0 0 2vw;
+  }
 }
 
 /* crew article*/
@@ -468,17 +505,69 @@ nav ul li span {
   margin: 15px 0 20px;
 }
 
+@media screen and (max-width:840px) {
+  .crew .crew-info article h4 {
+    font-size: 2.2em;
+    margin: 12px 0 16px;
+  }
+}
+
+@media screen and (max-width:615px) {
+  .crew .crew-info article h4 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+}
+
 .crew .crew-info article p {
   width: 70%;
   line-height: 1.7em;
 }
 
+@media screen and (max-width:1075px) {
+  .crew .crew-info article p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:870px) {
+  .crew .crew-info article p {
+    line-height: 1.5em;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  .crew .crew-info article p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .crew .crew-info article p {
+    line-height: 1.2em;
+  }
+}
+
 .crew .crew-nav-holder ul {
   position: absolute;
-  bottom: 100px;
+  bottom: 95px;
   width: 100px;
   justify-content: space-between;
   padding: 3px 0;
+}
+
+@media screen and (max-width:600px) {
+  .crew .crew-nav-holder ul {
+    bottom: 80px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .crew .crew-nav-holder ul {
+    bottom: 60px;
+    right: 5px;
+  }
 }
 
 .crew .crew-info .crew-nav-holder nav ul li {
@@ -496,6 +585,42 @@ nav ul li span {
   width: 500px;
   height: 100%;
   object-fit: contain;
+}
+
+@media screen and (max-width:1010px) {
+  .crew .crew-img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .crew .crew-img img {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .crew .crew-img img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .crew .crew-img img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:570px) {
+  .crew .crew-img img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .crew .crew-img img {
+    width: 150px;
+  }
 }
 
 /* technology */
