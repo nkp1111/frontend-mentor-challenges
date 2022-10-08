@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [modalOpen, setModalOpen] = useState(true)
   const [playerChoice, setPlayerChoice] = useState('')
   const [computerChoice, setComputerChoice] = useState('')
+  const [winner, setWinner] = useState('')
 
   useEffect(() => {
     if (modalOpen) {
@@ -25,7 +26,20 @@ const AppProvider = ({ children }) => {
     }
   }, [playerChoice])
 
-  console.log(playerChoice.name, computerChoice.name);
+  useEffect(() => {
+    let winCondition = { 'paper': 'rock', 'rock': 'scissors', 'scissors': 'paper' }
+    if (playerChoice && computerChoice) {
+      if (playerChoice.name === computerChoice.name) {
+        setWinner('tie')
+      } else if (winCondition[playerChoice.name] === computerChoice.name) {
+        setWinner('player')
+      } else {
+        setWinner('computer')
+      }
+    }
+  })
+
+  console.log(playerChoice.name, computerChoice.name, winner);
 
   return (
     <AppContext.Provider
