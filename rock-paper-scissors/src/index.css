@@ -33,6 +33,7 @@
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  color: white;
 }
 
 body,
@@ -93,7 +94,6 @@ body,
 #modal div:first-child p {
   font-size: 30px;
   color: var(--Dark-Text);
-  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -130,7 +130,6 @@ body,
 
 #game .score-board .score p:first-child {
   color: var(--Score-Text);
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: -5px;
 }
@@ -264,9 +263,7 @@ body,
   bottom: 10vh;
   right: 10vw;
   padding: 10px 30px;
-  text-transform: uppercase;
   background-color: transparent;
-  color: white;
   border-color: white;
   letter-spacing: 4px;
   display: flex;
@@ -280,7 +277,6 @@ footer {
   position: absolute;
   bottom: 5vh;
   left: 5vw;
-  color: white;
 }
 
 .attribution {
