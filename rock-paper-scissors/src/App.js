@@ -7,7 +7,7 @@ import Rule from './Rule';
 function App() {
   return (
     <>
-      {/* <Modal /> */}
+      <Modal />
       <Game />
       <Rule />
       <Footer />

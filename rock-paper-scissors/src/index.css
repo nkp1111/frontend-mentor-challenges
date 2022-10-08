@@ -16,7 +16,7 @@
   --Cyan: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
 
   /* image position along x and y axis*/
-  --position-x: 130px;
+  --position-x: 125px;
   --position-bottom: 50px;
   --position-top: 10px;
   /*image background*/
@@ -45,14 +45,17 @@ body,
   padding: 50px;
 }
 
-/* #root:before {
+#root:before {
   content: '';
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: white;
-  opacity: 0.3;
-} */
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 5;
+}
 
 /* Modal */
 #modal,
@@ -71,6 +74,7 @@ body,
   top: 50vh;
   left: 50vw;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 #modal div:first-child {
@@ -108,7 +112,7 @@ body,
   border: 3px var(--Header-Outline) solid;
   border-radius: 25px;
   padding: 20px 25px;
-  width: 50vw;
+  width: 43vw;
   min-width: 375px;
 }
 
@@ -118,7 +122,7 @@ body,
   border-radius: 10px;
   text-align: center;
   padding-top: 15px;
-  min-width: 70px;
+  min-width: 150px;
 }
 
 #game .score-board .score p:first-child {
