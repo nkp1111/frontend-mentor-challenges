@@ -31,6 +31,12 @@ body,
   background: var(--Radial-Gradient);
 }
 
+#root {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
 /* #root:before {
   content: '';
   position: absolute;
@@ -78,6 +84,45 @@ body,
 
 #modal div:last-child img {
   width: 100%;
+}
+
+/* Game */
+#game {
+  display: flex;
+  flex-direction: column;
+}
+
+#game div:first-child {
+  display: flex;
+  justify-content: space-between;
+  border: 3px var(--Header-Outline) solid;
+  border-radius: 25px;
+  padding: 20px 25px;
+  width: 50vw;
+  min-width: 375px;
+}
+
+/* Score board */
+#game .score-board {
+  width: 18%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+  min-width: 70px;
+}
+
+#game .score-board p:first-child {
+  color: var(--Score-Text);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: -5px;
+}
+
+#game .score-board p:last-child {
+  color: var(--Dark-Text);
+  font-size: 50px;
+  font-weight: 700;
 }
 
 /* Footer */
