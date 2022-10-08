@@ -31,14 +31,14 @@ body,
   background: var(--Radial-Gradient);
 }
 
-#root:before {
+/* #root:before {
   content: '';
   position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: white;
   opacity: 0.3;
-}
+} */
 
 /* Modal */
 #modal,

@@ -1,11 +1,13 @@
 import React from 'react'
 import Footer from './Footer'
+import Game from './Game';
 import Modal from './Modal';
 
 function App() {
   return (
     <div className="App">
-      <Modal />
+      {/* <Modal /> */}
+      <Game />
       <Footer />
     </div>
   );
