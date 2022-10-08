@@ -139,7 +139,7 @@ body,
 }
 
 /* Game: Pick a choice */
-#game .game-choice {
+#game .startgame {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,11 +149,12 @@ body,
   margin-top: 40px;
 }
 
-#game .game-choice div {
+#game .startgame div {
   position: absolute;
 }
 
-#game .game-choice div {
+#game .startgame div,
+#game .midgame div {
   width: var(--width);
   height: var(--width);
   border-radius: 50%;
@@ -162,35 +163,47 @@ body,
   align-items: center;
 }
 
-#game .game-choice div:nth-of-type(1),
-#game .game-choice div:nth-of-type(2) {
+#game .startgame .paper,
+#game .startgame .scissors {
   top: var(--position-top);
 }
 
-#game .game-choice div:nth-of-type(1) {
+#game .startgame .paper {
   left: var(--position-x);
-  background: var(--Paper-Gradient);
+
 }
 
-#game .game-choice div:nth-of-type(2) {
+#game .startgame .scissors {
   right: var(--position-x);
   background: var(--Scissors-Gradient);
 }
 
-#game .game-choice div:nth-of-type(3) {
+#game .startgame .rock {
   bottom: var(--position-bottom);
   background: var(--Rock-Gradient);
 }
 
 /* Rock Paper Scissors image */
-#game .game-choice div img,
-#game .game-choice div img,
-#game .game-choice div img {
+#game .startgame div img,
+#game .midgame div img {
   background-color: white;
   border-radius: 50%;
   padding: 30px;
   width: calc(var(--width) - var(--offset));
   height: calc(var(--width) - var(--offset));
+}
+
+/* Midgame */
+.paper {
+  background: var(--Paper-Gradient);
+}
+
+.scissors {
+  background: var(--Scissors-Gradient);
+}
+
+.rock {
+  background: var(--Rock-Gradient);
 }
 
 /* Rules button */

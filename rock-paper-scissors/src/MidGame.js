@@ -5,11 +5,11 @@ function MidGame() {
 
   const { playerChoice, computerChoice } = useGlobalContext()
   return (
-    <div>
+    <div className='midgame'>
       <div>You Picked</div>
       <div>The House Picked</div>
-      <div><img src={playerChoice.img} alt={playerChoice.name} /></div>
-      <div><img src={computerChoice.img} alt={computerChoice.name} /></div>
+      <div className={playerChoice.name}><img src={playerChoice.img} alt={playerChoice.name} /></div>
+      <div className={computerChoice.name}><img src={computerChoice.img} alt={computerChoice.name} /></div>
     </div>
   )
 }
