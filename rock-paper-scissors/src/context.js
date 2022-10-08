@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [playerChoice, setPlayerChoice] = useState('')
   const [computerChoice, setComputerChoice] = useState('')
   const [winner, setWinner] = useState('')
+  const [startGame, setStartGame] = useState(false)
 
   useEffect(() => {
     if (modalOpen) {
@@ -37,7 +38,7 @@ const AppProvider = ({ children }) => {
         setWinner('computer')
       }
     }
-  })
+  }, [playerChoice, computerChoice])
 
   console.log(playerChoice.name, computerChoice.name, winner);
 
@@ -48,8 +49,10 @@ const AppProvider = ({ children }) => {
         playerChoice,
         computerChoice,
         winner,
+        startGame,
         setModalOpen,
-        setPlayerChoice
+        setPlayerChoice,
+        setStartGame
       }}>
       {children}
     </AppContext.Provider>

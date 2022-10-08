@@ -3,7 +3,7 @@ import useGlobalContext from './context'
 
 function MidGame() {
 
-  const { playerChoice, computerChoice, winner } = useGlobalContext();
+  const { playerChoice, computerChoice, winner, setStartGame } = useGlobalContext();
   let winMsg = ''
   let color = 'red'
   if (winner !== '') {
@@ -13,6 +13,8 @@ function MidGame() {
         ? 'You Won'
         : 'You Lose'
   }
+
+  /* Different colors for diff outcome */
   // if (winMsg === 'A Tie !') {
   //   color = 'yellow'
   // } else if (winMsg === 'You Won') {
@@ -32,7 +34,8 @@ function MidGame() {
           {winMsg}
         </p>
         <button className='playAgain-btn'
-          style={{ color }}>Play Again</button>
+          style={{ color }}
+          onClick={() => setStartGame(true)}>Play Again</button>
       </div>
       <div className={computerChoice.name}><img src={computerChoice.img} alt={computerChoice.name} /></div>
     </div>

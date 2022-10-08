@@ -6,11 +6,13 @@ import MidGame from './MidGame'
 
 function Game() {
 
-  const { playerChoice } = useGlobalContext()
+  const { playerChoice, startGame } = useGlobalContext()
   return (
     <div id="game">
       <GameScore />
-      {playerChoice !== '' ? <MidGame /> : <GameChoice />}
+      {playerChoice === '' || startGame
+        ? <GameChoice />
+        : <MidGame />}
 
     </div>
   )
