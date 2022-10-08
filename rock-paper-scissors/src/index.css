@@ -34,14 +34,23 @@ body,
 #modal,
 #modal div:first-child {
   display: flex;
+}
+
+#modal {
+  width: 350px;
   flex-direction: column;
-  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
 }
 
 #modal div:first-child {
-  height: 10%;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #modal div:last-child img {}
@@ -51,10 +60,11 @@ footer {
   position: absolute;
   bottom: 5vh;
   left: 65vw;
+  color: white;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .attribution a {
