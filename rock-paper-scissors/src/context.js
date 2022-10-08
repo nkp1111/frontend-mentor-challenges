@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 const AppContext = React.createContext()
 
@@ -6,9 +6,12 @@ const AppProvider = ({ children }) => {
 
   const [modalOpen, setModalOpen] = useState(true)
 
-  useEffect(() => {
+  if (modalOpen) {
     document.getElementById('root').classList.add('active')
-  })
+  } else {
+    document.getElementById('root').classList.remove('active')
+  }
+
 
   return (
     <AppContext.Provider
