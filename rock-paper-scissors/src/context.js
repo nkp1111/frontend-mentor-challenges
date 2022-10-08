@@ -1,11 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
+
+  const [modalOpen, setModalOpen] = useState(true)
+
+  const handleModalOpen = (modal) => {
+    setModalOpen(!modal)
+  }
+
   return (
     <AppContext.Provider
-      value='hi'>
+      value={{
+        modalOpen,
+        handleModalOpen
+      }}>
       {children}
     </AppContext.Provider>
   )
