@@ -21,12 +21,6 @@ function App() {
 export default App;
 
 
-// Score
-// Rules
-
-//   You Picked
-//   The House Picked
-
 //   You Win
 //   You Lose
 
