@@ -92,7 +92,9 @@ body,
   flex-direction: column;
 }
 
-#game div:first-child {
+/* Game: Score board */
+
+#game .score-board {
   display: flex;
   justify-content: space-between;
   border: 3px var(--Header-Outline) solid;
@@ -102,8 +104,7 @@ body,
   min-width: 375px;
 }
 
-/* Score board */
-#game .score-board {
+#game .score-board .score {
   width: 18%;
   background-color: white;
   border-radius: 10px;
@@ -112,18 +113,21 @@ body,
   min-width: 70px;
 }
 
-#game .score-board p:first-child {
+#game .score-board .score p:first-child {
   color: var(--Score-Text);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: -5px;
 }
 
-#game .score-board p:last-child {
+#game .score-board .score p:last-child {
   color: var(--Dark-Text);
   font-size: 50px;
   font-weight: 700;
 }
+
+/* Game: Pick a choice */
+
 
 /* Footer */
 footer {
