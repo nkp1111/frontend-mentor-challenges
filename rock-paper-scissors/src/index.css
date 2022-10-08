@@ -19,9 +19,11 @@
   --position-x: 125px;
   --position-bottom: 50px;
   --position-top: 10px;
-  /*image background*/
+  /* image background */
   --width: 160px;
   --offset: 30px;
+  /* factor to increase image size at midgame */
+  --sizeIncreaeFactor: 1.5;
 }
 
 * {
@@ -163,6 +165,11 @@ body,
   align-items: center;
 }
 
+#game .midgame div {
+  width: calc(var(--width) * var(--sizeIncreaeFactor));
+  height: calc(var(--width) * var(--sizeIncreaeFactor));
+}
+
 #game .startgame .paper,
 #game .startgame .scissors {
   top: var(--position-top);
@@ -170,7 +177,6 @@ body,
 
 #game .startgame .paper {
   left: var(--position-x);
-
 }
 
 #game .startgame .scissors {
@@ -184,6 +190,7 @@ body,
 }
 
 /* Rock Paper Scissors image */
+/* Midgame */
 #game .startgame div img,
 #game .midgame div img {
   background-color: white;
@@ -193,7 +200,11 @@ body,
   height: calc(var(--width) - var(--offset));
 }
 
-/* Midgame */
+#game .midgame div img {
+  width: calc((var(--width) - var(--offset)) * var(--sizeIncreaeFactor));
+  height: calc((var(--width) - var(--offset)) * var(--sizeIncreaeFactor));
+}
+
 .paper {
   background: var(--Paper-Gradient);
 }
@@ -204,6 +215,17 @@ body,
 
 .rock {
   background: var(--Rock-Gradient);
+}
+
+.midgame {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  min-width: 800px;
+  grid-template-rows: 50px 500px;
+}
+
+.midgame div {
+  margin: auto;
 }
 
 /* Rules button */
