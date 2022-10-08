@@ -32,6 +32,7 @@
   padding: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 body,
@@ -217,6 +218,7 @@ body,
   background: var(--Rock-Gradient);
 }
 
+/* midgame grid structure */
 .midgame {
   display: grid;
   grid-template-columns: 50% 0 50%;
@@ -228,13 +230,32 @@ body,
 }
 
 .midgame.active {
-  min-width: 60vw;
-  grid-template-columns: 30% 40% 30%;
+  min-width: 50vw;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .midgame div {
   margin: auto;
   font-size: 25px;
+}
+
+/* midgame result */
+.midgame .show-result {
+  display: flex;
+  flex-direction: column;
+}
+
+.midgame .show-result p {
+  font-size: 50px;
+}
+
+.midgame .show-result button {
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  letter-spacing: 0.2em;
 }
 
 /* Rules button */
