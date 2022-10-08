@@ -7,7 +7,7 @@ import Rule from './Rule';
 
 function App() {
 
-  const { modalOpen, handleModalOpen } = useGlobalContext()
+  const { modalOpen } = useGlobalContext()
   return (
     <>
       {modalOpen && <Modal />}

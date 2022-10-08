@@ -13,7 +13,7 @@ function GameChoice() {
       {data.map(item => {
         return (
           <div key={item.name}
-            onClick={() => setPlayerChoice(item.name)}>
+            onClick={() => setPlayerChoice(item)}>
             <img src={item.img} alt={item.name} />
           </div>
         )

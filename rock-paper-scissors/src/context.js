@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import data from './assets/data'
 
 const AppContext = React.createContext()
 
@@ -6,12 +7,25 @@ const AppProvider = ({ children }) => {
 
   const [modalOpen, setModalOpen] = useState(true)
   const [playerChoice, setPlayerChoice] = useState('')
+  const [computerChoice, setComputerChoice] = useState('')
 
-  if (modalOpen) {
-    document.getElementById('root').classList.add('active')
-  } else {
-    document.getElementById('root').classList.remove('active')
-  }
+  useEffect(() => {
+    if (modalOpen) {
+      document.getElementById('root').classList.add('active')
+    } else {
+      document.getElementById('root').classList.remove('active')
+    }
+  }, [modalOpen])
+
+  useEffect(() => {
+    if (playerChoice) {
+      const numOfChoice = 3
+      const ind = Math.floor(Math.random() * numOfChoice)
+      setComputerChoice(data[ind])
+    }
+  }, [playerChoice])
+
+  console.log(playerChoice.name, computerChoice.name);
 
   return (
     <AppContext.Provider
