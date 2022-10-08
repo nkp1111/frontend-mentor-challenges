@@ -1,13 +1,16 @@
 import React from 'react'
+import useGlobalContext from './context';
 import Footer from './Footer'
 import Game from './Game';
 import Modal from './Modal';
 import Rule from './Rule';
 
 function App() {
+
+  const { modalOpen, handleModalOpen } = useGlobalContext()
   return (
     <>
-      <Modal />
+      {modalOpen && <Modal />}
       <Game />
       <Rule />
       <Footer />
