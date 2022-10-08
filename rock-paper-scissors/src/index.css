@@ -17,9 +17,14 @@
 }
 
 /* Footer */
+footer {
+  position: absolute;
+  bottom: 5vh;
+  left: 65vw;
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a {
