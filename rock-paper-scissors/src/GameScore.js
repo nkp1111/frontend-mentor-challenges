@@ -1,6 +1,9 @@
 import React from 'react'
+import useGlobalContext from './context'
 
 function GameScore() {
+
+  const { score } = useGlobalContext()
   return (
     <div className='score-board'>
       <img
@@ -8,7 +11,7 @@ function GameScore() {
         alt="logo" />
       <div className='score'>
         <p>Score</p>
-        <p>10</p>
+        <p>{score}</p>
       </div>
     </div>
   )

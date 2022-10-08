@@ -10,6 +10,7 @@ const AppProvider = ({ children }) => {
   const [computerChoice, setComputerChoice] = useState('')
   const [winner, setWinner] = useState('')
   const [startGame, setStartGame] = useState(false)
+  const [score, setScore] = useState(0)
 
   useEffect(() => {
     if (modalOpen) {
@@ -40,6 +41,23 @@ const AppProvider = ({ children }) => {
     }
   }, [playerChoice, computerChoice])
 
+  useEffect(() => {
+    if (winner === 'player') {
+      setScore(score + 1)
+    }
+  }, [winner])
+
+  useEffect(() => {
+    if (startGame) {
+      setTimeout(() => {
+        setStartGame(false)
+        setPlayerChoice('')
+        setComputerChoice('')
+        setWinner('')
+      }, 50)
+    }
+  }, [startGame, score])
+
   console.log(playerChoice.name, computerChoice.name, winner);
 
   return (
@@ -50,6 +68,7 @@ const AppProvider = ({ children }) => {
         computerChoice,
         winner,
         startGame,
+        score,
         setModalOpen,
         setPlayerChoice,
         setStartGame
