@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
 }
 
 body,
@@ -32,16 +33,17 @@ body,
 
 /* Modal */
 #modal,
-#modal div:first-child {
+#modal div:first-child,
+#modal div:last-child {
   display: flex;
 }
 
 #modal {
   width: 350px;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   position: absolute;
   top: 50vh;
   left: 50vw;
@@ -49,11 +51,25 @@ body,
 }
 
 #modal div:first-child {
+  padding: 3px 0 25px 0;
+}
+
+#modal div:first-child,
+#modal div:last-child {
   justify-content: space-between;
   align-items: center;
 }
 
-#modal div:last-child img {}
+#modal div:first-child p {
+  font-size: 30px;
+  color: var(--Dark-Text);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#modal div:last-child img {
+  width: 100%;
+}
 
 /* Footer */
 footer {
