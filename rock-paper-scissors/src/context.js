@@ -47,6 +47,7 @@ const AppProvider = ({ children }) => {
         modalOpen,
         playerChoice,
         computerChoice,
+        winner,
         setModalOpen,
         setPlayerChoice
       }}>
