@@ -1,7 +1,10 @@
 import React from 'react'
 import data from './assets/data'
+import useGlobalContext from './context'
 
 function GameChoice() {
+
+  const { setPlayerChoice } = useGlobalContext()
   return (
     <div className='game-choice'>
       <img
@@ -9,7 +12,8 @@ function GameChoice() {
         alt="triangle" />
       {data.map(item => {
         return (
-          <div key={item.name}>
+          <div key={item.name}
+            onClick={() => setPlayerChoice(item.name)}>
             <img src={item.img} alt={item.name} />
           </div>
         )

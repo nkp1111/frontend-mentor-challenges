@@ -5,6 +5,7 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
 
   const [modalOpen, setModalOpen] = useState(true)
+  const [playerChoice, setPlayerChoice] = useState('')
 
   if (modalOpen) {
     document.getElementById('root').classList.add('active')
@@ -12,12 +13,13 @@ const AppProvider = ({ children }) => {
     document.getElementById('root').classList.remove('active')
   }
 
-
   return (
     <AppContext.Provider
       value={{
         modalOpen,
-        setModalOpen
+        playerChoice,
+        setModalOpen,
+        setPlayerChoice
       }}>
       {children}
     </AppContext.Provider>
