@@ -32,6 +32,7 @@ const AppProvider = ({ children }) => {
       value={{
         modalOpen,
         playerChoice,
+        computerChoice,
         setModalOpen,
         setPlayerChoice
       }}>
