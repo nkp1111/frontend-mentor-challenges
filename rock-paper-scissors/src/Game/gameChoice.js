@@ -6,7 +6,8 @@ function GameChoice() {
 
   const { setPlayerChoice } = useGlobalContext()
   return (
-    <div className='startgame'>
+    <section className='startgame'>
+      <h2>Pick A Choice</h2>
       <img
         src="https://raw.githubusercontent.com/nkp1111/frontend-mentor-challenges/98c203fa86b9f72c246559b69755eb87e8d41bb6/rock-paper-scissors/src/assets/images/bg-triangle.svg"
         alt="triangle" />
@@ -19,7 +20,7 @@ function GameChoice() {
           </div>
         )
       })}
-    </div>
+    </section>
   )
 }
 
