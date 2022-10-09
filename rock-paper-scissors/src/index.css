@@ -2,7 +2,7 @@
 
 /* General */
 :root {
-  /*background color*/
+  /* background colors */
   --Radial-Gradient: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 
   --Dark-Text: hsl(229, 25%, 31%);
@@ -15,7 +15,7 @@
   --Lizard-Gradient: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
   --Cyan: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
 
-  /* image position along x and y axis*/
+  /* image position along x and y axis for easy mode */
   --position-x: 125px;
   --position-bottom: 50px;
   --position-top: 10px;
@@ -109,6 +109,7 @@ body,
   z-index: 10;
 }
 
+/* hidden modal heading */
 #modal h2 {
   color: black;
   top: 1px;
@@ -262,16 +263,16 @@ body,
 }
 
 /* position for hard mode */
-#game .startgame.hard .paper {
-  background: var(--Paper-Gradient);
-  left: calc(var(--position-x1) + 285px);
-  top: calc(var(--position-top1) + 100px);
-}
-
 #game .startgame.hard .scissors {
   background: var(--Scissors-Gradient);
   right: calc(var(--position-x1) + 125px);
   top: calc(var(--position-top1) - 20px);
+}
+
+#game .startgame.hard .paper {
+  background: var(--Paper-Gradient);
+  left: calc(var(--position-x1) + 285px);
+  top: calc(var(--position-top1) + 100px);
 }
 
 #game .startgame.hard .rock {
