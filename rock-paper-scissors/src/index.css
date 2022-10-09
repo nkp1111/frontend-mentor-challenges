@@ -227,15 +227,18 @@ body,
   height: calc((var(--width) - var(--offset)) * var(--sizeIncreaeFactor));
 }
 
-.paper {
+.paper,
+.midgame.active .paper {
   background: var(--Paper-Gradient);
 }
 
-.scissors {
+.scissors,
+.midgame.active .scissors {
   background: var(--Scissors-Gradient);
 }
 
-.rock {
+.rock,
+.midgame.active .rock {
   background: var(--Rock-Gradient);
 }
 
@@ -260,22 +263,36 @@ body,
   font-size: 25px;
 }
 
+/* for computer choice img */
+.midgame div:nth-child(6) {
+  background: var(--Radial-Gradient);
+}
+
+.midgame div:nth-child(6) img {
+  display: none;
+}
+
+#game .midgame.active div img {
+  display: block;
+}
+
 /* midgame result */
-.midgame .show-result {
+.midgame.active .show-result {
   display: flex;
   flex-direction: column;
+  transition: .3s all;
 }
 
 /* small width change */
-.midgame .show-result.active {
+.midgame.active .show-result.active {
   grid-column: span 3;
 }
 
-.midgame .show-result p {
+.midgame.active .show-result p {
   font-size: 50px;
 }
 
-.midgame .show-result button {
+.midgame.active .show-result button {
   width: 75%;
   padding: 10px;
   border: none;
@@ -406,7 +423,7 @@ footer {
     grid-template-rows: 50px 400px;
   }
 
-  .midgame.active .show-result.active {
+  .midgame.active .show-result {
     margin-top: -130px;
     white-space: nowrap;
   }
