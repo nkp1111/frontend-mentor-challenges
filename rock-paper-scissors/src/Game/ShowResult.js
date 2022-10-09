@@ -14,14 +14,6 @@ function ShowResult() {
         : 'You Lose'
   }
 
-  /* Different colors for diff outcome */
-  // if (winMsg === 'A Tie !') {
-  //   color = 'yellow'
-  // } else if (winMsg === 'You Won') {
-  //   color = 'green'
-  // } else if (winMsg === 'You Lose') {
-  //   color = 'red'
-  // }
   return (
     <div className={resultViewChange ? 'show-result active' : 'show-result'}>
       <p>

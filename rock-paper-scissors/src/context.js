@@ -25,15 +25,11 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     /* For computer to make random choice */
-    let computerChoiceTimeout = setTimeout(() => {
-      if (playerChoice) {
-        const numOfChoice = 3
-        const ind = Math.floor(Math.random() * numOfChoice)
-        setComputerChoice(data[ind])
-      }
-    }, 500)
-
-    return () => clearTimeout(computerChoiceTimeout)
+    if (playerChoice) {
+      const numOfChoice = 3
+      const ind = Math.floor(Math.random() * numOfChoice)
+      setComputerChoice(data[ind])
+    }
 
   }, [playerChoice])
 
@@ -50,7 +46,7 @@ const AppProvider = ({ children }) => {
           setWinner('computer')
         }
       }
-    }, 100)
+    }, 500)
 
     return () => clearTimeout(winnerDecideTimeout)
 
@@ -60,6 +56,8 @@ const AppProvider = ({ children }) => {
     /* For updating score */
     if (winner === 'player') {
       setScore(score + 1)
+    } else if (winner === 'computer') {
+      setScore(score - 1)
     }
   }, [winner])
 
