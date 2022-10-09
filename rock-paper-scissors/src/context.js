@@ -14,6 +14,7 @@ const AppProvider = ({ children }) => {
   const [resultViewChange, setResultViewChange] = useState(false)
 
   useEffect(() => {
+    /* For modal */
     if (modalOpen) {
       document.getElementById('root').classList.add('active')
     } else {
@@ -22,33 +23,47 @@ const AppProvider = ({ children }) => {
   }, [modalOpen])
 
   useEffect(() => {
-    if (playerChoice) {
-      const numOfChoice = 3
-      const ind = Math.floor(Math.random() * numOfChoice)
-      setComputerChoice(data[ind])
-    }
+    /* For computer to make random choice */
+    let computerChoiceTimeout = setTimeout(() => {
+      if (playerChoice) {
+        const numOfChoice = 3
+        const ind = Math.floor(Math.random() * numOfChoice)
+        setComputerChoice(data[ind])
+      }
+    }, 500)
+
+    return () => clearTimeout(computerChoiceTimeout)
+
   }, [playerChoice])
 
   useEffect(() => {
-    let winCondition = { 'paper': 'rock', 'rock': 'scissors', 'scissors': 'paper' }
-    if (playerChoice && computerChoice) {
-      if (playerChoice.name === computerChoice.name) {
-        setWinner('tie')
-      } else if (winCondition[playerChoice.name] === computerChoice.name) {
-        setWinner('player')
-      } else {
-        setWinner('computer')
+    /* For finding winner */
+    let winnerDecideTimeout = setTimeout(() => {
+      let winCondition = { 'paper': 'rock', 'rock': 'scissors', 'scissors': 'paper' }
+      if (playerChoice && computerChoice) {
+        if (playerChoice.name === computerChoice.name) {
+          setWinner('tie')
+        } else if (winCondition[playerChoice.name] === computerChoice.name) {
+          setWinner('player')
+        } else {
+          setWinner('computer')
+        }
       }
-    }
+    }, 100)
+
+    return () => clearTimeout(winnerDecideTimeout)
+
   }, [playerChoice, computerChoice])
 
   useEffect(() => {
+    /* For updating score */
     if (winner === 'player') {
       setScore(score + 1)
     }
   }, [winner])
 
   useEffect(() => {
+    /* For restarting the game */
     if (startGame) {
       setTimeout(() => {
         setStartGame(false)
@@ -59,6 +74,7 @@ const AppProvider = ({ children }) => {
     }
   }, [startGame, score])
 
+  /* To adjust grid structure for diff. width */
   const handleResultView = (width) => {
     if (width < 405) {
       setResultViewChange(false)
