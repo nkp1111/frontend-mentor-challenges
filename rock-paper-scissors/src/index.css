@@ -37,7 +37,8 @@
 }
 
 button {
-  cursor: pointer
+  cursor: pointer;
+  transition: all .3s;
 }
 
 body {
@@ -110,6 +111,7 @@ body,
 }
 
 #modal .close-btn:hover {
+  transition: all .3s;
   cursor: pointer;
   scale: 1.2;
 }
@@ -168,6 +170,7 @@ body,
 #game .startgame div {
   position: absolute;
   cursor: pointer;
+  transition: all .3s;
 }
 
 #game .startgame div:hover {
@@ -282,7 +285,7 @@ body,
 }
 
 .midgame .show-result button:hover {
-  scale: 1.02;
+  scale: 1.05;
 }
 
 /* Rules button */
