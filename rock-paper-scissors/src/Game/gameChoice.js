@@ -8,7 +8,7 @@ function GameChoice() {
 
   let gameData = gameMode === 'easy' ? data.slice(0, 3) : data
   return (
-    <section className='startgame'>
+    <section className={gameMode === 'easy' ? 'startgame' : 'startgame hard'}>
       <h2>Pick A Choice</h2>
       <img
         src={gameMode === 'easy'

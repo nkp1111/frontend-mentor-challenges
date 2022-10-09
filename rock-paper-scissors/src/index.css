@@ -258,27 +258,34 @@ body,
 }
 
 /* position for hard mode */
-
 #game .startgame.hard .paper {
-  left: var(--position-x);
+  background: var(--Paper-Gradient);
+  left: calc(var(--position-x) + 285px);
+  top: calc(var(--position-top) + 100px);
 }
 
 #game .startgame.hard .scissors {
-  right: var(--position-x);
   background: var(--Scissors-Gradient);
+  right: calc(var(--position-x) + 120px);
+  top: calc(var(--position-top) - 20px);
 }
 
 #game .startgame.hard .rock {
-  bottom: var(--position-bottom);
   background: var(--Rock-Gradient);
+  left: calc(var(--position-x) + 220px);
+  bottom: calc(var(--position-bottom) - 60px);
 }
 
 #game .startgame.hard .lizard {
   background: var(--Lizard-Gradient);
+  right: calc(var(--position-x) + 220px);
+  bottom: calc(var(--position-bottom) - 60px);
 }
 
 #game .startgame.hard .spock {
-  background: var(--Cyan-Gradient);
+  background: var(--Cyan);
+  right: calc(var(--position-x) + 285px);
+  top: calc(var(--position-top) + 100px);
 }
 
 /* Rock Paper Scissors image */
@@ -528,7 +535,7 @@ footer {
   #modal div:first-of-type {
     display: flex;
     justify-content: center;
-    margin: 50px 0 60px;
+    margin: 50px 0 30px;
   }
 
   #modal .change-mode {
