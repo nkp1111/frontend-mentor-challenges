@@ -383,6 +383,24 @@ footer {
   }
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 405px) {
+
   /* Change structure */
+  #modal {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  #modal div:first-child {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px;
+  }
+
+  .close-btn {
+    position: absolute;
+    bottom: 10vh;
+    padding: 10px 150px;
+  }
 }
