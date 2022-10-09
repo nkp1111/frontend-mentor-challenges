@@ -291,9 +291,13 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+/* For first page : startgame */
 @media screen and (max-width: 700px) {
 
-  #game .score-board,
+  #game .score-board {
+    min-width: 550px;
+  }
+
   .startgame,
   .midgame {
     min-width: 400px;
@@ -304,10 +308,44 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+  #game .score-board {
+    min-width: 450px;
+  }
 
   .rules {
     right: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #game .score-board {
+    min-width: 400px;
+  }
+}
+
+/* for midgame */
+@media screen and (max-width: 1300px) {
+  .midgame {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .midgame {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .midgame {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .midgame {
+    width: 95vw;
   }
 }
 
