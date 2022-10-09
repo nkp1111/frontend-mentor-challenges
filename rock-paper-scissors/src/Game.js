@@ -1,7 +1,7 @@
 import React from 'react'
 import useGlobalContext from './context'
 import GameChoice from './gameChoice'
-import GameScore from './GameScore'
+import ScoreBoard from './Scoreboard'
 import MidGame from './MidGame'
 
 function Game() {
@@ -9,7 +9,7 @@ function Game() {
   const { playerChoice, startGame } = useGlobalContext()
   return (
     <div id="game">
-      <GameScore />
+      <ScoreBoard />
       {playerChoice === '' || startGame
         ? <GameChoice />
         : <MidGame />}
