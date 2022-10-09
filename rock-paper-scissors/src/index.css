@@ -21,9 +21,13 @@
   --position-top: 10px;
   /* image background */
   --width: 160px;
-  --offset: 30px;
+  --offset: 35px;
   /* factor to increase image size at midgame */
   --sizeIncreaseFactor: 1.5;
+  /* image position along x and y axis for hard mode */
+  --position-x1: 120px;
+  --position-bottom1: 50px;
+  --position-top1: -10px;
 }
 
 * {
@@ -226,8 +230,8 @@ body,
 }
 
 #game .midgame div {
-  width: calc(var(--width) * var(s));
-  height: calc(var(--width) * var(s));
+  width: calc(var(--width) * var(--sizeIncreaseFactor));
+  height: calc(var(--width) * var(--sizeIncreaseFactor));
 }
 
 #game .startgame .paper,
@@ -260,32 +264,32 @@ body,
 /* position for hard mode */
 #game .startgame.hard .paper {
   background: var(--Paper-Gradient);
-  left: calc(var(--position-x) + 285px);
-  top: calc(var(--position-top) + 100px);
+  left: calc(var(--position-x1) + 285px);
+  top: calc(var(--position-top1) + 100px);
 }
 
 #game .startgame.hard .scissors {
   background: var(--Scissors-Gradient);
-  right: calc(var(--position-x) + 120px);
-  top: calc(var(--position-top) - 20px);
+  right: calc(var(--position-x1) + 125px);
+  top: calc(var(--position-top1) - 20px);
 }
 
 #game .startgame.hard .rock {
   background: var(--Rock-Gradient);
-  left: calc(var(--position-x) + 220px);
-  bottom: calc(var(--position-bottom) - 60px);
+  left: calc(var(--position-x1) + 220px);
+  bottom: calc(var(--position-bottom1) - 60px);
 }
 
 #game .startgame.hard .lizard {
   background: var(--Lizard-Gradient);
-  right: calc(var(--position-x) + 220px);
-  bottom: calc(var(--position-bottom) - 60px);
+  right: calc(var(--position-x1) + 220px);
+  bottom: calc(var(--position-bottom1) - 60px);
 }
 
 #game .startgame.hard .spock {
   background: var(--Cyan);
-  right: calc(var(--position-x) + 285px);
-  top: calc(var(--position-top) + 100px);
+  right: calc(var(--position-x1) + 285px);
+  top: calc(var(--position-top1) + 100px);
 }
 
 /* Rock Paper Scissors image */
@@ -300,8 +304,8 @@ body,
 }
 
 #game .midgame div img {
-  width: calc((var(--width) - var(--offset)) * var(s));
-  height: calc((var(--width) - var(--offset)) * var(s));
+  width: calc((var(--width) - var(--offset)) * var(--sizeIncreaseFactor));
+  height: calc((var(--width) - var(--offset)) * var(--sizeIncreaseFactor));
 }
 
 .paper,
@@ -336,7 +340,7 @@ body,
   width: 45vw;
   min-width: 600px;
   grid-template-rows: 100px 400px;
-  margin-top: -50px;
+  margin-top: -30px;
   color: white;
 }
 
@@ -348,6 +352,7 @@ body,
 .midgame div {
   margin: auto;
   font-size: 25px;
+  white-space: nowrap;
 }
 
 /* for computer choice img */
@@ -535,6 +540,12 @@ footer {
   :root {
     --width: 135px;
     --offset: 30px;
+
+    --position-top1: 10px;
+  }
+
+  #game .startgame.hard .scissors {
+    right: calc(var(--position-x1) + 140px);
   }
 }
 
@@ -550,9 +561,9 @@ footer {
     --offset: 30px;
     --sizeIncreaseFactor: 1.02;
 
-    --position-x1: -60px;
-    --position-bottom1: 10px;
-    --position-top1: 10px;
+    --position-x1: -65px;
+    --position-bottom1: 60px;
+    --position-top1: -25px;
   }
 
   /* modal */
@@ -623,7 +634,8 @@ footer {
   }
 
   #game .startgame.hard .scissors {
-    right: calc(var(--position-x1) + 170px);
+    right: calc(var(--position-x1) + 175px);
+    top: calc(var(--position-top1));
   }
 
   #game .startgame.hard .rock {
@@ -684,14 +696,14 @@ footer {
 
   .midgame .show-result button {
     display: none;
-    width: 120%;
     padding: 10px 30px;
     white-space: nowrap;
-    border-radius: 5px;
+    border-radius: 2px;
   }
 
   .midgame.active .show-result button {
     display: block;
+    width: 100%;
   }
 
   .midgame {
@@ -714,14 +726,8 @@ footer {
 @media screen and (max-width:385px) {
 
   :root {
-
-    --width: 130px;
-    --offset: 30px;
-    --sizeIncreaseFactor: 1.02;
-
-    --position-x1: -70px;
-    --position-bottom1: 20px;
-    --position-top1: 10px;
+    --width: 120px;
+    --offset: 28px;
   }
 
 }
