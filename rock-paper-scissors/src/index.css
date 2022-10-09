@@ -23,7 +23,7 @@
   --width: 160px;
   --offset: 30px;
   /* factor to increase image size at midgame */
-  --sizeIncreaeFactor: 1.5;
+  --sizeIncreaseFactor: 1.5;
 }
 
 * {
@@ -226,8 +226,8 @@ body,
 }
 
 #game .midgame div {
-  width: calc(var(--width) * var(--sizeIncreaeFactor));
-  height: calc(var(--width) * var(--sizeIncreaeFactor));
+  width: calc(var(--width) * var(s));
+  height: calc(var(--width) * var(s));
 }
 
 #game .startgame .paper,
@@ -300,8 +300,8 @@ body,
 }
 
 #game .midgame div img {
-  width: calc((var(--width) - var(--offset)) * var(--sizeIncreaeFactor));
-  height: calc((var(--width) - var(--offset)) * var(--sizeIncreaeFactor));
+  width: calc((var(--width) - var(--offset)) * var(s));
+  height: calc((var(--width) - var(--offset)) * var(s));
 }
 
 .paper,
@@ -428,6 +428,16 @@ footer {
 }
 
 /* For first page : startgame */
+@media screen and (max-width: 750px) {
+  .rules {
+    bottom: 3vh;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
 
   #game .score-board {
@@ -451,6 +461,11 @@ footer {
 
   .rules {
     right: 3vw;
+  }
+
+  .midgame {
+    width: 300px;
+    min-width: 300px;
   }
 }
 
@@ -495,7 +510,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   :root {
-    --sizeIncreaeFactor: 1.25;
+    --sizeIncreaseFactor: 1.25;
   }
 }
 
@@ -516,9 +531,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
   :root {
-    --sizeIncreaeFactor: 1.1;
+    --width: 135px;
+    --offset: 30px;
   }
 }
 
@@ -526,13 +542,17 @@ footer {
 
   /* Change structure */
   :root {
-    --position-x: 0;
-    --position-bottom: 0;
-    --position-top: 0;
+    --position-x: 0px;
+    --position-bottom: 0px;
+    --position-top: 0px;
 
-    --width: 140px;
-    --offset: 35px;
-    --sizeIncreaeFactor: 1.05;
+    --width: 130px;
+    --offset: 30px;
+    --sizeIncreaseFactor: 1.02;
+
+    --position-x1: -60px;
+    --position-bottom1: 10px;
+    --position-top1: 10px;
   }
 
   /* modal */
@@ -594,6 +614,31 @@ footer {
     width: 90vw;
     min-width: 320px;
     height: 50vh;
+  }
+
+  /* For hard mode */
+  #game .startgame.hard .paper {
+    left: calc(var(--position-x1) + 285px);
+    top: calc(var(--position-top1) + 100px);
+  }
+
+  #game .startgame.hard .scissors {
+    right: calc(var(--position-x1) + 170px);
+  }
+
+  #game .startgame.hard .rock {
+    left: calc(var(--position-x1) + 260px);
+    bottom: calc(var(--position-bottom1) - 60px);
+  }
+
+  #game .startgame.hard .lizard {
+    right: calc(var(--position-x1) + 260px);
+    bottom: calc(var(--position-bottom1) - 60px);
+  }
+
+  #game .startgame.hard .spock {
+    right: calc(var(--position-x1) + 285px);
+    top: calc(var(--position-top1) + 100px);
   }
 
   /* midgame grid-structure*/
@@ -664,4 +709,19 @@ footer {
     transform: translateX(-50%);
     width: 30%;
   }
+}
+
+@media screen and (max-width:385px) {
+
+  :root {
+
+    --width: 130px;
+    --offset: 30px;
+    --sizeIncreaseFactor: 1.02;
+
+    --position-x1: -70px;
+    --position-bottom1: 20px;
+    --position-top1: 10px;
+  }
+
 }
