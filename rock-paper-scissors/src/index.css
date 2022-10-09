@@ -496,12 +496,16 @@ footer {
   #modal div:first-of-type {
     display: flex;
     justify-content: center;
-    margin: 50px 0 80px;
+    margin: 50px 0 60px;
+  }
+
+  #modal .change-mode {
+    margin-top: 40px;
   }
 
   #modal .close-btn {
     position: absolute;
-    bottom: 5vh;
+    bottom: 1vh;
   }
 
   #modal .close-btn img {
