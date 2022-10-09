@@ -11,6 +11,7 @@ const AppProvider = ({ children }) => {
   const [winner, setWinner] = useState('')
   const [startGame, setStartGame] = useState(false)
   const [score, setScore] = useState(0)
+  const [resultViewChange, setResultViewChange] = useState(false)
 
   useEffect(() => {
     if (modalOpen) {
@@ -58,7 +59,24 @@ const AppProvider = ({ children }) => {
     }
   }, [startGame, score])
 
-  console.log(playerChoice.name, computerChoice.name, winner);
+  const handleResultView = (width) => {
+    if (width < 650) {
+      setResultViewChange(true)
+    } else {
+      setResultViewChange(false)
+    }
+  }
+
+  useEffect(() => {
+    let width = window.innerWidth
+    handleResultView(width)
+    window.addEventListener('resize', () => {
+      width = window.innerWidth
+      handleResultView(width)
+    })
+  }, [])
+
+  console.log(playerChoice.name, computerChoice.name, winner, resultViewChange);
 
   return (
     <AppContext.Provider
