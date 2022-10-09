@@ -3,7 +3,7 @@ import useGlobalContext from './context'
 
 function ShowResult() {
 
-  const { setStartGame, winner } = useGlobalContext();
+  const { setStartGame, winner, resultViewChange } = useGlobalContext();
   let winMsg = ''
   let color = 'red'
   if (winner !== '') {
@@ -23,7 +23,7 @@ function ShowResult() {
   //   color = 'red'
   // }
   return (
-    <div className='show-result'>
+    <div className={resultViewChange ? 'show-result active' : 'show-result'}>
       <p>
         {winMsg}
       </p>

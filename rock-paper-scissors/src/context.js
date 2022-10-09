@@ -76,7 +76,7 @@ const AppProvider = ({ children }) => {
     })
   }, [])
 
-  console.log(playerChoice.name, computerChoice.name, winner, resultViewChange);
+  // console.log(playerChoice.name, computerChoice.name, winner, resultViewChange);
 
   return (
     <AppContext.Provider
@@ -87,6 +87,7 @@ const AppProvider = ({ children }) => {
         winner,
         startGame,
         score,
+        resultViewChange,
         setModalOpen,
         setPlayerChoice,
         setStartGame

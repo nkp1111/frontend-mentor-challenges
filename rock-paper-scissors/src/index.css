@@ -36,9 +36,9 @@
   color: white;
 }
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 body,
 #root {
@@ -246,6 +246,11 @@ body,
 .midgame .show-result {
   display: flex;
   flex-direction: column;
+}
+
+/* small width change */
+.midgame .show-result.active {
+  grid-column: span 3;
 }
 
 .midgame .show-result p {

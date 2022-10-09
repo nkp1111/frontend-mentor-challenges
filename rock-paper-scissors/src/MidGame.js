@@ -4,7 +4,7 @@ import ShowResult from './ShowResult';
 
 function MidGame() {
 
-  const { playerChoice, computerChoice, winner } = useGlobalContext();
+  const { playerChoice, computerChoice, winner, resultViewChange } = useGlobalContext();
 
   return (
     <div className={winner ? 'midgame active' : 'midgame'}>
@@ -12,8 +12,9 @@ function MidGame() {
       <div></div>
       <div>The House Picked</div>
       <div className={playerChoice.name}><img src={playerChoice.img} alt={playerChoice.name} /></div>
-      <ShowResult />
+      {resultViewChange === false ? <ShowResult /> : <div></div>}
       <div className={computerChoice.name}><img src={computerChoice.img} alt={computerChoice.name} /></div>
+      {resultViewChange === true && <ShowResult />}
     </div>
   )
 }
