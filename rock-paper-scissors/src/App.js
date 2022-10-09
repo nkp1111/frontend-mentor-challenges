@@ -1,9 +1,9 @@
 import React from 'react'
 import useGlobalContext from './context';
 import Footer from './Footer'
-import Game from './Game';
-import Modal from './Modal';
-import Rule from './Rule';
+import Game from './Game/index';
+import Modal from './Modal/Modal';
+import Rule from './Modal/Rule';
 
 function App() {
 

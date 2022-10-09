@@ -1,5 +1,5 @@
 import React from 'react'
-import useGlobalContext from './context'
+import useGlobalContext from '../context'
 import GameChoice from './gameChoice'
 import ScoreBoard from './Scoreboard'
 import MidGame from './MidGame'
