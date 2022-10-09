@@ -360,6 +360,29 @@ footer {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .midgame {
+    height: 100vh;
+  }
+
+  .midgame,
+  .midgame.active {
+    grid-template-columns: 50% 0 50%;
+    grid-template-rows: 50px 400px;
+  }
+
+  .midgame.active .show-result.active {
+    margin-top: -130px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --sizeIncreaeFactor: 1.1;
+  }
+}
+
 @media screen and (max-width: 401px) {
   /* Change structure */
 }
