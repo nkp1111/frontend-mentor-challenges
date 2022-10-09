@@ -394,7 +394,7 @@ footer {
 
     --width: 140px;
     --offset: 35px;
-    --sizeIncreaeFactor: 1.18;
+    --sizeIncreaeFactor: 1;
   }
 
   /* modal */
@@ -449,15 +449,24 @@ footer {
     height: 50vh;
   }
 
-  /* midgame */
+  /* midgame grid-structure*/
+  #game .midgame div {
+    white-space: nowrap;
+  }
+
   .midgame div:nth-child(1) {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
   }
 
   .midgame div:nth-child(3) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 2 / 2;
+  }
+
+  .midgame div:nth-child(1),
+  .midgame div:nth-child(3) {
+    grid-row: 2 / 2;
+    margin-top: -70px;
+    font-size: 18px;
   }
 
   .midgame div:nth-child(4) {
@@ -466,10 +475,35 @@ footer {
   }
 
   .midgame div:nth-child(6) {
-    grid-column: 2 / 3;
+    grid-column: 2 / 2;
     grid-row: 1 / 2;
   }
 
+  /* result */
+  .midgame div:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+    grid-column: span 3
+  }
+
+  .midgame .show-result p {
+    font-size: 40px;
+  }
+
+  .midgame .show-result button {
+    width: 120%;
+    padding: 10px 30px;
+    white-space: nowrap;
+    border-radius: 5px;
+  }
+
+  .midgame {
+    margin-top: 40px;
+  }
+
+  .midgame.active {
+    grid-template-rows: 200px 40px 100px;
+  }
 
   /* rule button */
   .rules {

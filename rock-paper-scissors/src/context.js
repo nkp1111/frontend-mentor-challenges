@@ -60,9 +60,13 @@ const AppProvider = ({ children }) => {
   }, [startGame, score])
 
   const handleResultView = (width) => {
-    if (width < 650) {
+    if (width < 405) {
+      setResultViewChange(false)
+    }
+    else if (width < 650) {
       setResultViewChange(true)
-    } else {
+    }
+    else {
       setResultViewChange(false)
     }
   }
