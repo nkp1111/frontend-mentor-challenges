@@ -36,9 +36,9 @@
   color: white;
 }
 
-/* body {
+body {
   overflow: hidden;
-} */
+}
 
 body,
 #root {
@@ -121,6 +121,7 @@ body,
   padding: 20px 25px;
   width: 45vw;
   min-width: 600px;
+  align-items: center;
 }
 
 #game .score-board .score {
@@ -386,6 +387,7 @@ footer {
 @media screen and (max-width: 405px) {
 
   /* Change structure */
+  /* modal */
   #modal {
     width: 100vw;
     height: 100vh;
@@ -402,5 +404,30 @@ footer {
     position: absolute;
     bottom: 10vh;
     padding: 10px 150px;
+  }
+
+  /* score board */
+  #game .score-board {
+    width: 80vw;
+    min-width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #game .score-board img {
+    width: 40%;
+  }
+
+  #game .score-board .score {
+    min-width: 80px;
+    border-radius: 5px;
+  }
+
+  #game .score-board .score p:first-child {
+    margin: -10px 0;
+  }
+
+  #game .score-board .score p:last-child {
+    font-size: 45px;
   }
 }
