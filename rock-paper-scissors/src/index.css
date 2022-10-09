@@ -36,6 +36,10 @@
   color: white;
 }
 
+body {
+  overflow: hidden;
+}
+
 body,
 #root {
   height: 100vh;
@@ -285,4 +289,28 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 700px) {
+
+  #game .score-board,
+  .startgame,
+  .midgame {
+    min-width: 400px;
+  }
+
+  .startgame {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .rules {
+    right: 3vw;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  /* Change structure */
 }
