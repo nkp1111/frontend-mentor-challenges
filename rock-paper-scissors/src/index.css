@@ -489,14 +489,18 @@ footer {
   #modal div:first-of-type {
     display: flex;
     justify-content: center;
-    margin: 50px 0 100px;
+    margin: 50px 0 80px;
   }
 
-  .close-btn {
+  #modal .close-btn {
     position: absolute;
-    bottom: 10vh;
-    padding: 15px;
+    bottom: 5vh;
+  }
+
+  #modal .close-btn img {
+    margin: auto;
     box-shadow: 0 0 10px 5px rgb(223, 217, 217);
+    padding: 15px;
   }
 
   /* score board */
