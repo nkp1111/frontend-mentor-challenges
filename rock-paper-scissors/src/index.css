@@ -574,17 +574,23 @@ footer {
   }
 
   .midgame .show-result button {
+    display: none;
     width: 120%;
     padding: 10px 30px;
     white-space: nowrap;
     border-radius: 5px;
   }
 
+  .midgame.active .show-result button {
+    display: block;
+  }
+
   .midgame {
     margin-top: 40px;
   }
 
-  .midgame.active {
+  .midgame.active,
+  .midgame {
     grid-template-rows: 200px 140px 200px;
   }
 
