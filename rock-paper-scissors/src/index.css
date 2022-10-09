@@ -138,6 +138,13 @@ body,
   scale: 1.2;
 }
 
+/* For bouus round */
+#modal .change-mode {
+  margin-top: 5px;
+  padding: 5px 20px;
+  color: red;
+}
+
 /* Game */
 #game {
   display: flex;
