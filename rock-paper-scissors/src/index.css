@@ -41,6 +41,13 @@ button {
   transition: all .3s;
 }
 
+section h2 {
+  position: absolute;
+  /* opacity: 0; */
+}
+
+/* Body */
+
 body {
   overflow: hidden;
 }
@@ -50,6 +57,14 @@ body,
   height: 100vh;
   width: 100vw;
   background: var(--Radial-Gradient);
+}
+
+#root h1 {
+  position: absolute;
+  top: 10px;
+  left: 50vw;
+  transform: translateX(-50%);
+  opacity: 0
 }
 
 #root {
@@ -72,7 +87,7 @@ body,
 
 /* Modal */
 #modal,
-#modal div:first-child,
+#modal div:first-of-type,
 #modal div:last-child {
   display: flex;
 }
@@ -90,17 +105,24 @@ body,
   z-index: 10;
 }
 
-#modal div:first-child {
+#modal h2 {
+  color: black;
+  top: 1px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#modal div:first-of-type {
   padding: 3px 0 25px 0;
 }
 
-#modal div:first-child,
+#modal div:first-of-type,
 #modal div:last-child {
   justify-content: space-between;
   align-items: center;
 }
 
-#modal div:first-child p {
+#modal div:first-of-type p {
   font-size: 30px;
   color: var(--Dark-Text);
   font-weight: 700;
@@ -135,6 +157,11 @@ body,
   align-items: center;
 }
 
+#game .score-board h2 {
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
 #game .score-board .score {
   width: 18%;
   background-color: white;
@@ -165,6 +192,10 @@ body,
   width: 650px;
   position: relative;
   margin-top: 40px;
+}
+
+#game .startgame h2 {
+  top: -3vh;
 }
 
 #game .startgame div {
@@ -455,7 +486,7 @@ footer {
     border-radius: 0;
   }
 
-  #modal div:first-child {
+  #modal div:first-of-type {
     display: flex;
     justify-content: center;
     margin: 50px 0 100px;
@@ -563,5 +594,4 @@ footer {
     transform: translateX(-50%);
     width: 30%;
   }
-
 }
