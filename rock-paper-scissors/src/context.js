@@ -40,11 +40,11 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     /* For finding winner */
     let winnerDecideTimeout = setTimeout(() => {
-      let winCondition = { 'paper': 'rock', 'rock': 'scissors', 'scissors': 'paper' }
+      let winCondition = { 'paper': ['rock', 'spock'], 'rock': ['scissors', 'lizard'], 'scissors': ['paper', 'lizard'], 'lizard': ['spock', 'paper'], 'spock': ['scissors', 'rock'] }
       if (playerChoice && computerChoice) {
         if (playerChoice.name === computerChoice.name) {
           setWinner('tie')
-        } else if (winCondition[playerChoice.name] === computerChoice.name) {
+        } else if (winCondition[playerChoice.name].includes(computerChoice.name)) {
           setWinner('player')
         } else {
           setWinner('computer')

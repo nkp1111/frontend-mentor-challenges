@@ -319,6 +319,16 @@ body,
   background: var(--Rock-Gradient);
 }
 
+.lizard,
+.midgame.active .lizard {
+  background: var(--Lizard-Gradient);
+}
+
+.spock,
+.midgame.active .spock {
+  background: var(--Cyan);
+}
+
 /* midgame grid structure */
 .midgame {
   display: grid;
