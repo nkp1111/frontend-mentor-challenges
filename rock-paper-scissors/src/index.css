@@ -249,6 +249,38 @@ body,
   background: var(--Rock-Gradient);
 }
 
+#game .startgame .lizard {
+  background: var(--Lizard-Gradient);
+}
+
+#game .startgame .spock {
+  background: var(--Cyan-Gradient);
+}
+
+/* position for hard mode */
+
+#game .startgame.hard .paper {
+  left: var(--position-x);
+}
+
+#game .startgame.hard .scissors {
+  right: var(--position-x);
+  background: var(--Scissors-Gradient);
+}
+
+#game .startgame.hard .rock {
+  bottom: var(--position-bottom);
+  background: var(--Rock-Gradient);
+}
+
+#game .startgame.hard .lizard {
+  background: var(--Lizard-Gradient);
+}
+
+#game .startgame.hard .spock {
+  background: var(--Cyan-Gradient);
+}
+
 /* Rock Paper Scissors image */
 /* Midgame */
 #game .startgame div img,
