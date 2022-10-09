@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/nkp1111/frontend-mentor-challenges/blob/main/rock-paper-scissors/src/assets/images/Screenshot%202022-10-09%20211616.png?raw=true)
 
 ### Links
 
