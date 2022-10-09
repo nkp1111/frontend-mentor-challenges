@@ -36,6 +36,10 @@
   color: white;
 }
 
+button {
+  cursor: pointer
+}
+
 body {
   overflow: hidden;
 }
@@ -105,6 +109,11 @@ body,
   width: 100%;
 }
 
+#modal .close-btn:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
 /* Game */
 #game {
   display: flex;
@@ -158,6 +167,11 @@ body,
 
 #game .startgame div {
   position: absolute;
+  cursor: pointer;
+}
+
+#game .startgame div:hover {
+  transform: scale(1.1);
 }
 
 #game .startgame div,
@@ -267,6 +281,10 @@ body,
   letter-spacing: 0.2em;
 }
 
+.midgame .show-result button:hover {
+  scale: 1.02;
+}
+
 /* Rules button */
 .rules {
   position: absolute;
@@ -280,6 +298,11 @@ body,
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+
+.rules:hover {
+  background-color: white;
+  color: rgb(36, 36, 170);
 }
 
 /* Footer */
@@ -355,6 +378,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 750px) {
+
+  .midgame div:nth-child(1),
+  .midgame div:nth-child(3) {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   :root {
     --sizeIncreaeFactor: 1.25;
@@ -413,7 +444,8 @@ footer {
   .close-btn {
     position: absolute;
     bottom: 10vh;
-    padding: 10px 150px;
+    padding: 15px;
+    box-shadow: 0 0 10px 5px rgb(223, 217, 217);
   }
 
   /* score board */
