@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
   const [startGame, setStartGame] = useState(false)
   const [score, setScore] = useState(0)
   const [resultViewChange, setResultViewChange] = useState(false)
+  const [gameMode, setGameMode] = useState('easy')
 
   useEffect(() => {
     /* For modal */
@@ -96,6 +97,14 @@ const AppProvider = ({ children }) => {
     })
   }, [])
 
+  const handleGameMode = (mode) => {
+    if (mode === 'easy') {
+      setGameMode('hard')
+    } else {
+      setGameMode('easy')
+    }
+  }
+
   // console.log(playerChoice.name, computerChoice.name, winner, resultViewChange);
 
   return (
@@ -108,9 +117,11 @@ const AppProvider = ({ children }) => {
         startGame,
         score,
         resultViewChange,
+        gameMode,
         setModalOpen,
         setPlayerChoice,
-        setStartGame
+        setStartGame,
+        handleGameMode
       }}>
       {children}
     </AppContext.Provider>
