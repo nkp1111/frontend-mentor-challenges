@@ -7,7 +7,8 @@ function MidGame() {
   const { playerChoice, computerChoice, winner, resultViewChange } = useGlobalContext();
 
   return (
-    <div className={winner ? 'midgame active' : 'midgame'}>
+    <section className={winner ? 'midgame active' : 'midgame'}>
+      <h2>Result and Restart</h2>
       <div>You Picked</div>
       <div></div>
       <div>The House Picked</div>
@@ -15,7 +16,7 @@ function MidGame() {
       {resultViewChange === false ? <ShowResult /> : <div></div>}
       <div className={computerChoice.name}><img src={computerChoice.img} alt={computerChoice.name} /></div>
       {resultViewChange === true && <ShowResult />}
-    </div>
+    </section>
   )
 }
 
