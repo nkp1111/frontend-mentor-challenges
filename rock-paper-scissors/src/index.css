@@ -408,8 +408,8 @@ footer {
 
   /* score board */
   #game .score-board {
-    width: 80vw;
-    min-width: 350px;
+    width: 90vw;
+    min-width: 320px;
     padding: 10px;
     border-radius: 5px;
   }
@@ -429,5 +429,29 @@ footer {
 
   #game .score-board .score p:last-child {
     font-size: 45px;
+  }
+
+  /* game choice img */
+  #game .startgame {
+    width: 90vw;
+    min-width: 320px;
+    height: 50vh;
+  }
+
+
+  :root {
+    --position-x: 0;
+    --position-bottom: 0;
+    --position-top: 0;
+
+    --width: 140px;
+    --offset: 35px;
+    --sizeIncreaeFactor: 1.18;
+  }
+
+  .rules {
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 30%;
   }
 }
