@@ -10,6 +10,9 @@ function App() {
   const { modalOpen } = useGlobalContext()
   return (
     <>
+      <h1>
+        Rock Paper Scissors Game
+      </h1>
       {modalOpen && <Modal />}
       <Game />
       <Rule />
