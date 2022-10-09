@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/rock-paper-scissors)
+- Live Site URL: [Netlify](https://nkp1111-rock-paper-scissors-game.netlify.app/)
 
 ## My process
 
