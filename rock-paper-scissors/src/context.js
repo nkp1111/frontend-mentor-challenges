@@ -5,7 +5,7 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
 
-  const [modalOpen, setModalOpen] = useState(true)
+  const [modalOpen, setModalOpen] = useState(false)
   const [playerChoice, setPlayerChoice] = useState('')
   const [computerChoice, setComputerChoice] = useState('')
   const [winner, setWinner] = useState('')
