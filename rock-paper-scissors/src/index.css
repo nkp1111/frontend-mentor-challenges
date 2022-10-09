@@ -387,6 +387,16 @@ footer {
 @media screen and (max-width: 405px) {
 
   /* Change structure */
+  :root {
+    --position-x: 0;
+    --position-bottom: 0;
+    --position-top: 0;
+
+    --width: 140px;
+    --offset: 35px;
+    --sizeIncreaeFactor: 1.18;
+  }
+
   /* modal */
   #modal {
     width: 100vw;
@@ -432,26 +442,40 @@ footer {
   }
 
   /* game choice img */
-  #game .startgame {
+  #game .startgame,
+  #game .midgame {
     width: 90vw;
     min-width: 320px;
     height: 50vh;
   }
 
-
-  :root {
-    --position-x: 0;
-    --position-bottom: 0;
-    --position-top: 0;
-
-    --width: 140px;
-    --offset: 35px;
-    --sizeIncreaeFactor: 1.18;
+  /* midgame */
+  .midgame div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 
+  .midgame div:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .midgame div:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .midgame div:nth-child(6) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+
+  /* rule button */
   .rules {
     left: 50vw;
     transform: translateX(-50%);
     width: 30%;
   }
+
 }
