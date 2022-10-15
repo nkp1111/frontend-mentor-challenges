@@ -8,7 +8,7 @@ import pinterestLogo from './assets/images/icon-pinterest.svg'
 
 function App() {
 
-  const { seconds, minutes, hours, days } = useGlobalContext()
+  const { seconds, minutes, hours, days, format } = useGlobalContext()
 
   // console.log(state)
   return (
@@ -17,10 +17,10 @@ function App() {
       <section>
         <h2>We're launching soon</h2>
         <div className='timer'>
-          <div className='time'>{days}</div>
-          <div className='time'>{hours}</div>
-          <div className='time'>{minutes}</div>
-          <div className='time'>{seconds}</div>
+          <div className='time'>{format(days)}</div>
+          <div className='time'>{format(hours)}</div>
+          <div className='time'>{format(minutes)}</div>
+          <div className='time active'>{format(seconds)}</div>
           {data.map(d => {
             return (
               <div className='title'
