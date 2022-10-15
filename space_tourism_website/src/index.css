@@ -942,3 +942,36 @@ header nav.menu.sideopen .close-btn:hover {
     line-height: 1.2em;
   }
 }
+
+/* Error Page */
+#error-page {
+  background: url('https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/home/background-home-desktop.jpg?raw=true') center center/ cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  flex-direction: column;
+}
+
+#error-page h2 {
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+#error-page button {
+  font-size: 20px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: crimson;
+  font-weight: 500;
+}
+
+#error-page button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
