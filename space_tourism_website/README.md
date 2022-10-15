@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/nkp1111/frontend-mentor-challenges/blob/main/space_tourism_website/src/assets/Screenshot%202022-10-15%20122130.png?raw=true)
 
 ### Links
 
@@ -46,4 +46,3 @@ Users should be able to:
 - Website - [Neeraj Parmar](https://www.your-site.com)
 - Frontend Mentor - [nkp1111](https://www.frontendmentor.io/profile/nkp1111)
 - Twitter - [@nkp11111507](https://twitter.com/home)
-
