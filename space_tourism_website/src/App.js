@@ -22,7 +22,7 @@ function App() {
           </Route>
           <Route path='/technology' element={<Technology />}>
           </Route>
-          <Route path='/*' element={<Error />}>
+          <Route path='*' element={<Error />}>
           </Route>
         </Routes>
       </BrowserRouter>
