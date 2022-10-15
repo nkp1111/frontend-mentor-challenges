@@ -4,18 +4,19 @@ import Header from './Header';
 
 function App() {
 
-  const val = useGlobalContext()
-  // console.log(val);
+  const { seconds, minutes, hours, days } = useGlobalContext()
+
+  // console.log(state)
   return (
     <>
       <Header />
       <section>
         <h2>We're launching soon</h2>
         <div className='timer'>
-          <div>08</div>
-          <div>23</div>
-          <div>55</div>
-          <div>41</div>
+          <div>{days}</div>
+          <div>{hours}</div>
+          <div>{minutes}</div>
+          <div>{seconds}</div>
           <div>Days</div>
           <div>Hours</div>
           <div>Minutes</div>
