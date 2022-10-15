@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400&700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
 :root {
   --Grayish-blue: hsl(237, 18%, 59%);
@@ -23,7 +23,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: var(--Very-dark-blue-1);
+  background: linear-gradient(var(--Very-dark-blue-1) 55%, var(--Very-dark-blue) 60%, var(--Soft-red));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +58,18 @@ section h2 {
   grid-template-columns: repeat(4, 25%);
 }
 
+.timer .time {
+  padding: 10px;
+  color: var(--Soft-red);
+  font-size: 30px;
+  background: var(--Dark-desaturated-blue);
+  margin: 0 10px 15px;
+}
+
 .timer .title {
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 9px;
   letter-spacing: 2px;
+  color: var(--Grayish-blue);
 }
 
 /* bottom background image*/
@@ -72,6 +80,10 @@ section h2 {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.mountain-bed img {
+  margin: 15vh 2vh 0;
 }
 
 /* Footer */
