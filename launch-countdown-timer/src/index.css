@@ -16,6 +16,7 @@
   margin: 0;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* main */
@@ -25,12 +26,23 @@
   background: var(--Very-dark-blue-1);
 }
 
-#root>div {
+/* hidden heading */
+#root h1 {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  translate: -50% 0;
+  font-size: 30px;
+  opacity: 0;
+}
+
+#root>section {
   background: url('./assets/images/bg-stars.svg');
   width: 100%;
   height: 100%;
 }
 
+/* bottom background image*/
 .mountain-bed {
   background: url('./assets/images/pattern-hills.svg') center center/cover;
   width: 100vw;
