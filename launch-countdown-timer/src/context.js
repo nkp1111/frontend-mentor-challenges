@@ -5,9 +5,20 @@ const AppContext = React.createContext()
 export const AppProvider = ({ children }) => {
 
   const [days, setDays] = useState(14)
-  const [hours, setHours] = useState(0)
+  const [hours, setHours] = useState(1)
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
+
+  if (minutes === 0) {
+    setMinutes(59)
+    setHours(hours - 1)
+  }
+
+  if (hours < 0) {
+    setHours(23)
+    setDays(days - 1)
+  }
+
   useEffect(() => {
     const secondChangeInterval = setInterval(() => {
       if (seconds === 0) {
@@ -16,7 +27,7 @@ export const AppProvider = ({ children }) => {
       } else {
         setSeconds(seconds - 1)
       }
-    }, 100)
+    }, 1000)
     return () => clearInterval(secondChangeInterval)
   })
 
