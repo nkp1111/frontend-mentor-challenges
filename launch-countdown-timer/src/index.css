@@ -6,17 +6,43 @@
   --White: hsl(0, 0%, 100%);
   --Dark-desaturated-blue: hsl(236, 21%, 26%);
   --Very-dark-blue: hsl(235, 16%, 14%);
-  --Very-dark-blue: hsl(234, 17%, 12%);
+  --Very-dark-blue-1: hsl(234, 17%, 12%);
 }
 
 * {
   font-size: 14px;
   font-family: 'Red Hat Text', sans-serif;
   font-weight: 700;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* main */
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Very-dark-blue-1);
+}
+
+#root>div {
+  background: url('./assets/images/bg-stars.svg');
+  width: 100%;
+  height: 100%;
+}
+
+.mountain-bed {
+  background: url('./assets/images/pattern-hills.svg') center center/cover;
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* Footer */
 .attribution {
+  color: white;
   font-size: 11px;
   text-align: center;
   position: absolute;

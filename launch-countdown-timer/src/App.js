@@ -14,6 +14,7 @@ function App() {
         <div>Minutes</div>
         <div>Seconds</div>
       </div>
+      <div className='mountain-bed'></div>
     </div>
   );
 }
