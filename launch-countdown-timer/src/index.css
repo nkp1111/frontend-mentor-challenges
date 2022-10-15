@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400&700&display=swap');
 
 :root {
   --Grayish-blue: hsl(237, 18%, 59%);
@@ -24,6 +24,9 @@
   width: 100vw;
   height: 100vh;
   background: var(--Very-dark-blue-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* hidden heading */
@@ -36,10 +39,29 @@
   opacity: 0;
 }
 
+/* section */
 #root>section {
   background: url('./assets/images/bg-stars.svg');
   width: 100%;
   height: 100%;
+  padding: 0 30px;
+}
+
+section h2 {
+  margin: 20vh 0 5vh;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.timer .title {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 /* bottom background image*/

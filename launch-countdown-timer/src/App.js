@@ -17,10 +17,10 @@ function App() {
           <div>{hours}</div>
           <div>{minutes}</div>
           <div>{seconds}</div>
-          <div>Days</div>
-          <div>Hours</div>
-          <div>Minutes</div>
-          <div>Seconds</div>
+          <div className='title'>Days</div>
+          <div className='title'>Hours</div>
+          <div className='title'>Minutes</div>
+          <div className='title'>Seconds</div>
         </div>
         <div className='mountain-bed'></div>
       </section>

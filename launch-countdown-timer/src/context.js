@@ -5,7 +5,7 @@ const AppContext = React.createContext()
 export const AppProvider = ({ children }) => {
 
   const [days, setDays] = useState(14)
-  const [hours, setHours] = useState(1)
+  const [hours, setHours] = useState(0)
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
 
