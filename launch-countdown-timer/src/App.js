@@ -20,7 +20,7 @@ function App() {
           <div className='time'>{format(days)}</div>
           <div className='time'>{format(hours)}</div>
           <div className='time'>{format(minutes)}</div>
-          <div className='time active'>{format(seconds)}</div>
+          <div className='time'>{format(seconds)}</div>
           {data.map(d => {
             return (
               <div className='title'
