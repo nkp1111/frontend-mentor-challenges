@@ -7,10 +7,34 @@
   --Dark-blue: hsl(218, 44%, 22%);
 
   --Mobile: 375px;
-  --Font-size: 15px;
 }
 
 * {
   font-family: 'Outfit', sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-gray);
+}
+
+p {
+  font-size: 15px;
+  color: var(--Grayish-blue);
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
