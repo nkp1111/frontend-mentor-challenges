@@ -29,10 +29,10 @@ main {
   display: flex;
   flex-direction: column-reverse;
   background-color: white;
-  padding: 15px 18px;
-  width: 300px;
-  height: 440px;
-  border-radius: 15px;
+  padding: 15px 20px 25px;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -42,8 +42,8 @@ main div:first-child {
 }
 
 h1 {
-  font-size: 20px;
-  margin: 15px;
+  font-size: 22px;
+  margin: 20px;
 }
 
 p {
@@ -52,10 +52,10 @@ p {
 }
 
 main div:last-child {
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
-  width: 270px;
-  height: 270px;
+  width: 320px;
+  height: 320px;
 }
 
 img {
