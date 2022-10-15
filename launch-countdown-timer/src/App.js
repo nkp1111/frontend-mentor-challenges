@@ -1,7 +1,11 @@
 import React from 'react'
+import useGlobalContext from './context';
 import Header from './Header';
 
 function App() {
+
+  const val = useGlobalContext()
+  // console.log(val);
   return (
     <>
       <Header />
