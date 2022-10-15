@@ -200,10 +200,11 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  width: 650px;
+  min-width: 650px;
+  max-height: 85vh;
   position: relative;
   margin-top: 40px;
+  min-height: 450px;
 }
 
 #game .startgame h2 {
