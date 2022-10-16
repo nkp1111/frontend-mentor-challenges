@@ -15,6 +15,10 @@
   font-family: 'Manrope', sans-serif;
 }
 
+body {
+  background: var(--Dark-Blue);
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
