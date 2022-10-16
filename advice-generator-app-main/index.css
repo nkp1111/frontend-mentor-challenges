@@ -46,7 +46,7 @@ main span {
   color: var(--Light-Cyan);
   margin: 10px 0 5px;
   font-size: 0.8rem;
-  padding: 0 5px;
+  padding: 0 10px;
   transition: all .6s;
 }
 

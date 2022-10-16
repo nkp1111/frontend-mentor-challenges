@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./screenshot.jpg)
+![image](./images/Screenshot%202022-10-16%20121253.png)
 
 ### Links
 
@@ -40,8 +40,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- Bootstrap
 
 ## Author
 
