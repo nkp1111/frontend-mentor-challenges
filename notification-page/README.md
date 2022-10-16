@@ -1,6 +1,6 @@
 # Frontend Mentor - Notifications page solution
 
-This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -47,4 +47,3 @@ Users should be able to:
 - Website - [Neeraj Parmar](https://www.your-site.com)
 - Frontend Mentor - [nkp1111](https://www.frontendmentor.io/profile/nkp1111)
 - Twitter - [@nkp11111507](https://twitter.com/home)
-
