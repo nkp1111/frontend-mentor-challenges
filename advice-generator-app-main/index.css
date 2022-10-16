@@ -35,14 +35,25 @@ main {
 main h1,
 main span {
   color: var(--Neon-Green);
-  font-size: 0.6rem;
+  font-size: 0.45rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+/* article */
+#advice {
+  color: var(--Light-Cyan);
+  margin: 10px 0 5px;
+  font-size: 23px;
+  padding: 0 5px;
 }
 
 #advice+img {
   margin-bottom: 40px;
 }
+
+/* dice img for random quotes */
+#dice {}
 
 /* bottom img */
 main div:last-of-type {
