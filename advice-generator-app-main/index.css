@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+/* general styles */
 :root {
   --Light-Cyan: hsl(193, 38%, 86%);
   --Neon-Green: hsl(150, 100%, 66%);
@@ -17,6 +18,7 @@
   padding: 0;
 }
 
+/* body */
 body {
   background: var(--Dark-Blue);
   height: 100vh;
@@ -29,12 +31,30 @@ main {
   border-radius: 10px;
 }
 
+/* main */
 main h1,
 main span {
   color: var(--Neon-Green);
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+#advice+img {
+  margin-bottom: 40px;
+}
+
+/* bottom img */
+main div:last-of-type {
+  background: var(--Neon-Green);
+  border-radius: 50%;
+  bottom: -25px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+main img:last-of-type {
+  padding: 15px;
 }
 
 /* Footer */
