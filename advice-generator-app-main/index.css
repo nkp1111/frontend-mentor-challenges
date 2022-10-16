@@ -30,6 +30,7 @@ main {
   width: 98vw;
   border-radius: 10px;
   max-width: 550px;
+  padding: 15px 0;
 }
 
 /* main */
@@ -51,7 +52,7 @@ main span {
 }
 
 #advice+img {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* dice img for random quotes */
