@@ -29,6 +29,7 @@ main {
   background: var(--Dark-Grayish-Blue);
   width: 98vw;
   border-radius: 10px;
+  max-width: 550px;
 }
 
 /* main */
@@ -44,8 +45,9 @@ main span {
 #advice {
   color: var(--Light-Cyan);
   margin: 10px 0 5px;
-  font-size: 23px;
+  font-size: 0.8rem;
   padding: 0 5px;
+  transition: all .6s;
 }
 
 #advice+img {
@@ -53,7 +55,17 @@ main span {
 }
 
 /* dice img for random quotes */
-#dice {}
+#dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .6s;
+}
+
+#dice:hover {
+  box-shadow: 0 0 30px var(--Neon-Green);
+}
 
 /* bottom img */
 main div:last-of-type {
@@ -81,4 +93,11 @@ main img:last-of-type {
 .attribution a {
   color: hsl(228, 45%, 44%);
   font-size: 11px;
+}
+
+@media screen and (min-width: 700px) {
+  #advice {
+    font-size: 1rem;
+    padding: 5px 25px;
+  }
 }
