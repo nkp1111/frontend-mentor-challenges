@@ -19,7 +19,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  padding: 110px 15px 0 15px;
+  padding: 110px 15px 50px;
 }
 
 /* header */
@@ -46,6 +46,10 @@ main img {
   width: 100%;
 }
 
+main section {
+  margin: 10px 0;
+}
+
 /* section1 */
 main section:first-child {
   display: flex;
@@ -66,6 +70,20 @@ main section:first-child p {
 
 main section:first-child img {
   height: 45vh;
+}
+
+main section:first-child button {
+  padding: 15px 40px;
+  background: var(--Soft-red);
+  border: none;
+  color: var(--Off-white);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main section:first-child button:hover {
+  background: var(--Very-dark-blue);
 }
 
 /* footer */
