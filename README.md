@@ -13,3 +13,6 @@ This contains the following project:
 - space-tourism-website
 - rock-paper-scissors
 - qr-code-component
+- launch-countdown-timer
+- advise-generator-app
+- news-homepage
