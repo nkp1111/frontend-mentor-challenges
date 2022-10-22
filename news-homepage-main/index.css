@@ -119,6 +119,27 @@ main section#new {
   line-height: 1.5rem;
 }
 
+/* section3 : category section */
+main section#category {
+  position: relative;
+}
+
+#category h2 {
+  opacity: 0;
+  position: absolute;
+}
+
+#category {
+  display: flex;
+  flex-direction: column;
+}
+
+#category article {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
 /* footer */
 .attribution {
   font-size: 11px;
