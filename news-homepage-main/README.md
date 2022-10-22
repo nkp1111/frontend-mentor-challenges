@@ -6,7 +6,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,14 +21,10 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Toggle the mobile menu (requires some JavaScript)
 
-### Screenshot
-
-![image](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/news-homepage-main)
+- Live Site URL: [Netlify](https://nkp1111-news-homepage.netlify.app/)
 
 ## My process
 
