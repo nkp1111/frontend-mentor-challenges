@@ -40,7 +40,10 @@ header img {
 }
 
 /* main */
-main {}
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 main img {
   width: 100%;
@@ -76,6 +79,7 @@ main #home button {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .3s all;
 }
 
 main #home button:hover {
@@ -134,9 +138,47 @@ main section#category {
   flex-direction: column;
 }
 
+/* section3: article */
 #category article {
   display: flex;
   flex-direction: row-reverse;
+  margin: 15px 0;
+}
+
+/* section3: article first div (text) */
+#category article .article-text {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.article-text div:last-child {
+  color: var(--Grayish-blue);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.article-text div:first-child h3 {
+  font-weight: 800;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.article-text div:first-child p {
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+#category article .article-text>* {
+  flex: 0;
+}
+
+/* section3: article last div (image) */
+#category article div:last-child img {
+  width: 110px;
+  margin-right: 20px;
+  height: 130px;
 }
 
 
