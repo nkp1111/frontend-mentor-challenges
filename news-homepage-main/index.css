@@ -80,6 +80,7 @@ main #home button {
   text-transform: uppercase;
   cursor: pointer;
   transition: .3s all;
+  font-weight: 700;
 }
 
 main #home button:hover {
@@ -149,7 +150,8 @@ main section#category {
 #category article .article-text {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  max-width: 200px;
 }
 
 .article-text div:last-child {
@@ -194,4 +196,80 @@ main section#category {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+  body {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  header {
+    padding: 5vh 10vw 2vh;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    /* height: 90vh; */
+    margin-top: -6vh;
+  }
+
+  /* section1 home*/
+  main section#home {
+    width: 60%;
+    height: 60vh;
+    margin: 15vh 2vw 0 0;
+  }
+
+  main #home img {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  main #home div:first-child {
+    height: 40%;
+  }
+
+  main #home div:first-child h2 {
+    float: left;
+    width: 20vw;
+  }
+
+  main #home div:first-child p {
+    width: 97%;
+    font-size: 1rem;
+  }
+
+  /* section 2 new */
+  main section#new {
+    margin-top: 40px;
+    flex: 1;
+    padding: 35px;
+  }
+
+  main section#new article {
+    width: 90%;
+  }
+
+  main section#new article h3 {
+    font-size: 1.3rem;
+  }
+
+  main section#new article p {
+    font-size: 1rem;
+  }
+
+  /* section 3 category */
+  #category {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+  }
+
 }
