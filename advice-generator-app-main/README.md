@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/advice-generator-app-main)
+- Live Site URL: [Netlify](https://nkp1111-advice-generator-app.netlify.app/)
 
 ## My process
 

@@ -16,3 +16,4 @@ This contains the following project:
 - launch-countdown-timer
 - advise-generator-app
 - news-homepage
+- time-tracking-dashboard
