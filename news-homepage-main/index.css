@@ -54,6 +54,13 @@ main {
   flex-direction: column;
 }
 
+main h1 {
+  position: absolute;
+  opacity: 0;
+  top: 5vh;
+  left: 40vw;
+}
+
 main img {
   width: 100%;
 }
