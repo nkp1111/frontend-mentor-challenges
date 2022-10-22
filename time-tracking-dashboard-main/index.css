@@ -83,7 +83,7 @@ section div div {
 #grid-box {
   display: grid;
   grid-template-columns: repeat(4, 23%);
-  gap: 30px;
+  gap: 25px;
 }
 
 /* profile */
@@ -120,7 +120,7 @@ section div div {
 #profile div:first-child span {
   font-size: 30px;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: inline-block;
 }
 
@@ -143,7 +143,8 @@ section div div {
   color: white;
 }
 
-/* section play, work,... background */
+/* section play, work,... */
+/* Add background*/
 
 section#work {
   background: var(--Light-red--work);
@@ -193,6 +194,8 @@ section#self-care::before {
   background: url('./images/icon-self-care.svg') center center/ cover;
 }
 
+/* Sections Text positioning */
+
 section:not(#profile)>div>div:first-child {
   display: flex;
   justify-content: space-between;
@@ -204,6 +207,22 @@ section:not(#profile)>div>div:first-child {
 section:not(#profile)>div>div:first-child img {
   width: 20px;
   height: 6px;
+  cursor: pointer;
+}
+
+section:not(#profile)>div>div:first-child img:hover {
+  scale: 1.1;
+}
+
+section:not(#profile)>div>div:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 1rem 0 .5rem 0;
+}
+
+section:not(#profile)>div>div:nth-child(3) {
+  font-size: 13px;
+  color: var(--Desaturated-blue);
 }
 
 /* footer */
