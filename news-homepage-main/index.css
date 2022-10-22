@@ -10,6 +10,74 @@
   --Soft-red: hsl(5, 85%, 63%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 110px 15px 0 15px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 15px;
+  background: white;
+}
+
+header img {
+  height: 100%;
+}
+
+/* main */
+main {}
+
+main img {
+  width: 100%;
+}
+
+/* section1 */
+main section:first-child {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main section:first-child h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin: 25px 0;
+}
+
+main section:first-child p {
+  line-height: 1.5rem;
+  margin: 25px 0;
+  color: var(--Dark-grayish-blue);
+}
+
+main section:first-child img {
+  height: 45vh;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+  opacity: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
