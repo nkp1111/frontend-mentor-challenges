@@ -8,6 +8,7 @@
   --Lime-green--exercise: hsl(145, 58%, 55%);
   --Violet--social: hsl(264, 64%, 52%);
   --Soft-orange--self-care: hsl(43, 84%, 65%);
+
   --Very-dark-blue: hsl(226, 43%, 10%);
   --Dark-blue: hsl(235, 46%, 20%);
   --Desaturated-blue: hsl(235, 45%, 61%);
@@ -22,12 +23,196 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  background: var(--Very-dark-blue);
+  color: white;
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  top: 5vh;
+  left: 40vw;
+  opacity: 0;
+}
+
+section {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+section>div {
+  height: 75%;
+  background: var(--Dark-blue);
+  border-radius: 15px;
+  transition: all .3s;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+section:hover>div {
+  background: hsl(236, 41%, 38%);
+}
+
+section h2 {
+  opacity: 0;
+  position: absolute;
+}
+
+section div div {
+  padding: 0 25px;
+}
+
+/* grid-structure */
+#grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 30px;
+}
+
+/* profile */
+#profile {
+  grid-row: 1 / 3;
+}
+
+#profile>div {
+  height: 100%;
+  padding: 0;
+}
+
+#profile div {
+  background: var(--Dark-blue);
+  border-radius: 15px;
+}
+
+#profile div div:first-child {
+  background: var(--Blue);
+  border-radius: 15px;
+}
+
+#profile img {
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 20px 0 25px 0;
+}
+
+#profile div:first-child p {
+  font-size: 13px;
+}
+
+#profile div:first-child span {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+#profile nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-bottom: 25px;
+}
+
+#profile nav ul li {
+  margin: 15px 0 0 25px;
+  font-size: 1rem;
+  color: var(--Desaturated-blue);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+#profile nav ul li:hover {
+  color: white;
+}
+
+/* section play, work,... background */
+
+section#work {
+  background: var(--Light-red--work);
+}
+
+section#work::before {
+  background: url('./images/icon-work.svg') center center/ cover;
+}
+
+section#play {
+  background: var(--Soft-blue--play);
+}
+
+section#play::before {
+  background: url('./images/icon-play.svg') center center/ cover;
+}
+
+section#study {
+  background: var(--Light-red--study);
+}
+
+section#study::before {
+  background: url('./images/icon-study.svg') center center/ cover;
+}
+
+section#exercise {
+  background: var(--Lime-green--exercise);
+}
+
+section#exercise::before {
+  background: url('./images/icon-exercise.svg') center center/ cover;
+}
+
+section#social {
+  background: var(--Violet--social);
+}
+
+section#social::before {
+  background: url('./images/icon-social.svg') center center/ cover;
+}
+
+section#self-care {
+  background: var(--Soft-orange--self-care);
+}
+
+section#self-care::before {
+  background: url('./images/icon-self-care.svg') center center/ cover;
+}
+
+section:not(#profile)>div>div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section:not(#profile)>div>div:first-child img {
+  width: 20px;
+  height: 6px;
 }
 
 /* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
 }
 
 .attribution a {
