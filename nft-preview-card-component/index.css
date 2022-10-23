@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --Very-dark-blue--main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue--card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue--line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  color: white;
+  bottom: 5vh;
+  right: 10vw;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
