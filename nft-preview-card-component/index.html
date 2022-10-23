@@ -11,20 +11,30 @@
   <title>NFT preview card component</title>
 </head>
 
-<body>
+<body class="d-flex 
+justify-content-center 
+align-items-center">
 
-  <div id="card">
-    <img src="./images/image-equilibrium.jpg" alt="">
-    <h2>Equilibrium #3429</h2>
-    <p>Our Equilibrium collection promotes balance and calm.</p>
+  <div id="card" class="container p-3 d-flex flex-column">
     <div>
-      <span>0.041 ETH</span>
-      <span>3 days left</span>
+      <img src="./images/image-equilibrium.jpg" alt="">
     </div>
-    <hr>
-    <div>
+    <h2 class="fs-5 mt-3">Equilibrium #3429</h2>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="d-flex justify-content-between">
+      <span>
+        <img src="./images/icon-ethereum.svg" alt="clock">
+        0.041 ETH
+      </span>
+      <span>
+        <img src="./images/icon-clock.svg" alt="clock">
+        3 days left
+      </span>
+    </div>
+    <div class="underline"></div>
+    <div class="author d-flex">
       <img src="./images/image-avatar.png" alt="author">
-      <span class="author">Creation of Jules Wyvern</span>
+      <p class="name mx-3">Creation of <span>Jules&nbsp;Wyvern</span></p>
     </div>
   </div>
 
