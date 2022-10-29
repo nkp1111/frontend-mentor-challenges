@@ -14,26 +14,27 @@ function App() {
           <button><FiChevronRight /></button>
         </form>
 
-        <article>
-          <h3>IP Address</h3>
-          <p></p>
-        </article>
+        <div className='ip-info'>
+          <article>
+            <h3>IP Address</h3>
+            <p>192.212.174.101</p>
+          </article>
 
-        <article>
-          <h3>Location</h3>
-          <p></p>
-        </article>
+          <article>
+            <h3>Location</h3>
+            <p>Brooklyn, ms 10001</p>
+          </article>
 
-        <article>
-          <h3> Timezone</h3>
-          <p>UTC</p>
-        </article>
+          <article>
+            <h3> Timezone</h3>
+            <p>UTC -05:33</p>
+          </article>
 
-        <article>
-          <h3>ISP</h3>
-          <p></p>
-        </article>
-
+          <article>
+            <h3>ISP</h3>
+            <p>SpaceX Starlink</p>
+          </article>
+        </div>
       </main>
       <Footer />
     </>

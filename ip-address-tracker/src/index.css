@@ -26,7 +26,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 2.5rem;
 }
 
 h1 {
@@ -49,7 +49,7 @@ h1 {
 
 /* form */
 main form {
-  margin: 30px 0;
+  margin: 20px 0 30px;
   display: flex;
   align-items: center;
 }
@@ -81,6 +81,34 @@ button {
 button:hover {
   background: var(--Dark-Gray);
   border: 1px solid var(--Dark-Gray);
+}
+
+/* grid ip-info */
+.ip-info {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(4, 18vw);
+  grid-template-rows: 20vh;
+  box-shadow: 0 0 3px 0 rgb(50, 89, 146);
+  border-radius: 14px;
+}
+
+.ip-info article {
+  padding: 25px 20px;
+}
+
+article h3 {
+  color: var(--Dark-Gray);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+article p {
+  font-weight: 500;
+  font-size: 1.45rem;
+  margin-top: 10px;
 }
 
 /* footer */
