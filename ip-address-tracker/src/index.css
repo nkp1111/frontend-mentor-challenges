@@ -117,6 +117,12 @@ article p {
   height: 65vh;
   position: absolute;
   top: 35vh;
+  display: block;
+  overflow: hidden;
+}
+
+#map img {
+  width: 100%;
 }
 
 /* footer */
