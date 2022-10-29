@@ -111,6 +111,14 @@ article p {
   margin-top: 10px;
 }
 
+/* map */
+#map {
+  width: 100vw;
+  height: 65vh;
+  position: absolute;
+  top: 35vh;
+}
+
 /* footer */
 footer {
   position: absolute;

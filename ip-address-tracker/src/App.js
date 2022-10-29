@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Footer from './footer'
 import { FiChevronRight } from 'react-icons/fi'
+import Map from './Map'
+import IPtracker from './IPtracker'
 
 function App() {
+
+  const mapRef = useRef(null)
   return (
     <>
       <main className="App">
@@ -14,27 +18,9 @@ function App() {
           <button><FiChevronRight /></button>
         </form>
 
-        <div className='ip-info'>
-          <article>
-            <h3>IP Address</h3>
-            <p>192.212.174.101</p>
-          </article>
+        <div ref={mapRef}></div>
 
-          <article>
-            <h3>Location</h3>
-            <p>Brooklyn, ms 10001</p>
-          </article>
-
-          <article>
-            <h3> Timezone</h3>
-            <p>UTC -05:33</p>
-          </article>
-
-          <article>
-            <h3>ISP</h3>
-            <p>SpaceX Starlink</p>
-          </article>
-        </div>
+        <IPtracker />
       </main>
       <Footer />
     </>
