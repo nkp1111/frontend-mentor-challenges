@@ -8,11 +8,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
 }
 
 html {
   font-size: 18px;
-  font-family: 'Rubik', sans-serif;
 }
 
 body,
@@ -31,6 +31,7 @@ main {
 
 h1 {
   color: white;
+  font-weight: 500;
 }
 
 /* background strip image */
@@ -44,6 +45,42 @@ h1 {
   background-size: cover;
   top: 0;
   left: 0;
+}
+
+/* form */
+main form {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 35vw;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 9px 0 0 9px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background: var(--Very-Dark-Gray);
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--Very-Dark-Gray);
+  border-radius: 0 9px 9px 0;
+}
+
+button:hover {
+  background: var(--Dark-Gray);
+  border: 1px solid var(--Dark-Gray);
 }
 
 /* footer */

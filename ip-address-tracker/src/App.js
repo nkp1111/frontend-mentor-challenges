@@ -9,8 +9,8 @@ function App() {
         <h1>IP Address Tracker</h1>
 
         <div className="background"></div>
-        <form>
-          <input type='text' placeholder='Search for any IP address or domain' name='location' id='location' />
+        <form >
+          <input type='text' placeholder='Search for any IP address or domain' name='location' id='location' autoFocus />
           <button><FiChevronRight /></button>
         </form>
 
