@@ -40,16 +40,15 @@ h1 {
 button {
   cursor: pointer;
   transition: all 0.3s;
-
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
 }
 
-button:hover {
+/* button:hover {
   background: var(--Light-grayish-cyan);
   color: var(--Very-dark-cyan);
-}
+} */
 
 /* main */
 main {
@@ -158,12 +157,56 @@ section#input input:focus {
 }
 
 
-/* section 2 view output */
+/* section 2 output */
+section#output {
+  padding: 30px 25px;
+}
 
+section#output div {
+  padding: 0 10px;
+}
 
+section#output div:last-child {
+  height: 40%;
+  display: flex;
+  align-items: flex-end;
+}
 
+section#output button {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--Strong-cyan);
+}
 
+section#output button:hover {
+  background: hsl(171, 19%, 81%);
+  color: var(--Very-dark-cyan);
+}
 
+/* section 2 article */
+section#output article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#output article h4 {
+  font-size: 1rem;
+}
+
+section#output article h4::after {
+  content: '/ person';
+  color: var(--Grayish-cyan);
+  display: block;
+}
+
+section#output article p {
+  font-size: 3rem;
+  color: var(--Strong-cyan);
+  margin: 0;
+}
 
 /* footer */
 .attribution {
