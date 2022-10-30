@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./screenshot.jpg)
+![image](./images/Screenshot%202022-10-30%20233536.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/tip-calculator-app-main)
+- Live Site URL: [Netlify](https://nkp1111-tip-calculator-app.netlify.app/)
 
 ## My process
 
