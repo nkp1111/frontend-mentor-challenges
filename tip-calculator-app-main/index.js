@@ -8,7 +8,7 @@ const resetBtn = document.getElementById('reset-btn')
 
 // to add amount and tip 
 const tipPerPersonHolder = document.getElementById('tip-per-person')
-const totalPerPersonHolder = document.getElementById('total-per-person')
+const totalAmountPerPersonHolder = document.getElementById('total-per-person')
 
 // var to store values
 let totalAmoutWithoutTip
@@ -37,9 +37,27 @@ totalPerson.addEventListener('change', (e) => {
   showAmounts(totalAmoutWithoutTip, tipPercent, personToDivideBill)
 })
 
+resetBtn.addEventListener('click', () => {
+  billAmount.value = ''
+  customTip.value = ''
+  totalPerson.value = ''
+  totalAmoutWithoutTip = 0
+  tipPercent = 0
+  personToDivideBill = 0
+  showAmounts(totalAmoutWithoutTip, tipPercent, personToDivideBill)
+})
+
 const showAmounts = (totalAmoutWithoutTip, tipPercent, personToDivideBill) => {
   // to calculate amount and tip
-  if (totalAmoutWithoutTip && tipPercent && personToDivideBill) {
-    console.log(totalAmoutWithoutTip, tipPercent, personToDivideBill);
+  if (totalAmoutWithoutTip && totalAmoutWithoutTip != 0 && tipPercent && personToDivideBill && personToDivideBill != 0) {
+    const totalAmountWithTip = totalAmoutWithoutTip * (1 + tipPercent / 100)
+    const totalTip = totalAmountWithTip - totalAmoutWithoutTip
+    const totalPerPerson = totalAmountWithTip / personToDivideBill
+    const totalTipPerPerson = totalTip / personToDivideBill
+    tipPerPersonHolder.innerText = `$${totalTipPerPerson.toFixed(2)}`
+    totalAmountPerPersonHolder.innerText = `$${totalPerPerson.toFixed(2)}`
+  } else {
+    tipPerPersonHolder.innerText = `$0.00`
+    totalAmountPerPersonHolder.innerText = `$0.00`
   }
 }

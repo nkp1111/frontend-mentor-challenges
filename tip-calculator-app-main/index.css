@@ -82,6 +82,7 @@ section {
 section h3 {
   position: absolute;
   opacity: 0;
+  z-index: -1;
 }
 
 main section:last-child {
@@ -93,6 +94,13 @@ main section:last-child {
 /* section1 : input */
 section#input div {
   margin-bottom: 1.5rem;
+  position: relative;
+}
+
+section#input div img {
+  position: absolute;
+  top: 45px;
+  left: 10px;
 }
 
 section#input label,
@@ -112,6 +120,7 @@ section#input input {
   width: 100%;
   text-align: end;
   border-radius: 5px;
+  color: var(--Very-dark-cyan);
 }
 
 section#input input::placeholder {
@@ -121,6 +130,10 @@ section#input input::placeholder {
 section#input input:focus {
   outline: none;
   border: 2px solid var(--Strong-cyan);
+}
+
+section#input input:invalid {
+  border: 2px solid crimson;
 }
 
 #tip-percent {
@@ -241,6 +254,12 @@ input[type=number] {
 }
 
 /**************************************/
+
+@media (max-width:1200px) {
+  main {
+    width: 65vw;
+  }
+}
 
 @media (max-width:1050px) {
   main {
