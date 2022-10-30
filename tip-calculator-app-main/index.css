@@ -37,6 +37,19 @@ h1 {
   font-size: 1.5rem;
 }
 
+button {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
 
 /* main */
 main {
@@ -77,6 +90,7 @@ main section:last-child {
   color: white;
 }
 
+
 /* section1 : input */
 section#input div {
   margin-bottom: 1.5rem;
@@ -91,7 +105,7 @@ section#input label,
 }
 
 section#input input {
-  border: none;
+  border: 2px solid white;
   background: var(--Very-light-grayish-cyan);
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -107,21 +121,8 @@ section#input input::placeholder {
 
 section#input input:focus {
   outline: none;
+  border: 2px solid var(--Strong-cyan);
 }
-
-/*********** to hide arrows ***********/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-/**************************************/
 
 #tip-percent {
   display: grid;
@@ -131,22 +132,38 @@ input[type=number] {
   height: 40%;
 }
 
-#tip-percent p {
+#tip-percent label {
   grid-column: 1 /4;
 }
 
 #tip-percent button {
   background: var(--Very-dark-cyan);
-  border: none;
-  color: white;
   font-size: 1.5rem;
-  border-radius: 5px;
+  color: white;
 }
 
-#tip-percent button:last-child {
+#tip-percent button:hover,
+#tip-percent button:focus {
+  background: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+#tip-percent input {
   background: var(--Very-light-grayish-cyan);
   color: var(--Dark-grayish-cyan);
 }
+
+#tip-percent input:focus {
+  border: 2px solid var(--Strong-cyan);
+}
+
+
+/* section 2 view output */
+
+
+
+
+
 
 /* footer */
 .attribution {
@@ -161,3 +178,19 @@ input[type=number] {
   color: hsl(228, 45%, 44%);
   font-size: 1rem;
 }
+
+
+
+/*********** to hide arrows ***********/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**************************************/
