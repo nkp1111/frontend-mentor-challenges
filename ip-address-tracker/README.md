@@ -14,9 +14,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./screenshot.jpg)
+![image](./src/assets/images/Screenshot%202022-10-30%20121415.png)
 
 ### Links
 
@@ -46,10 +43,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
+### What I learned
+
+- **leaflet** : library to create maps.
+- **<http://ip-api.com/json/${ipaddress}>** : to get location information from ip address.
 
 ## Author
 

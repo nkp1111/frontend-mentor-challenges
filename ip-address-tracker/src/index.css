@@ -29,6 +29,31 @@ main {
   padding-top: 2.5rem;
 }
 
+/* in case of wrong ip address */
+main.error::before {
+  content: 'Error: Wrong IP address';
+  padding: 30px;
+  background: white;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  color: crimson;
+  border-radius: 10px;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+}
+
+main.error::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  top: 0;
+  left: 0;
+}
+
 h1 {
   color: white;
   font-weight: 500;
@@ -56,7 +81,7 @@ main form {
 
 input {
   width: 35vw;
-  min-width: 300px;
+  min-width: 250px;
   padding: 15px;
   border-radius: 9px 0 0 9px;
   background: white;
@@ -88,10 +113,11 @@ button:hover {
   background: white;
   display: grid;
   grid-template-columns: repeat(4, 18vw);
-  grid-template-rows: 20vh;
+  grid-template-rows: 21vh;
   box-shadow: 0 0 3px 0 rgb(50, 89, 146);
   border-radius: 14px;
   z-index: 5;
+  padding-bottom: 10px;
 }
 
 .ip-info article {
@@ -127,4 +153,50 @@ footer {
   position: absolute;
   bottom: 5vh;
   right: 5vh;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .ip-info {
+    grid-template-columns: repeat(4, 23vw);
+    grid-template-rows: 20vh;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  article p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .ip-info {
+    grid-template-columns: repeat(2, 43vw);
+    grid-template-rows: repeat(2, 15vh);
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .ip-info {
+    grid-template-columns: repeat(1, 80vw);
+    grid-template-rows: repeat(4, 10vh);
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
