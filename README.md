@@ -17,3 +17,5 @@ This contains the following project:
 - advise-generator-app
 - news-homepage
 - time-tracking-dashboard
+- nft-preview-card
+- ip-address-tracker
