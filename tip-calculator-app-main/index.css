@@ -24,10 +24,11 @@ body {
   align-items: center;
   font-size: 24px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
-  margin: 30px auto;
+  margin: 10px auto 20px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -45,11 +46,6 @@ button {
   border: none;
   text-transform: uppercase;
 }
-
-/* button:hover {
-  background: var(--Light-grayish-cyan);
-  color: var(--Very-dark-cyan);
-} */
 
 /* main */
 main {
@@ -281,6 +277,10 @@ input[type=number] {
 }
 
 @media (max-width:660px) {
+  body {
+    overflow: scroll;
+  }
+
   main {
     flex-direction: column;
     width: 70vw;
@@ -311,5 +311,9 @@ input[type=number] {
 @media (max-width:400px) {
   main {
     width: 100vw;
+  }
+
+  h1 {
+    margin: 30px auto;
   }
 }
