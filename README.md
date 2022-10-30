@@ -19,3 +19,4 @@ This contains the following project:
 - time-tracking-dashboard
 - nft-preview-card
 - ip-address-tracker
+- tip-calculator-app
