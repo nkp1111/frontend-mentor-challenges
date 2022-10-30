@@ -15,12 +15,12 @@
     <h2>Tip Calculator</h2>
     <section>
       <h3>Input amount and tip percent</h3>
-      <form>
-        <div>
+      <form role="form" aria-label="Bill, tip and number of people information">
+        <div id="initial-bill">
           <label for="bill-amount">Bill</label>
           <input type="number" min="1" id="bill-amount" name="bill-amount" placeholder="0">
         </div>
-        <div>
+        <div id="tip-percent">
           <p>Select Tip %</p>
           <button>5%</button>
           <button>10%</button>
@@ -29,8 +29,10 @@
           <button>30%</button>
           <button>Custom</button>
         </div>
-        <label for="people-number">Number of People</label>
-        <input type="text" id="people-number" name="people-number" min="1" placeholder="0">
+        <div id="total-person">
+          <label for="people-number">Number of People</label>
+          <input type="text" id="people-number" name="people-number" min="1" placeholder="0">
+        </div>
       </form>
     </section>
     <section>
