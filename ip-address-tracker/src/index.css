@@ -112,7 +112,7 @@ article p {
 }
 
 /* map */
-#map {
+/* #map {
   width: 100vw;
   height: 65vh;
   position: absolute;
@@ -123,7 +123,7 @@ article p {
 
 #map img {
   width: 100%;
-}
+} */
 
 /* footer */
 footer {

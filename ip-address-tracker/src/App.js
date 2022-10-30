@@ -7,8 +7,9 @@ import IPtracker from './IPtracker'
 function App() {
 
   const mapRef = useRef(null)
-
+  const ipRef = useRef(null)
   const [ipaddress, setIpAddress] = useState('192.212.174.101')
+
   return (
     <>
       <main className="App">
@@ -17,14 +18,14 @@ function App() {
         <div className="background"></div>
         <form onSubmit={(e) => {
           e.preventDefault()
-          setIpAddress(e.target.value)
+          setIpAddress(ipRef.current.value)
         }}>
-          <input type='text' placeholder='Search for any IP address or domain' name='location' id='location' autoFocus />
-          <button><FiChevronRight /></button>
+          <input type='text' placeholder='Search for any IP address or domain' name='location' id='location' autoFocus ref={ipRef} />
+          <button type='submit'><FiChevronRight /></button>
         </form>
 
         <div ref={mapRef}></div>
-        {/* <Map /> */}
+        <Map />
         <IPtracker ipaddress={ipaddress} />
       </main>
       <Footer />
