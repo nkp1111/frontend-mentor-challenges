@@ -13,7 +13,6 @@
 
 * {
   box-sizing: border-box;
-  font-size: 24px;
   font-family: 'Space Mono', monospace;
 }
 
@@ -23,25 +22,28 @@ body {
   justify-content: center;
   background: var(--Light-grayish-cyan);
   align-items: center;
+  font-size: 24px;
 }
 
 h1 {
-  margin: 50px auto 20px;
+  margin: 50px auto 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
   color: var(--Dark-grayish-cyan);
   width: 100px;
   word-wrap: break-word;
-  line-height: 1.3rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
+
 
 /* main */
 main {
   background: white;
   display: flex;
   width: 60vw;
-  padding: 15px 25px;
+  padding: 20px;
   position: relative;
   border-radius: 20px;
   justify-content: space-evenly;
@@ -57,11 +59,93 @@ main h2 {
 /* section */
 section {
   flex: 1;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section h3 {
   position: absolute;
   opacity: 0;
+}
+
+main section:last-child {
+  background: var(--Very-dark-cyan);
+  color: white;
+}
+
+/* section1 : input */
+section#input div {
+  margin-bottom: 1.5rem;
+}
+
+section#input label,
+#tip-percent p {
+  display: block;
+  color: var(--Dark-grayish-cyan);
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+section#input input {
+  border: none;
+  background: var(--Very-light-grayish-cyan);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: end;
+  border-radius: 5px;
+}
+
+section#input input::placeholder {
+  color: var(--Grayish-cyan);
+}
+
+section#input input:focus {
+  outline: none;
+}
+
+/*********** to hide arrows ***********/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**************************************/
+
+#tip-percent {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(3, 30%);
+  gap: 15px;
+  height: 40%;
+}
+
+#tip-percent p {
+  grid-column: 1 /4;
+}
+
+#tip-percent button {
+  background: var(--Very-dark-cyan);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+#tip-percent button:last-child {
+  background: var(--Very-light-grayish-cyan);
+  color: var(--Dark-grayish-cyan);
 }
 
 /* footer */

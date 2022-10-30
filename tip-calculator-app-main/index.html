@@ -13,29 +13,27 @@
   <h1>Splitter</h1>
   <main>
     <h2>Tip Calculator</h2>
-    <section>
+    <section id="input">
       <h3>Input amount and tip percent</h3>
-      <form role="form" aria-label="Bill, tip and number of people information">
-        <div id="initial-bill">
-          <label for="bill-amount">Bill</label>
-          <input type="number" min="1" id="bill-amount" name="bill-amount" placeholder="0">
-        </div>
-        <div id="tip-percent">
-          <p>Select Tip %</p>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>30%</button>
-          <button>Custom</button>
-        </div>
-        <div id="total-person">
-          <label for="people-number">Number of People</label>
-          <input type="text" id="people-number" name="people-number" min="1" placeholder="0">
-        </div>
-      </form>
+      <div id="initial-bill">
+        <label for="bill-amount">Bill</label>
+        <input type="number" min="1" id="bill-amount" name="bill-amount" placeholder="0" autofocus>
+      </div>
+      <div id="tip-percent">
+        <p>Select Tip %</p>
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>30%</button>
+        <button>Custom</button>
+      </div>
+      <div id="total-person" style="margin-bottom:0;margin-top:1.9rem;">
+        <label for="people-number">Number of People</label>
+        <input type="number" id="people-number" name="people-number" min="1" placeholder="0">
+      </div>
     </section>
-    <section>
+    <section id="output">
       <h3>Total bill and tip</h3>
       <div>
         <div>Tip Amount / person</div>
