@@ -23,10 +23,11 @@ body {
   background: var(--Light-grayish-cyan);
   align-items: center;
   font-size: 24px;
+  min-height: 100vh;
 }
 
 h1 {
-  margin: 50px auto 30px;
+  margin: 30px auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -231,7 +232,7 @@ section#output article p {
   text-align: center;
   position: absolute;
   right: 5vw;
-  bottom: 5vh;
+  bottom: 3vh;
 }
 
 .attribution a {
