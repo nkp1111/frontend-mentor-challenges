@@ -91,6 +91,7 @@ button:hover {
   grid-template-rows: 20vh;
   box-shadow: 0 0 3px 0 rgb(50, 89, 146);
   border-radius: 14px;
+  z-index: 5;
 }
 
 .ip-info article {
@@ -112,18 +113,14 @@ article p {
 }
 
 /* map */
-/* #map {
-  width: 100vw;
+.leaflet-container {
   height: 65vh;
+  width: 100vw;
   position: absolute;
   top: 35vh;
-  display: block;
-  overflow: hidden;
+  left: 0;
+  z-index: 3;
 }
-
-#map img {
-  width: 100%;
-} */
 
 /* footer */
 footer {

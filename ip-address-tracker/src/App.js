@@ -6,7 +6,6 @@ import IPtracker from './IPtracker'
 
 function App() {
 
-  const mapRef = useRef(null)
   const ipRef = useRef(null)
   const [ipaddress, setIpAddress] = useState('192.212.174.101')
 
@@ -24,9 +23,8 @@ function App() {
           <button type='submit'><FiChevronRight /></button>
         </form>
 
-        <div ref={mapRef}></div>
-        <Map />
         <IPtracker ipaddress={ipaddress} />
+        <Map />
       </main>
       <Footer />
     </>
