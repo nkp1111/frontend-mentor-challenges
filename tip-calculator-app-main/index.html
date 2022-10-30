@@ -11,26 +11,41 @@
 
 <body>
   <h1>Splitter</h1>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <main>
+    <h2>Tip Calculator</h2>
+    <section>
+      <h3>Input amount and tip percent</h3>
+      <form>
+        <div>
+          <label for="bill-amount">Bill</label>
+          <input type="number" min="1" id="bill-amount" name="bill-amount" placeholder="0">
+        </div>
+        <div>
+          <p>Select Tip %</p>
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>30%</button>
+          <button>Custom</button>
+        </div>
+        <label for="people-number">Number of People</label>
+        <input type="text" id="people-number" name="people-number" min="1" placeholder="0">
+      </form>
+    </section>
+    <section>
+      <h3>Total bill and tip</h3>
+      <div>
+        <div>Tip Amount / person</div>
+        <div>$0.00</div>
+      </div>
+      <div>
+        <div>Total / person</div>
+        <div>$0.00</div>
+      </div>
+      <button>Reset</button>
+    </section>
+  </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
