@@ -23,7 +23,8 @@ body {
   justify-content: center;
   margin: 0;
   padding: 20px;
-  background: var(--Pale-blue)
+  background: url('./images/pattern-background-mobile.svg') center center/contain no-repeat;
+  background-color: var(--Pale-blue);
 }
 
 main {
@@ -142,4 +143,16 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  body {
+    background: url('./images/pattern-background-desktop.svg') top center/ contain no-repeat;
+    background-color: var(--Pale-blue);
+  }
+
+  .hero-image {
+    height: 180px;
+    background: url('./images/illustration-hero.svg') center center/ cover;
+  }
 }
