@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./screenshot.jpg)
+![image](./images/Screenshot%202022-11-04%20183109.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://nkp1111-order-summary-component.netlify.app/)
 
 ## My process
 
@@ -36,7 +36,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author
