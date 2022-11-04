@@ -20,3 +20,4 @@ This contains the following project:
 - nft-preview-card
 - ip-address-tracker
 - tip-calculator-app
+- order-summary-component
