@@ -7,26 +7,28 @@ app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded({ extended: true }))
 
-const url = 'https://restcountries.com/v3.1/name/a'
-
-axios.get(url)
-  .then(d => setCountrys(d))
-  .catch(err => console.log(err))
+const url = 'https://restcountries.com/v3.1/'
 
 let countrys
-const setCountrys = (data) => {
-  countrys = data.data.slice(0, 9)
-  // countrys = data.slice(0, 8)
+let regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
+const getCountrys = (url) => {
+  const countryData = axios.get(url)
+    .then(data => data.data)
+    .catch(err => console.log(err))
+  return countryData
 }
 
-app.get('/', (req, res) => {
-  console.log(countrys && countrys[0].name.official, countrys[0].population, countrys[0].region, countrys[0].flags.svg);
-  // detail
-  console.log(countrys[0].name.nativeName, countrys[0].subregion, countrys[0].capital)
-  res.render('index', { countrys })
+app.get('/', async (req, res) => {
+  countrys = await getCountrys(url + 'name/unit')
+  console.log(countrys)
+  res.render('index', { countrys: countrys.slice(0, 12), regions })
 })
 
-app.post('/country', (req, res) => {
+app.post('/country', async (req, res) => {
+
+  const { name, region } = req.body
+  const byName = 'name/' + name
+  const byRegion = 'region/' + region
   console.log(req.body);
   res.send('country')
 })
