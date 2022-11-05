@@ -5,6 +5,7 @@ const app = express()
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))
+app.use(express.urlencoded({ extended: true }))
 
 const url = 'https://restcountries.com/v3.1/name/a'
 
@@ -23,6 +24,11 @@ app.get('/', (req, res) => {
   // detail
   console.log(countrys[0].name.nativeName, countrys[0].subregion, countrys[0].capital)
   res.render('index', { countrys })
+})
+
+app.post('/country', (req, res) => {
+  console.log(req.body);
+  res.send('country')
 })
 
 app.listen(3000, () => {
