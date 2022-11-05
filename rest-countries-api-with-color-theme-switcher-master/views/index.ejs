@@ -15,9 +15,19 @@
   <%- include('partials/header.ejs') %>
 
     <main>
-      <% for (let country of countrys) { %>
-        <%- include('partials/countryListView.ejs', {country}) %>
-          <% } %>
+      <h2>Country Data View</h2>
+      <form action="" method="get">
+        <input type="search" id="countryName" name="countryName" placeholder="           Search for a country...">
+        <select name="region" id="region">
+          <option value="#">Filter by region</option>
+        </select>
+      </form>
+      <section>
+        <h3>Country list view</h3>
+        <% for (let country of countrys) { %>
+          <%- include('partials/countryListView.ejs', {country}) %>
+            <% } %>
+      </section>
     </main>
 
 </body>

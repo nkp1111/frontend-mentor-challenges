@@ -6,7 +6,7 @@ app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))
 
-const url = 'https://restcountries.com/v3.1/name/united'
+const url = 'https://restcountries.com/v3.1/name/a'
 
 axios.get(url)
   .then(d => setCountrys(d))
@@ -14,7 +14,7 @@ axios.get(url)
 
 let countrys
 const setCountrys = (data) => {
-  countrys = data.data.slice(0, 8)
+  countrys = data.data.slice(0, 9)
   // countrys = data.slice(0, 8)
 }
 

@@ -1,10 +1,12 @@
 <article>
-  <h2>
+  <h4>
     <%= country.name.official %>
-  </h2>
-  <img src="<%= country.flags.svg %>" alt="<%= country.name.official %>flag">
+  </h4>
+  <div class="flag">
+    <img src="<%= country.flags.png %>" alt="<%= country.name.official %>flag">
+  </div>
   <p><span>Population: </span>
-    <%= country.population %>
+    <%= country.population.toLocaleString("en-US") %>
   </p>
   <p><span>Region: </span>
     <%= country.region %>
