@@ -4,6 +4,7 @@ const app = express()
 
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
+app.use(express.static(__dirname + '/public'))
 
 const url = 'https://restcountries.com/v3.1/all'
 
