@@ -15,5 +15,30 @@
 }
 
 body {
-  background-color: red;
+  margin: 0;
+  background: var(--Very-Dark-Blue-Dark-Mode-Background);
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+  color: var(--White-Dark-Mode-Text-and--Light-mode-Elements);
+  background: var(--Dark-Blue-Dark-Mode-Elements);
+  box-shadow: 1px 0 1px black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header i {
+  margin-right: 5px;
+  transform: rotate(-30deg);
 }
