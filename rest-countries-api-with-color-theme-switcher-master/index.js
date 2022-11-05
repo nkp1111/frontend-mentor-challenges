@@ -3,11 +3,11 @@ const axios = require('axios')
 const app = express()
 
 app.set('views', __dirname + '/views')
+app.use(express.static(__dirname + "/public"))
 app.set('view engine', 'ejs')
-app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded({ extended: true }))
 
-const url = 'https://restcountries.com/v3.1/'
+const url = 'https://restcountries.com/v3.1'
 
 let countrys
 let regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
@@ -19,20 +19,30 @@ const getCountrys = (url) => {
 }
 
 app.get('/', async (req, res) => {
-  countrys = await getCountrys(url + 'name/unit')
-  console.log(countrys)
+  countrys = await getCountrys(url + '/name/unit')
   res.render('index', { countrys: countrys.slice(0, 12), regions })
 })
 
 app.post('/country', async (req, res) => {
 
-  const { name, region } = req.body
-  const byName = 'name/' + name
-  const byRegion = 'region/' + region
-  console.log(req.body);
-  res.send('country')
+  let { name, region } = req.body
+  let byName = '/name/' + name
+  let byRegion = '/region/' + region
+  if (region === '#') {
+    region = null
+  }
+  if (region) {
+    countrys = await getCountrys(url + byRegion)
+    res.render('index', { countrys, regions })
+  }
+  if (name) {
+    countrys = await getCountrys(url + byName)
+    res.render('detailView', { country: countrys[0] })
+  }
+
+  res.redirect('/')
 })
 
-app.listen(3000, () => {
+app.listen('800', () => {
   console.log('Active on port 3000')
 })
