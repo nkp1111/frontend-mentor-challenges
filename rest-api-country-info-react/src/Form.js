@@ -10,11 +10,12 @@ function Form() {
 
   useEffect(() => {
     navRef.current.addEventListener('click', (e) => {
-      e.target.classList.toggle('active')
       if (e.target.classList.contains('active')) {
+        e.target.classList.remove('active')
         arrowRef.current.classList.add('fa-chevron-up')
         arrowRef.current.classList.remove('fa-chevron-down')
       } else {
+        e.target.classList.add('active')
         arrowRef.current.classList.remove('fa-chevron-up')
         arrowRef.current.classList.add('fa-chevron-down')
       }

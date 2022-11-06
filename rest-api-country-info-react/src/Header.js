@@ -3,7 +3,7 @@ import useGlobalContext from './context'
 
 function Header() {
 
-  const { darkmode, setDarkmode } = useGlobalContext()
+  const { darkmode, setDarkmode, setCountryName } = useGlobalContext()
 
   useEffect(() => {
     if (!darkmode) {
@@ -14,7 +14,9 @@ function Header() {
   })
   return (
     <header>
-      <h1>Where in the world?</h1>
+      <h1 onClick={() => {
+        setCountryName('a')
+      }}>Where in the world?</h1>
       <div className="mode"
         onClick={() => {
           if (darkmode) {
