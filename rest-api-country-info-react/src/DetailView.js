@@ -1,17 +1,17 @@
 import React from 'react'
+import useGlobalContext from './context'
 
-function DetailView({ country, setDetail }) {
+function DetailView({ country }) {
 
-  console.log(country);
+  const { setDetail } = useGlobalContext()
   return (
     <section>
       <h3>Country Detail view</h3>
       <div>
-        <form>
-          <button id="returnBtn">
-            <i className="fa fa-solid fa-arrow-left-long"></i> Back
-          </button>
-        </form>
+        <button id="returnBtn"
+          onClick={(e) => setDetail(false)}>
+          <i className="fa fa-solid fa-arrow-left-long"></i> Back
+        </button>
         <div className="flag">
           <img src={`${country.flags.png}`} alt={`${country.name.official} flag`} />
         </div>
@@ -50,7 +50,7 @@ function DetailView({ country, setDetail }) {
             </p>
           </div>
         </div>
-        <div>
+        <div className='border-holder'>
           <p>Border Countries: </p>
           {Array.isArray(country.borders) && country.borders.map(border => {
             return <span key={border} className='borders'>{border}</span>

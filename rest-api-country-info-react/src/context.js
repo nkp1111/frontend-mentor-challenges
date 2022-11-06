@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   const [countryName, setCountryName] = useState('')
   const [region, setRegion] = useState('')
   const [detail, setDetail] = useState(false)
-  const [darkmode, setDarkmode] = useState(false)
+  const [darkmode, setDarkmode] = useState(true)
 
   const getCountries = (url) => {
     fetch(url)
@@ -37,7 +37,9 @@ export const AppProvider = ({ children }) => {
       setRegion,
       setDetail,
       detail,
-      countryName
+      countryName,
+      darkmode,
+      setDarkmode
     }}>
       {children}
     </AppContext.Provider>

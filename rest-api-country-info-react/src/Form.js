@@ -20,6 +20,7 @@ function Form() {
       }
     })
   })
+
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <input
@@ -30,8 +31,8 @@ function Form() {
         value={countryName}
         onChange={(e) => setCountryName(e.target.value)}
         minLength="1" />
-      <nav name="region" id="region" ref={navRef}>
-        Filter by region
+      <nav name="region" ref={navRef}>
+        Filter by Region
         <i className='fa fa-solid fa-chevron-down'
           ref={arrowRef}></i>
         <div className="nav-bar">
