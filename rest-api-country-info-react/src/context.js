@@ -1,12 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react'
-import axios from 'axios'
 
 const AppContext = React.createContext()
 
 export const AppProvider = ({ children }) => {
 
   const [countries, setCountries] = useState('')
+  let regions = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
   const url = 'https://restcountries.com/v3.1'
+  const [countryName, setCountryName] = useState('')
+  const [region, setRegion] = useState('')
+  const [detail, setDetail] = useState(false)
+  const [darkmode, setDarkmode] = useState(false)
 
   const getCountries = (url) => {
     fetch(url)
@@ -16,12 +20,24 @@ export const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    getCountries(url + '/name/a')
-  }, [])
+    if (countryName !== '') {
+      getCountries(url + `/name/${countryName}`)
+    } else if (region) {
+      getCountries(url + `/region/${region.toLowerCase()}`)
+    } else {
+      getCountries(url + `/name/a`)
+    }
+  }, [countryName, region])
 
   return (
     <AppContext.Provider value={{
-      countries
+      countries,
+      regions,
+      setCountryName,
+      setRegion,
+      setDetail,
+      detail,
+      countryName
     }}>
       {children}
     </AppContext.Provider>

@@ -67,24 +67,75 @@ main form {
 }
 
 input,
-select {
+nav {
   background: var(--Dark-Blue-Dark-Mode-Elements);
   border: none;
   padding: 1rem 1.2rem;
   color: var(--White-Dark-Mode-Text-and--Light-mode-Elements);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 input {
   width: 500px;
 }
 
-select {
+nav {
   width: 200px;
+  position: relative;
+  transition: .3s all;
 }
 
+nav i {
+  margin-left: 10px;
+  transition: .3s all;
+}
+
+/* navbar */
+.nav-bar {
+  height: 0;
+  display: none;
+  transition: .3s all;
+}
+
+nav.active .nav-bar {
+  display: block;
+  height: auto;
+  position: absolute;
+  background: var(--Dark-Blue-Dark-Mode-Elements);
+  width: 200px;
+  top: 60px;
+  left: 0;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+  padding: 10px;
+  transition: .3s all;
+  width: 100%;
+  cursor: pointer;
+  margin-left: -20px;
+  border-radius: 4px;
+}
+
+.nav-bar ul li:hover {
+  background: var(--Very-Dark-Blue-Dark-Mode-Background);
+}
+
+
 input:focus,
-select:focus {
+nav:focus {
   outline: none;
 }
 
@@ -103,7 +154,7 @@ main section {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   padding: 0 5rem;
   flex-wrap: wrap;
 }
@@ -118,7 +169,6 @@ section article {
   padding: 0;
   background: var(--Dark-Blue-Dark-Mode-Elements);
   padding-bottom: 15px;
-  min-height: 50vh;
 }
 
 article .flag {
@@ -150,11 +200,9 @@ article p span {
 /*************************/
 /** for detail view **/
 main.detail {
-  height: 90vh;
   overflow: hidden;
-  width: 100vw;
-  display: flex;
-  padding: 0 8vw;
+  width: 80vw;
+  margin: auto;
 }
 
 main.detail section {
@@ -228,8 +276,9 @@ main.detail .detailInfo div {
   flex-direction: column;
 }
 
-main.detail .detailInfo p {
+main.detail .detailInfo div>p {
   margin: 0 10px 10px 0;
+  font-weight: 300;
 }
 
 main.detail .detailInfo span {
@@ -243,7 +292,7 @@ main.detail article div:last-child {
   align-items: center;
 }
 
-main.detail article div:last-child p {
+main.detail article .detailInfo+div p {
   font-weight: 600;
   margin-right: 5px;
 }
@@ -253,4 +302,19 @@ main.detail article div:last-child .borders {
   background: var(--Dark-Blue-Dark-Mode-Elements);
   margin: 5px;
   cursor: pointer;
+}
+
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  margin: none;
+}
+
+.error-page h3 {
+  display: block;
+  font-size: 3rem;
+  visibility: visible;
 }
