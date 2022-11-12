@@ -22,3 +22,4 @@ This contains the following project:
 - tip-calculator-app
 - order-summary-component
 - rest-api-country
+- ecommerce-product-page
