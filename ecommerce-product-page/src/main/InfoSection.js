@@ -2,8 +2,12 @@ import React from 'react'
 import MinusIcon from '../assets/images/icon-minus.svg'
 import PlusIcon from '../assets/images/icon-plus.svg'
 import CartIcon from '../assets/images/icon-cart-white.svg'
+import useGlobalContext from '../context'
 
 function InfoSection() {
+
+  const { quantity, setQuantity } = useGlobalContext()
+
   return (
     <section className='p-5 m-3' id="info-section">
       <h2>Sneaker Company</h2>
@@ -22,11 +26,19 @@ function InfoSection() {
       justify-content-between 
       mt-5 
       align-items-center'>
-        <div>
+        <div
+          onClick={() => {
+            quantity > 0 && setQuantity(quantity - 1)
+          }}>
           <img src={MinusIcon} alt="minus icon" />
         </div>
-        <div className='fw-bold'>0</div>
-        <div>
+        <div className='fw-bold'>
+          {quantity}
+        </div>
+        <div
+          onClick={() => {
+            setQuantity(quantity + 1)
+          }}>
           <img src={PlusIcon} alt="plus icon" />
         </div>
         <button className='fw-bold'>
