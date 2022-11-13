@@ -36,6 +36,7 @@ body {
 header {
   height: 10vh;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 header #logo {
@@ -85,9 +86,47 @@ header #avatar {
   width: 50px;
   padding: 3px;
   border-radius: 50%;
-  /*change this line*/
-  background: orange;
+  transition: .3s all;
 }
+
+header #avatar:hover {
+  background: var(--Orange);
+}
+
+/********** Header : div (cart-items) **********/
+header #cart-items {
+  position: absolute;
+  right: 15vw;
+  top: 12vh;
+  background: var(--White);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.332);
+}
+
+/* thumbnail image inside cart */
+header #cart-items #quantity-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+header #cart-items #quantity-info img:last-of-type {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header #cart-items #quantity-info p {
+  margin: 0;
+  color: var(--Dark-grayish-blue);
+}
+
+#cart-items #checkout-btn {
+  width: 100%;
+}
+
+/******************************************/
 
 /* Main */
 main section {
@@ -177,7 +216,10 @@ main #info-section p {
   opacity: 0.8;
 }
 
-#info-section #shop-cart button {
+
+/* Add to cart and Checkout button */
+#info-section #shop-cart button,
+#checkout-btn {
   border: none;
   background: var(--Orange);
   padding: 13px 0;
@@ -188,7 +230,8 @@ main #info-section p {
   box-shadow: 0 5px 10px var(--Pale-orange);
 }
 
-#info-section #shop-cart button:hover {
+#info-section #shop-cart button:hover,
+#checkout-btn:hover {
   opacity: 0.8;
 }
 

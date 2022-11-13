@@ -4,8 +4,12 @@ import cart from '../assets/images/icon-cart.svg'
 import avatar from '../assets/images/image-avatar.png'
 import Navbar from './navbar'
 import useGlobalContext from '../context'
+import CartItems from './CartItems'
+
 
 function Header() {
+
+  const { showCart, setShowCart } = useGlobalContext()
 
   return (
     <header className='d-flex mb-5'>
@@ -14,9 +18,15 @@ function Header() {
       </div>
       <Navbar />
       <div id="info" className='d-flex align-items-center'>
-        <img src={cart} alt="cart" className='mx-3' />
+        <img src={cart} alt="cart" className='mx-3'
+          onClick={() => {
+            showCart
+              ? setShowCart(false)
+              : setShowCart(true)
+          }} />
         <img src={avatar} alt="avatar" className='mx-3' id="avatar" />
       </div>
+      {showCart && <CartItems />}
     </header>
   )
 }

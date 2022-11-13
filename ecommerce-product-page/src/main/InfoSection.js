@@ -6,7 +6,7 @@ import useGlobalContext from '../context'
 
 function InfoSection() {
 
-  const { quantity, setQuantity } = useGlobalContext()
+  const { quantity, setQuantity, setItemAdded } = useGlobalContext()
 
   return (
     <section className='p-5 m-3' id="info-section">
@@ -41,7 +41,10 @@ function InfoSection() {
           }}>
           <img src={PlusIcon} alt="plus icon" />
         </div>
-        <button className='fw-bold'>
+        <button className='fw-bold'
+          onClick={() => {
+            setItemAdded(quantity)
+          }}>
           <img src={CartIcon} alt="cart icon" className='mx-3' />
           Add to cart</button>
       </div>
