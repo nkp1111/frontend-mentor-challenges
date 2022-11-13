@@ -116,12 +116,12 @@ main section #thumbnail-holder img {
 }
 
 main section #thumbnail-holder img:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 main section #thumbnail-holder div.active img {
-  border: 3px solid var(--Orange);
-  opacity: 0.6;
+  border: 2px solid var(--Orange);
+  opacity: 0.5;
 }
 
 /* Main : section (info section) */
