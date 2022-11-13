@@ -6,10 +6,10 @@ import useGlobalContext from '../context'
 
 function InfoSection() {
 
-  const { quantity, setQuantity, setItemAdded } = useGlobalContext()
+  const { quantity, setQuantity, setItemAdded, media } = useGlobalContext()
 
   return (
-    <section className='p-5 m-3' id="info-section">
+    <section className={media ? 'p-4 m-0' : 'p-5 m-3'} id="info-section">
       <h2>Sneaker Company</h2>
       <h3 className='mb-5 mt-3'>Fall Limited Edition Sneakers</h3>
       <p>
@@ -21,11 +21,9 @@ function InfoSection() {
         <p>$250.00</p>
       </div>
       <div id="shop-cart"
-        className='d-flex 
-      w-100 
-      justify-content-between 
-      mt-5 
-      align-items-center'>
+        className={media ? 'd-flex justify-content-between mt-5 align-items-center'
+          : 'd-flex w-100 justify-content-between mt-5 align-items-center'
+        }>
         <div
           onClick={() => {
             quantity > 0 && setQuantity(quantity - 1)

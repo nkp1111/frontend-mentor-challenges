@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 
 const AppContext = React.createContext()
 
@@ -9,6 +9,8 @@ export const AppProvider = ({ children }) => {
   const [showCart, setShowCart] = useState(false)
   const [itemAdded, setItemAdded] = useState(0)
   const [showModal, setShowModal] = useState(false)
+
+  const [media, setMedia] = useState(false)
 
   const handleModalChange = (action) => {
     let newActiveImg
@@ -29,6 +31,19 @@ export const AppProvider = ({ children }) => {
     setActiveImg(newActiveImg)
   }
 
+  const handleMedia = (width) => {
+    if (width < 651) {
+      setMedia(true)
+    } else {
+      setMedia(false)
+    }
+  }
+
+  useEffect(() => {
+    let width = window.innerWidth
+    handleMedia(width)
+  })
+
   return (
     <AppContext.Provider
       value={{
@@ -43,6 +58,7 @@ export const AppProvider = ({ children }) => {
         showModal,
         setShowModal,
         handleModalChange,
+        media
       }}
     >
       {children}

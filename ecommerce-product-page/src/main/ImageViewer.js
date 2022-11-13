@@ -16,18 +16,18 @@ const thumbnails = [ImageThumb1, ImageThumb2, ImageThumb3, ImageThumb4]
 
 function ImageViewer() {
 
-  const { activeImg, setActiveImg, setShowModal } = useGlobalContext()
+  const { activeImg, setActiveImg, setShowModal, media } = useGlobalContext()
   return (
     <>
       <div className='mb-4' id="main-img-holder">
         <img
           src={images[activeImg]}
           alt="product full view"
-          className='w-100 rounded-4'
+          className={media ? 'rounded-0 h-100 w-100' : 'w-100 rounded-4'}
           onClick={() => setShowModal(true)}
         />
       </div>
-      <div id='thumbnail-holder' className='d-flex w-100 justify-content-between'>
+      <div id='thumbnail-holder' className={media ? 'd-none' : 'd-flex w-100 justify-content-between'}>
         {thumbnails.map((thumbnail, ind) => {
           return (
             <div key={ind}

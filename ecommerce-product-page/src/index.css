@@ -327,3 +327,77 @@ main #info-section p {
 }
 
 /*********************************/
+
+
+/********************************************************************/
+/* Media query */
+
+@media (max-width:1300px) {
+  main section {
+    width: 40%;
+  }
+}
+
+@media (max-width:1260px) {
+  main section {
+    width: 45%;
+  }
+}
+
+@media (max-width:1130px) {
+  main section {
+    width: 50%;
+  }
+}
+
+@media (max-width:1050px) {
+  #shop-cart {
+    margin-top: 10px !important;
+  }
+
+  #price-info p {
+    margin: 0;
+  }
+}
+
+@media (max-width:1030px) {
+  #info-section h3 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:950px) {
+  #info-section {
+    padding: 10px !important;
+  }
+}
+
+@media (max-width:850px) {
+  main section:first-of-type {
+    min-width: 300px;
+  }
+
+  main section #main-img-holder {
+    min-width: 200px;
+  }
+
+  #thumbnail-holder {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+/*********/
+@media (max-width: 650px) {
+  #main-img-holder {
+    width: 110vw;
+  }
+
+  main section {
+    width: 90%;
+  }
+}
+
+
+/**********************************/
