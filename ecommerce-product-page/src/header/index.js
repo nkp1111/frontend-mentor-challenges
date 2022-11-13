@@ -9,7 +9,7 @@ import CartItems from './CartItems'
 
 function Header() {
 
-  const { showCart, setShowCart } = useGlobalContext()
+  const { showCart, setShowCart, itemAdded } = useGlobalContext()
 
   return (
     <header className='d-flex mb-5'>
@@ -24,7 +24,9 @@ function Header() {
               ? setShowCart(false)
               : setShowCart(true)
           }} />
+        {itemAdded > 0 && <p id="item-tooltip">{itemAdded}</p>}
         <img src={avatar} alt="avatar" className='mx-3' id="avatar" />
+
       </div>
       {showCart && <CartItems />}
     </header>

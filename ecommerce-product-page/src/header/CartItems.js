@@ -5,7 +5,7 @@ import DeleteIcon from '../assets/images/icon-delete.svg'
 
 function CartItems() {
 
-  const { itemAdded, setItemAdded, showCart, setShowCart } = useGlobalContext()
+  const { itemAdded, setItemAdded } = useGlobalContext()
   return (
     <div id="cart-items"
       className='py-4 d-flex flex-column rounded-4 px-3'>
