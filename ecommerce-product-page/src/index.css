@@ -96,10 +96,12 @@ header #avatar:hover {
 /********** Header : div (cart-items) **********/
 header #cart-items {
   position: absolute;
-  right: 15vw;
+  right: 10vw;
   top: 12vh;
   background: var(--White);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.332);
+  min-width: 340px;
+  min-height: 220px;
 }
 
 /* thumbnail image inside cart */
