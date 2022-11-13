@@ -18,6 +18,7 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* Body */
 body {
   width: 100vw;
   height: 100vh;
@@ -27,9 +28,59 @@ body {
 
 #root {
   width: 100%;
+  margin: 0;
 }
 
-/* footer */
+/* Header */
+header {
+  height: 10vh;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header #logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+
+/* Header:  navbar */
+header nav {
+  margin-left: 5vw;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav ul {
+  list-style-type: none;
+  height: 10vh;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+/* Header: info*/
+header #info {
+  margin: 0 10vw 0 5vw;
+}
+
+header #avatar {
+  width: 50px;
+  padding: 3px;
+  border-radius: 50%;
+  /*change this line*/
+  background: orange;
+}
+
+/* Main */
+main section {
+  width: 35%;
+}
+
+/* Footer */
 .attribution {
   position: absolute;
   font-size: 11px;

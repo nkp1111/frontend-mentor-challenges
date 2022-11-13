@@ -2,24 +2,18 @@ import React from 'react'
 import logo from '../assets/images/logo.svg'
 import cart from '../assets/images/icon-cart.svg'
 import avatar from '../assets/images/image-avatar.png'
-import { data } from '../assets/navData'
+import Navbar from './navbar'
 
 function Header() {
   return (
-    <header className='d-flex justify-content-between'>
-      <img src={logo} alt="logo" />
-      <nav>
-        <div>
-          <ul>
-            {data.map(d => {
-              return (<li key={d}>{d}</li>)
-            })}
-          </ul>
-        </div>
-      </nav>
-      <div id="info">
-        <img src={cart} alt="cart" />
-        <img src={avatar} alt="avatar" />
+    <header className='d-flex mb-5'>
+      <div id='logo'>
+        <img src={logo} alt="logo" />
+      </div>
+      <Navbar />
+      <div id="info" className='d-flex align-items-center'>
+        <img src={cart} alt="cart" className='mx-3' />
+        <img src={avatar} alt="avatar" className='mx-3' id="avatar" />
       </div>
     </header>
   )
