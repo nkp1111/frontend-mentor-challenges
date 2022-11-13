@@ -61,11 +61,24 @@ header nav ul {
 
 header nav ul li {
   margin-left: 1rem;
+  color: var(--Grayish-blue);
+  padding: 3.5vh 0;
+  transition: all .3s linear;
+}
+
+header nav ul li:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 5px solid var(--Orange);
 }
 
 /* Header: info*/
 header #info {
   margin: 0 10vw 0 5vw;
+}
+
+header #info img:hover {
+  cursor: pointer;
 }
 
 header #avatar {
