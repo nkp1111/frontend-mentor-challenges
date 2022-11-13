@@ -88,7 +88,10 @@ main section:first-of-type {
 }
 
 main section #main-img-holder {
-  min-width: 450px;
+  min-width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 main section #thumbnail-holder img {
@@ -97,14 +100,77 @@ main section #thumbnail-holder img {
 }
 
 
+/* Main : section (info section) */
+main #info-section {}
+
+main #info-section h2 {
+  text-transform: uppercase;
+  color: var(--Orange);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+main #info-section h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 2.8rem;
+}
+
+main #info-section p {
+  color: var(--Dark-grayish-blue);
+}
+
+/* Main : section(info) > div */
+#info-section #price-info p {
+  font-weight: 700;
+  color: var(--Grayish-blue);
+}
+
+#info-section #price-info p:first-child {
+  color: var(--Black);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+#info-section #price-info span {
+  font-size: 0.8rem;
+  background: var(--Pale-orange);
+  color: var(--Orange);
+  border-radius: 4px;
+}
+
+/* Main : section(info) > div */
+#info-section #shop-cart div:first-child,
+#info-section #shop-cart div:nth-child(3) {
+  cursor: pointer;
+}
+
+#info-section #shop-cart button {
+  border: none;
+  background: var(--Orange);
+  padding: 13px 0;
+  cursor: pointer;
+  color: var(--White);
+  border-radius: 8px;
+  width: 65%;
+  box-shadow: 0 5px 10px var(--Pale-orange);
+}
+
+#info-section #shop-cart button:hover {
+  opacity: 0.8;
+}
 
 /* Footer */
 .attribution {
   position: absolute;
   font-size: 11px;
   text-align: center;
-  bottom: 5vh;
   right: 5vw;
+  opacity: 0;
+  display: none;
 }
 
 .attribution a {
