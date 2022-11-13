@@ -17,3 +17,27 @@
   box-sizing: border-box;
   font-family: 'Kumbh Sans', sans-serif;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+/* footer */
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
