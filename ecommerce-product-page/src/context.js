@@ -10,6 +10,25 @@ export const AppProvider = ({ children }) => {
   const [itemAdded, setItemAdded] = useState(0)
   const [showModal, setShowModal] = useState(false)
 
+  const handleModalChange = (action) => {
+    let newActiveImg
+    if (action === 'prev') {
+      newActiveImg = activeImg - 1
+    }
+    if (action === 'next') {
+      newActiveImg = activeImg + 1
+    }
+
+    if (newActiveImg < 0) {
+      newActiveImg = 3
+    }
+    if (newActiveImg > 3) {
+      newActiveImg = 0
+    }
+
+    setActiveImg(newActiveImg)
+  }
+
   return (
     <AppContext.Provider
       value={{
@@ -23,6 +42,7 @@ export const AppProvider = ({ children }) => {
         setItemAdded,
         showModal,
         setShowModal,
+        handleModalChange,
       }}
     >
       {children}

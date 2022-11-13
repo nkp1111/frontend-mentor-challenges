@@ -171,6 +171,11 @@ main section #thumbnail-holder img {
   border: 2px solid white;
 }
 
+main section #thumbnail-holder div {
+  background-color: white;
+  border-radius: 1rem;
+}
+
 main section #thumbnail-holder img:hover {
   opacity: 0.7;
 }
@@ -256,7 +261,7 @@ main #info-section p {
 /***********************************************/
 /* Modal */
 #modal {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -270,9 +275,37 @@ main #info-section p {
   z-index: 100;
   cursor: pointer;
   width: 30px;
+  margin-left: 28vw;
+  margin-bottom: 1vh;
+}
+
+#modal-image-holder {
+  width: 30vw
+}
+
+#modal-image-holder img {
+  cursor: default;
 }
 
 #close-btn:hover {
+  scale: 1.1;
+}
+
+/*next and previous button*/
+#modal-btn {
+  position: absolute;
+  top: 40vh;
+  width: 33vw;
+}
+
+#modal-btn img {
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#modal-btn img:hover {
   scale: 1.1;
 }
 
