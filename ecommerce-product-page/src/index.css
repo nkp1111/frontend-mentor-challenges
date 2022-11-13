@@ -110,8 +110,19 @@ main section #main-img-holder {
 main section #thumbnail-holder img {
   width: 100px;
   border-radius: 1rem;
+  cursor: pointer;
+  transition: .3s all;
+  border: 2px solid white;
 }
 
+main section #thumbnail-holder img:hover {
+  opacity: 0.8;
+}
+
+main section #thumbnail-holder div.active img {
+  border: 3px solid var(--Orange);
+  opacity: 0.6;
+}
 
 /* Main : section (info section) */
 main #info-section {}
@@ -159,6 +170,11 @@ main #info-section p {
 #info-section #shop-cart div:first-child,
 #info-section #shop-cart div:nth-child(3) {
   cursor: pointer;
+}
+
+#info-section #shop-cart div:first-child:hover,
+#info-section #shop-cart div:nth-child(3):hover {
+  opacity: 0.8;
 }
 
 #info-section #shop-cart button {
