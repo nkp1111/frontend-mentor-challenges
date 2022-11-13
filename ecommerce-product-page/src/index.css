@@ -21,9 +21,10 @@
 /* Body */
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   margin: 0;
+  padding: 1rem 0;
 }
 
 #root {
@@ -78,7 +79,24 @@ header #avatar {
 /* Main */
 main section {
   width: 35%;
+  margin: 0 1rem;
 }
+
+/* Main : section (image section) */
+main section:first-of-type {
+  min-width: 500px;
+}
+
+main section #main-img-holder {
+  min-width: 450px;
+}
+
+main section #thumbnail-holder img {
+  width: 100px;
+  border-radius: 1rem;
+}
+
+
 
 /* Footer */
 .attribution {

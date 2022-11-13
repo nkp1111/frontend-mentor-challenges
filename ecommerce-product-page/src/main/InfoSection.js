@@ -2,7 +2,7 @@ import React from 'react'
 
 function InfoSection() {
   return (
-    <section className='p-3'>
+    <section className='p-5 m-3'>
       <h2>Sneaker Company</h2>
       <h3>Fall Limited Edition Sneakers</h3>
       <p>

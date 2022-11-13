@@ -10,10 +10,10 @@ import ImageThumb4 from '../assets/images/image-product-4-thumbnail.jpg'
 
 function ImageSection() {
   return (
-    <section>
+    <section className='m-3 px-3'>
       <h2 className='opacity-0 d-none'>Product image</h2>
-      <div>
-        <img src={Image1} alt="product full view" />
+      <div className='mb-4' id="main-img-holder">
+        <img src={Image1} alt="product full view" className='w-100 rounded-4' />
       </div>
       <div id='thumbnail-holder' className='d-flex w-100 justify-content-between'>
         <div><img src={ImageThumb1} alt="product preview" /></div>
