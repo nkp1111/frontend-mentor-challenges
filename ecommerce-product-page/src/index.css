@@ -160,6 +160,7 @@ main section #main-img-holder {
   height: 400px;
   overflow: hidden;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 main section #thumbnail-holder img {
