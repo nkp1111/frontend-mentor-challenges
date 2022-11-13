@@ -32,6 +32,7 @@ body {
   margin: 0;
 }
 
+/*******************************************************/
 /* Header */
 header {
   height: 10vh;
@@ -105,7 +106,7 @@ header #avatar:hover {
   background: var(--Orange);
 }
 
-/********** Header : div (cart-items) **********/
+/* Header : div (cart-items) */
 header #cart-items {
   position: absolute;
   right: 10vw;
@@ -140,8 +141,9 @@ header #cart-items #quantity-info p {
   width: 100%;
 }
 
-/******************************************/
+/***************************************/
 
+/***********************************************/
 /* Main */
 main section {
   width: 35%;
@@ -230,7 +232,6 @@ main #info-section p {
   opacity: 0.8;
 }
 
-
 /* Add to cart and Checkout button */
 #info-section #shop-cart button,
 #checkout-btn {
@@ -249,6 +250,34 @@ main #info-section p {
   opacity: 0.8;
 }
 
+/*********************************/
+
+/***********************************************/
+/* Modal */
+#modal {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  left: 0;
+}
+
+#close-btn {
+  z-index: 100;
+  cursor: pointer;
+  width: 30px;
+}
+
+#close-btn:hover {
+  scale: 1.1;
+}
+
+/*********************************/
+
+/***********************************************/
 /* Footer */
 .attribution {
   position: absolute;
@@ -262,3 +291,5 @@ main #info-section p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/*********************************/

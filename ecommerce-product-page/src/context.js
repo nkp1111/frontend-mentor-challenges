@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
   const [quantity, setQuantity] = useState(0)
   const [showCart, setShowCart] = useState(false)
   const [itemAdded, setItemAdded] = useState(0)
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <AppContext.Provider
@@ -20,6 +21,8 @@ export const AppProvider = ({ children }) => {
         setShowCart,
         itemAdded,
         setItemAdded,
+        showModal,
+        setShowModal,
       }}
     >
       {children}
