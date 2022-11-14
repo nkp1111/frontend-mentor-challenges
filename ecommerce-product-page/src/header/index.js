@@ -9,7 +9,7 @@ import CartItems from './CartItems'
 
 function Header() {
 
-  const { showCart, setShowCart, itemAdded } = useGlobalContext()
+  const { showCart, setShowCart, itemAdded, media } = useGlobalContext()
 
   return (
     <header className='d-flex mb-5'>
@@ -18,14 +18,14 @@ function Header() {
       </div>
       <Navbar />
       <div id="info" className='d-flex align-items-center'>
-        <img src={cart} alt="cart" className='mx-3'
+        <img src={cart} alt="cart" className={media ? 'mx-4' : 'mx-3'}
           onClick={() => {
             showCart
               ? setShowCart(false)
               : setShowCart(true)
           }} />
         {itemAdded > 0 && <p id="item-tooltip">{itemAdded}</p>}
-        <img src={avatar} alt="avatar" className='mx-3' id="avatar" />
+        <img src={avatar} alt="avatar" className={media ? 'mx-0' : 'mx-3'} id="avatar" />
 
       </div>
       {showCart && <CartItems />}

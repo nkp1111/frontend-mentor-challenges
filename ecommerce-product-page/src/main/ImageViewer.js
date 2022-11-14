@@ -9,6 +9,7 @@ import ImageThumb1 from '../assets/images/image-product-1-thumbnail.jpg'
 import ImageThumb2 from '../assets/images/image-product-2-thumbnail.jpg'
 import ImageThumb3 from '../assets/images/image-product-3-thumbnail.jpg'
 import ImageThumb4 from '../assets/images/image-product-4-thumbnail.jpg'
+import ModalBtn from '../modal/ModalBtn'
 
 
 const images = [Image1, Image2, Image3, Image4]
@@ -27,19 +28,23 @@ function ImageViewer() {
           onClick={() => setShowModal(true)}
         />
       </div>
-      <div id='thumbnail-holder' className={media ? 'd-none' : 'd-flex w-100 justify-content-between'}>
-        {thumbnails.map((thumbnail, ind) => {
-          return (
-            <div key={ind}
-              className={ind === activeImg ? 'active' : ''}
-              onClick={() => {
-                setActiveImg(ind)
-              }}>
-              <img src={thumbnail} alt="product preview" />
-            </div>
-          )
-        })}
-      </div>
+      {media
+        ? <ModalBtn />
+        :
+        <div id='thumbnail-holder' className='d-flex w-100 justify-content-between'>
+          {thumbnails.map((thumbnail, ind) => {
+            return (
+              <div key={ind}
+                className={ind === activeImg ? 'active' : ''}
+                onClick={() => {
+                  setActiveImg(ind)
+                }}>
+                <img src={thumbnail} alt="product preview" />
+              </div>
+            )
+          })}
+        </div>
+      }
     </>
   )
 }

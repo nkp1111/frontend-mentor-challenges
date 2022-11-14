@@ -32,7 +32,7 @@ export const AppProvider = ({ children }) => {
   }
 
   const handleMedia = (width) => {
-    if (width < 651) {
+    if (width < 650) {
       setMedia(true)
     } else {
       setMedia(false)

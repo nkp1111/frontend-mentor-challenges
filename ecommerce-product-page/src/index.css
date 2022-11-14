@@ -25,6 +25,7 @@ body {
   display: flex;
   margin: 0;
   padding: 1rem 0;
+  /* overflow: hidden; */
 }
 
 #root {
@@ -309,6 +310,13 @@ main #info-section p {
   scale: 1.1;
 }
 
+/* for media small width*/
+#main-img-holder+#modal-btn {
+  top: 30vh;
+  width: 85vw;
+  left: 7vw;
+}
+
 /*********************************/
 
 /***********************************************/
@@ -386,17 +394,38 @@ main #info-section p {
   }
 }
 
+@media (max-width:790px) {
+  header #logo {
+    margin-left: 3vw;
+  }
+
+  header nav {
+    margin-left: 2vw;
+  }
+
+  header nav ul li {
+    margin-left: 0.8rem;
+  }
+}
 
 
 /*********/
 @media (max-width: 650px) {
-  #main-img-holder {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  main section #main-img-holder {
     width: 110vw;
+    cursor: default;
   }
 
   main section {
-    width: 90%;
+    width: 95%;
+    padding: 0 10px;
   }
+
 }
 
 
