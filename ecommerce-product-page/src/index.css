@@ -66,7 +66,7 @@ header nav ul {
 header nav ul li {
   margin-left: 1rem;
   color: var(--Grayish-blue);
-  padding: 3.5vh 0;
+  padding: 4vh 0;
   transition: all .3s linear;
   cursor: pointer;
 }
@@ -190,7 +190,7 @@ header #sidebar nav ul {
   flex-direction: column;
 }
 
-header nav ul li {
+header #sidebar nav ul li {
   margin-left: 1rem;
   color: var(--Very-dark-blue);
   padding: 1rem;
@@ -198,6 +198,9 @@ header nav ul li {
   border-bottom: 5px solid transparent;
 }
 
+header #sidebar nav ul li:hover {
+  border-bottom: 5px solid var(--Orange);
+}
 
 /***************************************/
 
