@@ -2,6 +2,7 @@ import React from 'react'
 import { data } from '../assets/navData'
 
 function navbar() {
+
   return (
     <nav>
       <div className="">

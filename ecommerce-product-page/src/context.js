@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [showCart, setShowCart] = useState(false)
   const [itemAdded, setItemAdded] = useState(0)
   const [showModal, setShowModal] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(false)
 
   const [media, setMedia] = useState(false)
 
@@ -44,6 +45,14 @@ export const AppProvider = ({ children }) => {
     handleMedia(width)
   })
 
+  useEffect(() => {
+    if (showSidebar) {
+      document.querySelector('body').style.overflow = 'hidden'
+    } else {
+      document.querySelector('body').style.overflowY = 'visible'
+    }
+  })
+
   return (
     <AppContext.Provider
       value={{
@@ -58,7 +67,9 @@ export const AppProvider = ({ children }) => {
         showModal,
         setShowModal,
         handleModalChange,
-        media
+        media,
+        showSidebar,
+        setShowSidebar,
       }}
     >
       {children}

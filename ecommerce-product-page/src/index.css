@@ -55,6 +55,7 @@ header nav {
   width: 50%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 header nav ul {
@@ -67,11 +68,11 @@ header nav ul li {
   color: var(--Grayish-blue);
   padding: 3.5vh 0;
   transition: all .3s linear;
+  cursor: pointer;
 }
 
 header nav ul li:hover {
   color: black;
-  cursor: pointer;
   border-bottom: 5px solid var(--Orange);
 }
 
@@ -141,6 +142,62 @@ header #cart-items #quantity-info p {
 #cart-items #checkout-btn {
   width: 100%;
 }
+
+/* Header: menu button */
+#menu-btn {
+  cursor: pointer;
+  margin: auto 5vw;
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* Header: sidebar */
+header #sidebar {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+}
+
+header #sidebar img {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 30px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+header #sidebar img:hover {
+  scale: 1.1;
+}
+
+header #sidebar nav {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 60vw;
+  bottom: 0;
+}
+
+header #sidebar nav ul {
+  flex-direction: column;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+  color: var(--Very-dark-blue);
+  padding: 1rem;
+  font-weight: 700;
+  border-bottom: 5px solid transparent;
+}
+
 
 /***************************************/
 
@@ -425,6 +482,17 @@ main #info-section p {
     width: 95%;
     padding: 0 10px;
   }
+
+  #logo {
+    flex: 1;
+  }
+
+  header #cart-items {
+    right: 2vw;
+    top: 12vh;
+    z-index: 3;
+  }
+
 
 }
 
