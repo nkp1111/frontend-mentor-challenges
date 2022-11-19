@@ -12,11 +12,13 @@ const AppProvider = ({ children }) => {
   const [scores, setScores] = useState({})
 
   const handleData = (data) => {
+    /* Set current user data and whole comments */
     setCommentData(data.comments)
     setUserData(data.currentUser)
   }
 
   const addScore = (data, id, action) => {
+    /* Define scores separately and to increase and decrease */
     let tempScore = {}
     data.comments.forEach(d => {
       tempScore[d.id] = d.score
@@ -27,6 +29,7 @@ const AppProvider = ({ children }) => {
       }
     })
 
+    /* Manipulating scores */
     if (id) {
       tempScore = { ...scores }
       if (action === 'add') {
@@ -42,6 +45,7 @@ const AppProvider = ({ children }) => {
   }
 
   const replyDataMapping = (data, id, action) => {
+    /* To keep track of replies and their connection to comments */
     let tempReply = {}
     let rep = []
     let tempReplyData = []
@@ -82,7 +86,8 @@ const AppProvider = ({ children }) => {
         scores,
         addScore,
         data,
-        replyMap
+        replyMap,
+        replyDataMapping
       }}
     >
       {children}

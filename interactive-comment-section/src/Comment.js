@@ -7,9 +7,8 @@ import Replies from './Replies'
 
 function Comment() {
 
-  const { commentData, replyMap, replyData } = useGlobalContext()
+  const { commentData, replyMap } = useGlobalContext()
 
-  console.log("r", replyMap);
   return (
     commentData && commentData.map(comment => {
       return (

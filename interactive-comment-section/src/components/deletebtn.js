@@ -1,7 +1,8 @@
 import React from 'react'
 import DeleteIcon from '../assets/images/icon-delete.svg'
 
-function Editbtn() {
+function Deletebtn({ replyId }) {
+
   return (
     <button className='icons'>
       <img src={DeleteIcon} alt='' />
@@ -10,4 +11,4 @@ function Editbtn() {
   )
 }
 
-export default Editbtn
+export default Deletebtn

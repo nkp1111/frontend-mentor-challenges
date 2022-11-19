@@ -19,7 +19,8 @@ function Replies({ replyMap }) {
               <CHeader
                 imgNum={reply.id - 1}
                 username={reply.user.username}
-                date={reply.createdAt} />
+                date={reply.createdAt}
+                replyId={reply.id} />
               <p>
                 <span
                   style={{ color: '#5457b6', fontWeight: '500' }}>
