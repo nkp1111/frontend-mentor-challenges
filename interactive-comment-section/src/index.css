@@ -9,7 +9,7 @@
 
   --Dark-blue: hsl(212, 24%, 26%);
   --Grayish-Blue: hsl(211, 10%, 45%);
-  --Light-gray: hsl(223, 19%, 93%);
+  --Light-gray: hsl(223, 20%, 93%);
   --Very-light-gray: hsl(228, 33%, 97%);
   --White: hsl(0, 0%, 100%);
 
@@ -22,7 +22,7 @@
 
 body {
   background: var(--Very-light-gray);
-  padding: 10px;
+  padding: 1.5rem;
   margin: 0;
 }
 
@@ -33,13 +33,35 @@ main {
 }
 
 /* comment header */
+#comment-header {
+  margin-bottom: 10px;
+}
+
+#comment-header>img {
+  width: 40px;
+}
+
 #comment-header div:last-child {
-  width: 48%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
 
+#comment-header span#me {
+  background: var(--Moderate-blue);
+  color: white;
+  font-weight: 500;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+#comment-header>span:last-of-type {
+  color: var(--Grayish-Blue);
+}
+
 /* article: content */
+
+/* reply div */
 main .content {
   display: flex;
   background: white;
@@ -49,7 +71,7 @@ main .content {
 }
 
 .content.replies {
-  margin-left: 3rem;
+  margin-left: 3.9rem;
 }
 
 /* article : comments and replies */

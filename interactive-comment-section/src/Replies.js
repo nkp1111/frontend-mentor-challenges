@@ -10,7 +10,7 @@ function Replies() {
   return (
     replyData && replyData.map(reply => {
       return (
-        <article key={reply.id} class="content replies">
+        <article key={reply.id} className="content replies">
           <div>
             <Scoreboard score={reply.score} />
           </div>
@@ -19,7 +19,13 @@ function Replies() {
               imgNum={reply.id - 1}
               username={reply.user.username}
               date={reply.createdAt} />
-            <p>{reply.content}</p>
+            <p>
+              <span
+                style={{ color: '#5457b6', fontWeight: '500' }}>
+                {'@' + reply.replyingTo + ' '}
+              </span>
+              {reply.content}
+            </p>
           </div>
         </article>
       )

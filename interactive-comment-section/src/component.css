@@ -2,20 +2,39 @@
 #scoreboard {
   flex-direction: column;
   position: relative;
-  background: hsl(223, 19%, 93%);
+  background: hsl(220, 18%, 97%);
   color: #5457b6;
   font-weight: 500;
   padding: 10px 0;
   border-radius: 8px;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 #scoreboard img {
   margin: 10px;
   cursor: pointer;
-  width: 15px;
+  width: 12px;
 }
 
 #scoreboard img:hover {
   opacity: 0.8;
+}
+
+
+/* buttons: Icons*/
+.icons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+
+.icons img {
+  margin-right: 7px;
+}
+
+.icons:hover {
+  opacity: 0.6;
 }

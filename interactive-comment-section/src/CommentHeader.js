@@ -16,8 +16,8 @@ function CommentHeader({ imgNum, username, date }) {
   return (
     <div className='d-flex align-items-center justify-content-between' id='comment-header'>
       <img src={images[imgNum]} alt={username} />
-      <span>{username}</span>
-      {username === 'juliusomo' && <span id="me">You</span>}
+      <span className='fw-bold'>{username}</span>
+      {username === 'juliusomo' && <span id="me">you</span>}
       <span>{date}</span>
       {username === 'juliusomo'
         ?
