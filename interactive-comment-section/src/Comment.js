@@ -13,7 +13,7 @@ function Comment() {
       return (
         <article key={comment.id} className="content">
           <div>
-            <Scoreboard score={comment.score} />
+            <Scoreboard id={comment.id} />
           </div>
           <div>
             <CHeader

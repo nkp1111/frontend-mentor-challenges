@@ -6,13 +6,13 @@ import Scoreboard from './components/scoreboard'
 function Replies() {
 
   const { replyData } = useGlobalContext()
-  console.log(replyData);
+
   return (
     replyData && replyData.map(reply => {
       return (
         <article key={reply.id} className="content replies">
           <div>
-            <Scoreboard score={reply.score} />
+            <Scoreboard id={reply.id} />
           </div>
           <div>
             <CHeader
