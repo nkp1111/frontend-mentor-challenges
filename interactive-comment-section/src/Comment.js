@@ -8,14 +8,13 @@ function Comment() {
   const { commentData } = useGlobalContext()
 
   return (
-    commentData && commentData.map((comment, ind) => {
+    commentData && commentData.map(comment => {
       return (
-        <article key={ind}>
+        <article key={comment.id}>
           <CHeader
             imgNum={comment.id - 1}
             username={comment.user.username}
-            date={comment.createdAt}
-            buttons={'nothing'} />
+            date={comment.createdAt} />
           <p>
             {comment.content}
           </p>

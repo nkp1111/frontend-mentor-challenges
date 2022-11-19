@@ -9,7 +9,7 @@ function Replies() {
   return (
     replyData && replyData.map(reply => {
       return (
-        <article>
+        <article key={reply.id}>
           <CHeader
             imgNum={reply.id - 1}
             username={reply.user.username}
