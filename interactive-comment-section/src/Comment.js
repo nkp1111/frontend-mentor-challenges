@@ -1,6 +1,7 @@
 import React from 'react'
 import useGlobalContext from './context'
 import CHeader from './CommentHeader'
+import Scoreboard from './components/scoreboard'
 
 
 function Comment() {
@@ -11,13 +12,19 @@ function Comment() {
     commentData && commentData.map(comment => {
       return (
         <article key={comment.id}>
-          <CHeader
-            imgNum={comment.id - 1}
-            username={comment.user.username}
-            date={comment.createdAt} />
-          <p>
-            {comment.content}
-          </p>
+          <div>
+            <Scoreboard score={comment.score} />
+          </div>
+          <div>
+            <CHeader
+              imgNum={comment.id - 1}
+              username={comment.user.username}
+              date={comment.createdAt} />
+            <p>
+              {comment.content}
+            </p>
+          </div>
+
         </article>
       )
     })

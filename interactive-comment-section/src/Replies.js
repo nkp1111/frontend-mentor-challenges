@@ -1,6 +1,7 @@
 import React from 'react'
 import CHeader from './CommentHeader';
 import useGlobalContext from './context'
+import Scoreboard from './components/scoreboard'
 
 function Replies() {
 
@@ -10,6 +11,11 @@ function Replies() {
     replyData && replyData.map(reply => {
       return (
         <article key={reply.id}>
+          <div>
+            <div>
+              <Scoreboard score={reply.score} />
+            </div>
+          </div>
           <CHeader
             imgNum={reply.id - 1}
             username={reply.user.username}

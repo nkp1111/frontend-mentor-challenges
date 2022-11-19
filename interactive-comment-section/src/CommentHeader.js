@@ -3,9 +3,9 @@ import AmyImage from './assets/images/avatars/image-amyrobson.png'
 import MaxImage from './assets/images/avatars/image-maxblagun.png'
 import RamImage from './assets/images/avatars/image-ramsesmiron.png'
 import JuliImage from './assets/images/avatars/image-juliusomo.png'
-import ReplyBtn from './buttons/replybtn'
-import EditBtn from './buttons/editbtn'
-import DeleteBtn from './buttons/deletebtn'
+import ReplyIcon from './components/replybtn'
+import EditIcon from './components/editbtn'
+import DeleteIcon from './components/deletebtn'
 
 
 
@@ -20,10 +20,10 @@ function CommentHeader({ imgNum, username, date }) {
       <span>{date}</span>
       {username === 'juliusomo'
         ? <div>
-          <DeleteBtn />
-          <EditBtn />
+          <DeleteIcon />
+          <EditIcon />
         </div>
-        : <ReplyBtn />}
+        : <ReplyIcon />}
 
     </div>
   )
