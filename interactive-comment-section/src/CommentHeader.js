@@ -7,8 +7,6 @@ import ReplyIcon from './components/replybtn'
 import EditIcon from './components/editbtn'
 import DeleteIcon from './components/deletebtn'
 
-
-
 const images = [AmyImage, MaxImage, RamImage, JuliImage]
 
 function CommentHeader({ imgNum, username, date }) {
