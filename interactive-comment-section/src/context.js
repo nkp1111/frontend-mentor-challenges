@@ -11,6 +11,7 @@ const AppProvider = ({ children }) => {
   const [replyMap, setReplyMap] = useState({})
   const [scores, setScores] = useState({})
   const [addReplyText, setAddReplyText] = useState(0)
+  const [text, setText] = useState("")
 
   const handleData = (data) => {
     /* Set current user data and whole comments */
@@ -93,6 +94,8 @@ const AppProvider = ({ children }) => {
         replyDataMapping,
         addReplyText,
         setAddReplyText,
+        text,
+        setText
       }}
     >
       {children}

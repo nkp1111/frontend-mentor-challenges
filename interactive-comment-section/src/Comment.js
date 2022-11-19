@@ -33,7 +33,7 @@ function Comment() {
           {replyMap[comment.id] &&
             <Replies replyMap={replyMap[comment.id]} />}
 
-          {addReplyText === comment.id && <SendText reply={'@' + comment.user.username} />}
+          {addReplyText === comment.id && <SendText reply={'@' + comment.user.username + ' '} />}
         </>
       )
     })
