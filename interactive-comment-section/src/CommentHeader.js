@@ -14,16 +14,20 @@ const images = [AmyImage, MaxImage, RamImage, JuliImage]
 function CommentHeader({ imgNum, username, date }) {
 
   return (
-    <div>
+    <div className='d-flex align-items-center justify-content-between' id='comment-header'>
       <img src={images[imgNum]} alt={username} />
       <span>{username}</span>
+      {username === 'juliusomo' && <span id="me">You</span>}
       <span>{date}</span>
       {username === 'juliusomo'
-        ? <div>
+        ?
+        <div>
           <DeleteIcon />
           <EditIcon />
         </div>
-        : <ReplyIcon />}
+        :
+        <div><ReplyIcon /></div>
+      }
 
     </div>
   )

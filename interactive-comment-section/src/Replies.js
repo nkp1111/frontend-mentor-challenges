@@ -10,17 +10,17 @@ function Replies() {
   return (
     replyData && replyData.map(reply => {
       return (
-        <article key={reply.id}>
+        <article key={reply.id} class="content replies">
           <div>
-            <div>
-              <Scoreboard score={reply.score} />
-            </div>
+            <Scoreboard score={reply.score} />
           </div>
-          <CHeader
-            imgNum={reply.id - 1}
-            username={reply.user.username}
-            date={reply.createdAt} />
-          <p>{reply.content}</p>
+          <div>
+            <CHeader
+              imgNum={reply.id - 1}
+              username={reply.user.username}
+              date={reply.createdAt} />
+            <p>{reply.content}</p>
+          </div>
         </article>
       )
     })

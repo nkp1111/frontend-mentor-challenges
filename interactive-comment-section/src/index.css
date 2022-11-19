@@ -2,7 +2,7 @@
 
 :root {
 
-  --Moderate-blue: hsl(238, 40%, 52%);
+  --Moderate-blue: #5457b6;
   --Soft-Red: hsl(358, 79%, 66%);
   --Light-grayish-blue: hsl(239, 57%, 85%);
   --Pale-red: hsl(357, 100%, 86%);
@@ -22,7 +22,38 @@
 
 body {
   background: var(--Very-light-gray);
+  padding: 10px;
+  margin: 0;
 }
+
+/* comment holder */
+main {
+  width: 56%;
+  min-width: 360px;
+}
+
+/* comment header */
+#comment-header div:last-child {
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* article: content */
+main .content {
+  display: flex;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.content.replies {
+  margin-left: 3rem;
+}
+
+/* article : comments and replies */
+article.content>div:last-child {}
 
 /* footer */
 .attribution {

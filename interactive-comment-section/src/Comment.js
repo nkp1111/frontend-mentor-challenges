@@ -11,7 +11,7 @@ function Comment() {
   return (
     commentData && commentData.map(comment => {
       return (
-        <article key={comment.id}>
+        <article key={comment.id} class="content">
           <div>
             <Scoreboard score={comment.score} />
           </div>

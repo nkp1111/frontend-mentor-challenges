@@ -4,8 +4,8 @@ import Replies from './Replies'
 
 function CommentHolder() {
   return (
-    <main className='text-center'>
-      <h1 className='d-none'>Interactive Comment Section</h1>
+    <main className='m-auto p-3'>
+      <h1 className='d-none text-center'>Interactive Comment Section</h1>
       <Comment />
       <Replies />
     </main>

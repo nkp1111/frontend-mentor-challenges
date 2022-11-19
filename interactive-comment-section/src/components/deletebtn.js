@@ -3,7 +3,7 @@ import DeleteIcon from '../assets/images/icon-delete.svg'
 
 function Editbtn() {
   return (
-    <button>
+    <button className='icons'>
       <img src={DeleteIcon} alt='' />
       Delete
     </button>
