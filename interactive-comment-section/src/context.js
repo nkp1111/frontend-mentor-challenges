@@ -8,12 +8,12 @@ const AppProvider = ({ children }) => {
   const [commentData, setCommentData] = useState("")
   const [userData, setUserData] = useState("")
   const [replyData, setReplyData] = useState("")
+  const [replyMap, setReplyMap] = useState({})
   const [scores, setScores] = useState({})
 
   const handleData = (data) => {
     setCommentData(data.comments)
     setUserData(data.currentUser)
-    setReplyData(data.comments[1].replies)
   }
 
   const addScore = (data, id, action) => {
@@ -41,6 +41,25 @@ const AppProvider = ({ children }) => {
     }
   }
 
+  const replyDataMapping = (data, id, action) => {
+    let tempReply = {}
+    let rep = []
+    let tempReplyData = []
+    data.comments.forEach(d => {
+      if (d.replies) {
+        tempReplyData.push(...d.replies)
+        d.replies.forEach(e => {
+          rep.push(e.id)
+        });
+        tempReply[d.id] = rep
+        rep = []
+      }
+    })
+
+    setReplyMap(tempReply)
+    setReplyData(tempReplyData)
+  }
+
   useEffect(() => {
     handleData(data)
   })
@@ -49,7 +68,11 @@ const AppProvider = ({ children }) => {
     addScore(data)
   }, [])
 
+  useEffect(() => {
+    replyDataMapping(data)
+  }, [])
 
+  console.log(replyData, replyMap)
   return (
     <AppContext.Provider
       value={{
@@ -58,7 +81,8 @@ const AppProvider = ({ children }) => {
         commentData,
         scores,
         addScore,
-        data
+        data,
+        replyMap
       }}
     >
       {children}

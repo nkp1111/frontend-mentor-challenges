@@ -3,32 +3,35 @@ import CHeader from './CommentHeader';
 import useGlobalContext from './context'
 import Scoreboard from './components/scoreboard'
 
-function Replies() {
+function Replies({ replyMap }) {
 
   const { replyData } = useGlobalContext()
 
   return (
-    replyData && replyData.map(reply => {
-      return (
-        <article key={reply.id} className="content replies">
-          <div>
-            <Scoreboard id={reply.id} />
-          </div>
-          <div>
-            <CHeader
-              imgNum={reply.id - 1}
-              username={reply.user.username}
-              date={reply.createdAt} />
-            <p>
-              <span
-                style={{ color: '#5457b6', fontWeight: '500' }}>
-                {'@' + reply.replyingTo + ' '}
-              </span>
-              {reply.content}
-            </p>
-          </div>
-        </article>
-      )
+    replyData && replyMap && replyData.map(reply => {
+      if (replyMap.includes(reply.id)) {
+        return (
+          <article key={reply.id} className="content replies">
+            <div>
+              <Scoreboard id={reply.id} />
+            </div>
+            <div>
+              <CHeader
+                imgNum={reply.id - 1}
+                username={reply.user.username}
+                date={reply.createdAt} />
+              <p>
+                <span
+                  style={{ color: '#5457b6', fontWeight: '500' }}>
+                  {'@' + reply.replyingTo + ' '}
+                </span>
+                {reply.content}
+              </p>
+            </div>
+          </article>
+        )
+      }
+
     })
   )
 }
