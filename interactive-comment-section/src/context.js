@@ -51,9 +51,11 @@ const AppProvider = ({ children }) => {
     let tempReplyData = []
     data.comments.forEach(d => {
       if (d.replies) {
-        tempReplyData.push(...d.replies)
         d.replies.forEach(e => {
-          rep.push(e.id)
+          if (id !== e.id) {
+            rep.push(e.id)
+            tempReplyData.push(e)
+          }
         });
         tempReply[d.id] = rep
         rep = []
