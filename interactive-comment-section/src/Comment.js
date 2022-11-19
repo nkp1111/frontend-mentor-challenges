@@ -1,11 +1,7 @@
 import React from 'react'
 import useGlobalContext from './context'
-import AmyImage from './assets/images/avatars/image-amyrobson.png'
-import MaxImage from './assets/images/avatars/image-maxblagun.png'
-import RamImage from './assets/images/avatars/image-ramsesmiron.png'
-import JuliImage from './assets/images/avatars/image-juliusomo.png'
+import CHeader from './CommentHeader'
 
-const images = [AmyImage, MaxImage, RamImage, JuliImage]
 
 function Comment() {
 
@@ -15,8 +11,11 @@ function Comment() {
     commentData && commentData.map((comment, ind) => {
       return (
         <article key={ind}>
-          <img src={images[comment.id - 1]} alt=""></img>
-          <span>{comment.createdAt}</span>
+          <CHeader
+            imgNum={comment.id - 1}
+            username={comment.user.username}
+            date={comment.createdAt}
+            buttons={'nothing'} />
           <p>
             {comment.content}
           </p>
@@ -27,4 +26,3 @@ function Comment() {
 }
 
 export default Comment
-export { images }
