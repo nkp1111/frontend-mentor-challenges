@@ -23,3 +23,4 @@ This contains the following project:
 - order-summary-component
 - rest-api-country
 - ecommerce-product-page
+- interactive-comment-section
