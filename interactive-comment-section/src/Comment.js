@@ -3,11 +3,12 @@ import useGlobalContext from './context'
 import CHeader from './CommentHeader'
 import Scoreboard from './components/scoreboard'
 import Replies from './Replies'
+import SendText from './components/sendText'
 
 
 function Comment() {
 
-  const { commentData, replyMap } = useGlobalContext()
+  const { commentData, replyMap, addReplyText } = useGlobalContext()
 
   return (
     commentData && commentData.map(comment => {
@@ -21,7 +22,8 @@ function Comment() {
               <CHeader
                 imgNum={comment.id - 1}
                 username={comment.user.username}
-                date={comment.createdAt} />
+                date={comment.createdAt}
+                commentId={comment.id} />
               <p>
                 {comment.content}
               </p>
@@ -30,6 +32,8 @@ function Comment() {
 
           {replyMap[comment.id] &&
             <Replies replyMap={replyMap[comment.id]} />}
+
+          {addReplyText === comment.id && <SendText reply={'@' + comment.user.username} />}
         </>
       )
     })

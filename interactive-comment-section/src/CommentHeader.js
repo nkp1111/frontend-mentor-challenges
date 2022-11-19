@@ -9,7 +9,7 @@ import DeleteIcon from './components/deletebtn'
 
 const images = [AmyImage, MaxImage, RamImage, JuliImage]
 
-function CommentHeader({ imgNum, username, date, replyId }) {
+function CommentHeader({ imgNum, username, date, replyId, commentId }) {
 
   return (
     <div className='d-flex align-items-center justify-content-between' id='comment-header'>
@@ -24,7 +24,7 @@ function CommentHeader({ imgNum, username, date, replyId }) {
           <EditIcon />
         </div>
         :
-        <div><ReplyIcon /></div>
+        <div><ReplyIcon commentId={commentId} /></div>
       }
 
     </div>

@@ -1,12 +1,16 @@
 import React from 'react'
 import JuliImage from '../assets/images/avatars/image-juliusomo.png'
 
-function sendText() {
+function sendText({ reply }) {
   return (
-    <article className='content justify-content-between'>
+    <article className='content justify-content-between' id="reply-send">
       <img src={JuliImage} alt='profile avatar' />
-      <textarea placeholder='Add a comment...' />
-      <button className='btns'>SEND</button>
+      <textarea
+        placeholder={reply
+          ? 'Add Reply Message...'
+          : 'Add a comment...'}
+        value={reply} />
+      <button className='btns'>{reply ? 'REPLY' : 'SEND'}</button>
     </article>
   )
 }

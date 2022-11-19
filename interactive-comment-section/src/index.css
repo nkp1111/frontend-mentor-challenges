@@ -76,7 +76,8 @@ main .content {
 /* article : send */
 main .content:last-of-type {}
 
-main .content:last-of-type img {
+main .content:last-of-type img,
+#reply-send img {
   width: 50px;
   height: 50px;
 }
