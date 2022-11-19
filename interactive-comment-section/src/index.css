@@ -20,6 +20,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  background: var(--Very-light-gray);
+}
+
 /* footer */
 .attribution {
   font-size: 11px;
