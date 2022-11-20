@@ -21,7 +21,8 @@ function Replies({ replyMap }) {
                 imgNum={imageNum}
                 username={reply.user.username}
                 date={reply.createdAt}
-                replyId={reply.id} />
+                replyId={reply.id}
+                text={reply.content} />
               <p>
                 <span
                   style={{ color: '#5457b6', fontWeight: '500' }}>

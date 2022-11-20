@@ -60,6 +60,8 @@ const AppProvider = ({ children }) => {
           if (id !== e.id) {
             rep.push(e.id)
             tempReplyData.push(e)
+          } else {
+            d.replies.splice(i, 1)
           }
         });
         tempReply[d.id] = rep
@@ -73,7 +75,6 @@ const AppProvider = ({ children }) => {
 
   const createReply = (data, commentId, comment) => {
 
-    console.log("reply created");
     let reply = {
       id: new Date().getTime(),
       content: comment,
@@ -110,7 +111,7 @@ const AppProvider = ({ children }) => {
     createReply(data)
   }, [])
 
-  console.log(data)
+  // console.log(data)
   return (
     <AppContext.Provider
       value={{
