@@ -12,6 +12,8 @@ const AppProvider = ({ children }) => {
   const [scores, setScores] = useState({})
   const [addReplyText, setAddReplyText] = useState(0)
   const [text, setText] = useState("")
+  const [deleteModal, setDeleteModal] = useState(false)
+  const [modifyId, setModifyId] = useState(0)
 
   const handleData = (data) => {
     /* Set current user data and whole comments */
@@ -80,7 +82,7 @@ const AppProvider = ({ children }) => {
     replyDataMapping(data)
   }, [])
 
-  console.log(replyData, replyMap)
+  console.log(deleteModal)
   return (
     <AppContext.Provider
       value={{
@@ -95,7 +97,10 @@ const AppProvider = ({ children }) => {
         addReplyText,
         setAddReplyText,
         text,
-        setText
+        setText,
+        deleteModal,
+        setDeleteModal,
+        modifyId, setModifyId,
       }}
     >
       {children}

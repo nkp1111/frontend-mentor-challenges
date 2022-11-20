@@ -4,11 +4,12 @@ import CHeader from './CommentHeader'
 import Scoreboard from './components/scoreboard'
 import Replies from './Replies'
 import SendText from './components/sendText'
+import DModal from './components/deleteModal'
 
 
 function Comment() {
 
-  const { commentData, replyMap, addReplyText } = useGlobalContext()
+  const { commentData, replyMap, addReplyText, deleteModal } = useGlobalContext()
 
   return (
     commentData && commentData.map(comment => {
@@ -34,6 +35,8 @@ function Comment() {
             <Replies replyMap={replyMap[comment.id]} />}
 
           {addReplyText === comment.id && <SendText reply={'@' + comment.user.username + ' '} />}
+
+          {deleteModal && <DModal />}
         </>
       )
     })

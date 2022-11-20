@@ -4,12 +4,13 @@ import useGlobalContext from '../context'
 
 function Deletebtn({ replyId }) {
 
-  const { data, replyDataMapping } = useGlobalContext()
+  const { setDeleteModal, setModifyId } = useGlobalContext()
 
   return (
     <button className='icons'
       onClick={() => {
-        replyDataMapping(data, replyId, "delete")
+        setDeleteModal(true)
+        setModifyId(replyId)
       }}>
       <img src={DeleteIcon} alt='' />
       Delete

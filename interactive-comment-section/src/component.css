@@ -38,3 +38,58 @@
 .icons:hover {
   opacity: 0.6;
 }
+
+/* delete Modal */
+#delete-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+}
+
+#delete-modal>div {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#delete-modal>div h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#delete-modal>div p {
+  color: hsl(211, 10%, 45%);
+}
+
+#delete-modal button {
+  margin: 0;
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.3s all;
+}
+
+#delete-modal button:first-of-type {
+  background: hsl(211, 10%, 45%);
+}
+
+#delete-modal button:last-of-type {
+  background: hsl(358, 79%, 66%);
+}
+
+#delete-modal button:hover {
+  opacity: 0.8;
+  scale: 1.1;
+}
