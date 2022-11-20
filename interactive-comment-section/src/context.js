@@ -22,10 +22,11 @@ const AppProvider = ({ children }) => {
     setUserData(data.currentUser)
   }
 
-  const addScore = (data, id, action) => {
+  const addScore = (cData, id, action) => {
     /* Define scores separately and to increase and decrease */
     let tempScore = {}
-    data.comments.forEach(d => {
+    console.log(cData);
+    cData.forEach(d => {
       tempScore[d.id] = d.score
       if (d.replies) {
         d.replies.forEach(e => {
@@ -43,11 +44,15 @@ const AppProvider = ({ children }) => {
       } else if (action === 'minus') {
         tempScore[id] -= 1
         setScores(tempScore)
+      } else if (action === 'new') {
+        tempScore[id] = 0
       }
     } else {
       setScores(tempScore)
     }
   }
+
+  console.log(scores);
 
   const replyDataMapping = (data, id, action) => {
     /* To keep track of replies and their connection to comments */
@@ -76,9 +81,10 @@ const AppProvider = ({ children }) => {
   const createReply = (data, commentId, comment) => {
 
     if (commentId === 'new') {
+      let id = new Date().getTime()
 
       let newComment = {
-        id: new Date().getTime(),
+        id: id,
         content: comment,
         createdAt: 'Now',
         score: 0,
@@ -89,6 +95,7 @@ const AppProvider = ({ children }) => {
       let newData = [...commentData, newComment]
 
       setCommentData(newData)
+      addScore(newData, id, 'new')
 
     } else {
       let reply = {
@@ -109,7 +116,6 @@ const AppProvider = ({ children }) => {
       })
 
       setCommentData(newData)
-
     }
 
   }
@@ -119,8 +125,8 @@ const AppProvider = ({ children }) => {
   }, [data])
 
   useEffect(() => {
-    addScore(data)
-  }, [])
+    commentData && addScore(commentData)
+  }, [commentData])
 
   useEffect(() => {
     replyDataMapping(data)

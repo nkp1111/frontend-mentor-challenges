@@ -6,19 +6,19 @@ import useGlobalContext from '../context'
 
 function Scoreboard({ id }) {
 
-  const { scores, addScore, data } = useGlobalContext()
+  const { scores, addScore, commentData } = useGlobalContext()
 
   return (
     <div id="scoreboard" className='d-flex justify-content-center align-items-center'>
       <img src={PlusIcon} alt='plus-icon'
         onClick={() => {
-          addScore(data, id, "add")
+          addScore(commentData, id, "add")
         }} />
       <span>{scores[id]}</span>
       <img src={MinusIcon} alt='minus-icon'
         onClick={() => {
           if (scores[id] > 0) {
-            addScore(data, id, "minus")
+            addScore(commentData, id, "minus")
           }
         }} />
     </div>
