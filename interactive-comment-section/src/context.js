@@ -77,7 +77,7 @@ const AppProvider = ({ children }) => {
 
     let reply = {
       id: new Date().getTime(),
-      content: comment,
+      content: comment && comment.split(" ").slice(1).join(" "),
       createdAt: "Now",
       score: 0,
       replyingTo: '',
