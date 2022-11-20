@@ -15,6 +15,7 @@ const AppProvider = ({ children }) => {
   const [text, setText] = useState("")
   const [deleteModal, setDeleteModal] = useState(false)
   const [modifyId, setModifyId] = useState(0)
+  const [edit, setEdit] = useState(0)
 
   const handleData = (data) => {
     /* Set current user data and whole comments */
@@ -78,7 +79,7 @@ const AppProvider = ({ children }) => {
     setReplyData(tempReplyData)
   }
 
-  const createReply = (data, commentId, comment) => {
+  const createReply = (cData, commentId, comment) => {
 
     if (commentId === 'new') {
       let id = new Date().getTime()
@@ -92,12 +93,27 @@ const AppProvider = ({ children }) => {
         replies: []
       }
 
-      let newData = [...commentData, newComment]
+      let newData = [...cData, newComment]
 
       setCommentData(newData)
       addScore(newData, id, 'new')
 
-    } else {
+    } else if (commentId) {
+
+      let newData = cData.map(comment => {
+        comment.replies.map(reply => {
+          if (reply.id === commentId) {
+            reply.content = text
+          }
+          return reply
+        })
+        return comment
+      })
+
+      setCommentData(newData)
+      setEdit(0)
+    }
+    else {
       let reply = {
         id: new Date().getTime(),
         content: comment && comment.split(" ").slice(1).join(" "),
@@ -107,7 +123,7 @@ const AppProvider = ({ children }) => {
         user: userData
       }
 
-      let newData = data.comments.map(d => {
+      let newData = cData.map(d => {
         if (d.id === commentId) {
           reply["replyingTo"] = d.user.username
           d.replies.push(reply)
@@ -130,6 +146,8 @@ const AppProvider = ({ children }) => {
     setCommentData(newCommentData)
   }
 
+  console.log(commentData);
+
   useEffect(() => {
     handleData(data)
   }, [data])
@@ -143,7 +161,7 @@ const AppProvider = ({ children }) => {
   }, [data, commentData])
 
   useEffect(() => {
-    createReply(data)
+    commentData && createReply(commentData)
   }, [])
 
   useEffect(() => {
@@ -172,6 +190,8 @@ const AppProvider = ({ children }) => {
         setModifyId,
         createReply,
         deleteComment,
+        edit,
+        setEdit,
       }}
     >
       {children}

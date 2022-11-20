@@ -4,10 +4,12 @@ import useGlobalContext from '../context'
 
 
 function Editbtn({ replyId, text }) {
-  const { setAddReplyText, addReplyText } = useGlobalContext()
+  const { setAddReplyText, addReplyText, setEdit, setText } = useGlobalContext()
   return (
     <button className='icons'
       onClick={() => {
+        setEdit(replyId)
+        setText(text)
       }}>
       <img src={EditIcon} alt='' />
       Edit

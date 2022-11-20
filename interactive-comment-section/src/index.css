@@ -26,6 +26,11 @@ body {
   margin: 0;
 }
 
+/* #root {
+  width: 100vw;
+  min-height: 100vh;
+} */
+
 /* comment holder */
 main {
   width: 56%;
@@ -126,4 +131,40 @@ textarea:focus {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:1400px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (max-width:1200px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media (max-width:1000px) {
+  main {
+    width: 90%;
+  }
+
+  .content.replies {
+    margin-left: 1.5rem;
+  }
+
+  #comment-header div:last-child {
+    width: 40%;
+  }
+}
+
+@media (max-width:780px) {
+  main {
+    width: 100%;
+  }
+
+  #root {
+    margin: 0 20px;
+  }
 }

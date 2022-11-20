@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import JuliImage from '../assets/images/avatars/image-juliusomo.png'
 import useGlobalContext from '../context'
 
-function SendText({ reply, commentId }) {
+function SendText({ reply, commentId, replyId }) {
 
-  const { data, text, setText, createReply, setAddReplyText } = useGlobalContext()
+  const { commentData, text, setText, createReply, setAddReplyText } = useGlobalContext()
 
   useEffect(() => {
     if (reply) {
@@ -28,10 +28,13 @@ function SendText({ reply, commentId }) {
       <button className='btns'
         onClick={() => {
           if (text && commentId) {
-            createReply(data, commentId, text)
+            createReply(commentData, commentId, text)
+            setAddReplyText(0)
+          } else if (text && replyId) {
+            createReply(commentData, replyId, text)
             setAddReplyText(0)
           } else if (text && !commentId) {
-            createReply(data, 'new', text)
+            createReply(commentData, 'new', text)
             setAddReplyText(0)
           }
         }}>{reply ? 'REPLY' : 'SEND'}</button>
