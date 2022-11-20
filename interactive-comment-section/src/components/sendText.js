@@ -27,8 +27,11 @@ function SendText({ reply, commentId }) {
         autoFocus />
       <button className='btns'
         onClick={() => {
-          if (text) {
+          if (text && commentId) {
             createReply(data, commentId, text)
+            setAddReplyText(0)
+          } else if (text && !commentId) {
+            createReply(data, 'new', text)
             setAddReplyText(0)
           }
         }}>{reply ? 'REPLY' : 'SEND'}</button>

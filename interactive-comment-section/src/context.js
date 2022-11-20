@@ -75,24 +75,43 @@ const AppProvider = ({ children }) => {
 
   const createReply = (data, commentId, comment) => {
 
-    let reply = {
-      id: new Date().getTime(),
-      content: comment && comment.split(" ").slice(1).join(" "),
-      createdAt: "Now",
-      score: 0,
-      replyingTo: '',
-      user: userData
+    if (commentId === 'new') {
+
+      let newComment = {
+        id: new Date().getTime(),
+        content: comment,
+        createdAt: 'Now',
+        score: 0,
+        user: userData,
+        replies: []
+      }
+
+      let newData = [...commentData, newComment]
+
+      setCommentData(newData)
+
+    } else {
+      let reply = {
+        id: new Date().getTime(),
+        content: comment && comment.split(" ").slice(1).join(" "),
+        createdAt: "Now",
+        score: 0,
+        replyingTo: '',
+        user: userData
+      }
+
+      let newData = data.comments.map(d => {
+        if (d.id === commentId) {
+          reply["replyingTo"] = d.user.username
+          d.replies.push(reply)
+        }
+        return d
+      })
+
+      setCommentData(newData)
+
     }
 
-    let newData = data.comments.map(d => {
-      if (d.id === commentId) {
-        reply["replyingTo"] = d.user.username
-        d.replies.push(reply)
-      }
-      return d
-    })
-
-    setCommentData(newData)
   }
 
   useEffect(() => {
