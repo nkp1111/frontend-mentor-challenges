@@ -16,6 +16,7 @@ const AppProvider = ({ children }) => {
   const [deleteModal, setDeleteModal] = useState(false)
   const [modifyId, setModifyId] = useState(0)
   const [edit, setEdit] = useState(0)
+  const [media, setMedia] = useState(false)
 
   const handleData = (data) => {
     /* Set current user data and whole comments */
@@ -168,7 +169,22 @@ const AppProvider = ({ children }) => {
     commentData && deleteComment()
   }, [])
 
-  // console.log(data)
+
+  const handleMedia = (width) => {
+    if (width <= 600) {
+      setMedia(true)
+    } else {
+      setMedia(false)
+    }
+  }
+
+  useEffect(() => {
+    let width = window.innerWidth
+    handleMedia(width)
+  })
+
+  console.log(media);
+
   return (
     <AppContext.Provider
       value={{
@@ -192,6 +208,7 @@ const AppProvider = ({ children }) => {
         deleteComment,
         edit,
         setEdit,
+        media
       }}
     >
       {children}

@@ -6,11 +6,13 @@ import JuliImage from './assets/images/avatars/image-juliusomo.png'
 import ReplyIcon from './components/replybtn'
 import EditIcon from './components/editbtn'
 import DeleteIcon from './components/deletebtn'
+import useGlobalContext from './context'
 
 const images = [AmyImage, MaxImage, RamImage, JuliImage]
 
 function CommentHeader({ imgNum, username, date, replyId, commentId, text }) {
 
+  const { media } = useGlobalContext()
 
   return (
     <div className='d-flex align-items-center justify-content-between' id='comment-header'>
