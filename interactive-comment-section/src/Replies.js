@@ -9,15 +9,16 @@ function Replies({ replyMap }) {
 
   return (
     replyData && replyMap && replyData.map(reply => {
+      let imageNum = reply.id > 3 ? 3 : reply.id - 1
       if (replyMap.includes(reply.id)) {
         return (
           <article key={reply.id} className="content replies">
             <div>
-              <Scoreboard id={reply.id} />
+              <Scoreboard id={imageNum} />
             </div>
             <div>
               <CHeader
-                imgNum={reply.id - 1}
+                imgNum={imageNum}
                 username={reply.user.username}
                 date={reply.createdAt}
                 replyId={reply.id} />

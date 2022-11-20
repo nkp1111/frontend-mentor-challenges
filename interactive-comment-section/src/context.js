@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import data from './assets/data.json'
+import rawdata from './assets/data.json'
 
 const AppContext = React.createContext(null)
 
 const AppProvider = ({ children }) => {
 
+  const [data, setData] = useState(rawdata)
   const [commentData, setCommentData] = useState("")
   const [userData, setUserData] = useState("")
   const [replyData, setReplyData] = useState("")
@@ -55,7 +56,7 @@ const AppProvider = ({ children }) => {
     let tempReplyData = []
     data.comments.forEach(d => {
       if (d.replies) {
-        d.replies.forEach(e => {
+        d.replies.forEach((e, i) => {
           if (id !== e.id) {
             rep.push(e.id)
             tempReplyData.push(e)
@@ -70,9 +71,32 @@ const AppProvider = ({ children }) => {
     setReplyData(tempReplyData)
   }
 
+  const createReply = (data, commentId, comment) => {
+
+    console.log("reply created");
+    let reply = {
+      id: new Date().getTime(),
+      content: comment,
+      createdAt: "Now",
+      score: 0,
+      replyingTo: '',
+      user: userData
+    }
+
+    let newData = data.comments.map(d => {
+      if (d.id === commentId) {
+        reply["replyingTo"] = d.user.username
+        d.replies.push(reply)
+      }
+      return d
+    })
+
+    setCommentData(newData)
+  }
+
   useEffect(() => {
     handleData(data)
-  })
+  }, [data])
 
   useEffect(() => {
     addScore(data)
@@ -80,9 +104,13 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     replyDataMapping(data)
+  }, [data, commentData])
+
+  useEffect(() => {
+    createReply(data)
   }, [])
 
-  console.log(deleteModal)
+  console.log(data)
   return (
     <AppContext.Provider
       value={{
@@ -100,7 +128,9 @@ const AppProvider = ({ children }) => {
         setText,
         deleteModal,
         setDeleteModal,
-        modifyId, setModifyId,
+        modifyId,
+        setModifyId,
+        createReply,
       }}
     >
       {children}

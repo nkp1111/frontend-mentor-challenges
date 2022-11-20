@@ -21,7 +21,7 @@ function Comment() {
             </div>
             <div>
               <CHeader
-                imgNum={comment.id - 1}
+                imgNum={comment.id > 2 ? 3 : comment.id - 1}
                 username={comment.user.username}
                 date={comment.createdAt}
                 commentId={comment.id} />
@@ -34,7 +34,7 @@ function Comment() {
           {replyMap[comment.id] &&
             <Replies replyMap={replyMap[comment.id]} />}
 
-          {addReplyText === comment.id && <SendText reply={'@' + comment.user.username + ' '} />}
+          {addReplyText === comment.id && <SendText reply={'@' + comment.user.username + ' '} commentId={comment.id} />}
 
           {deleteModal && <DModal />}
         </>

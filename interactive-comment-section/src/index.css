@@ -68,6 +68,10 @@ main .content {
   border-radius: 8px;
 }
 
+.content>div:nth-of-type(2) {
+  flex: 1;
+}
+
 /* reply div */
 .content.replies {
   margin-left: 3.9rem;

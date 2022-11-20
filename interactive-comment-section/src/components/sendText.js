@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import JuliImage from '../assets/images/avatars/image-juliusomo.png'
 import useGlobalContext from '../context'
 
-function SendText({ reply }) {
+function SendText({ reply, commentId }) {
 
-  const { text, setText } = useGlobalContext()
+  const { data, text, setText, createReply, setAddReplyText } = useGlobalContext()
 
   useEffect(() => {
     if (reply) {
@@ -25,7 +25,13 @@ function SendText({ reply }) {
           setText(e.target.value)
         }}
         autoFocus />
-      <button className='btns'>{reply ? 'REPLY' : 'SEND'}</button>
+      <button className='btns'
+        onClick={() => {
+          if (text) {
+            createReply(data, commentId, text)
+            setAddReplyText(0)
+          }
+        }}>{reply ? 'REPLY' : 'SEND'}</button>
     </article>
   )
 }
