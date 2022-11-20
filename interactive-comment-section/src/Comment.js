@@ -14,7 +14,7 @@ function Comment() {
   return (
     commentData && commentData.map(comment => {
       return (
-        <>
+        <React.Fragment key={comment.id}>
           <article key={comment.id} className="content">
             <div>
               <Scoreboard id={comment.id} />
@@ -37,7 +37,7 @@ function Comment() {
           {addReplyText === comment.id && <SendText reply={'@' + comment.user.username + ' '} commentId={comment.id} />}
 
           {deleteModal && <DModal />}
-        </>
+        </React.Fragment>
       )
     })
   )

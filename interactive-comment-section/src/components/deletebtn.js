@@ -2,7 +2,7 @@ import React from 'react'
 import DeleteIcon from '../assets/images/icon-delete.svg'
 import useGlobalContext from '../context'
 
-function Deletebtn({ replyId }) {
+function Deletebtn({ replyId, commentId }) {
 
   const { setDeleteModal, setModifyId } = useGlobalContext()
 
@@ -11,6 +11,9 @@ function Deletebtn({ replyId }) {
       onClick={() => {
         setDeleteModal(true)
         setModifyId(replyId)
+        if (commentId) {
+          setModifyId(commentId)
+        }
       }}>
       <img src={DeleteIcon} alt='' />
       Delete

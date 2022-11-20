@@ -3,7 +3,7 @@ import useGlobalContext from '../context'
 
 function DeleteModal() {
 
-  const { data, replyDataMapping, setDeleteModal, modifyId, setModifyId } = useGlobalContext()
+  const { commentData, replyDataMapping, setDeleteModal, modifyId, setModifyId, deleteComment } = useGlobalContext()
   return (
     <article id="delete-modal">
 
@@ -20,7 +20,9 @@ function DeleteModal() {
           </button>
 
           <button onClick={() => {
-            replyDataMapping(data, modifyId, "delete")
+
+            replyDataMapping(commentData, modifyId, "delete")
+            deleteComment(modifyId)
             setDeleteModal(false)
           }}>
             YES, DELETE

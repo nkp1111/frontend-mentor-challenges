@@ -52,14 +52,14 @@ const AppProvider = ({ children }) => {
     }
   }
 
-  console.log(scores);
-
-  const replyDataMapping = (data, id, action) => {
+  const replyDataMapping = (cData, id, action) => {
     /* To keep track of replies and their connection to comments */
     let tempReply = {}
     let rep = []
     let tempReplyData = []
-    data.comments.forEach(d => {
+
+    cData.forEach((d, j) => {
+
       if (d.replies) {
         d.replies.forEach((e, i) => {
           if (id !== e.id) {
@@ -120,6 +120,16 @@ const AppProvider = ({ children }) => {
 
   }
 
+  const deleteComment = (id) => {
+    let newCommentData = [...commentData]
+    commentData.map((c, i) => {
+      if (c.id === id) {
+        newCommentData.splice(i, 1)
+      }
+    })
+    setCommentData(newCommentData)
+  }
+
   useEffect(() => {
     handleData(data)
   }, [data])
@@ -129,11 +139,15 @@ const AppProvider = ({ children }) => {
   }, [commentData])
 
   useEffect(() => {
-    replyDataMapping(data)
+    commentData && replyDataMapping(commentData)
   }, [data, commentData])
 
   useEffect(() => {
     createReply(data)
+  }, [])
+
+  useEffect(() => {
+    commentData && deleteComment()
   }, [])
 
   // console.log(data)
@@ -157,6 +171,7 @@ const AppProvider = ({ children }) => {
         modifyId,
         setModifyId,
         createReply,
+        deleteComment,
       }}
     >
       {children}

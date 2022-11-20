@@ -21,7 +21,7 @@ function CommentHeader({ imgNum, username, date, replyId, commentId, text }) {
       {username === 'juliusomo'
         ?
         <div>
-          <DeleteIcon replyId={replyId} />
+          <DeleteIcon replyId={replyId} commentId={commentId} />
           <EditIcon replyId={replyId} text={text} />
         </div>
         :
