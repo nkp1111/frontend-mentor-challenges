@@ -14,7 +14,7 @@ function Replies({ replyMap }) {
         return (
           <article key={reply.id} className="content replies">
             <div>
-              <Scoreboard id={imageNum} />
+              <Scoreboard id={reply.id} />
             </div>
             <div>
               <CHeader
