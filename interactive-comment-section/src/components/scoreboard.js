@@ -9,7 +9,7 @@ function Scoreboard({ id }) {
   const { scores, addScore, commentData } = useGlobalContext()
 
   return (
-    <div id="scoreboard" className='d-flex justify-content-center align-items-center'>
+    <div className='scoreboard d-flex justify-content-center align-items-center'>
       <img src={PlusIcon} alt='plus-icon'
         onClick={() => {
           addScore(commentData, id, "add")

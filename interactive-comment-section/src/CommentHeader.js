@@ -14,7 +14,7 @@ function CommentHeader({ imgNum, username, date, replyId, commentId, text }) {
   const { media } = useGlobalContext()
 
   return (
-    <div className='d-flex align-items-center justify-content-between' id='comment-header'>
+    <div className='d-flex align-items-center justify-content-between comment-header'>
       <img src={images[imgNum]} alt={username} />
       <span className='fw-bold'>{username}</span>
       {username === 'juliusomo' && <span id="me">you</span>}

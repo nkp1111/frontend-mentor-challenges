@@ -38,21 +38,21 @@ main {
 }
 
 /* comment header */
-#comment-header {
+.comment-header {
   margin-bottom: 10px;
 }
 
-#comment-header>img {
+.comment-header>img {
   width: 40px;
 }
 
-#comment-header div:last-child {
+.comment-header div:last-child {
   width: 50%;
   display: flex;
   justify-content: flex-end;
 }
 
-#comment-header span#me {
+.comment-header span#me {
   background: var(--Moderate-blue);
   color: white;
   font-weight: 500;
@@ -60,7 +60,7 @@ main {
   border-radius: 3px;
 }
 
-#comment-header>span:last-of-type {
+.comment-header>span:last-of-type {
   color: var(--Grayish-Blue);
 }
 
@@ -83,10 +83,8 @@ main .content {
 }
 
 /* article : send */
-main .content:last-of-type {}
-
 main .content:last-of-type img,
-#reply-send img {
+.reply-send img {
   width: 50px;
   height: 50px;
 }
@@ -154,7 +152,7 @@ textarea:focus {
     margin-left: 1.5rem;
   }
 
-  #comment-header div:last-child {
+  .comment-header div:last-child {
     width: 40%;
   }
 }
@@ -178,12 +176,12 @@ textarea:focus {
     order: 2;
   }
 
-  #reply-send {
+  .reply-send {
     display: grid;
     padding: 0;
   }
 
-  #reply-send textarea {
+  .reply-send textarea {
     grid-column: 1/3;
     grid-row: 1/2;
     margin: 0;
@@ -191,12 +189,12 @@ textarea:focus {
     width: 100%;
   }
 
-  #reply-send img {
+  .reply-send img {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  #reply-send>textarea button.btns {
+  .reply-send>textarea button.btns {
     width: 100px;
     justify-self: flex-end;
     display: inline-flex;

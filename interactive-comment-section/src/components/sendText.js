@@ -13,7 +13,7 @@ function SendText({ reply, commentId, replyId }) {
   }, [])
 
   return (
-    <article className='content justify-content-between' id="reply-send">
+    <article className='content justify-content-between reply-send'>
       <img src={JuliImage} alt='profile avatar' />
       <textarea
         placeholder={reply

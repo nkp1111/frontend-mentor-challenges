@@ -1,5 +1,5 @@
 /* Score board */
-#scoreboard {
+.scoreboard {
   flex-direction: column;
   position: relative;
   background: hsl(220, 18%, 97%);
@@ -10,13 +10,13 @@
   margin: 0 15px;
 }
 
-#scoreboard img {
+.scoreboard img {
   margin: 10px;
   cursor: pointer;
   width: 12px;
 }
 
-#scoreboard img:hover {
+.scoreboard img:hover {
   opacity: 0.8;
 }
 
@@ -95,7 +95,7 @@
 }
 
 @media (max-width:600px) {
-  #scoreboard {
+  .scoreboard {
     flex-direction: row;
     width: 40%;
   }
