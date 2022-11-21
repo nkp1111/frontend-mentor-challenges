@@ -201,4 +201,13 @@ textarea:focus {
     justify-self: flex-end;
     display: inline-flex;
   }
+
+  .content>div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon-holder {
+    display: flex;
+  }
 }

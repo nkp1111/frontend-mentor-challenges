@@ -3,10 +3,12 @@ import CHeader from './CommentHeader';
 import useGlobalContext from './context'
 import Scoreboard from './components/scoreboard'
 import SendText from './components/sendText'
+import Icons from './Icons'
 
-function Replies({ replyMap }) {
 
-  const { replyData, edit } = useGlobalContext()
+function Replies({ replyMap, commentId }) {
+
+  const { replyData, edit, media } = useGlobalContext()
 
   return (
     replyData && replyMap && replyData.map(reply => {
@@ -19,6 +21,13 @@ function Replies({ replyMap }) {
             <article key={reply.id} className="content replies">
               <div>
                 <Scoreboard id={reply.id} />
+                {media && <Icons
+                  username={reply.user.username}
+                  replyId={reply.id}
+                  text={reply.content}
+                  commentId={commentId}
+                  date={reply.createdAt}
+                />}
               </div>
               <div>
                 <CHeader

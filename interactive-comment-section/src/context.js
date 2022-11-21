@@ -27,7 +27,6 @@ const AppProvider = ({ children }) => {
   const addScore = (cData, id, action) => {
     /* Define scores separately and to increase and decrease */
     let tempScore = {}
-    console.log(cData);
     cData.forEach(d => {
       tempScore[d.id] = d.score
       if (d.replies) {
@@ -84,7 +83,6 @@ const AppProvider = ({ children }) => {
 
     if (commentId === 'new') {
       let id = new Date().getTime()
-
       let newComment = {
         id: id,
         content: comment,
@@ -94,12 +92,11 @@ const AppProvider = ({ children }) => {
         replies: []
       }
 
-      let newData = [...cData, newComment]
-
+      let newData = [...commentData, newComment]
       setCommentData(newData)
       addScore(newData, id, 'new')
 
-    } else if (commentId) {
+    } else if (commentId > 2) {
 
       let newData = cData.map(comment => {
         comment.replies.map(reply => {
@@ -131,10 +128,8 @@ const AppProvider = ({ children }) => {
         }
         return d
       })
-
       setCommentData(newData)
     }
-
   }
 
   const deleteComment = (id) => {
@@ -146,8 +141,6 @@ const AppProvider = ({ children }) => {
     })
     setCommentData(newCommentData)
   }
-
-  console.log(commentData);
 
   useEffect(() => {
     handleData(data)
@@ -169,7 +162,6 @@ const AppProvider = ({ children }) => {
     commentData && deleteComment()
   }, [])
 
-
   const handleMedia = (width) => {
     if (width <= 600) {
       setMedia(true)
@@ -182,8 +174,6 @@ const AppProvider = ({ children }) => {
     let width = window.innerWidth
     handleMedia(width)
   })
-
-  console.log(media);
 
   return (
     <AppContext.Provider

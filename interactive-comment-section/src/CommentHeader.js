@@ -3,10 +3,9 @@ import AmyImage from './assets/images/avatars/image-amyrobson.png'
 import MaxImage from './assets/images/avatars/image-maxblagun.png'
 import RamImage from './assets/images/avatars/image-ramsesmiron.png'
 import JuliImage from './assets/images/avatars/image-juliusomo.png'
-import ReplyIcon from './components/replybtn'
-import EditIcon from './components/editbtn'
-import DeleteIcon from './components/deletebtn'
+
 import useGlobalContext from './context'
+import Icons from './Icons'
 
 const images = [AmyImage, MaxImage, RamImage, JuliImage]
 
@@ -20,15 +19,12 @@ function CommentHeader({ imgNum, username, date, replyId, commentId, text }) {
       <span className='fw-bold'>{username}</span>
       {username === 'juliusomo' && <span id="me">you</span>}
       <span>{date}</span>
-      {username === 'juliusomo'
-        ?
-        <div>
-          <DeleteIcon replyId={replyId} commentId={commentId} />
-          <EditIcon replyId={replyId} text={text} />
-        </div>
-        :
-        <div><ReplyIcon commentId={commentId} /></div>
-      }
+      {!media &&
+        <Icons
+          username={username}
+          replyId={replyId}
+          commentId={commentId}
+          text={text} />}
 
     </div>
   )
