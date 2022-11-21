@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](./src/assets/images/Screenshot%202022-11-21%20104047.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/interactive-comment-section)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
