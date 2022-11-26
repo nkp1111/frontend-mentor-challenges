@@ -13,11 +13,80 @@
 
 * {
   font-family: 'Inter', sans-serif;
-  font-family: 'Lexend Deca', sans-serif;
 }
 
 html {
   font-size: 15px;
+}
+
+body {
+  background: var(--Very-dark-blue-main-background);
+  height: 100vh;
+}
+
+main {
+  width: 85vw;
+  flex-direction: column-reverse;
+  background: var(--Dark-desaturated-blue-card-background);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 span {
+  color: var(--Soft-violet-accent);
+}
+
+p {
+  width: 95%;
+  color: var(--Slightly-transparent-white-stat-headings);
+  margin: 0;
+}
+
+/* info */
+#info {
+  flex-direction: column;
+}
+
+#info div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#info div span:first-child {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* margin-bottom: -3px; */
+}
+
+#info div span:last-child {
+  color: var(--Slightly-transparent-white-stat-headings);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* image */
+#image-body {
+  background: url("./images/image-header-desktop.jpg") top center/ cover no-repeat;
+  width: 90vw;
+  height: 25vh;
+  position: relative;
+
+}
+
+#image-body::before {
+  content: '';
+  position: absolute;
+  background: rgb(170, 92, 219, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* footer */
@@ -26,7 +95,7 @@ html {
   text-align: center;
   position: absolute;
   right: 5vw;
-  bottom: 5vh;
+  bottom: 1vh;
 }
 
 .attribution a {
