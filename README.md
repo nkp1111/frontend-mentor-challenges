@@ -25,3 +25,4 @@ This contains the following project:
 - ecommerce-product-page
 - interactive-comment-section
 - stats-preview-card
+- todo-application
