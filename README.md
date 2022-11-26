@@ -24,3 +24,4 @@ This contains the following project:
 - rest-api-country
 - ecommerce-product-page
 - interactive-comment-section
+- stats-preview-card
