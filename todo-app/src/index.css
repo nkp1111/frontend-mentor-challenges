@@ -205,10 +205,6 @@ body.light #todo-list li.completed {
   color: var(--Dark-Grayish-Blue2);
 }
 
-#todo-list li.completed .circle {
-  background: var(--Check-Background);
-}
-
 /* close icon */
 #todo-list li .close-btn {
   margin-left: auto;
@@ -267,6 +263,7 @@ main nav button {
   border: none;
   cursor: pointer;
   color: inherit;
+  text-transform: capitalize;
 }
 
 main nav button:hover {

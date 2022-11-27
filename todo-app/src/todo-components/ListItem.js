@@ -6,11 +6,12 @@ import { GrClose } from 'react-icons/gr'
 function ListItem({ todo }) {
 
   const { updateCompleted, removeTodoTask } = useGlobalContext()
+
   return (
-    <li
+    <li className='todo-task'
       onClick={(e) => {
-        updateCompleted(todo.id)
         e.currentTarget.classList.toggle("completed")
+        updateCompleted(todo.id)
       }}>
       <Circle id={todo.id} />
       <span>{todo.task}</span>
