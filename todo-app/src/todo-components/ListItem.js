@@ -5,10 +5,10 @@ import { GrClose } from 'react-icons/gr'
 
 function ListItem({ todo }) {
 
-  const { updateCompleted, removeTodoTask } = useGlobalContext()
+  const { state, updateCompleted, removeTodoTask } = useGlobalContext()
 
   return (
-    <li className='todo-task'
+    <li className={state.completed.includes(todo.id) ? 'completed' : ''}
       onClick={(e) => {
         e.currentTarget.classList.toggle("completed")
         updateCompleted(todo.id)

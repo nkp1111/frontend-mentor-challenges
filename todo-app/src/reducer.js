@@ -1,7 +1,7 @@
 const reducer = (state, action) => {
 
   let newState
-  console.log(action.type);
+
   if (action.type === "CHANGE_MODE") {
     if (state.mode === "dark") {
       newState = { ...state, mode: "light" }
@@ -56,6 +56,15 @@ const reducer = (state, action) => {
     let newTodoList = state.todoList.filter(todo => !state.completed.includes(todo.id))
     newState = { ...state, todoList: newTodoList, completed: [] }
     return newState
+  }
+
+  if (action.type === "SET_LOCAL_STORAGE_DATA") {
+    localStorage.setItem("todosApp", JSON.stringify(state))
+    return state
+  }
+
+  if (action.type === "SHOW_LOCAL_STORAGE") {
+    return action.payload.newState
   }
 
   throw new Error("UNKNOWN ACTION")

@@ -22,17 +22,20 @@ const AppProvider = ({ children }) => {
   const changeMode = () => {
     /* To change mode */
     dispatch({ type: "CHANGE_MODE" })
+    setLocalStorage()
   }
 
   const addTodoTask = (task) => {
     console.log("context", task);
     dispatch({ type: "ADD_TASK", payload: task })
     dispatch({ type: "UPDATE_TODO_LEFT" })
+    setLocalStorage()
   }
 
   const removeTodoTask = (id) => {
     dispatch({ type: "REMOVE_TASK", payload: id })
     dispatch({ type: "UPDATE_TODO_LEFT" })
+    setLocalStorage()
   }
 
   const changeBackColor = () => {
@@ -47,14 +50,21 @@ const AppProvider = ({ children }) => {
   const updateCompleted = (id) => {
     dispatch({ type: "MARK_COMPLETE", payload: id })
     dispatch({ type: "UPDATE_TODO_LEFT" })
+    setLocalStorage()
   }
 
   const updateShowTodos = (show) => {
     dispatch({ type: "SHOW_TODOS", payload: show })
+    setLocalStorage()
   }
 
   const clearCompleted = () => {
     dispatch({ type: "CLEAR_COMPLETE" })
+    setLocalStorage()
+  }
+
+  const setLocalStorage = () => {
+    dispatch({ type: "SET_LOCAL_STORAGE_DATA" })
   }
 
   useEffect(() => {
@@ -65,7 +75,13 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "UPDATE_TODO_LEFT" })
   }, [])
 
-  console.log(state);
+  useEffect(() => {
+    const newState = JSON.parse(localStorage.getItem("todosApp"))
+    if (newState) {
+      dispatch({ type: "SHOW_LOCAL_STORAGE", payload: { newState } })
+    }
+  }, []);
+
   return (
     <AppContext.Provider
       value={{
