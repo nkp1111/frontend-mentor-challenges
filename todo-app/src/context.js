@@ -11,7 +11,8 @@ let defaultState = {
     { id: 3, task: "Meditation" }
   ],
   completed: [],
-  todoLeft: 0
+  todoLeft: 0,
+  showTodos: "all"
 }
 
 const AppProvider = ({ children }) => {
@@ -48,6 +49,14 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "UPDATE_TODO_LEFT" })
   }
 
+  const updateShowTodos = (show) => {
+    dispatch({ type: "SHOW_TODOS", payload: show })
+  }
+
+  const clearCompleted = () => {
+    dispatch({ type: "CLEAR_COMPLETE" })
+  }
+
   useEffect(() => {
     changeBackColor()
   })
@@ -65,6 +74,8 @@ const AppProvider = ({ children }) => {
         addTodoTask,
         removeTodoTask,
         updateCompleted,
+        updateShowTodos,
+        clearCompleted,
       }}>
       {children}
     </AppContext.Provider>

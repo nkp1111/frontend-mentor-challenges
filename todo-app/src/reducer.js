@@ -43,7 +43,18 @@ const reducer = (state, action) => {
   if (action.type === "UPDATE_TODO_LEFT") {
     let newTodoLeft = state.todoList.length - state.completed.length
     newState = { ...state, todoLeft: newTodoLeft }
-    console.log(state.todoList, state.completed)
+    return newState
+  }
+
+  if (action.type === "SHOW_TODOS") {
+    let show = action.payload
+    newState = { ...state, showTodos: show }
+    return newState
+  }
+
+  if (action.type === "CLEAR_COMPLETE") {
+    let newTodoList = state.todoList.filter(todo => !state.completed.includes(todo.id))
+    newState = { ...state, todoList: newTodoList, completed: [] }
     return newState
   }
 

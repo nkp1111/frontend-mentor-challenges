@@ -1,29 +1,28 @@
 import React from 'react'
-import Circle from './circle'
-import { GrClose } from 'react-icons/gr'
 import useGlobalContext from '../context'
+import ListItem from './ListItem'
 
 function TodoList() {
 
-  const { state: { todoList }, updateCompleted, removeTodoTask } = useGlobalContext()
+  const { state } = useGlobalContext()
 
   return (
     <ul id="todo-list">
-      {todoList.map(todo => {
-        return (
-          <li key={todo.id}
-            onClick={(e) => {
-              updateCompleted(todo.id)
-              e.currentTarget.classList.toggle("completed")
-            }}>
-            <Circle id={todo.id} />
-            <span>{todo.task}</span>
-            <GrClose className='close-btn' onClick={(e) => {
-              e.stopPropagation()
-              removeTodoTask(todo.id)
-            }} />
-          </li>
-        )
+      {state.todoList.map(todo => {
+        if (state.showTodos === "active" && !state.completed.includes(todo.id)) {
+          return (
+            <ListItem todo={todo} key={todo.id} />
+          )
+        } else if (state.showTodos === "completed" && state.completed.includes(todo.id)) {
+          return (
+            <ListItem todo={todo} key={todo.id} />
+          )
+        } else if (state.showTodos === "all") {
+          return (
+            <ListItem todo={todo} key={todo.id} />
+          )
+        }
+
       })}
 
     </ul>

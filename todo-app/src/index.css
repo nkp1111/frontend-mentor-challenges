@@ -275,6 +275,7 @@ main nav button:hover {
 
 main nav ul li button:focus {
   color: var(--Bright-Blue);
+  outline: none;
 }
 
 /* light theme colors*/
