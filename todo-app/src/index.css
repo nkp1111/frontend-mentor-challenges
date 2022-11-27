@@ -44,12 +44,33 @@ body::before {
   z-index: -1;
 }
 
+/* header */
 header {
   margin-top: 10vh;
   background: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 5;
+  color: white;
+  align-items: center;
+}
+
+header>* {
+  margin: 0 8rem;
+}
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+}
+
+header .mode-change {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+header .mode-change:hover {
+  scale: 1.1;
 }
 
 /* footer */
