@@ -1,10 +1,10 @@
 import React from 'react'
-import { BiCircle } from 'react-icons/bi'
+import Circle from './circle'
 
 function Search() {
   return (
     <form>
-      <BiCircle className="circle" />
+      <Circle />
       <input type="text" placeholder='Add todo tasks...' id="search bar" />
     </form>
   )

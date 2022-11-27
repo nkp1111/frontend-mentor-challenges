@@ -17,8 +17,8 @@
   --Light-Grayish-Blue: hsl(234, 39%, 85%);
   --Light-Grayish-Blue--hover: hsl(236, 33%, 92%);
   --Dark-Grayish-Blue: hsl(234, 11%, 52%);
-  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
   --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
 
 }
 
@@ -31,6 +31,9 @@
 body {
   background: var(--Very-Dark-Blue);
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body::before {
@@ -49,14 +52,11 @@ header {
   margin-top: 10vh;
   background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 5;
   color: white;
   align-items: center;
-}
-
-header>* {
-  margin: 0 8rem;
+  width: 35vw;
 }
 
 header h1 {
@@ -71,6 +71,106 @@ header .mode-change {
 
 header .mode-change:hover {
   scale: 1.1;
+}
+
+/* main */
+main {
+  margin-top: 5vh;
+  background: transparent;
+  padding: 0;
+}
+
+/* todo */
+/* search bar */
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--Dark-Grayish-Blue);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+form {
+  position: relative;
+  margin-bottom: 3vh;
+}
+
+form input {
+  background: var(--Very-Dark-Desaturated-Blue);
+  padding: 1.2rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  color: var(--Light-Grayish-Blue);
+  width: 100%;
+  border-radius: 3px;
+  padding-left: 3rem;
+  caret-color: var(--Bright-Blue);
+}
+
+form input::placeholder {
+  color: var(--Dark-Grayish-Blue);
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .circle {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+/* To do list */
+#todo-list {
+  background: var(--Very-Dark-Desaturated-Blue);
+  border-radius: 3px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#todo-list li {
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  color: var(--Light-Grayish-Blue);
+  cursor: pointer;
+  width: 100%;
+}
+
+#todo-list li:hover {
+  color: var(--Light-Grayish-Blue--hover);
+}
+
+/* circle icon */
+#todo-list li .circle {
+  margin-right: 1rem;
+}
+
+#todo-list li:hover .circle {
+  border-color: var(--Check-Background);
+  border-width: 2px;
+}
+
+/* close icon */
+#todo-list li .close-btn {
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
+}
+
+#todo-list li:hover .close-btn {
+  display: block;
+}
+
+#todo-list li:hover .close-btn path {
+  stroke: var(--Very-Dark-Grayish-Blue);
+}
+
+#todo-list li:hover .close-btn:hover path {
+  stroke: var(--Dark-Grayish-Blue);
 }
 
 /* footer */
