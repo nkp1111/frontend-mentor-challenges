@@ -25,15 +25,31 @@
 * {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
-}
-
-html {
-  font-size: 18px;
+  margin: 0;
 }
 
 body {
-  background: var(--Check-Background);
-  height: 100vh;
+  background: var(--Very-Dark-Blue);
+  font-size: 18px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  height: 40vh;
+  background: url("./assets/images/bg-desktop-dark.jpg") center center /cover no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+header {
+  margin-top: 10vh;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
 }
 
 /* footer */
