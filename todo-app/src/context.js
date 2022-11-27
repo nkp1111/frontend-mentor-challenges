@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer } from 'react'
+import React, { useContext, useEffect, useReducer, useState } from 'react'
 import reducer from './reducer'
 
 const AppContext = React.createContext()
@@ -18,6 +18,7 @@ let defaultState = {
 const AppProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(reducer, defaultState)
+  const [media, setMedia] = useState(false)
 
   const changeMode = () => {
     /* To change mode */
@@ -82,6 +83,15 @@ const AppProvider = ({ children }) => {
     }
   }, []);
 
+  useEffect(() => {
+    let width = window.innerWidth
+    if (width < 501) {
+      setMedia(true)
+    } else {
+      setMedia(false)
+    }
+  }, [])
+
   return (
     <AppContext.Provider
       value={{
@@ -92,6 +102,7 @@ const AppProvider = ({ children }) => {
         updateCompleted,
         updateShowTodos,
         clearCompleted,
+        media
       }}>
       {children}
     </AppContext.Provider>

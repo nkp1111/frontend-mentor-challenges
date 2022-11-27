@@ -67,6 +67,7 @@ header {
   color: white;
   align-items: center;
   width: 35vw;
+  min-width: 480px;
 }
 
 header h1 {
@@ -235,7 +236,8 @@ body.light #todo-list li:hover .close-btn:hover path {
 }
 
 /* todo nav */
-main nav {
+main nav,
+nav+ul {
   background: var(--Very-Dark-Desaturated-Blue);
   color: var(--Dark-Grayish-Blue);
   display: flex;
@@ -246,19 +248,22 @@ main nav {
   box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
 }
 
-main nav ul {
+main nav ul,
+nav+ul {
   list-style-type: none;
   display: flex;
 }
 
-main nav ul li {
+main nav ul li,
+nav+ul li {
   margin: 0 .5rem;
   cursor: pointer;
   transition: .3s all;
 }
 
 /* nav button */
-main nav button {
+main nav button,
+nav+ul button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -266,17 +271,20 @@ main nav button {
   text-transform: capitalize;
 }
 
-main nav button:hover {
+main nav button:hover,
+nav+ul button:hover {
   color: var(--Light-Grayish-Blue);
 }
 
-main nav ul li button:focus {
+main nav ul li button:focus,
+nav+ul button:focus {
   color: var(--Bright-Blue);
   outline: none;
 }
 
 /* light theme colors*/
-body.light main nav {
+body.light main nav,
+body.light main nav+ul {
   background: var(--Very-Light-Grayish-Blue);
   color: var(--Dark-Grayish-Blue);
   box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3);
@@ -302,4 +310,26 @@ body.light main nav button:hover {
 
 body.light .attribution {
   color: var(--Very-Dark-Blue);
+}
+
+@media (max-width:500px) {
+  header {
+    min-width: 360px;
+    width: 95vw;
+    padding: 0 1rem;
+  }
+
+  main {
+    width: 95vw;
+  }
+
+  nav+ul {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  nav+ul li {
+    margin: 0 .9rem;
+  }
+
 }
