@@ -52,6 +52,7 @@ body::before {
   z-index: -1;
 }
 
+/* light theme colors*/
 body.light::before {
   background: url("./assets/images/bg-desktop-light.jpg") center center /cover no-repeat;
 }
@@ -99,6 +100,11 @@ main {
   border-radius: 50%;
 }
 
+/* light theme colors*/
+body.light .circle {
+  border: 1px solid var(--Light-Grayish-Blue2);
+}
+
 form {
   position: relative;
   margin-bottom: 3vh;
@@ -114,6 +120,12 @@ form input {
   border-radius: 3px;
   padding-left: 3rem;
   caret-color: var(--Bright-Blue);
+}
+
+/* light theme colors*/
+body.light form input {
+  background: var(--Very-Light-Grayish-Blue);
+  color: var(--Very-Dark-Blue);
 }
 
 form input::placeholder {
@@ -153,6 +165,20 @@ form .circle {
   color: var(--Light-Grayish-Blue--hover);
 }
 
+/* light theme colors*/
+body.light #todo-list {
+  background: var(--Very-Light-Grayish-Blue);
+}
+
+body.light #todo-list li {
+  border-bottom-color: var(--Light-Grayish-Blue2);
+  color: var(--Very-Dark-Blue);
+}
+
+body.light #todo-list li:hover {
+  color: var(--Very-Dark-Desaturated-Blue);
+}
+
 /* circle icon */
 #todo-list li .circle {
   margin-right: 1rem;
@@ -182,6 +208,15 @@ form .circle {
   stroke: var(--Dark-Grayish-Blue);
 }
 
+/* light theme colors*/
+body.light #todo-list li:hover .close-btn path {
+  stroke: var(--Dark-Grayish-Blue);
+}
+
+body.light #todo-list li:hover .close-btn:hover path {
+  stroke: var(--Very-Dark-Grayish-Blue);
+}
+
 /* todo nav */
 main nav {
   background: var(--Very-Dark-Desaturated-Blue);
@@ -191,7 +226,7 @@ main nav {
   align-items: center;
   padding: 1.2rem;
   font-size: .8rem;
-  box-shadow: 0 10px var(--Very-Dark-Blue);
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
 }
 
 main nav ul {
@@ -220,7 +255,16 @@ main nav ul li button:focus {
   color: var(--Bright-Blue);
 }
 
+/* light theme colors*/
+body.light main nav {
+  background: var(--Very-Light-Grayish-Blue);
+  color: var(--Dark-Grayish-Blue);
+  box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3);
+}
 
+body.light main nav button:hover {
+  color: var(--Very-Dark-Desaturated-Blue);
+}
 
 /* footer */
 .attribution {
