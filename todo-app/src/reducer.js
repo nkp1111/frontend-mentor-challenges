@@ -1,6 +1,6 @@
 const reducer = (state, action) => {
   let newState
-  console.log(state, action.type);
+  console.log(action.type);
   if (action.type === "CHANGE_MODE") {
     if (state.mode === "dark") {
       newState = { ...state, mode: "light" }
@@ -9,6 +9,28 @@ const reducer = (state, action) => {
     }
     return newState
   }
+
+  if (action.type === "ADD_TASK") {
+    let id = new Date().getTime()
+    let newTask = { id, task: action.payload }
+    let newTodoList = [...state.todoList, newTask]
+    newState = { ...state, todoList: newTodoList }
+    return newState
+  }
+
+  if (action.type === "MARK_COMPLETE") {
+    let id = action.payload
+    let newCompleted
+    if (state.completed.includes(id)) {
+      newCompleted = state.completed.filter(d => d !== id)
+    } else {
+      newCompleted = [...state.completed, id]
+    }
+
+    newState = { ...state, completed: newCompleted }
+    return newState
+  }
+
   throw new Error("UNKNOWN ACTION")
 }
 

@@ -98,6 +98,7 @@ main {
   border: 1px solid var(--Dark-Grayish-Blue);
   background-color: transparent;
   border-radius: 50%;
+  transition: .3s all;
 }
 
 /* light theme colors*/
@@ -159,6 +160,7 @@ form .circle {
   color: var(--Light-Grayish-Blue);
   cursor: pointer;
   width: 100%;
+  transition: .3s all;
 }
 
 #todo-list li:hover {
@@ -237,6 +239,7 @@ main nav ul {
 main nav ul li {
   margin: 0 .5rem;
   cursor: pointer;
+  transition: .3s all;
 }
 
 /* nav button */
@@ -278,4 +281,8 @@ body.light main nav button:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+body.light .attribution {
+  color: var(--Very-Dark-Blue);
 }

@@ -1,11 +1,20 @@
 import React from 'react'
 import Circle from './circle'
+import useGlobalContext from '../context'
 
 function Search() {
+
+  const { addTodoTask } = useGlobalContext()
   return (
-    <form>
+    <form onSubmit={(e) => {
+      e.preventDefault()
+      let searchBar = document.getElementById("search-bar")
+      let task = searchBar.value
+      addTodoTask(task)
+      searchBar.value = ""
+    }}>
       <Circle />
-      <input type="text" placeholder='Add todo tasks...' id="search bar" autoFocus />
+      <input type="text" placeholder='Add todo tasks...' id="search-bar" autoFocus />
     </form>
   )
 }

@@ -7,7 +7,7 @@ import useGlobalContext from './context'
 function Header() {
 
   const { state, changeMode } = useGlobalContext()
-  console.log(state);
+
   return (
     <header>
       <h1>Todo</h1>

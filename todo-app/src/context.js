@@ -5,7 +5,11 @@ const AppContext = React.createContext()
 
 let defaultState = {
   mode: "dark",
-  todoList: [],
+  todoList: [
+    { id: 1, task: "Complete online javascript course" },
+    { id: 2, task: "Jog around the park" },
+    { id: 3, task: "Meditation" }
+  ],
   completed: [],
 }
 
@@ -32,16 +36,22 @@ const AppProvider = ({ children }) => {
     }
   }
 
+  const updateCompleted = (id) => {
+    dispatch({ type: "MARK_COMPLETE", payload: id })
+  }
+
   useEffect(() => {
     changeBackColor()
   })
 
+  console.log(state);
   return (
     <AppContext.Provider
       value={{
         state,
         changeMode,
-        addTodoTask
+        addTodoTask,
+        updateCompleted
       }}>
       {children}
     </AppContext.Provider>
