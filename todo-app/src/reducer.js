@@ -1,4 +1,5 @@
 const reducer = (state, action) => {
+
   let newState
   console.log(action.type);
   if (action.type === "CHANGE_MODE") {
@@ -14,7 +15,15 @@ const reducer = (state, action) => {
     let id = new Date().getTime()
     let newTask = { id, task: action.payload }
     let newTodoList = [...state.todoList, newTask]
-    newState = { ...state, todoList: newTodoList }
+    newState = { ...state, todoList: newTodoList, todoLeft: state.todoLeft + 1 }
+    return newState
+  }
+
+  if (action.type === "REMOVE_TASK") {
+    let id = action.payload
+    let newTodoList = state.todoList.filter(todo => todo.id !== id)
+    let newCompleted = state.completed.filter(todoId => todoId !== id)
+    newState = { ...state, todoList: newTodoList, todoLeft: state.todoLeft - 1, completed: newCompleted }
     return newState
   }
 
@@ -22,12 +31,19 @@ const reducer = (state, action) => {
     let id = action.payload
     let newCompleted
     if (state.completed.includes(id)) {
-      newCompleted = state.completed.filter(d => d !== id)
+      newCompleted = state.completed.filter(todoId => todoId !== id)
     } else {
       newCompleted = [...state.completed, id]
     }
 
     newState = { ...state, completed: newCompleted }
+    return newState
+  }
+
+  if (action.type === "UPDATE_TODO_LEFT") {
+    let newTodoLeft = state.todoList.length - state.completed.length
+    newState = { ...state, todoLeft: newTodoLeft }
+    console.log(state.todoList, state.completed)
     return newState
   }
 

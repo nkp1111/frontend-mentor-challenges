@@ -1,9 +1,12 @@
 import React from 'react'
+import useGlobalContext from '../context'
 
 function TodoNav() {
+
+  const { state } = useGlobalContext()
   return (
     <nav>
-      <span>5 items left</span>
+      <span>{state.todoLeft} items left</span>
       <ul>
         <li>
           <button>All</button>

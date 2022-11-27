@@ -11,6 +11,7 @@ let defaultState = {
     { id: 3, task: "Meditation" }
   ],
   completed: [],
+  todoLeft: 0
 }
 
 const AppProvider = ({ children }) => {
@@ -25,6 +26,12 @@ const AppProvider = ({ children }) => {
   const addTodoTask = (task) => {
     console.log("context", task);
     dispatch({ type: "ADD_TASK", payload: task })
+    dispatch({ type: "UPDATE_TODO_LEFT" })
+  }
+
+  const removeTodoTask = (id) => {
+    dispatch({ type: "REMOVE_TASK", payload: id })
+    dispatch({ type: "UPDATE_TODO_LEFT" })
   }
 
   const changeBackColor = () => {
@@ -38,11 +45,16 @@ const AppProvider = ({ children }) => {
 
   const updateCompleted = (id) => {
     dispatch({ type: "MARK_COMPLETE", payload: id })
+    dispatch({ type: "UPDATE_TODO_LEFT" })
   }
 
   useEffect(() => {
     changeBackColor()
   })
+
+  useEffect(() => {
+    dispatch({ type: "UPDATE_TODO_LEFT" })
+  }, [])
 
   console.log(state);
   return (
@@ -51,7 +63,8 @@ const AppProvider = ({ children }) => {
         state,
         changeMode,
         addTodoTask,
-        updateCompleted
+        removeTodoTask,
+        updateCompleted,
       }}>
       {children}
     </AppContext.Provider>

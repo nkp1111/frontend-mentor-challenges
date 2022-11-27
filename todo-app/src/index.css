@@ -101,6 +101,10 @@ main {
   transition: .3s all;
 }
 
+.circle svg {
+  stroke: white;
+}
+
 /* light theme colors*/
 body.light .circle {
   border: 1px solid var(--Light-Grayish-Blue2);
@@ -188,7 +192,21 @@ body.light #todo-list li:hover {
 
 #todo-list li:hover .circle {
   border-color: var(--Check-Background);
-  border-width: 2px;
+  border-width: 1px;
+}
+
+/* completed todo item */
+#todo-list li.completed {
+  color: var(--Very-Dark-Grayish-Blue);
+  text-decoration: line-through;
+}
+
+body.light #todo-list li.completed {
+  color: var(--Dark-Grayish-Blue2);
+}
+
+#todo-list li.completed .circle {
+  background: var(--Check-Background);
 }
 
 /* close icon */
@@ -196,6 +214,7 @@ body.light #todo-list li:hover {
   margin-left: auto;
   display: none;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 #todo-list li:hover .close-btn {

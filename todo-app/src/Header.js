@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiCheck } from 'react-icons/fi'
 import { FaMoon } from 'react-icons/fa'
 import { RiSunFill } from 'react-icons/ri'
 import useGlobalContext from './context'

@@ -5,7 +5,7 @@ import useGlobalContext from '../context'
 
 function TodoList() {
 
-  const { state: { todoList }, updateCompleted } = useGlobalContext()
+  const { state: { todoList }, updateCompleted, removeTodoTask } = useGlobalContext()
 
   return (
     <ul id="todo-list">
@@ -14,11 +14,14 @@ function TodoList() {
           <li key={todo.id}
             onClick={(e) => {
               updateCompleted(todo.id)
-              e.target.classList.toggle("completed")
+              e.currentTarget.classList.toggle("completed")
             }}>
-            <Circle />
+            <Circle id={todo.id} />
             <span>{todo.task}</span>
-            <GrClose className='close-btn' />
+            <GrClose className='close-btn' onClick={(e) => {
+              e.stopPropagation()
+              removeTodoTask(todo.id)
+            }} />
           </li>
         )
       })}
