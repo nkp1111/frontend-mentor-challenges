@@ -5,7 +5,7 @@ function Search() {
   return (
     <form>
       <Circle />
-      <input type="text" placeholder='Add todo tasks...' id="search bar" />
+      <input type="text" placeholder='Add todo tasks...' id="search bar" autoFocus />
     </form>
   )
 }

@@ -173,6 +173,46 @@ form .circle {
   stroke: var(--Dark-Grayish-Blue);
 }
 
+/* todo nav */
+main nav {
+  background: var(--Very-Dark-Desaturated-Blue);
+  color: var(--Dark-Grayish-Blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  font-size: .8rem;
+  box-shadow: 0 10px var(--Very-Dark-Blue);
+}
+
+main nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+main nav ul li {
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+
+/* nav button */
+main nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+main nav button:hover {
+  color: var(--Light-Grayish-Blue);
+}
+
+main nav ul li button:focus {
+  color: var(--Bright-Blue);
+}
+
+
+
 /* footer */
 .attribution {
   font-size: 11px;

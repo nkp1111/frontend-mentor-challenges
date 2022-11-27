@@ -5,9 +5,11 @@ function TodoNav() {
     <nav>
       <span>5 items left</span>
       <ul>
-        <li>All</li>
-        <li>Active</li>
-        <li>Completed</li>
+        <li>
+          <button>All</button>
+        </li>
+        <li><button>Active</button></li>
+        <li><button>Completed</button></li>
       </ul>
       <button>Clear completed</button>
     </nav>
