@@ -7,9 +7,9 @@
   /* light theme */
   --Very-Light-Gray: hsl(0, 0%, 98%);
   --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
-  --Light-Grayish-Blue: hsl(233, 11%, 84%);
-  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
-  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+  --Light-Grayish-Blue2: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue2: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue2: hsl(235, 19%, 35%);
 
   /* dark theme */
   --Very-Dark-Blue: hsl(235, 21%, 11%);
@@ -17,7 +17,6 @@
   --Light-Grayish-Blue: hsl(234, 39%, 85%);
   --Light-Grayish-Blue--hover: hsl(236, 33%, 92%);
   --Dark-Grayish-Blue: hsl(234, 11%, 52%);
-  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
   --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
 
 }
@@ -34,6 +33,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: .3s all;
+}
+
+body.light {
+  background: var(--Very-Light-Gray);
+  transition: .3s all;
 }
 
 body::before {
@@ -45,6 +50,10 @@ body::before {
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+body.light::before {
+  background: url("./assets/images/bg-desktop-light.jpg") center center /cover no-repeat;
 }
 
 /* header */
