@@ -6,9 +6,9 @@ const AppContext = React.createContext()
 let defaultState = {
   mode: "dark",
   todoList: [
-    { id: 1, task: "Complete online javascript course" },
-    { id: 2, task: "Jog around the park" },
-    { id: 3, task: "Meditation" }
+    // { id: 1, task: "Complete online javascript course" },
+    // { id: 2, task: "Jog around the park" },
+    // { id: 3, task: "Meditation" }
   ],
   completed: [],
   todoLeft: 0,
