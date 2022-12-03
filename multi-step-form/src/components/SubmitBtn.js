@@ -3,7 +3,7 @@ import useGlobalContext from '../context'
 import { Link } from 'react-router-dom'
 
 function SubmitBtn() {
-
+  {/* Change Page by clicking Link */ }
   const { sectionMap, setSection, section } = useGlobalContext()
   let newSectionName = sectionMap[section + 1]
   return (
