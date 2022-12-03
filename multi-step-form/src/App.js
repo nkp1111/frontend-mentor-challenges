@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar';
 import PersonalInfo from './pages/PersonalInfo'
+import SelectPlan from './pages/SelectPlan'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Multi Step Form</h1>
       {/* <Sidebar /> */}
       {/* <PersonalInfo /> */}
+      <SelectPlan />
     </main>
   );
 }
