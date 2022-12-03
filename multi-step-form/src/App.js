@@ -1,11 +1,14 @@
 import React from 'react'
 import Sidebar from './Sidebar';
+import PersonalInfo from './pages/PersonalInfo'
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-    </div>
+    <main className="App">
+      <h1>Multi Step Form</h1>
+      {/* <Sidebar /> */}
+      {/* <PersonalInfo /> */}
+    </main>
   );
 }
 
