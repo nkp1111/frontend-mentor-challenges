@@ -7,14 +7,16 @@ function GoBackBtn() {
   const { sectionMap, setSection, section } = useGlobalContext()
   let newSectionName = sectionMap[section - 1]
   return (
-    <Link to={`/${newSectionName}`}
-      onClick={() => {
-        setSection(section - 1)
-      }}>
-      <button>
+
+    <button className='go-back-btn'>
+      <Link to={`/${newSectionName}`}
+        onClick={() => {
+          setSection(section - 1)
+        }}>
         Go Back
-      </button>
-    </Link>
+      </Link>
+    </button>
+
 
   )
 }

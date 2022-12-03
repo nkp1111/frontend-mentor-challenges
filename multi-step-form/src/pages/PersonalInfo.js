@@ -3,7 +3,7 @@ import SubmitBtn from '../components/SubmitBtn'
 
 function PersonalInfo() {
   return (
-    <section id="personal-info">
+    <section id="personalInfo">
       <h2>Personal info</h2>
       <p>Please provide your name, email address, and phone number.</p>
       <form>

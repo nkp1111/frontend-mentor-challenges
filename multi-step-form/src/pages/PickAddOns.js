@@ -5,7 +5,7 @@ import pickAddOnsData from '../assets/data/pickAddOnsData'
 
 function PickAddOns() {
   return (
-    <section>
+    <section id="pickAddOns">
       <h2> Pick add-ons</h2>
       <p>  Add-ons help enhance your gaming experience.</p>
       <form>

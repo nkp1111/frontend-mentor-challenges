@@ -4,7 +4,7 @@ import checkmark from '../assets/images/icon-checkmark.svg'
 function ThankYou() {
 
   return (
-    <section>
+    <section id="thankYou">
       <div>
         <h2> Thank you!</h2>
         <p>

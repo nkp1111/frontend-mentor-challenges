@@ -4,7 +4,7 @@ import GoBackBtn from '../components/GoBackBtn'
 
 function Summary() {
   return (
-    <section>
+    <section id="summary">
       <h2>Finishing up</h2>
       <p>Double-check everything looks OK before confirming.</p>
       <form>

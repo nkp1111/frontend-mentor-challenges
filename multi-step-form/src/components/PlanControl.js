@@ -2,13 +2,13 @@ import React from 'react'
 
 function PlanControl() {
   return (
-    <div>
-      <span>Monthly</span>
+    <div className="plan-changer">
+      <label htmlFor='pack'>Monthly</label>
       <label className="switch">
         <input type="checkbox" id="pack" value="monthly" />
         <span className="slider"></span>
       </label>
-      <span>Yearly</span>
+      <label htmlFor='pack'>Yearly</label>
     </div>
   )
 }
