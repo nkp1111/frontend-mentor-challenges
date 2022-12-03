@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import PersonalInfo from './pages/PersonalInfo'
 import SelectPlan from './pages/SelectPlan'
 import PickAddOns from './pages/PickAddOns'
+import Summary from './pages/Summary'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Sidebar /> */}
       {/* <PersonalInfo /> */}
       {/* <SelectPlan /> */}
-      <PickAddOns />
+      {/* <PickAddOns /> */}
+      <Summary />
     </main>
   );
 }
