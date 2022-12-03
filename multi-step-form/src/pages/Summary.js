@@ -35,8 +35,10 @@ function Summary() {
             <span>$9/mon</span>
           </li>
         </ul>
-        <GoBackBtn />
-        <SubmitBtn />
+        <div className='btn-holder'>
+          <GoBackBtn />
+          <SubmitBtn />
+        </div>
       </form>
     </section>
   )

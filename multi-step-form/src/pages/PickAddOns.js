@@ -11,23 +11,22 @@ function PickAddOns() {
       <form>
         {pickAddOnsData.map(item => {
           return (
-            <div key={item.id}>
+            <div key={item.id} className="add-ons-holder">
               <label htmlFor={item.type}>
-                <input name={item.type} type="checkbox" placeholder="e.g. Stephen King" />
+                <input name={item.type} type="checkbox" id={item.type} />
                 <span>
-                  <span>
-                    <p>{item.type}</p>
-                    <p>{item.desc}</p>
-                  </span>
-                  <span>{item.cost.monthly}</span>
+                  <p>{item.type}</p>
+                  <p>{item.desc}</p>
                 </span>
+                <span>+${item.cost.monthly}/mon</span>
               </label>
             </div>
           )
         })}
-
-        <GoBackBtn />
-        <SubmitBtn />
+        <div className='btn-holder'>
+          <GoBackBtn />
+          <SubmitBtn />
+        </div>
       </form>
     </section>
   )
