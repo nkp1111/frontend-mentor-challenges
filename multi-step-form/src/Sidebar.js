@@ -8,7 +8,7 @@ function Sidebar() {
         {SidebarData.map(item => {
           return (
             <li key={item.id}>
-              <span>{item.id}</span>
+              <span className='step-num'>{item.id}</span>
               <span>
                 <p>Step {item.id}</p>
                 <p>{item.type}</p>

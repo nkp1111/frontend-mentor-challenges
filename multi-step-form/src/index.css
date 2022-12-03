@@ -32,9 +32,14 @@ body {
   align-items: center;
 }
 
+/* main */
 main {
   background: var(--White);
   display: flex;
+  border-radius: 1rem;
+  padding: .6rem;
+  box-shadow: 5px 5px 10px var(--Pastel-blue);
+  width: 60vw;
 }
 
 main h1 {
@@ -45,6 +50,47 @@ main h1 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Sidebar */
+#sidebar {
+  background: url("./assets/images/bg-sidebar-desktop.svg") center bottom/ cover no-repeat;
+  border-radius: .5rem;
+  width: 35%;
+  color: var(--White);
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin: .8rem;
+}
+
+#sidebar .step-num {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: .5rem;
+  border: 1px solid var(--White);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#sidebar .step-num.active {
+  background: var(--Light-blue);
+  color: var(--Marine-blue);
+}
+
+/* section : personal info*/
+
 
 /* footer */
 .attribution {
