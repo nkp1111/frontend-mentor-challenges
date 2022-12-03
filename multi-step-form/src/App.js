@@ -4,6 +4,7 @@ import PersonalInfo from './pages/PersonalInfo'
 import SelectPlan from './pages/SelectPlan'
 import PickAddOns from './pages/PickAddOns'
 import Summary from './pages/Summary'
+import ThankYou from './pages/ThankYou'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <PersonalInfo /> */}
       {/* <SelectPlan /> */}
       {/* <PickAddOns /> */}
-      <Summary />
+      {/* <Summary /> */}
+      <ThankYou />
     </main>
   );
 }
