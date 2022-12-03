@@ -9,7 +9,7 @@ function Sidebar() {
           return (
             <li key={item.id}>
               <span className='step-num'>{item.id}</span>
-              <span>
+              <span className='step-info'>
                 <p>Step {item.id}</p>
                 <p>{item.type}</p>
               </span>

@@ -7,14 +7,16 @@ function SubmitBtn() {
   const { sectionMap, setSection, section } = useGlobalContext()
   let newSectionName = sectionMap[section + 1]
   return (
-    <Link to={`/${newSectionName}`}
-      onClick={() => {
-        setSection(section + 1)
-      }}>
-      <button>
+
+    <button className="submit-btn">
+      <Link to={`/${newSectionName}`}
+        onClick={() => {
+          setSection(section + 1)
+        }}>
         {section === 3 ? "Confirm" : "Next Step"}
-      </button>
-    </Link>
+      </Link>
+    </button>
+
   )
 }
 
