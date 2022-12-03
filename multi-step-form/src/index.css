@@ -21,4 +21,40 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-body {}
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 10vh 20vw;
+  background: var(--Magnolia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: var(--White);
+  display: flex;
+}
+
+main h1 {
+  color: var(--Marine-blue);
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* footer */
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  right: 10%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
