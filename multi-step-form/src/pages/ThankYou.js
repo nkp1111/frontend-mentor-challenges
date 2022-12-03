@@ -2,6 +2,7 @@ import React from 'react'
 import checkmark from '../assets/images/icon-checkmark.svg'
 
 function ThankYou() {
+
   return (
     <section>
       <div>

@@ -5,17 +5,23 @@ import SelectPlan from './pages/SelectPlan'
 import PickAddOns from './pages/PickAddOns'
 import Summary from './pages/Summary'
 import ThankYou from './pages/ThankYou'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <main className="App">
       <h1>Multi Step Form</h1>
-      {/* <Sidebar /> */}
-      {/* <PersonalInfo /> */}
-      {/* <SelectPlan /> */}
-      {/* <PickAddOns /> */}
-      {/* <Summary /> */}
-      <ThankYou />
+      <Router>
+        <Sidebar />
+        <Routes>
+          <Route exact path="/" element={<PersonalInfo />}></Route>
+          <Route path="/personalInfo" element={<PersonalInfo />} ></Route>
+          <Route path="/planSelect" element={<SelectPlan />}></Route>
+          <Route path="/pickAddOns" element={<PickAddOns />} ></Route>
+          <Route path='/summary' element={<Summary />}></Route>
+          <Route path='/thankYou' element={<ThankYou />}></Route>
+        </Routes>
+      </Router>
     </main>
   );
 }

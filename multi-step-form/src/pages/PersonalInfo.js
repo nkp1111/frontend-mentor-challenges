@@ -8,15 +8,15 @@ function PersonalInfo() {
       <p>Please provide your name, email address, and phone number.</p>
       <form>
         <div>
-          <label for="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input id="" name="name" type="text" placeholder="e.g. Stephen King" />
         </div>
         <div>
-          <label for="email">Email Address</label>
+          <label htmlFor="email">Email Address</label>
           <input id="" name="email" type="email" placeholder="e.g. stephenking@lorem.com" />
         </div>
         <div>
-          <label for="phone">Phone Number</label>
+          <label htmlFor="phone">Phone Number</label>
           <input id="" name="phone" type="text" placeholder="e.g. +1 234 567 890" />
         </div>
         <SubmitBtn />

@@ -15,7 +15,7 @@ function SelectPlan() {
             {selectPlanData.map(item => {
               return (
                 <div key={item.id}>
-                  <label for={`plan-${item.plan}`}> {item.plan}</label>
+                  <label htmlFor={`plan-${item.plan}`}> {item.plan}</label>
                   <input type="radio" name="plan" value={item.plan} id={`plan-${item.plan}`} />
                 </div>
               )

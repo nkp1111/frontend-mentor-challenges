@@ -12,7 +12,7 @@ function PickAddOns() {
         {pickAddOnsData.map(item => {
           return (
             <div key={item.id}>
-              <label for={item.type}>
+              <label htmlFor={item.type}>
                 <input name={item.type} type="checkbox" placeholder="e.g. Stephen King" />
                 <span>
                   <span>
