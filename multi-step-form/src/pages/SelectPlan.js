@@ -18,6 +18,7 @@ function SelectPlan() {
       <form>
         <div>
           <div>
+            {/* add active class to selected plan */}
             {selectPlanData.map(item => {
               return (
                 <label htmlFor={`plan-${item.plan}`}

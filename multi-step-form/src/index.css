@@ -56,7 +56,7 @@ section h2+p {
 }
 
 section button {
-  background: var(--Purplish-blue);
+  background: var(--Marine-blue);
   color: white;
   border: none;
   border-radius: 5px;
@@ -75,6 +75,10 @@ section button a {
 
 section .submit-btn {
   margin: 3.5rem 0 0 auto;
+}
+
+section .submit-btn:hover {
+  opacity: .8;
 }
 
 section .go-back-btn {
@@ -211,7 +215,7 @@ section#personalInfo form input::placeholder {
   color: var(--Cool-gray);
 }
 
-/* section : select plan*/
+/* section : select plan */
 section#planSelect form div>div:first-child {
   display: flex;
   margin-bottom: 1rem;
@@ -227,7 +231,8 @@ section#planSelect form label.plan-label {
   width: 28%;
 }
 
-section#planSelect form label.plan-label:hover {
+section#planSelect form label.plan-label:hover,
+section#planSelect form label.plan-label.active {
   border: 1px solid var(--Marine-blue);
 }
 
@@ -266,6 +271,12 @@ section#planSelect .plan-changer {
 section#planSelect .plan-changer label:nth-child(odd) {
   color: var(--Cool-gray);
   margin: 0 .9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+section#planSelect .plan-changer label:nth-child(odd).active {
+  color: var(--Marine-blue);
 }
 
 section#planSelect .plan-changer label.switch {
@@ -379,6 +390,11 @@ section#summary form ul a {
   color: var(--Cool-gray);
   text-decoration: underline;
   margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+section#summary form ul a:hover {
+  color: var(--Marine-blue);
 }
 
 section#summary form ul .total-amount {
