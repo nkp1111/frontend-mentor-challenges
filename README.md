@@ -26,3 +26,4 @@ This contains the following project:
 - interactive-comment-section
 - stats-preview-card
 - todo-application
+- multi-step-form
