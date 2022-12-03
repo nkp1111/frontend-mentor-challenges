@@ -26,8 +26,8 @@ function PickAddOns() {
           )
         })}
 
-        <SubmitBtn />
         <GoBackBtn />
+        <SubmitBtn />
       </form>
     </section>
   )

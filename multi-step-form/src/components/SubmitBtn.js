@@ -1,10 +1,20 @@
 import React from 'react'
+import useGlobalContext from '../context'
+import { Link } from 'react-router-dom'
 
 function SubmitBtn() {
+
+  const { sectionMap, setSection, section } = useGlobalContext()
+  let newSectionName = sectionMap[section + 1]
   return (
-    <button>
-      Next Step
-    </button>
+    <Link to={`/${newSectionName}`}
+      onClick={() => {
+        setSection(section + 1)
+      }}>
+      <button>
+        {section === 3 ? "Confirm" : "Next Step"}
+      </button>
+    </Link>
   )
 }
 

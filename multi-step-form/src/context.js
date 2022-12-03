@@ -4,13 +4,21 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
 
-  const [section, setSection] = useState("personal-info")
+  const sectionMap = [
+    "personalInfo",
+    "planSelect",
+    "pickAddOns",
+    "summary",
+    "thankYou",
+  ]
+  const [section, setSection] = useState(0)
 
   return (
     <AppContext.Provider
       value={{
         section,
-        setSection
+        setSection,
+        sectionMap,
       }}>
       {children}
     </AppContext.Provider>
