@@ -397,6 +397,21 @@ section#summary .btn-holder {
   margin-top: 0;
 }
 
+/* section : thank you*/
+section#thankYou {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section#thankYou p {
+  width: 95%;
+  margin: auto;
+  line-height: 1.3rem;
+}
+
 /* footer */
 .attribution {
   position: absolute;

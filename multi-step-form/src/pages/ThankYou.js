@@ -1,5 +1,5 @@
 import React from 'react'
-import checkmark from '../assets/images/icon-checkmark.svg'
+import thankYou from '../assets/images/icon-thank-you.svg'
 
 function ThankYou() {
 
@@ -14,7 +14,7 @@ function ThankYou() {
         </p>
       </div>
       <div>
-        <img src={checkmark} alt="check mark" style={{ width: "50px", height: "50px", background: "black" }}></img>
+        <img src={thankYou} alt="check mark"></img>
       </div>
     </section>
   )
