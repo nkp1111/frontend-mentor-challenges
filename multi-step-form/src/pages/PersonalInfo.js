@@ -11,6 +11,7 @@ function PersonalInfo() {
   })
 
   useEffect(() => {
+    /* To show custom message on leaving a field empty */
     let submitBtn = document.querySelector("#personalInfo .submit-btn")
     let inputs = document.querySelectorAll("#personalInfo form input")
     submitBtn.addEventListener("click", () => {

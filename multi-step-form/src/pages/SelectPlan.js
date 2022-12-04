@@ -13,34 +13,40 @@ const images = [ArcadeIcon, AdvacedIcon, ProIcon]
 
 function SelectPlan() {
 
-  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+  const { handleSection,
+    selectedPlan,
+    setSelectedPlan } = useGlobalContext()
 
   useEffect(() => {
     handleSection(1)
+  })
+
+  useEffect(() => {
+    /* To set active plan */
+    let radios = document.querySelectorAll("#planSelect form input[type='radio']")
+    radios.forEach(radio => {
+      radio.addEventListener("change", (e) => {
+        if (radio.checked) {
+          setSelectedPlan(radio.value)
+        }
+      })
+    })
   })
 
   return (
     <section id="planSelect">
       <h2>Select your plan</h2>
       <p>You have the option of monthly or yearly billing.</p>
-      <form action="/pickAddOns" method="GET" onSubmit={(e) => {
-        let radios = document.querySelectorAll("input[type='radio']")
-        let state = false
-        radios.forEach(radio => {
-          if (radio.checked) {
-            state = true
-          }
-        })
-        !state && e.preventDefault()
-      }}>
+      <form action="/pickAddOns" method="GET">
         <div>
           <div>
-            {/* add active class to selected plan */}
             {selectPlanData.map(item => {
               return (
                 <label htmlFor={`plan-${item.plan}`}
                   key={item.id}
-                  className="plan-label">
+                  className={item.plan === selectedPlan
+                    ? "plan-label active"
+                    : "plan-label"}>
                   <img src={images[item.id - 1]} alt={`${item.plan}`} />
                   <p className='plan-name'>{item.plan}</p>
                   <p>${item.cost.monthly}/mon</p>

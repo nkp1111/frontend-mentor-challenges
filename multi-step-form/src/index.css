@@ -175,8 +175,6 @@ main h1 {
 }
 
 /* section : personal info*/
-section#personalInfo form {}
-
 section#personalInfo form div {
   margin-bottom: 1rem;
   position: relative;
@@ -241,7 +239,10 @@ section#planSelect form label.plan-label {
   width: 28%;
 }
 
-section#planSelect form label.plan-label:hover,
+section#planSelect form label.plan-label:hover {
+  border: 1px solid var(--Purplish-blue);
+}
+
 section#planSelect form label.plan-label.active {
   border: 1px solid var(--Marine-blue);
 }
@@ -296,6 +297,7 @@ section#planSelect .plan-changer label.switch {
   border-radius: 1rem;
   padding: 2px;
   background: var(--Marine-blue);
+  cursor: pointer;
 }
 
 section#planSelect .plan-changer label.switch input {
