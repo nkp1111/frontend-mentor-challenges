@@ -36,10 +36,10 @@ function SelectPlan() {
                     ? "plan-label active"
                     : "plan-label"}>
                   <img src={images[item.id - 1]} alt={`${item.plan}`} />
-                  <span>
+                  <div>
                     <p className='plan-name'>{item.plan}</p>
                     <p>${item.cost[selectedPack]} / {newDuration}</p>
-                  </span>
+                  </div>
 
                   {selectedPack === "yearly" && <p> 2 months free</p>}
                   <input type="radio" name="plan" value={item.plan} id={`plan-${item.plan}`} />

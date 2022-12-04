@@ -39,10 +39,10 @@ function PickAddOns() {
             <div key={item.id} className="add-ons-holder">
               <label htmlFor={item.type}>
                 <input name={item.type} type="checkbox" id={item.type} />
-                <span>
+                <div>
                   <p>{item.type}</p>
                   <p>{item.desc}</p>
-                </span>
+                </div>
                 <span>+${item.cost.monthly}/{selectedPack === "monthly" ? "mo" : "yr"}</span>
               </label>
             </div>

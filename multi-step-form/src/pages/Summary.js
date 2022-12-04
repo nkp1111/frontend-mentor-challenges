@@ -51,10 +51,10 @@ function Summary() {
           {/*title */}
           <div>
             <li>
-              <span>
+              <div>
                 <p style={{ textTransform: "capitalize" }}>{selectedPlan} ({selectedPack})</p>
                 <Link to="/planSelect">change</Link>
-              </span>
+              </div>
               <span>${planCost}/{newDuration}</span>
             </li>
             <hr />
@@ -71,9 +71,9 @@ function Summary() {
           </div>
           {/*total */}
           <li className='total-amount'>
-            <span>
+            <div>
               <p>Total {selectedPack === "monthly" ? "(per month)" : "(per year)"}</p>
-            </span>
+            </div>
             <span>+${finalCost.reduce((fin, acc) => fin + acc, 0)}/ {selectedPack === "monthly" ? "mo" : "yr"}</span>
           </li>
         </ul>

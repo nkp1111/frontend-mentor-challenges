@@ -279,7 +279,7 @@ section#planSelect form label p.plan-name+p {
   transition: .3s all linear;
 }
 
-section#planSelect form label span+p {
+section#planSelect form label div+p {
   color: var(--Marine-blue);
   font-size: .7rem;
   transition: .3s all linear;
@@ -355,18 +355,18 @@ section#pickAddOns form .add-ons-holder label input {
   cursor: pointer;
 }
 
-section#pickAddOns form .add-ons-holder label>span>p:first-child {
+section#pickAddOns form .add-ons-holder label>div>p:first-child {
   color: var(--Marine-blue);
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: .1rem;
 }
 
-section#pickAddOns form .add-ons-holder label>span>p:last-child {
+section#pickAddOns form .add-ons-holder label>div>p:last-child {
   color: var(--Cool-gray);
 }
 
-section#pickAddOns form .add-ons-holder label span+span {
+section#pickAddOns form .add-ons-holder label div+span {
   margin: 0;
   margin-left: auto;
   color: var(--Purplish-blue);
@@ -387,7 +387,7 @@ section#summary form ul {
   color: var(--Cool-gray);
 }
 
-section#summary form ul div {
+section#summary form ul>div {
   background: var(--Magnolia);
   border-radius: .8rem;
   padding: 1.5rem;
