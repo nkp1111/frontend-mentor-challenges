@@ -21,7 +21,7 @@ const AppProvider = ({ children }) => {
     setSection(section)
   }
 
-  /* Personal Info */
+  /* section 1 */
   const showMessage = () => {
     /* To show custom message on leaving a field empty */
     let submitBtn = document.querySelector("#personalInfo .submit-btn")
@@ -38,6 +38,7 @@ const AppProvider = ({ children }) => {
   }
 
   const removeMessage = () => {
+    /* remove message with input */
     let inputs = document.querySelectorAll("#personalInfo form input")
     inputs.forEach(input => {
       input.addEventListener("input", (e) => {
@@ -52,7 +53,7 @@ const AppProvider = ({ children }) => {
   }, [])
 
 
-  /* select plan */
+  /* section 2 */
   useEffect(() => {
     /* To set active plan */
     let radios = document.querySelectorAll("#planSelect form input[type='radio']")
@@ -63,9 +64,13 @@ const AppProvider = ({ children }) => {
         }
       })
     })
-  }, [])
+  })
 
+  /* section 3 */
+
+  /* localStorage */
   const setLocalStorage = () => {
+    /* Every submit button click will save info in localstorage */
     let values = {
       plan: selectedPlan,
       pack: selectedPack,
@@ -74,7 +79,8 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("multi-step-form", JSON.stringify(values))
   }
 
-  const setValues = () => {
+  const setValuesToState = () => {
+    /* To keep state values from changing after page change */
     let newValues = JSON.parse(localStorage.getItem("multi-step-form"))
     if (newValues) {
       setAddOns(newValues.addOn)
@@ -84,10 +90,10 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    setValues()
+    setValuesToState()
   }, [section])
 
-  console.log(selectedPlan, selectedPack);
+  console.log(selectedPlan, selectedPack, addOns);
   return (
     <AppContext.Provider
       value={{

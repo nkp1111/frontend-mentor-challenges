@@ -6,11 +6,28 @@ import useGlobalContext from '../context'
 
 function PickAddOns() {
 
-  const { handleSection, selectedPack } = useGlobalContext()
+  const { handleSection, selectedPack, setAddOns } = useGlobalContext()
 
   useEffect(() => {
     handleSection(2)
   })
+
+  useEffect(() => {
+    const checkboxes = document.querySelectorAll("#pickAddOns form input")
+    let newAddOns = []
+    checkboxes && checkboxes.forEach(checkbox => {
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          newAddOns.push(checkbox.id)
+        } else {
+          console.log(newAddOns);
+          newAddOns = newAddOns.filter(item => item !== checkbox.id)
+          console.log(newAddOns);
+        }
+      })
+    })
+    setAddOns(newAddOns)
+  }, [setAddOns])
 
   return (
     <section id="pickAddOns">
