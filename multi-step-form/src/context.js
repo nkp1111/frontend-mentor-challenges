@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [selectedPlan, setSelectedPlan] = useState("arcade")
   const [selectedPack, setSelectedPack] = useState("yearly")
   const [addOns, setAddOns] = useState([])
+  const [media, setMedia] = useState(false)
 
   const sectionMap = [
     "personalInfo",
@@ -97,6 +98,20 @@ const AppProvider = ({ children }) => {
     setValuesToState()
   }, [section])
 
+  /* media query */
+  const handleMedia = (width) => {
+    if (width < 781) {
+      setMedia(true)
+    } else {
+      setMedia(false)
+    }
+  }
+
+  useEffect(() => {
+    let width = window.innerWidth
+    handleMedia(width)
+  }, [])
+
   console.log(selectedPlan, selectedPack, addOns);
   return (
     <AppContext.Provider
@@ -113,6 +128,7 @@ const AppProvider = ({ children }) => {
         setAddOns,
         setLocalStorage,
         formatDuration,
+        media,
       }}>
       {children}
     </AppContext.Provider>

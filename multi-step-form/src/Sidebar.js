@@ -4,7 +4,7 @@ import useGlobalContext from './context'
 
 function Sidebar() {
 
-  const { section } = useGlobalContext()
+  const { section, media } = useGlobalContext()
   return (
     <div id="sidebar">
       <ul>
@@ -16,10 +16,10 @@ function Sidebar() {
                 : section > 3 && item.id === 4
                   ? "step-num active"
                   : "step-num"}>{item.id}</span>
-              <span className='step-info'>
+              {!media && <span className='step-info'>
                 <p>Step {item.id}</p>
                 <p>{item.type}</p>
-              </span>
+              </span>}
             </li>
           )
         })}

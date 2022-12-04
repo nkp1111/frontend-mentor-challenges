@@ -42,6 +42,7 @@ section {
   display: flex;
   flex-direction: column;
   flex: 1;
+  background: white;
 }
 
 section h2 {
@@ -105,6 +106,7 @@ main {
   box-shadow: 5px 5px 10px var(--Light-gray);
   width: 60vw;
   min-height: 530px;
+  min-width: 790px;
 }
 
 main h1 {
@@ -118,7 +120,7 @@ main h1 {
 
 /* Sidebar */
 #sidebar {
-  background: url("./assets/images/bg-sidebar-desktop.svg") center bottom/ cover no-repeat;
+  background: url("./assets/images/bg-sidebar-desktop.svg") center center/ cover no-repeat;
   border-radius: .5rem;
   width: 35%;
   color: var(--White);
@@ -265,7 +267,7 @@ section#planSelect form label p.plan-name+p {
   margin: .5rem 0;
 }
 
-section#planSelect form label p.plan-name+p+p {
+section#planSelect form label span+p {
   color: var(--Marine-blue);
   font-size: .7rem;
 }
@@ -452,4 +454,114 @@ section#thankYou p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:800px) {
+  section {
+    margin: 1.5rem;
+  }
+}
+
+@media (max-width:780px) {
+  body {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    min-width: 375px;
+    min-height: auto;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    background: url("./assets/images/bg-sidebar-mobile.svg") center center/ cover no-repeat;
+  }
+
+  #sidebar ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #sidebar ul li {
+    padding: 0;
+  }
+
+  section {
+    width: 50vw;
+    min-width: 360px;
+    position: absolute;
+    top: 14vh;
+    left: 50vw;
+    transform: translateX(-55%);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px var(--Light-gray);
+    min-height: 70vh;
+  }
+
+  section#planSelect form div>div:first-child {
+    flex-direction: column;
+  }
+
+  section#planSelect form div>div:first-child>label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: .3rem;
+    margin: .3rem;
+  }
+
+  section#planSelect form div>div:first-child>label>span {
+    display: flex;
+    flex-direction: column;
+    margin: -1rem 1rem 0;
+  }
+
+  section#planSelect form div>div:first-child>label>span+p {
+    margin-right: .5rem;
+    margin-left: auto;
+  }
+
+  section#planSelect .go-back-btn,
+  section#planSelect .submit-btn {
+    margin-top: .5rem;
+  }
+
+  section#thankYou img {
+    margin-bottom: 1rem;
+  }
+
+  section#thankYou h2 {
+    margin-bottom: .8rem;
+  }
+
+  section#thankYou p {
+    width: 100%;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width:400px) {
+  section {
+    left: -1.2rem;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width:365px) {
+  body {
+    overflow: visible;
+  }
 }
