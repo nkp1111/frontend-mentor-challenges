@@ -6,7 +6,7 @@ import useGlobalContext from '../context'
 
 function PickAddOns() {
 
-  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+  const { handleSection, selectedPack } = useGlobalContext()
 
   useEffect(() => {
     handleSection(2)
@@ -26,7 +26,7 @@ function PickAddOns() {
                   <p>{item.type}</p>
                   <p>{item.desc}</p>
                 </span>
-                <span>+${item.cost.monthly}/mon</span>
+                <span>+${item.cost.monthly}/{selectedPack === "monthly" ? "mo" : "yr"}</span>
               </label>
             </div>
           )

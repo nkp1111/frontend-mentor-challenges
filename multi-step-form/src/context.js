@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 
 const AppContext = React.createContext()
 
@@ -21,8 +21,73 @@ const AppProvider = ({ children }) => {
     setSection(section)
   }
 
-  console.log(selectedPack);
+  /* Personal Info */
+  const showMessage = () => {
+    /* To show custom message on leaving a field empty */
+    let submitBtn = document.querySelector("#personalInfo .submit-btn")
+    let inputs = document.querySelectorAll("#personalInfo form input")
+    submitBtn && submitBtn.addEventListener("click", () => {
+      inputs.forEach(input => {
+        if (!input.value) {
+          input.parentElement.classList.add("empty")
+        } else {
+          input.parentElement.classList.remove("empty")
+        }
+      })
+    })
+  }
 
+  const removeMessage = () => {
+    let inputs = document.querySelectorAll("#personalInfo form input")
+    inputs.forEach(input => {
+      input.addEventListener("input", (e) => {
+        input.parentElement.classList.remove("empty")
+      })
+    })
+  }
+
+  useEffect(() => {
+    showMessage()
+    removeMessage()
+  }, [])
+
+
+  /* select plan */
+  useEffect(() => {
+    /* To set active plan */
+    let radios = document.querySelectorAll("#planSelect form input[type='radio']")
+    radios && radios.forEach(radio => {
+      radio.addEventListener("change", (e) => {
+        if (radio.checked) {
+          setSelectedPlan(radio.value)
+        }
+      })
+    })
+  }, [])
+
+  const setLocalStorage = () => {
+    let values = {
+      plan: selectedPlan,
+      pack: selectedPack,
+      addOn: addOns
+    }
+    localStorage.setItem("multi-step-form", JSON.stringify(values))
+  }
+
+  const setValues = () => {
+    let newValues = JSON.parse(localStorage.getItem("multi-step-form"))
+    if (newValues) {
+      setAddOns(newValues.addOn)
+      setSelectedPack(newValues.pack)
+      setSelectedPlan(newValues.plan)
+    }
+  }
+
+  useEffect(() => {
+    setValues()
+  }, [section])
+
+  console.log(selectedPlan, selectedPack);
   return (
     <AppContext.Provider
       value={{
@@ -36,6 +101,7 @@ const AppProvider = ({ children }) => {
         setSelectedPack,
         addOns,
         setAddOns,
+        setLocalStorage,
       }}>
       {children}
     </AppContext.Provider>

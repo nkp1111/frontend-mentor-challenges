@@ -8,22 +8,6 @@ function PersonalInfo() {
 
   useEffect(() => {
     handleSection(0)
-  })
-
-  useEffect(() => {
-    /* To show custom message on leaving a field empty */
-    let submitBtn = document.querySelector("#personalInfo .submit-btn")
-    let inputs = document.querySelectorAll("#personalInfo form input")
-    submitBtn.addEventListener("click", () => {
-      inputs.forEach(input => {
-        if (!input.value) {
-          input.parentElement.classList.add("empty")
-        } else {
-          input.parentElement.classList.remove("empty")
-        }
-      })
-    })
-
   }, [])
 
   return (

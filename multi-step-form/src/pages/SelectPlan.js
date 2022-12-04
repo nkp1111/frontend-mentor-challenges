@@ -21,18 +21,6 @@ function SelectPlan() {
     handleSection(1)
   })
 
-  useEffect(() => {
-    /* To set active plan */
-    let radios = document.querySelectorAll("#planSelect form input[type='radio']")
-    radios.forEach(radio => {
-      radio.addEventListener("change", (e) => {
-        if (radio.checked) {
-          setSelectedPlan(radio.value)
-        }
-      })
-    })
-  })
-
   return (
     <section id="planSelect">
       <h2>Select your plan</h2>
