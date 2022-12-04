@@ -179,6 +179,16 @@ section#personalInfo form {}
 
 section#personalInfo form div {
   margin-bottom: 1rem;
+  position: relative;
+}
+
+section#personalInfo form div.empty label::after {
+  content: "*This field is required";
+  color: var(--Strawberry-red);
+  position: absolute;
+  right: 0;
+  font-size: .8rem;
+  font-weight: 500;
 }
 
 section#personalInfo form label,
