@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubmitBtn from '../components/SubmitBtn'
 import GoBackBtn from '../components/GoBackBtn'
+import useGlobalContext from '../context'
 
 function Summary() {
+
+  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+
+  useEffect(() => {
+    handleSection(3)
+  })
+
   return (
     <section id="summary">
       <h2>Finishing up</h2>
       <p>Double-check everything looks OK before confirming.</p>
-      <form>
+      <form action="/thankYou" method="GET">
         <ul>
           {/*title */}
           <div>

@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import thankYou from '../assets/images/icon-thank-you.svg'
+import useGlobalContext from '../context'
 
 function ThankYou() {
+
+  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+
+  useEffect(() => {
+    handleSection(4)
+  })
 
   return (
     <section id="thankYou">

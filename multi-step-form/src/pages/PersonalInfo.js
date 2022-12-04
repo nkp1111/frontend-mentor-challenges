@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubmitBtn from '../components/SubmitBtn'
+import useGlobalContext from '../context'
 
 function PersonalInfo() {
+
+  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+
+  useEffect(() => {
+    handleSection(0)
+  })
+
   return (
     <section id="personalInfo">
       <h2>Personal info</h2>
       <p>Please provide your name, email address, and phone number.</p>
-      <form>
+      <form action="/planSelect" method="GET">
         <div>
           <label htmlFor="name">Name</label>
           <input id="" name="name" type="text" placeholder="e.g. Stephen King" autoFocus required />

@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubmitBtn from '../components/SubmitBtn'
 import GoBackBtn from '../components/GoBackBtn'
 import pickAddOnsData from '../assets/data/pickAddOnsData'
+import useGlobalContext from '../context'
 
 function PickAddOns() {
+
+  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+
+  useEffect(() => {
+    handleSection(2)
+  })
+
   return (
     <section id="pickAddOns">
       <h2> Pick add-ons</h2>
       <p>  Add-ons help enhance your gaming experience.</p>
-      <form>
+      <form action="/summary" method="GET">
         {pickAddOnsData.map(item => {
           return (
             <div key={item.id} className="add-ons-holder">

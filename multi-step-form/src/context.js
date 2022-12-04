@@ -13,12 +13,18 @@ const AppProvider = ({ children }) => {
   ]
   const [section, setSection] = useState(0)
 
+  const handleSection = (section) => {
+    setSection(section)
+  }
+
+  console.log(section);
   return (
     <AppContext.Provider
       value={{
         section,
         setSection,
         sectionMap,
+        handleSection,
       }}>
       {children}
     </AppContext.Provider>
