@@ -12,7 +12,10 @@ function Sidebar() {
           return (
             <li key={item.id}>
               <span className={section === item.id - 1
-                ? "step-num active" : "step-num"}>{item.id}</span>
+                ? "step-num active"
+                : section > 3 && item.id === 4
+                  ? "step-num active"
+                  : "step-num"}>{item.id}</span>
               <span className='step-info'>
                 <p>Step {item.id}</p>
                 <p>{item.type}</p>

@@ -66,7 +66,11 @@ const AppProvider = ({ children }) => {
     })
   })
 
-  /* section 3 */
+  /* section 4 */
+  const formatDuration = (pack) => {
+    /* Format duration: month as mo and year as yr*/
+    return pack === "monthly" ? "mo" : "yr"
+  }
 
   /* localStorage */
   const setLocalStorage = () => {
@@ -108,6 +112,7 @@ const AppProvider = ({ children }) => {
         addOns,
         setAddOns,
         setLocalStorage,
+        formatDuration,
       }}>
       {children}
     </AppContext.Provider>

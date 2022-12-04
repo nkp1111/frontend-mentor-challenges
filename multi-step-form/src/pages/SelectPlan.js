@@ -13,13 +13,13 @@ const images = [ArcadeIcon, AdvacedIcon, ProIcon]
 
 function SelectPlan() {
 
-  const { handleSection,
-    selectedPlan,
-    setSelectedPlan } = useGlobalContext()
+  const { handleSection, selectedPlan, selectedPack, formatDuration } = useGlobalContext()
 
   useEffect(() => {
     handleSection(1)
   })
+
+  let newDuration = formatDuration(selectedPack)
 
   return (
     <section id="planSelect">
@@ -37,8 +37,8 @@ function SelectPlan() {
                     : "plan-label"}>
                   <img src={images[item.id - 1]} alt={`${item.plan}`} />
                   <p className='plan-name'>{item.plan}</p>
-                  <p>${item.cost.monthly}/mon</p>
-                  <p>2 months free</p>
+                  <p>${item.cost[selectedPack]} / {newDuration}</p>
+                  {selectedPack === "yearly" && <p> 2 months free</p>}
                   <input type="radio" name="plan" value={item.plan} id={`plan-${item.plan}`} />
                 </label>
               )

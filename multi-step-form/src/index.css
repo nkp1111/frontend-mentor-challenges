@@ -262,7 +262,7 @@ section#planSelect form label p.plan-name {
 section#planSelect form label p.plan-name+p {
   color: var(--Cool-gray);
   font-size: .8rem;
-  margin: .1rem 0;
+  margin: .5rem 0;
 }
 
 section#planSelect form label p.plan-name+p+p {
@@ -277,6 +277,7 @@ section#planSelect .plan-changer {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  padding: .3rem;
 }
 
 section#planSelect .plan-changer label:nth-child(odd) {
