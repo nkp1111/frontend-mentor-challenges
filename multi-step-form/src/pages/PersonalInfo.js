@@ -4,7 +4,7 @@ import useGlobalContext from '../context'
 
 function PersonalInfo() {
 
-  const { section, setSection, sectionMap, handleSection } = useGlobalContext()
+  const { handleSection } = useGlobalContext()
 
   useEffect(() => {
     handleSection(0)
