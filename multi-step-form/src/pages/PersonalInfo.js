@@ -27,7 +27,7 @@ function PersonalInfo() {
         </div>
         <div>
           <label htmlFor="phone">Phone Number</label>
-          <input id="phone" name="phone" type="text" placeholder="e.g. +1 234 567 890" required
+          <input id="phone" name="phone" type="tel" placeholder="e.g. +1 234 567 890" required
           />
         </div>
         <SubmitBtn />

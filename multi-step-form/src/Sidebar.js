@@ -16,10 +16,10 @@ function Sidebar() {
                 : section > 3 && item.id === 4
                   ? "step-num active"
                   : "step-num"}>{item.id}</span>
-              {!media && <span className='step-info'>
+              {!media && <div className='step-info'>
                 <p>Step {item.id}</p>
                 <p>{item.type}</p>
-              </span>}
+              </div>}
             </li>
           )
         })}
