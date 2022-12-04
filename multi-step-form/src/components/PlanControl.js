@@ -12,7 +12,7 @@ function PlanControl() {
         slider.style.transform = "translateX(0%)"
       }
       if (selectedPack === "yearly") {
-        slider.style.transform = "translateX(200%)"
+        slider.style.transform = "translateX(140%)"
       }
     }
 

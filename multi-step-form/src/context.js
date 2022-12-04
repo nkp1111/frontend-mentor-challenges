@@ -112,7 +112,6 @@ const AppProvider = ({ children }) => {
     handleMedia(width)
   }, [])
 
-  console.log(selectedPlan, selectedPack, addOns);
   return (
     <AppContext.Provider
       value={{
