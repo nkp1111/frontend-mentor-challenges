@@ -268,3 +268,27 @@ footer {
   margin: 0 1rem;
   cursor: pointer;
 }
+
+/* media query  */
+@media (max-width:1250px) {
+  #testimonial-section {
+    padding: 5rem;
+  }
+
+  .user {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (max-width:400px) {
+
+  /* testinomial article user  */
+  .user {
+    padding: .5rem;
+  }
+
+  .user-text {
+    margin-bottom: 1rem;
+  }
+
+}
