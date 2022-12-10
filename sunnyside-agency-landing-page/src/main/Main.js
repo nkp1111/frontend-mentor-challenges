@@ -2,6 +2,7 @@ import React from 'react'
 import FrontSection from './FrontSection'
 import GridSections from './GridSections'
 import TestimonialSection from './TestimonialSection'
+import ImageSection from './ImageSection'
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
       <FrontSection />
       <GridSections />
       <TestimonialSection />
+      <ImageSection />
     </main>
   )
 }
