@@ -5,8 +5,8 @@ import TestimonialSection from './TestimonialSection'
 
 function Main() {
   return (
-    <main>
-      <h1>We are creatives</h1>
+    <main >
+      <h1 className='big-heading'>We are creatives</h1>
       <FrontSection />
       <GridSections />
       <TestimonialSection />

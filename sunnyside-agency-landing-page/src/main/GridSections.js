@@ -8,7 +8,7 @@ import PhotoArticle from './gridSectionArticles/PhotoArticle'
 
 function GridSections() {
   return (
-    <section>
+    <section id="grid-section">
       <h2>Grid section</h2>
       <div>
         <Info1Article />
