@@ -4,9 +4,11 @@ import photographyMobile from '../../assets/images/mobile/image-photography.jpg'
 
 function PhotoArticle() {
   return (
-    <div>
-      <h3>Photography</h3>
-      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    <article className='col-md-6 tangerine-article'>
+      <div className='article-img-content'>
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
       {/* tangerine image */}
       <picture>
         <source
@@ -14,7 +16,7 @@ function PhotoArticle() {
           media="(max-width: 700px)"></source>
         <img src={photographyDesktop} alt="orange"></img>
       </picture>
-    </div>
+    </article>
   )
 }
 

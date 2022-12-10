@@ -8,13 +8,17 @@ import PhotoArticle from './gridSectionArticles/PhotoArticle'
 
 function GridSections() {
   return (
-    <section id="grid-section">
-      <h2>Grid section</h2>
-      <div>
+    <section id="grid-section" className='container-fluid'>
+      <h2 className='hidden-heading'>Grid section</h2>
+      <div className='row article-set-1'>
         <Info1Article />
         <EggImage />
+      </div>
+      <div className='row article-set-2'>
         <GlassImage />
         <Info2Article />
+      </div>
+      <div className='row article-set-3'>
         <GraphicDesign />
         <PhotoArticle />
       </div>

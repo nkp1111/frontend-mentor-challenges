@@ -4,9 +4,12 @@ import graphicDesignMobile from '../../assets/images/mobile/image-graphic-design
 
 function GraphicDesign() {
   return (
-    <article>
-      <h3>Graphic design</h3>
-      <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    <article className='col-md-6 cherry-article'>
+      <div className='article-img-content'>
+        <h3 >Graphic Design</h3>
+        <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+
       {/* cherry image */}
       <picture>
         <source
