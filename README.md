@@ -27,3 +27,4 @@ This contains the following project:
 - stats-preview-card
 - todo-application
 - multi-step-form
+- sunnyside-agency-landing-page
