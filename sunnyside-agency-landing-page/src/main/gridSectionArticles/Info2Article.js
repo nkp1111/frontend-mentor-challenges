@@ -8,7 +8,7 @@ function Info2Article() {
         <p>
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
         </p>
-        <button>Learn more</button>
+        <button className='info2-btn'>Learn more</button>
       </div>
 
     </article>

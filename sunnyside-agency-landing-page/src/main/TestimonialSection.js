@@ -12,7 +12,8 @@ function TestimonialSection() {
       <div className='row gy-3'>
         {testimonialData.map(item => {
           return (
-            <article className='col-4 user d-flex flex-column'>
+            <article key={item.id}
+              className='col-md-4 user d-flex flex-column'>
               <div className='order-1'>
                 <h3 className='user-name'>{item.name}</h3>
                 <p className='user-position'>{item.position}</p>

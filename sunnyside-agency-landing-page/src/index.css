@@ -67,6 +67,7 @@ footer {
   font-size: 3rem;
   letter-spacing: .3rem;
   word-spacing: .5rem;
+  text-align: center;
 }
 
 .hidden-heading {
@@ -75,6 +76,11 @@ footer {
 }
 
 /* header navigation */
+.navbar-toggler:focus {
+  outline: none;
+  scale: 1.1;
+}
+
 .nav-link {
   margin: 0 1rem;
   color: #fff;
@@ -91,6 +97,11 @@ footer {
   font-family: 'Fraunces', serif;
 }
 
+.nav-contact-btn:hover {
+  background-color: rgb(100, 216, 255);
+  color: #fff;
+}
+
 /* front section */
 #front-section {
   width: 100vw;
@@ -100,11 +111,11 @@ footer {
 /* down arrow image */
 .arrow-down-image {
   background: url("./assets/images/icon-arrow-down.svg") center center /cover no-repeat;
-  width: 1.8rem;
-  height: 9.5rem;
+  width: 3rem;
   position: absolute;
   top: 35vh;
   left: 50%;
+  bottom: 30%;
 }
 
 /* header image */
@@ -130,6 +141,7 @@ footer {
 /* article with text */
 .info-article {
   padding: 4rem 8rem;
+  background-color: #fff;
 }
 
 .info-article h3 {
@@ -144,6 +156,7 @@ footer {
 
 .info-article button {
   border: none;
+  padding: 1rem;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: var(--Yellow);
@@ -151,6 +164,10 @@ footer {
   opacity: 0.7;
   font-family: 'Fraunces', serif;
   transition: opacity .3s linear;
+}
+
+.info-article button.info2-btn {
+  text-decoration-color: var(--Soft-red);
 }
 
 .info-article button:hover {
@@ -258,10 +275,19 @@ footer {
   margin: 0 2rem;
   color: var(--Dark-moderate-cyan);
   cursor: pointer;
+  transition: .3s all;
+}
+
+.footer-links li:hover {
+  color: #eee;
 }
 
 .footer-icons {
   margin: 3rem 1rem;
+}
+
+.footer-icons:hover {
+  fill: #fff;
 }
 
 .footer-icons li {
@@ -269,8 +295,20 @@ footer {
   cursor: pointer;
 }
 
+
 /* media query  */
+
+@media (max-width: 1280px) {
+
+  /* grid section last 2 article  */
+  .article-img-content {
+    padding: 17rem 5rem 1rem;
+  }
+}
+
 @media (max-width:1250px) {
+
+  /* testinomial section  */
   #testimonial-section {
     padding: 5rem;
   }
@@ -280,7 +318,62 @@ footer {
   }
 }
 
+@media (max-width: 1050px) {
+
+  /* grid section article with text */
+  .info-article {
+    padding: 4rem 6rem;
+  }
+
+  .info-article h3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 870px) {
+
+  /* grid section article with text */
+  .info-article {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* bootstrap medium size  */
+  /* grid section */
+  .info-article {
+    text-align: center;
+    padding: 8rem 4rem;
+  }
+
+  /* navigation button  */
+  .nav-contact-btn {
+    background-color: var(--Yellow);
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* grid section */
+  .info-article {
+    text-align: center;
+    padding: 4rem;
+  }
+}
+
 @media (max-width:400px) {
+
+  /* big heading */
+  .big-heading {
+    font-size: 2.7rem;
+  }
+
+  /* grid section */
+  .info-article {
+    text-align: center;
+    padding: 2rem;
+  }
 
   /* testinomial article user  */
   .user {
@@ -291,4 +384,8 @@ footer {
     margin-bottom: 1rem;
   }
 
+  /* grid section last 2 article  */
+  .article-img-content {
+    padding: 17rem 3rem 1rem;
+  }
 }
