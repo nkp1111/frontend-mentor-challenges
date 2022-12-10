@@ -232,11 +232,6 @@ footer {
 }
 
 /* image section  */
-#image-section {
-  height: 50vh;
-  overflow: hidden;
-}
-
 #image-section picture {
   padding: 0;
 }

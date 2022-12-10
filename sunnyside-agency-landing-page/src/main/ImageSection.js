@@ -13,28 +13,28 @@ function ImageSection() {
     <section id="image-section">
       <h2 className='hidden-heading'>Image Section</h2>
       <div className='row'>
-        <picture className='col-3'>
+        <picture className='col-lg-3 col-sm-6'>
           <source
             srcSet={milkbottlesImageMobile}
-            media="(max-width: 700px)"></source>
+            media="(max-width: 400px)"></source>
           <img src={milkbottlesImageDesktop} alt="orange"></img>
         </picture>
-        <picture className='col-3'>
+        <picture className='col-lg-3 col-sm-6'>
           <source
             srcSet={orangeImageMobile}
-            media="(max-width: 700px)"></source>
+            media="(max-width: 400px)"></source>
           <img src={orangeImageDesktop} alt="orange"></img>
         </picture>
-        <picture className='col-3'>
+        <picture className='col-lg-3 col-sm-6'>
           <source
             srcSet={coneImageMobile}
-            media="(max-width: 700px)"></source>
+            media="(max-width: 400px)"></source>
           <img src={coneImageDesktop} alt="orange"></img>
         </picture>
-        <picture className='col-3'>
+        <picture className='col-lg-3 col-sm-6'>
           <source
             srcSet={sugarcubesImageMobile}
-            media="(max-width: 700px)"></source>
+            media="(max-width: 400px)"></source>
           <img src={sugarcubesImageDesktop} alt="orange"></img>
         </picture>
       </div>
