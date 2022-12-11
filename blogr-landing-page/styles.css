@@ -4,7 +4,7 @@
   /* CTA text */
   --Light-red: hsl(356, 100%, 66%);
   /* CTA hover background */
-  --Very-light-red: hsl(355, 100%, 74%);
+  --Very-light-red1: hsl(355, 100%, 74%);
   /* headings */
   --Very-dark-blue: hsl(208, 49%, 24%);
   /* text colors  */
@@ -16,7 +16,7 @@
   /* footer background */
   --Very-dark-black-blue: hsl(240, 10%, 16%);
   /* Background gradient - Intro/CTA mobile nav: */
-  --Very-light-red: hsl(13, 100%, 72%);
+  --Very-light-red2: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
   /* Background gradient - body:  */
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -26,21 +26,88 @@
 body {
   /* font-family: 'Overpass', sans-serif; */
   font-family: 'Ubuntu', sans-serif;
+  width: 100vw;
 }
+
+/* header  */
+
+header {
+  padding: 1rem 10%;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* navbar  */
+.navbar-brand {
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+/* dropdown menus */
+.dropdown-toggle {
+  color: white;
+  margin: 0 .8rem;
+  text-decoration: none;
+}
+
+.dropdown-toggle:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  padding: 1rem;
+}
+
+.dropdown-item {
+  color: var(--Very-dark-grayish-blue);
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: #000;
+}
+
+/* navbar buttons  */
+.navbar-btn-holder {
+  margin-left: auto;
+}
+
+.navbar-btn-holder button {
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+}
+
+.login-btn {
+  color: #fff;
+}
+
+.signin-btn {
+  background: #fff;
+  color: var(--Light-red);
+}
+
+.signin-btn:hover {
+  background: var(--Very-light-red1);
+  color: #fff;
+}
+
 
 /* main */
 /* front page  */
 .front-page {
   text-align: center;
   padding: 10rem;
+  color: #fff;
 }
 
 .front-page-image {
+  background: linear-gradient(75deg, var(--Very-light-red2), var(--Light-red));
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 70vh;
+  height: 80vh;
   z-index: -1;
 }
 
