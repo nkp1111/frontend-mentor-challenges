@@ -28,3 +28,4 @@ This contains the following project:
 - todo-application
 - multi-step-form
 - sunnyside-agency-landing-page
+- blogr-landing-page
