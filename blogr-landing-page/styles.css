@@ -29,10 +29,6 @@ body {
   width: 100vw;
 }
 
-p {
-  color: var(--Very-dark-grayish-blue);
-}
-
 /* navbar and front page buttons  */
 .btn-holder button {
   border-radius: 2rem;
@@ -173,6 +169,7 @@ header {
   padding: 5%;
   padding-right: 0;
   min-height: 100vh;
+  color: var(--Very-dark-grayish-blue);
 }
 
 .intro-section-heading {
@@ -203,6 +200,32 @@ header {
   height: 100%;
   object-fit: cover;
   margin: -10% -9%;
+}
+
+/* feature section  */
+#feature-section {
+  color: #fff;
+}
+
+.feature-section-wrapper {
+  background: linear-gradient(var(--Very-dark-desaturated-blue), var(--Very-dark-gray-blue));
+  border-radius: 0 15%;
+  height: 50vh;
+  margin-bottom: 5%;
+}
+
+.feature-section-heading {
+  margin: 6rem 0 2rem;
+}
+
+#feature-section p {
+  width: 70%;
+  color: var(--Grayish-blue);
+}
+
+/* feature section image */
+.feature-section-image img {
+  margin: -8% 0 0 15%;
 }
 
 /* attribution  */
