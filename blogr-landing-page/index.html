@@ -21,9 +21,10 @@
   <title>Blogr Landing Page</title>
 </head>
 
-<body class="container-fluid">
+<body>
   <!-- header -->
   <header>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-md">
 
       <!-- logo -->
@@ -71,7 +72,7 @@
         </div>
 
         <div class="btn-holder">
-          <!-- buttons  -->
+          <!--navbar buttons  -->
           <button class="btn login-btn">Login</button>
           <button class="btn signin-btn">Sign Up</button>
         </div>
@@ -91,7 +92,7 @@
         <button class="learn-btn">Learn More</button>
       </div>
       <picture class="front-page-image">
-        <source srcset="./images/bg-pattern-intro-mobile.svg" media="(max-width:1100px)">
+        <source srcset="./images/bg-pattern-intro-mobile.svg" media="(max-width:767px)">
         <img src="./images/bg-pattern-intro-desktop.svg" alt="wallpaper">
       </picture>
     </div>
@@ -100,10 +101,11 @@
       <!-- section 1 intro  -->
       <h2 class="intro-section-heading">Designed for the future</h2>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 section-articles">
           <!-- 2 article text content  -->
           <div class="row">
             <article class="intro-article">
+              <!-- article text content -->
               <h3 class="article-heading">
                 Introducing an extensible editor</h3>
               <p class="article-text">
@@ -117,6 +119,7 @@
           </div>
           <div class="row">
             <article class="intro-article">
+              <!-- article text content -->
               <h3 class="article-heading">
                 Robust content management</h3>
               <p class="article-text">
@@ -132,7 +135,7 @@
         <div class="col-md-6 section-image-holder">
           <!-- article image  -->
           <picture class="section-image">
-            <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 1100px)">
+            <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 767px)">
             <img src="./images/illustration-editor-desktop.svg" alt="">
           </picture>
         </div>
@@ -143,7 +146,7 @@
     <section id="feature-section">
       <!-- section 2 feature  -->
       <div class="row feature-section-wrapper">
-        <div class="col-md-6  order-2">
+        <div class="col-md-6  order-2 feature-text">
           <h2 class="feature-section-heading">State of the Art Infrastructure</h2>
           <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
             connectivity.
@@ -163,12 +166,13 @@
 
     </section>
 
-    <section>
+    <section id="cost-section">
       <!-- section 3 cost  -->
       <div class="row">
         <div class="col-md-6 order-2">
-          <article>
-            <h2>Free, open, simple</h2>
+          <article class="article">
+            <!-- cost section article  -->
+            <h2 class="article-heading">Free, open, simple</h2>
             <p>
               Blogr is a free and open source application backed by a large community of helpful developers. It supports
               features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
@@ -176,8 +180,9 @@
               and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
             </p>
           </article>
-          <article>
-            <h2>Powerful tooling</h2>
+          <article class="article">
+            <!-- cost section article  -->
+            <h2 class="article-heading">Powerful tooling</h2>
             <p>
               Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
               a
@@ -189,9 +194,10 @@
         </div>
 
         <div class="col-md-6 order-1">
-          <!-- image div at start change order -->
-          <picture>
-            <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 1100px)">
+          <!-- cost section image -->
+          <!-- image div change order -->
+          <picture class="section-image">
+            <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 767px)">
             <img src="./images/illustration-laptop-desktop.svg" alt="">
           </picture>
         </div>
@@ -203,12 +209,12 @@
   <!-- footer  -->
   <footer>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 footer-items">
         <!-- logo  -->
         <img src="./images/logo.svg" alt="blogr logo">
       </div>
       <!-- navigation items  -->
-      <div class="col-md-3">
+      <div class="col-md-3 footer-items">
         <p>Product</p>
         <ul>
           <li>Overview</li>
@@ -218,7 +224,7 @@
           <li>Integrations</li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 footer-items">
         <p>Company</p>
         <ul>
           <li>About</li>
@@ -227,7 +233,7 @@
           <li>Careers</li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 footer-items">
         <p>Connect</p>
         <ul>
           <li>Contact</li>
@@ -244,6 +250,7 @@
     </div>
   </footer>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>
