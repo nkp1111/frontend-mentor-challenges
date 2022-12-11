@@ -21,51 +21,58 @@
   <title>Blogr Landing Page</title>
 </head>
 
-<body class="container-fluid bg-dark text-white">
+<body class="container-fluid">
   <!-- header -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md">
       <!-- logo -->
       <img src="./images/logo.svg" alt="blogr logo" class="navbar-brand">
-      <div class="dropdown">
-        <!-- dropdown menu1 -->
-        <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Product</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">Overview</li>
-          <li class="dropdown-item">Pricing</li>
-          <li class="dropdown-item">Marketplace</li>
-          <li class="dropdown-item">Features</li>
-          <li class="dropdown-item">Integration</li>
-        </ul>
-      </div>
 
-      <div class="dropdown">
-        <!-- dropdown menu2 -->
-        <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Company</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">About</li>
-          <li class="dropdown-item">Team</li>
-          <li class="dropdown-item">Blog</li>
-          <li class="dropdown-item">Careers</li>
-        </ul>
-      </div>
 
-      <div class="dropdown">
-        <!-- dropdown menu3 -->
-        <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Connect</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">Contact</li>
-          <li class="dropdown-item">Newsletter</li>
-          <li class="dropdown-item">LinkedIn</li>
-        </ul>
-      </div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items">
+        <img src="./images/icon-hamburger.svg" alt="hamburger icon">
+      </button>
 
-      <div>
-        <!-- buttons  -->
-        <button class="btn btn-light">Login</button>
-        <button class="btn btn-light">Sign Up</button>
-      </div>
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <div class="dropdown">
+          <!-- dropdown menu1 -->
+          <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">Overview</li>
+            <li class="dropdown-item">Pricing</li>
+            <li class="dropdown-item">Marketplace</li>
+            <li class="dropdown-item">Features</li>
+            <li class="dropdown-item">Integration</li>
+          </ul>
+        </div>
 
+        <div class="dropdown">
+          <!-- dropdown menu2 -->
+          <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Company</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">About</li>
+            <li class="dropdown-item">Team</li>
+            <li class="dropdown-item">Blog</li>
+            <li class="dropdown-item">Careers</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <!-- dropdown menu3 -->
+          <a role="button" class="dropdown-toggle" data-bs-toggle="dropdown">Connect</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">Contact</li>
+            <li class="dropdown-item">Newsletter</li>
+            <li class="dropdown-item">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- buttons  -->
+          <button class="btn btn-light">Login</button>
+          <button class="btn btn-light">Sign Up</button>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -79,6 +86,10 @@
         <button>Start for Free</button>
         <button>Learn More</button>
       </div>
+      <picture class="front-page-image">
+        <source srcset="./images/bg-pattern-intro-mobile.svg" media="(max-width:1100px)">
+        <img src="./images/bg-pattern-intro-desktop.svg" alt="wallpaper">
+      </picture>
     </div>
 
     <section id="intro-section">
@@ -106,7 +117,10 @@
         </div>
         <div class="col-md-6">
           <!-- article image  -->
-
+          <picture>
+            <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 1100px)">
+            <img src="./images/illustration-editor-desktop.svg" alt="">
+          </picture>
         </div>
       </div>
     </section>
@@ -115,7 +129,7 @@
     <section id="feature-section">
       <!-- section 2 feature  -->
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6  order-2">
           <h2>State of the Art Infrastructure</h2>
           <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
             connectivity.
@@ -123,8 +137,12 @@
           </p>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 order-1">
           <!-- image div at start change order -->
+          <picture>
+            <source>
+            <img src="./images/illustration-phones.svg" alt="">
+          </picture>
         </div>
 
       </div>
@@ -158,6 +176,10 @@
 
         <div class="col-md-6 order-1">
           <!-- image div at start change order -->
+          <picture>
+            <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 1100px)">
+            <img src="./images/illustration-laptop-desktop.svg" alt="">
+          </picture>
         </div>
       </div>
 
