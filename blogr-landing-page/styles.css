@@ -54,6 +54,11 @@ footer {
   border-radius: 0 10rem 0 0;
 }
 
+.hidden-heading {
+  display: none;
+  position: absolute;
+}
+
 /* header  */
 
 header {
