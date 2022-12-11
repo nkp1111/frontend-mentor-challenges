@@ -96,8 +96,8 @@ main.hide .big-heading {
   background-color: #fff;
   border-radius: 1.5rem;
   border: none;
-  color: black;
-  padding: .7rem 1.5rem;
+  color: var(--Very-dark-grayish-blue);
+  padding: .7rem 1.1rem !important;
   text-transform: uppercase;
   font-family: 'Fraunces', serif;
 }

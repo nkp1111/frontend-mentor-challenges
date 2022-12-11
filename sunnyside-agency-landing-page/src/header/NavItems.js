@@ -7,11 +7,11 @@ function NavItems() {
       {NavData.map(item => {
         return (
           <li className='nav-item' key={item}>
-            <span className='nav-link'>{item}</span>
+            <a className='nav-link'>{item}</a>
           </li>
         )
       })}
-      <button className='nav-contact-btn'>Contact</button>
+      <a className='nav-link nav-contact-btn' role="button">Contact</a>
     </ul>
   )
 }

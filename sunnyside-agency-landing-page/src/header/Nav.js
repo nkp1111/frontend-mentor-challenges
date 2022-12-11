@@ -11,7 +11,7 @@ function Nav() {
   return (
     <nav className='navbar navbar-expand-md'>
       <img className='navbar-brand' src={logo} alt="logo" />
-      <button className='navbar-toggler py-2' databstarget="#headerNavbar" databstoggle="collapse"
+      <button className='navbar-toggler py-2'
         onClick={() => {
           if (showNav) {
             setShowNav(false)
