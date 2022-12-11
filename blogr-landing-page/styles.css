@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
 :root {
   /* CTA text */
   --Light-red: hsl(356, 100%, 66%);
@@ -19,6 +21,28 @@
   /* Background gradient - body:  */
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
   --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+body {
+  /* font-family: 'Overpass', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* main */
+/* front page  */
+.front-page {
+  text-align: center;
+  padding: 10rem;
+}
+
+
+/* section1 intro section  */
+#intro-section {
+  padding: 5% 2%;
+}
+
+.intro-section-heading {
+  text-align: center;
 }
 
 /* attribution  */
