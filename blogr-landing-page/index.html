@@ -70,7 +70,7 @@
           </ul>
         </div>
 
-        <div class="navbar-btn-holder">
+        <div class="btn-holder">
           <!-- buttons  -->
           <button class="btn login-btn">Login</button>
           <button class="btn signin-btn">Sign Up</button>
@@ -84,11 +84,11 @@
   <main>
     <!-- front page  -->
     <div class="front-page">
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-      <div>
-        <button>Start for Free</button>
-        <button>Learn More</button>
+      <h1 class="big-heading">A modern publishing platform</h1>
+      <p class="front-tagline">Grow your audience and build your online brand</p>
+      <div class="btn-holder">
+        <button class="start-btn">Start for Free</button>
+        <button class="learn-btn">Learn More</button>
       </div>
       <picture class="front-page-image">
         <source srcset="./images/bg-pattern-intro-mobile.svg" media="(max-width:1100px)">
@@ -103,25 +103,35 @@
         <div class="col-md-6">
           <!-- 2 article text content  -->
           <div class="row">
-            <article class="">
-              <h3>Introducing an extensible editor</h3>
-              <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            <article class="intro-article">
+              <h3 class="article-heading">
+                Introducing an extensible editor</h3>
+              <p class="article-text">
+                Blogr features an exceedingly intuitive interface which lets you focus on one
+                thing: creating content.
                 The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
                 videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-                change the looks of a blog.</p>
+                change the looks of a blog.
+              </p>
             </article>
-            <article class="">
-              <h3>Robust content management</h3>
-              <p>Flexible content management enables users to easily move through posts. Increase the usability of your
+          </div>
+          <div class="row">
+            <article class="intro-article">
+              <h3 class="article-heading">
+                Robust content management</h3>
+              <p class="article-text">
+                Flexible content management enables users to easily move through posts. Increase
+                the usability of your
                 blog
                 by adding customized categories, sections, format, or flow. With this functionality, you’re in full
-                control.</p>
+                control.
+              </p>
             </article>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 section-image-holder">
           <!-- article image  -->
-          <picture>
+          <picture class="section-image">
             <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 1100px)">
             <img src="./images/illustration-editor-desktop.svg" alt="">
           </picture>

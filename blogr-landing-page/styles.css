@@ -29,8 +29,23 @@ body {
   width: 100vw;
 }
 
-/* header  */
+p {
+  color: var(--Very-dark-grayish-blue);
+}
 
+/* navbar and front page buttons  */
+.btn-holder button {
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+}
+
+/* .section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* header  */
 header {
   padding: 1rem 10%;
   background-color: transparent;
@@ -69,13 +84,8 @@ header {
 }
 
 /* navbar buttons  */
-.navbar-btn-holder {
+.navbar .btn-holder {
   margin-left: auto;
-}
-
-.navbar-btn-holder button {
-  border-radius: 2rem;
-  padding: .5rem 2rem;
 }
 
 .login-btn {
@@ -97,10 +107,49 @@ header {
 /* front page  */
 .front-page {
   text-align: center;
-  padding: 10rem;
+  padding: 8rem 10rem 10rem;
   color: #fff;
 }
 
+.big-heading {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.front-tagline {
+  margin: 1rem auto 2.5rem;
+}
+
+/* front page buttons  */
+.front-page .btn-holder button {
+  padding: .6rem 1rem;
+  font-weight: bold;
+  margin: 0 .5rem;
+  transition: .3s all linear;
+}
+
+.start-btn {
+  border: none;
+  color: var(--Light-red);
+}
+
+.start-btn:hover {
+  color: #fff;
+  background: var(--Very-light-red1);
+}
+
+.learn-btn {
+  background: transparent;
+  color: #fff;
+  border: #fff solid 1px;
+}
+
+.learn-btn:hover {
+  color: var(--Light-red);
+  background: #fff;
+}
+
+/* front main image  */
 .front-page-image {
   background: linear-gradient(75deg, var(--Very-light-red2), var(--Light-red));
   position: absolute;
@@ -109,6 +158,7 @@ header {
   right: 0;
   height: 80vh;
   z-index: -1;
+  border-radius: 0 0 0 15%;
 }
 
 .front-page-image img {
@@ -120,11 +170,39 @@ header {
 
 /* section1 intro section  */
 #intro-section {
-  padding: 5% 2%;
+  padding: 5%;
+  padding-right: 0;
+  min-height: 100vh;
 }
 
 .intro-section-heading {
   text-align: center;
+  margin-top: 3rem;
+  color: var(--Very-dark-blue);
+}
+
+/* intro article  */
+.intro-article {
+  padding: 7% 14%;
+  padding-bottom: 0;
+}
+
+.article-heading {
+  color: var(--Very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+/* intro section image*/
+.section-image {
+  height: 100vh;
+  padding-left: 30%;
+}
+
+.section-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  margin: -10% -9%;
 }
 
 /* attribution  */
