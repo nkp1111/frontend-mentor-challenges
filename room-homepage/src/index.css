@@ -103,7 +103,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center left;
 }
 
 /* button holder  */
@@ -160,8 +160,88 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width:1350px) {
+
+  /* top-section description  */
+  .section-description {
+    padding: 4rem;
+  }
+}
+
+@media (max-width:1080px) {
+
+  /* top-section description  */
+  .section-description {
+    padding: 4rem 2rem;
+  }
+
+  .btn-holder {
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+
+  /* top-section description  */
+  .section-description {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+
+  /* bootstrap media medium size  */
+  .top-section {
+    height: auto;
+  }
+
+  .btn-holder {
+    top: 42.5%;
+  }
+
+  .section-description {
+    padding: 7rem;
+  }
+
+  /* bottom section  */
+  .bottom-section-description {
+    padding: 3rem 5rem;
+  }
+}
+
 @media (max-width:600px) {
   header {
     right: 0;
+  }
+
+  .btn-holder {
+    top: 35%;
+  }
+}
+
+@media (max-width:550px) {
+  .section-description {
+    padding: 4rem 7rem;
+  }
+
+  .btn-holder {
+    top: 42%;
+  }
+}
+
+@media (max-width:400px) {
+  .section-description {
+    padding: 4rem 5rem;
+  }
+
+  .btn-holder {
+    top: 31%;
+  }
+
+  /* bottom section  */
+  .bottom-section-description {
+    padding: 3rem;
+    padding-left: 4rem;
   }
 }

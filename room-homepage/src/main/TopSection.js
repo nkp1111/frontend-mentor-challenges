@@ -21,7 +21,9 @@ function TopSection() {
         if (item.id === visibleInd) {
           return (
             <div key={item.id}
-              className='section-description col-md-5 order-2'>
+              className='section-description 
+              col-md-5  
+              order-2'>
               <h2 className='section-heading'>{item.heading}</h2>
               <p className='section-text'>{item.description}</p>
               <span className='order-btn' role="button">
@@ -33,7 +35,9 @@ function TopSection() {
         }
       })}
       <ButtonHolder setVisibleInd={setVisibleInd} />
-      <div className='section-image col-md-7 order-1'>
+      <div className='section-image 
+      col-md-7 
+      order-1'>
         <picture>
           <source
             srcSet={mobileImages[visibleInd]}
