@@ -1,4 +1,6 @@
 import React from 'react'
+import PrecIcon from '../assets/images/icon-angle-left.svg'
+import NextIcon from '../assets/images/icon-angle-right.svg'
 
 
 class ButtonHolder extends React.Component {
@@ -40,14 +42,16 @@ class ButtonHolder extends React.Component {
   render() {
     return (
       <div className='btn-holder'>
-        <span onClick={() => this.changeCurrent("forward")}>
-          Next
-          <img src="" alt="" />
+        <span role="button"
+          onClick={() => this.changeCurrent("backward")}>
+          <img src={PrecIcon} alt="previous item button" />
         </span>
-        <span onClick={() => this.changeCurrent("backward")}>
-          Prev
-          <img src="" alt="" />
+
+        <span role="button"
+          onClick={() => this.changeCurrent("forward")}>
+          <img src={NextIcon} alt="next item button" />
         </span>
+
       </div>
     )
   }

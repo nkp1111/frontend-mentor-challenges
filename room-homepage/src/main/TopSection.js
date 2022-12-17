@@ -7,6 +7,7 @@ import mobileImage1 from '../assets/images/mobile-image-hero-1.jpg'
 import mobileImage2 from '../assets/images/mobile-image-hero-2.jpg'
 import mobileImage3 from '../assets/images/mobile-image-hero-3.jpg'
 import ButtonHolder from './ButtonHolder'
+import ArrowIcon from '../assets/images/icon-arrow.svg'
 
 const desktopImages = [desktopImage1, desktopImage2, desktopImage3]
 const mobileImages = [mobileImage1, mobileImage2, mobileImage3]
@@ -20,15 +21,19 @@ function TopSection() {
         if (item.id === visibleInd) {
           return (
             <div key={item.id}
-              className='section-description col-md-4 order-2'>
-              <h2>{item.heading}</h2>
-              <p>{item.description}</p>
+              className='section-description col-md-5 order-2'>
+              <h2 className='section-heading'>{item.heading}</h2>
+              <p className='section-text'>{item.description}</p>
+              <span className='order-btn' role="button">
+                Shop now
+                <img src={ArrowIcon} alt="" />
+              </span>
             </div>
           )
         }
       })}
       <ButtonHolder setVisibleInd={setVisibleInd} />
-      <div className='section-image col-md-8 order-1'>
+      <div className='section-image col-md-7 order-1'>
         <picture>
           <source
             srcSet={mobileImages[visibleInd]}
