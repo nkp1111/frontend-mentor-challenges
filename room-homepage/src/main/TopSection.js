@@ -26,7 +26,7 @@ function TopSection() {
               <p className='section-text'>{item.description}</p>
               <span className='order-btn' role="button">
                 Shop now
-                <img src={ArrowIcon} alt="" />
+                <img src={ArrowIcon} alt="arrow icon" />
               </span>
             </div>
           )
@@ -38,7 +38,7 @@ function TopSection() {
           <source
             srcSet={mobileImages[visibleInd]}
             media="(max-width:500px)"></source>
-          <img src={desktopImages[visibleInd]} alt="" />
+          <img src={desktopImages[visibleInd]} alt="hero items" />
         </picture>
       </div>
 

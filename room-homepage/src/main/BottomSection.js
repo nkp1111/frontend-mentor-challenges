@@ -8,9 +8,12 @@ function BottomSection() {
   return (
     <section className='bottom-section row'>
 
-      <div className='col-lg-4 col-md-3 order-2'>
-        <h2>{mainBottomSectionData.heading}</h2>
-        <p>{mainBottomSectionData.description}</p>
+      <div
+        className='bottom-section-description 
+      col-lg-4 col-md-3 order-2'
+      >
+        <h2 className='bottom-section-heading'>{mainBottomSectionData.heading}</h2>
+        <p >{mainBottomSectionData.description}</p>
       </div>
       <div className='col-lg-4 col-md-6 order-1'>
         <img src={DarkModeImage} alt="dark mode furniture" />
