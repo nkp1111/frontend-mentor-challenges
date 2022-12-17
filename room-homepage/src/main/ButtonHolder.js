@@ -16,6 +16,9 @@ class ButtonHolder extends React.Component {
   }
 
   changeCurrent(dir) {
+    /*
+    Change current view on mouse click
+    */
     let currentVal
 
     if (dir === "forward") {
@@ -39,6 +42,26 @@ class ButtonHolder extends React.Component {
 
     this.props.setVisibleInd(this.state.current)
   }
+
+  keyListen(e) {
+    /*
+    Change view on key press
+    */
+    if (e.key === "ArrowLeft") {
+      this.changeCurrent("backward")
+    } else if (e.key === "ArrowRight") {
+      this.changeCurrent("forward")
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("keydown", (e) => this.keyListen(e))
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("keydown", (e) => this.keyListen(e))
+  }
+
   render() {
     return (
       <div className='btn-holder'>

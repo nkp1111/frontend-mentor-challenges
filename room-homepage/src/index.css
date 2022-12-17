@@ -9,8 +9,7 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
-  width: 100vw;
-  height: 100vh;
+  overflow-x: hidden;
 }
 
 h1,
