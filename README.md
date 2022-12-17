@@ -29,3 +29,4 @@ This contains the following project:
 - multi-step-form
 - sunnyside-agency-landing-page
 - blogr-landing-page
+- room-homepage
