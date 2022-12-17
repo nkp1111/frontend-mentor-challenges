@@ -31,6 +31,10 @@ header {
   text-transform: uppercase;
 }
 
+.btn-holder {
+  position: absolute;
+}
+
 /* footer  */
 .attribution {
   font-size: 11px;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { mainData } from '../assets/data'
 import desktopImage1 from '../assets/images/desktop-image-hero-1.jpg'
 import desktopImage2 from '../assets/images/desktop-image-hero-2.jpg'
@@ -6,27 +6,29 @@ import desktopImage3 from '../assets/images/desktop-image-hero-3.jpg'
 import mobileImage1 from '../assets/images/mobile-image-hero-1.jpg'
 import mobileImage2 from '../assets/images/mobile-image-hero-2.jpg'
 import mobileImage3 from '../assets/images/mobile-image-hero-3.jpg'
+import ButtonHolder from './ButtonHolder'
 
 const desktopImages = [desktopImage1, desktopImage2, desktopImage3]
 const mobileImages = [mobileImage1, mobileImage2, mobileImage3]
 
 function TopSection() {
-  let visibleInd = 0
+  const [visibleInd, setVisibleInd] = useState(0)
   let visibleData = mainData.filter(item => item.id === visibleInd)
   return (
-    <section>
+    <section className='top-section row'>
       {visibleData.map(item => {
         if (item.id === visibleInd) {
           return (
-            <div className='section-description' key={item.id}>
+            <div key={item.id}
+              className='section-description col-md-4 order-2'>
               <h2>{item.heading}</h2>
               <p>{item.description}</p>
             </div>
           )
         }
       })}
-
-      <div className='section-image'>
+      <ButtonHolder setVisibleInd={setVisibleInd} />
+      <div className='section-image col-md-8 order-1'>
         <picture>
           <source
             srcSet={mobileImages[visibleInd]}
