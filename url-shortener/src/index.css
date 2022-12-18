@@ -70,7 +70,7 @@ nav {
 .btn {
   font-weight: 700;
   color: inherit;
-  margin: 0 .5rem;
+  margin: .1rem .5rem;
   padding: .5rem 1.5rem;
   border-radius: 5rem;
   transition: .3s all linear;
@@ -107,7 +107,7 @@ nav {
 /* section 1 front section */
 #front-section {
   background: white;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .front-section-info {
@@ -134,14 +134,14 @@ nav {
 
 /* section 2 form section  */
 #form-section {
-  padding: 10vh;
+  padding: 7% 10%;
 }
 
 #form-section form {
   position: absolute;
   background: url("./assets/images/bg-shorten-desktop.svg") center center / cover no-repeat;
   padding: 2rem;
-  top: -50%;
+  top: -15%;
   background-color: var(--Dark-Violet);
   border-radius: .5rem;
   left: 10%;
@@ -161,7 +161,6 @@ nav {
   outline: none;
 }
 
-
 #form-section button {
   border-radius: .5rem;
   white-space: nowrap;
@@ -175,6 +174,38 @@ nav {
 #form-section button:hover {
   opacity: 1;
   background: hsl(180, 55%, 58%);
+}
+
+/* form section urls */
+.url-holder {
+  list-style-type: none;
+  padding: 0;
+}
+
+.urls {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.urls span {
+  font-weight: 500;
+}
+
+.short-url {
+  color: var(--Cyan);
+  text-align: right;
+}
+
+#form-section .copy-btn:hover {
+  opacity: .6;
+}
+
+#form-section .copy-btn.active {
+  background-color: var(--Dark-Violet);
 }
 
 /* section 3 description section  */
@@ -307,4 +338,10 @@ li.footer-item-head:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 850px) {
+  header {
+    padding: 2rem;
+  }
 }
