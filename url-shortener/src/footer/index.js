@@ -38,7 +38,6 @@ function footer() {
               return (
                 <li key={ind}
                   className='footer-icons'>
-                  {console.log(icon)}
                   <img src={icon} alt="icon" />
                 </li>
               )
