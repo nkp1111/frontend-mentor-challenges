@@ -64,6 +64,12 @@ nav {
 .nav-item {
   margin: 0 1.5vw;
   font-weight: 500;
+  cursor: pointer;
+  transition: .2s all ease-in;
+}
+
+.nav-item:hover {
+  color: var(--Very-Dark-Violet);
 }
 
 /* button holder  */
@@ -343,5 +349,46 @@ li.footer-item-head:hover {
 @media (max-width: 850px) {
   header {
     padding: 2rem;
+  }
+}
+
+@media (max-width:670px) {
+  .btn-holder {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:575px) {
+
+  /* navigation on mobile screen  */
+  .navbar-collapse {
+    background: var(--Dark-Violet);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: .8rem;
+    border-radius: 1rem;
+  }
+
+  .navbar-collapse .nav-item {
+    margin: 1rem 0;
+  }
+
+  .navbar-collapse .nav-item:hover {
+    color: rgb(255, 253, 245);
+  }
+
+  .navbar-collapse .nav-item:last-child {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  .btn-holder .btn {
+    margin: 0.5rem 0;
+    padding: .8rem 0;
+  }
+
+  .btn-holder .login-btn {
+    box-shadow: none;
   }
 }
