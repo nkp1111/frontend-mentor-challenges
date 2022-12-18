@@ -138,42 +138,96 @@ nav {
   top: -50%;
   background-color: var(--Dark-Violet);
   border-radius: .5rem;
-  left: 50%;
-  translate: -50% 0;
+  left: 10%;
+  right: 10%;
   display: flex;
 }
 
 #form-section input {
-  width: 40vw;
   min-width: 350px;
   border-radius: .5rem;
-  margin-right: 1rem;
   padding: 1rem;
+  margin-right: 1rem;
+  flex: 1;
 }
 
 #form-section input:focus {
   outline: none;
 }
 
-.form-btn-holder {
-  background: #fff;
-  border-radius: .5rem;
-  overflow: hidden;
-}
 
 #form-section button {
-  border-radius: 0;
+  border-radius: .5rem;
   white-space: nowrap;
   background: var(--Cyan);
   color: #fff;
-  height: 100%;
   margin: 0;
+  opacity: .9;
+  padding: 1rem 2.5rem;
 }
 
 #form-section button:hover {
-  opacity: .7;
+  opacity: 1;
+  background: hsl(180, 55%, 58%);
 }
 
+/* section 3 description section  */
+#description-section {
+  text-align: center;
+}
+
+.background-line {
+  width: 70%;
+  height: .4rem;
+  background: var(--Cyan);
+  position: absolute;
+  z-index: -1;
+  top: 58%;
+  left: 10%;
+}
+
+.description-info-text {
+  margin: .8rem auto 4rem;
+  width: 30%;
+}
+
+/* description section articles  */
+.article-holder {
+  padding: 0 10%;
+}
+
+.article-holder article {
+  text-align: left;
+}
+
+.article-holder article:nth-of-type(2) {
+  padding-top: 2.5rem;
+}
+
+.article-holder article:nth-of-type(3) {
+  padding-top: 5rem;
+}
+
+/* content inside article wrapped in div  */
+.article-content {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.article-holder article img {
+  position: absolute;
+  background: var(--Very-Dark-Blue);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  top: -3rem;
+  left: 2rem;
+  bottom: 0;
+}
+
+/* section 4 end section  */
 /* footer  */
 .attribution {
   font-size: 11px;
