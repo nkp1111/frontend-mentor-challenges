@@ -6,9 +6,11 @@ import logo from './images/logo.svg'
 import BrandIcon from './images/icon-brand-recognition.svg'
 import RecordsIcon from './images/icon-detailed-records.svg'
 import CustomIcon from './images/icon-fully-customizable.svg'
+import footerIcon from './images/footer-logo.svg'
 
 // logo
 const logoIcon = logo
+const footerLogo = footerIcon
 
 // navbar data (links)
 const navbarData = [
@@ -76,4 +78,4 @@ const articleData = [
 
 const articleIcons = [BrandIcon, RecordsIcon, CustomIcon]
 
-export { navbarData, footerData, footerIconData, logoIcon, articleData }
+export { navbarData, footerData, footerIconData, logoIcon, articleData, footerLogo }

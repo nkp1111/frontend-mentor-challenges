@@ -1,14 +1,13 @@
 import React from 'react'
-import { footerData, footerIconData, logoIcon } from '../assets/data'
+import { footerData, footerIconData, footerLogo } from '../assets/data'
 
 function footer() {
   return (
     <footer>
       <div className='row'>
-
         <div className='col-md-3'>
           {/* logo */}
-          <img src={logoIcon} alt="shortly logo icon" />
+          <img src={footerLogo} alt="shortly logo icon white" />
         </div>
 
         <div className='footer-links col-md-7 row'>
@@ -17,9 +16,11 @@ function footer() {
             return (
               <ul
                 key={item.id}
-                className="col-md-4"
-              >
-                <li className='footer-item-head'>{item.title}</li>
+                className="col-md-4">
+                <li
+                  className='footer-item-head'>
+                  {item.title}
+                </li>
                 {item.subitems.map(subitem => {
                   return (
                     <li key={subitem}>{subitem}</li>
@@ -30,13 +31,14 @@ function footer() {
           })}
         </div>
 
-        <div className='col-md-2'>
+        <div className='footer-icon-holder col-md-2'>
           {/* footer icons */}
           <ul>
             {footerIconData.map((icon, ind) => {
               return (
                 <li key={ind}
-                  className='bg-dark'>
+                  className='footer-icons'>
+                  {console.log(icon)}
                   <img src={icon} alt="icon" />
                 </li>
               )
@@ -50,6 +52,12 @@ function footer() {
         Coded by <a href="https://github.com/nkp1111">Neeraj Parmar</a>.
       </div>
     </footer>
+  )
+}
+
+const formatIcons = (icon) => {
+  return (
+    icon
   )
 }
 

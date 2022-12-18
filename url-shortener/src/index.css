@@ -50,6 +50,12 @@ header {
   background: #fff;
 }
 
+footer {
+  background: var(--Very-Dark-Violet);
+  color: white;
+  padding: 7vw;
+}
+
 /* navigation bar  */
 nav {
   color: var(--Grayish-Violet);
@@ -174,6 +180,7 @@ nav {
 /* section 3 description section  */
 #description-section {
   text-align: center;
+  padding: 2% 10%;
 }
 
 .background-line {
@@ -192,9 +199,6 @@ nav {
 }
 
 /* description section articles  */
-.article-holder {
-  padding: 0 10%;
-}
 
 .article-holder article {
   text-align: left;
@@ -234,6 +238,7 @@ nav {
   background-color: var(--Dark-Violet);
   text-align: center;
   color: white;
+  margin: 3rem 0 0;
 }
 
 .end-btn {
@@ -247,6 +252,49 @@ nav {
 }
 
 /* footer  */
+footer ul {
+  list-style-type: none;
+}
+
+footer li,
+.footer-icons img {
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+footer li:hover {
+  color: var(--Cyan);
+}
+
+.footer-links li {
+  color: var(--Grayish-Violet);
+  font-size: .9rem;
+}
+
+li.footer-item-head {
+  color: #fff;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+li.footer-item-head:hover {
+  color: #fff;
+}
+
+.footer-icon-holder ul {
+  display: flex;
+}
+
+.footer-icons {
+  margin: 0 .5rem;
+}
+
+.footer-icons img:hover {
+  opacity: 0.8;
+  scale: 1.1;
+}
+
+/* attribution hidden */
 .attribution {
   font-size: 11px;
   text-align: center;
