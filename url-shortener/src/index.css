@@ -1,4 +1,20 @@
-:root {}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --Cyan: hsl(180, 66%, 49%) --Dark-Violet: hsl(257, 27%, 26%);
+
+  --Red: hsl(0, 87%, 67%);
+
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 section {
   position: relative;
@@ -12,6 +28,7 @@ header {
   right: 0;
   padding: 2rem 4rem;
   z-index: 5;
+  background: #fff;
 }
 
 /* main  */
