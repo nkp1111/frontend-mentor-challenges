@@ -1,5 +1,9 @@
 :root {}
 
+section {
+  position: relative;
+}
+
 /* header  */
 header {
   position: absolute;

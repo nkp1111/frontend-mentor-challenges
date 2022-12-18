@@ -1,6 +1,5 @@
 import React from 'react'
-import { navbarData } from '../assets/data'
-import logo from '../assets/images/logo.svg'
+import { navbarData, logoIcon } from '../assets/data'
 import hamburgerIcon from '../assets/images/icon-hamburger.svg'
 
 
@@ -10,7 +9,7 @@ function Header() {
       {/* navbar  */}
       <nav className='navbar navbar-expand-sm'>
         {/* navbar logo  */}
-        <img src={logo} alt="room logo" className='navbar-brand' />
+        <img src={logoIcon} alt="room logo" className='navbar-brand' />
         {/* navbar button toggler  */}
         <button className='navbar-toggler' data-bs-toggle="collapse" data-bs-target="#headerNavbar">
           <img src={hamburgerIcon} alt="hamburger menu" />
