@@ -1,4 +1,5 @@
 import React from 'react'
+import { articleData } from '../assets/data'
 
 function DescriptionSection() {
   return (
@@ -10,30 +11,17 @@ function DescriptionSection() {
         advanced statistics dashboard.
       </p>
       <div className='row'>
-        <article className='col-md-4'>
-          <h3> Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t
-            mean a thing. Branded links help instil confidence in your content.
-          </p>
-          <img src="" alt="" />
-        </article>
-        <article className='col-md-4'>
-          <h3>Detailed Records</h3>
-          <p>
-            Gain insights into who is clicking your links. Knowing when and where
-            people engage with your content helps inform better decisions.
-          </p>
-          <img src="" alt="" />
-        </article>
-        <article className='col-md-4'>
-          <h3>Fully Customizable</h3>
-          <p>
-            Improve brand awareness and content discoverability through customizable
-            links, supercharging audience engagement.
-          </p>
-          <img src="" alt="" />
-        </article>
+        {articleData.map(item => {
+          return (
+            <article className='col-md-4' key={item.id}>
+              <h3>{item.heading}</h3>
+              <p>
+                {item.description}
+              </p>
+              <img src={item.image} alt={`icon for ${item.heading}`} />
+            </article>
+          )
+        })}
       </div>
     </section>
   )
