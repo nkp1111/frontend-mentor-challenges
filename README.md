@@ -30,3 +30,4 @@ This contains the following project:
 - sunnyside-agency-landing-page
 - blogr-landing-page
 - room-homepage
+- url-shortener
