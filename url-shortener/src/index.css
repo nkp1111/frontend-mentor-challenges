@@ -22,6 +22,12 @@ section {
   position: relative;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
 p {
   color: var(--Grayish-Violet);
   font-weight: 400;
@@ -33,7 +39,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 20vh;
+  padding: 2rem 10vw;
   z-index: 5;
   background: #fff;
 }
@@ -84,6 +90,29 @@ nav {
   top: 1rem;
   left: 45%;
   text-transform: uppercase;
+}
+
+/* section 1 front section */
+.front-section-info {
+  padding: 10vh 10vw;
+}
+
+.front-section-heading {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+
+.front-section-btn {
+  background: var(--Cyan);
+  margin: 1.4rem 0;
+  transition: .3s all linear;
+  color: #fff;
+}
+
+.front-section-btn:hover {
+  color: #fff;
+  background: var(--Cyan);
+  opacity: .7;
 }
 
 /* footer  */
