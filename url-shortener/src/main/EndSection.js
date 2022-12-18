@@ -2,10 +2,13 @@ import React from 'react'
 
 function EndSection() {
   return (
-    <section>
+    <section id="end-section">
       {/* End section */}
-      <h2>Boost your links today</h2>
-      <button>Get Started</button>
+      <div className='end-section-holder'>
+        <h2>Boost your links today</h2>
+        <button className='end-btn btn'>Get Started</button>
+      </div>
+
     </section>
   )
 }

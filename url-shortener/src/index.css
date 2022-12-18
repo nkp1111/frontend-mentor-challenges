@@ -228,6 +228,24 @@ nav {
 }
 
 /* section 4 end section  */
+.end-section-holder {
+  background: url("./assets//images/bg-boost-desktop.svg") center center / cover no-repeat;
+  padding: 5rem;
+  background-color: var(--Dark-Violet);
+  text-align: center;
+  color: white;
+}
+
+.end-btn {
+  background-color: var(--Cyan);
+  transition: .3s all linear;
+  margin-top: 1rem;
+}
+
+.end-btn:hover {
+  background-color: hsl(180, 55%, 58%);
+}
+
 /* footer  */
 .attribution {
   font-size: 11px;
