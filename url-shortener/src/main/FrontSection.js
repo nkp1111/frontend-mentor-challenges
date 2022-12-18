@@ -13,7 +13,7 @@ function FrontSection() {
             on how your links are performing.</p>
           <button className='front-section-btn btn'>Get Started</button>
         </div>
-        <div className='col-md-6'>
+        <div className='front-section-image col-md-6'>
           <picture>
             <img
               src={frontImage}

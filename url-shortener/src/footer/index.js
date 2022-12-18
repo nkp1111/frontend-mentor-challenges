@@ -7,7 +7,7 @@ function footer() {
       <div className='row'>
         <div className='col-md-3'>
           {/* logo */}
-          <img src={footerLogo} alt="shortly logo icon white" />
+          <img src={footerLogo} alt="shortly logo icon white" className='footer-logo' />
         </div>
 
         <div className='footer-links col-md-7 row'>
@@ -54,10 +54,5 @@ function footer() {
   )
 }
 
-const formatIcons = (icon) => {
-  return (
-    icon
-  )
-}
 
 export default footer
