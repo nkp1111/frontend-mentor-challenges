@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](./src/assets/design/desktop-active-states.jpg)
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/url-shortener)
+- Live Site URL: [Netlify](https://nkp1111-url-shortener.netlify.app/)
 
 ## My process
 
