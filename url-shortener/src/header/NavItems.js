@@ -15,9 +15,9 @@ function NavItems({ navbarData }) {
       </ul>
 
       {/* navbar buttons  */}
-      <div className='btn-holder'>
-        <button className='btn btn-dark'>Login</button>
-        <button className='btn btn-dark'>Sign Up</button>
+      <div className='btn-holder ms-auto'>
+        <button className='login-btn btn'>Login</button>
+        <button className='signup-btn btn'>Sign Up</button>
       </div>
     </div>
   )

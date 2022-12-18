@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-  --Cyan: hsl(180, 66%, 49%) --Dark-Violet: hsl(257, 27%, 26%);
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
 
   --Red: hsl(0, 87%, 67%);
 
@@ -14,21 +15,66 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 section {
   position: relative;
 }
 
+p {
+  color: var(--Grayish-Violet);
+  font-weight: 400;
+}
+
 /* header  */
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 4rem;
+  padding: 2rem 20vh;
   z-index: 5;
   background: #fff;
+}
+
+/* navigation bar  */
+nav {
+  color: var(--Grayish-Violet);
+}
+
+.nav-item {
+  margin: 0 1.5vw;
+  font-weight: 500;
+}
+
+/* button holder  */
+.btn {
+  font-weight: 700;
+  color: inherit;
+  margin: 0 .5rem;
+  padding: .5rem 1.5rem;
+  border-radius: 5rem;
+  transition: .3s all linear;
+}
+
+.login-btn {
+  box-shadow: 0 0 1px 0 var(--Grayish-Violet);
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 3px 0 var(--Grayish-Violet);
+}
+
+.signup-btn {
+  background: var(--Cyan);
+  color: #fff;
+}
+
+.signup-btn:hover {
+  background: var(--Cyan);
+  color: #fff;
+  opacity: .6;
 }
 
 /* main  */
