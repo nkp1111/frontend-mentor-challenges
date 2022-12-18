@@ -1,5 +1,23 @@
 :root {}
 
+/* header  */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 4rem;
+  z-index: 5;
+}
+
+/* main  */
+.hidden-heading {
+  opacity: 0;
+  position: absolute;
+  top: 1rem;
+  left: 45%;
+  text-transform: uppercase;
+}
 
 /* footer  */
 .attribution {
