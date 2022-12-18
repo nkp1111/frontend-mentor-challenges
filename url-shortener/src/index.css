@@ -13,19 +13,25 @@
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-}
-
-section {
-  position: relative;
+  background: var(--Gray);
+  background: hsl(252, 100%, 95%);
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
+}
+
+section {
+  position: relative;
 }
 
 p {
@@ -93,6 +99,11 @@ nav {
 }
 
 /* section 1 front section */
+#front-section {
+  background: white;
+  padding-bottom: 10%;
+}
+
 .front-section-info {
   padding: 10vh 10vw;
 }
@@ -115,6 +126,54 @@ nav {
   opacity: .7;
 }
 
+/* section 2 form section  */
+#form-section {
+  padding: 10vh;
+}
+
+#form-section form {
+  position: absolute;
+  background: url("./assets/images/bg-shorten-desktop.svg") center center / cover no-repeat;
+  padding: 2rem;
+  top: -50%;
+  background-color: var(--Dark-Violet);
+  border-radius: .5rem;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+}
+
+#form-section input {
+  width: 40vw;
+  min-width: 350px;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+#form-section input:focus {
+  outline: none;
+}
+
+.form-btn-holder {
+  background: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+#form-section button {
+  border-radius: 0;
+  white-space: nowrap;
+  background: var(--Cyan);
+  color: #fff;
+  height: 100%;
+  margin: 0;
+}
+
+#form-section button:hover {
+  opacity: .7;
+}
+
 /* footer  */
 .attribution {
   font-size: 11px;
@@ -122,6 +181,8 @@ nav {
   position: absolute;
   bottom: 5vh;
   right: 5vh;
+  opacity: 0;
+  display: none;
 }
 
 .attribution a {

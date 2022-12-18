@@ -2,7 +2,7 @@ import React from 'react'
 
 function FormSection() {
   return (
-    <section>
+    <section id="form-section">
       <h2 className='hidden-heading'>Form to shorten links</h2>
       {/* Form section */}
       <form>
@@ -11,7 +11,10 @@ function FormSection() {
           placeholder='Shorten a link here...'
 
         />
-        <button>Shorten It!</button>
+        <span className='form-btn-holder'>
+          <button className='btn'>Shorten It!</button>
+        </span>
+
       </form>
     </section>
   )

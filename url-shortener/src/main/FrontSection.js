@@ -3,7 +3,7 @@ import frontImage from '../assets/images/illustration-working.svg'
 
 function FrontSection() {
   return (
-    <section className='container-fluid'>
+    <section className='container-fluid' id="front-section">
       {/* Front section */}
       <div className='row'>
         <div className='front-section-info col-md-6'>
