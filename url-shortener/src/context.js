@@ -20,12 +20,45 @@ const AppProvider = ({ children }) => {
     } else {
       fetch(baseUrl + toset + url)
         .then(res => res.json())
-        .then(data => setShortUrl(data.result))
+        .then(data => {
+          setShortUrl(data.result.full_short_link)
+        })
+        .catch(e => {
+          console.log(e);
+        })
     }
-
   }
 
-  console.log(shortUrl);
+  useEffect(() => {
+    if (fullUrl && shortUrl) {
+      let newUrlSet = {
+        id: new Date().getTime().toString(),
+        fullUrl,
+        shortUrl
+      }
+
+      setAllUrls([...allUrls, newUrlSet])
+      setFullUrl("")
+      setShortUrl("")
+      setUrlToLocalStorage(allUrls)
+    }
+  }, [fullUrl, shortUrl])
+
+  const setUrlToLocalStorage = (allUrls) => {
+    localStorage.setItem("shortenUrls", JSON.stringify(allUrls))
+  }
+
+  const getUrlFromLocalStorage = () => {
+    let allUrlsData = JSON.parse(localStorage.getItem("shortenUrls"))
+    if (allUrlsData) {
+      setAllUrls(allUrlsData)
+    }
+  }
+
+  useEffect(() => {
+    getUrlFromLocalStorage()
+  }, [])
+
   return (
     <AppContext.Provider
       value={{
@@ -34,6 +67,7 @@ const AppProvider = ({ children }) => {
         shortUrl,
         setShortUrl,
         startUrlShortener,
+        allUrls,
 
       }}>
       {children}
