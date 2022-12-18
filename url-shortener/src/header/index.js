@@ -1,6 +1,7 @@
 import React from 'react'
 import { navbarData, logoIcon } from '../assets/data'
 import hamburgerIcon from '../assets/images/icon-hamburger.svg'
+import NavItems from './NavItems'
 
 
 function Header() {
@@ -8,32 +9,17 @@ function Header() {
     <header>
       {/* navbar  */}
       <nav className='navbar navbar-expand-sm'>
+
         {/* navbar logo  */}
         <img src={logoIcon} alt="room logo" className='navbar-brand' />
+
         {/* navbar button toggler  */}
         <button className='navbar-toggler' data-bs-toggle="collapse" data-bs-target="#headerNavbar">
           <img src={hamburgerIcon} alt="hamburger menu" />
         </button>
 
         {/* navbar items (collapsable)  */}
-        <div id="headerNavbar" className='collapse navbar-collapse'>
-          <ul className='navbar-nav'>
-            {navbarData.map((item, ind) => {
-              return (
-                <li key={ind}
-                  className="nav-item">
-                  {item}
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-
-        {/* navbar buttons  */}
-        <div className='btn-holder'>
-          <button className='btn btn-dark'>Login</button>
-          <button className='btn btn-dark'>Sign Up</button>
-        </div>
+        <NavItems navbarData={navbarData} />
       </nav>
     </header>
   )
