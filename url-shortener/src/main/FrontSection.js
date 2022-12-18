@@ -4,6 +4,7 @@ import frontImage from '../assets/images/illustration-working.svg'
 function FrontSection() {
   return (
     <section>
+      {/* Front section */}
       <div className='row'>
         <div className='col-md-6'>
           <h2>More than just shorter links</h2>
