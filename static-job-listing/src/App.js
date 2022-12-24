@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="App">
       <h1 className='hidden-heading'>Job listing filter</h1>
-      <picture>
+      <picture className='head-image'>
         <source srcSet={headerMobile}
           media="(max-width: 700px)"></source>
         <img src={headerDesktop} alt="purple background" />
