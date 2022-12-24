@@ -27,19 +27,21 @@ function JobHolder() {
                 <div className='job-info'>
                   <h3>{job.position}</h3>
                   <span>{job.postedAt}</span>
+                  .
                   <span>{job.contract}</span>
+                  .
                   <span>{job.location}</span>
                 </div>
               </div>
 
               {/* article image  */}
-              <div className='job-image col-md-1'>
+              <div className='job-image col-md-2'>
                 <img src={job.logo}
                   alt={`${job.company} logo`} />
               </div>
 
               {/* article tags  */}
-              <div className='job-tags col-md-6'>
+              <div className='job-tags col-md-5'>
                 <ul>
                   <li>{job.role}</li>
                   <li>{job.level}</li>
