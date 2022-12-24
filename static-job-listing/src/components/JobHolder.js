@@ -4,12 +4,32 @@ import useGlobalContext from '../context'
 
 function JobHolder() {
 
-  const { setTags } = useGlobalContext()
+  const { tags } = useGlobalContext()
+
+  let filteredData
+  if (tags.length === 0) {
+    filteredData = maindata
+  } else {
+    filteredData = maindata.filter(tagEl => {
+      let dataTags = [tagEl.role, tagEl.level, ...tagEl.languages, ...tagEl.tools]
+      let isTagPresent = true
+
+      tags.forEach(tag => {
+        if (!dataTags.includes(tag)) {
+          isTagPresent = false
+        }
+      })
+
+      if (isTagPresent) {
+        return tagEl
+      }
+    })
+  }
 
   return (
     <div className='job-holder'>
       <div className='container-fluid'>
-        {maindata.map(job => {
+        {filteredData.map(job => {
           return (
             // article 
             <article key={job.id} className="job-article row">
