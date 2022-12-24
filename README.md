@@ -31,3 +31,4 @@ This contains the following project:
 - blogr-landing-page
 - room-homepage
 - url-shortener
+- static-job-listing
