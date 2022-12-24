@@ -1,7 +1,11 @@
 import React from 'react'
 import { maindata } from '../assets/data'
+import useGlobalContext from '../context'
 
 function JobHolder() {
+
+  const { val } = useGlobalContext()
+  console.log(val)
   return (
     <div className='job-holder'>
       <div className='container-fluid'>

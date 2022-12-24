@@ -1,14 +1,17 @@
 import React from 'react'
+import useGlobalContext from '../context'
 import FilterBox from './FilterBox'
 import JobHolder from './JobHolder'
 
-function section() {
+function Section() {
+
+  const { filters } = useGlobalContext()
   return (
     <div className='section'>
-      <FilterBox />
+      {filters.length > 0 && <FilterBox filters={filters} />}
       <JobHolder />
     </div>
   )
 }
 
-export default section
+export default Section

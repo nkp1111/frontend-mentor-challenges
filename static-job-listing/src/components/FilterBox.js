@@ -1,7 +1,8 @@
 import React from 'react'
-import { filters, removeIcon } from '../assets/data'
+import { removeIcon } from '../assets/data'
 
-function FilterBox() {
+function FilterBox({ filters }) {
+
   return (
     <div className='filter-box 
     d-flex'>
