@@ -3,20 +3,21 @@ import { filters, removeIcon } from '../assets/data'
 
 function FilterBox() {
   return (
-    <div className='filter-box'>
-      <ul>
+    <div className='filter-box 
+    d-flex'>
+      <ul className='filter-holder d-flex'>
         {filters.map(filter => {
           return (
-
-            <li key={filter}>{filter}
-              <img src={removeIcon} alt="remove icon"
-                className='bg-dark' />
+            <li key={filter}
+              className="filter-item">{filter}
+              <img src={removeIcon}
+                alt="remove icon"
+                className='remove-icon' />
             </li>
-
           )
         })}
       </ul>
-      <button className='btn'>Clear</button>
+      <button className='btn clear-btn ms-auto'>Clear</button>
     </div>
   )
 }

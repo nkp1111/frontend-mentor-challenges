@@ -5,7 +5,7 @@
   /* (Background) */
   --Light-Grayish-Cyan: hsl(180, 52%, 96%);
   /* (Filter Tablets) */
-  --Light-Grayish-Cyan: hsl(180, 31%, 95%);
+  --Light-Grayish-Cyan2: hsl(180, 31%, 95%);
   --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
   --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
 
@@ -16,11 +16,77 @@ body {
   background: var(--Light-Grayish-Cyan);
 }
 
+/* headings  */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* h1  */
 .hidden-heading {
   text-align: center;
   opacity: 0;
   display: none;
 }
+
+/* main  */
+.section {
+  width: 80%;
+  margin: auto;
+}
+
+/* filter box  */
+.filter-box {
+  box-shadow: 0 0 20px var(--Dark-Grayish-Cyan);
+  position: relative;
+  top: -2rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+
+.filter-holder {
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.filter-item {
+  margin-right: .8rem;
+  color: var(--Desaturated-Dark-Cyan);
+  background: var(--Light-Grayish-Cyan2);
+  padding-left: .5rem;
+  border-radius: .3rem 0 0 .3rem;
+  cursor: pointer;
+}
+
+.remove-icon {
+  border-radius: 0 .3rem .3rem 0;
+  margin-left: .5rem;
+  height: 100%;
+  padding: .5rem;
+  background: var(--Desaturated-Dark-Cyan);
+  transition: .3s all ease-in-out;
+}
+
+.filter-item:hover .remove-icon {
+  background: var(--Very-Dark-Grayish-Cyan);
+}
+
+/*filter box clear btn  */
+.clear-btn {
+  color: var(--Desaturated-Dark-Cyan);
+  transition: linear .3s all;
+}
+
+.clear-btn:hover {
+  text-decoration: underline;
+  color: var(--Desaturated-Dark-Cyan);
+}
+
 
 picture img {
   background-color: var(--Desaturated-Dark-Cyan);
