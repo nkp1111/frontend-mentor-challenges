@@ -32,7 +32,8 @@ function JobHolder() {
         {filteredData.map(job => {
           return (
             // article 
-            <article key={job.id} className="job-article row">
+            <article key={job.id}
+              className={`job-article row ${job.featured && "featured"}`}>
 
               {/* article content  */}
               <div className='job-content col-md-5'>
@@ -63,6 +64,8 @@ function JobHolder() {
                 <img src={job.logo}
                   alt={`${job.company} logo`} />
               </div>
+
+              <div className='divider'></div>
 
               {/* article tags  */}
               <div className='job-tags col-md-5'>
