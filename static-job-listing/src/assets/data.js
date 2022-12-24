@@ -168,4 +168,10 @@ let maindata = [
   }
 ]
 
-export { maindata, removeIcon, headerDesktop, headerMobile }
+const filters = [
+  "frontend",
+  "css",
+  "javascript"
+]
+
+export { maindata, removeIcon, headerDesktop, headerMobile, filters }
