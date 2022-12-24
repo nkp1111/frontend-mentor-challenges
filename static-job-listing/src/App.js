@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { headerDesktop, headerMobile } from './assets/data'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <h1 className='hidden-heading'>Job listing filter</h1>
+      <picture>
+        <source srcSet={headerMobile}
+          media="(max-width: 700px)"></source>
+        <img src={headerDesktop} alt="purple background" />
+      </picture>
+    </main>
   );
 }
 
