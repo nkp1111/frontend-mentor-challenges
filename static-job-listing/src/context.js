@@ -1,16 +1,37 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
 
-  const [filters, setFilters] = useState([])
+  const [tags, setTags] = useState([])
+
+  useEffect(() => {
+
+    const addTags = (e) => {
+      e.stopPropagation()
+      let newTag = [...tags, e.target.innerText]
+      newTag = newTag.filter((tag, ind) => newTag.indexOf(tag) === ind)
+      setTags(newTag)
+    }
+
+    const tagEl = document.querySelectorAll(".job-tags li")
+    tagEl.forEach(tag => {
+      tag.addEventListener("click", (e) => addTags(e))
+    })
+
+    return () => {
+      tagEl.forEach(tag => {
+        tag.removeEventListener("click", (e) => addTags(e))
+      })
+    }
+  }, [tags])
 
   return (
     <AppContext.Provider
       value={{
-        filters,
-        setFilters,
+        tags,
+        setTags,
       }}>
       {children}
     </AppContext.Provider>

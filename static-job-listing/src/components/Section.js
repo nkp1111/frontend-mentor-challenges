@@ -5,10 +5,11 @@ import JobHolder from './JobHolder'
 
 function Section() {
 
-  const { filters } = useGlobalContext()
+  const { tags } = useGlobalContext()
+
   return (
     <div className='section'>
-      {filters.length > 0 && <FilterBox filters={filters} />}
+      {tags.length > 0 && <FilterBox tags={tags} />}
       <JobHolder />
     </div>
   )

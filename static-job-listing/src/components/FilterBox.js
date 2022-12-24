@@ -1,16 +1,18 @@
 import React from 'react'
 import { removeIcon } from '../assets/data'
+import useGlobalContext from '../context'
 
-function FilterBox({ filters }) {
+function FilterBox({ tags }) {
 
+  const { setTags } = useGlobalContext()
   return (
     <div className='filter-box 
     d-flex'>
       <ul className='filter-holder d-flex'>
-        {filters.map(filter => {
+        {tags.map((tag, ind) => {
           return (
-            <li key={filter}
-              className="filter-item">{filter}
+            <li key={ind}
+              className="filter-item">{tag}
               <img src={removeIcon}
                 alt="remove icon"
                 className='remove-icon' />
@@ -18,7 +20,10 @@ function FilterBox({ filters }) {
           )
         })}
       </ul>
-      <button className='btn clear-btn ms-auto'>Clear</button>
+      <button className='btn clear-btn ms-auto'
+        onClick={() => {
+          setTags([])
+        }}>Clear</button>
     </div>
   )
 }

@@ -4,8 +4,8 @@ import useGlobalContext from '../context'
 
 function JobHolder() {
 
-  const { val } = useGlobalContext()
-  console.log(val)
+  const { setTags } = useGlobalContext()
+
   return (
     <div className='job-holder'>
       <div className='container-fluid'>
