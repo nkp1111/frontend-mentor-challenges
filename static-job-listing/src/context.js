@@ -6,9 +6,16 @@ const AppProvider = ({ children }) => {
 
   const [tags, setTags] = useState([])
 
-  useEffect(() => {
+  const removeOneTag = (tag) => {
+    // remove tags from the list 
+    const modifyTags = tags.filter(tagItem => tagItem !== tag)
+    setTags(modifyTags)
+  }
 
+
+  useEffect(() => {
     const addTags = (e) => {
+      // add tags to the tag list
       e.stopPropagation()
       let newTag = [...tags, e.target.innerText]
       newTag = newTag.filter((tag, ind) => newTag.indexOf(tag) === ind)
@@ -32,6 +39,7 @@ const AppProvider = ({ children }) => {
       value={{
         tags,
         setTags,
+        removeOneTag,
       }}>
       {children}
     </AppContext.Provider>

@@ -4,7 +4,7 @@ import useGlobalContext from '../context'
 
 function FilterBox({ tags }) {
 
-  const { setTags } = useGlobalContext()
+  const { setTags, removeOneTag } = useGlobalContext()
   return (
     <div className='filter-box 
     d-flex'>
@@ -12,7 +12,8 @@ function FilterBox({ tags }) {
         {tags.map((tag, ind) => {
           return (
             <li key={ind}
-              className="filter-item">{tag}
+              className="filter-item"
+              onClick={(e) => removeOneTag(tag)}>{tag}
               <img src={removeIcon}
                 alt="remove icon"
                 className='remove-icon' />
