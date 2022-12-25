@@ -38,6 +38,7 @@ p {
 @media (max-width:787px) {
   .main-image {
     background: url("./assets/images/bg-intro-mobile.svg") center bottom /cover;
+    background-color: var(--Grayish-Blue);
   }
 }
 
@@ -51,6 +52,7 @@ p {
 
 .navbar-nav {
   margin: auto;
+  display: flex;
 }
 
 .nav-item {
@@ -237,4 +239,79 @@ p {
 .copyright-div .invite-btn {
   width: fit-content;
   margin-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+
+  body {
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 5rem;
+    left: 10%;
+    right: 10%;
+    background: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: .5rem 0;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .bottom-line {
+    position: static;
+  }
+
+  .main-image {
+    order: 1;
+    height: 70vh;
+    background-position: center;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .front-page {
+    top: 0;
+  }
+
+  .front-info {
+    order: 2;
+  }
+
+  .front-page .invite-btn {
+    margin: auto;
+  }
+
+  .front-text {
+    width: 100%;
+  }
+
+  /* feature section  */
+  .feature-divider {
+    display: none;
+  }
+
+  .feature-section .feature-section-text {
+    margin-bottom: 13%;
+  }
+
+  .feature-article {
+    margin-bottom: 5%;
+  }
+
+  .feature-article h3 {
+    margin: 3% 0;
+  }
+
+  /* blog section  */
 }

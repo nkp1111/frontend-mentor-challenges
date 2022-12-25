@@ -8,7 +8,17 @@ function index() {
         <nav className='navbar navbar-expand-md'>
           <img src={logo} alt="logo" className='navbar-brand' />
 
-          <div className='navbar-toggler' role="button" data-bs-target="#headerNav" data-bs-toggle="collapse">
+          <div className='navbar-toggler' role="button" data-bs-target="#headerNav" data-bs-toggle="collapse"
+            onClick={(e) => {
+              const el = e.currentTarget.firstElementChild
+              if (el.alt === "close menu") {
+                el.src = hamburgerLogo
+                el.alt = "hamburger menu"
+              } else {
+                el.src = closeIcon
+                el.alt = "close menu"
+              }
+            }}>
             <img src={hamburgerLogo} alt="hamburger menu" />
           </div>
 

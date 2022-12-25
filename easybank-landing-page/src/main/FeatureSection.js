@@ -5,8 +5,8 @@ function FeatureSection() {
   return (
     <section className='feature-section'>
       <h2>Why choose Easybank?</h2>
-      <p>
-        We leverage Open Banking to turn your bank account into your financial hub.<br /> Control
+      <p className='feature-section-text'>
+        We leverage Open Banking to turn your bank account into your financial hub.<br className='feature-divider' /> Control
         your finances like never before.
       </p>
 
