@@ -16,6 +16,10 @@ body {
   font-family: 'Public Sans', sans-serif;
 }
 
+p {
+  color: var(--Grayish-Blue);
+}
+
 .container-fluid {
   --bs-gutter-x: 0;
 }
@@ -35,6 +39,8 @@ body {
 .header {
   padding: 1rem 8%;
   background: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -80,4 +86,38 @@ body {
 .invite-btn:hover {
   color: #fff;
   opacity: .7;
+}
+
+/* main  */
+.front-page {
+  position: relative;
+  top: -7.5rem;
+}
+
+.front-info {
+  display: flex;
+  flex-direction: column;
+  padding: 9%;
+  padding-top: 15%;
+}
+
+.big-heading {
+  font-size: 3rem;
+  color: var(--Dark-Blue);
+}
+
+.front-text {
+  width: 83%;
+  margin: 2rem 0;
+}
+
+.front-page .invite-btn {
+  width: fit-content;
+  margin-top: .5rem;
+}
+
+.front-info .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

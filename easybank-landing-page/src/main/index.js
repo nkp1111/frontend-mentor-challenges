@@ -1,16 +1,16 @@
 import React from 'react'
-import { backDekstop, backMobile, mockupsImage } from '../assets/data'
+import { mockupsImage } from '../assets/data'
 import BlogSection from './BlogSection'
 import FeatureSection from './FeatureSection'
 
 function index() {
   return (
     <main>
-      <div className='row'>
-        <div className='col-md-6'>
+      <div className='front-page row'>
+        <div className='col-md-6 front-info'>
           <h1 className='big-heading'>
             Next generation digital banking</h1>
-          <p>
+          <p className='front-text'>
             Take your financial life online. Your Easybank account will be a one-stop-shop
             for spending, saving, budgeting, investing, and much more
           </p>
