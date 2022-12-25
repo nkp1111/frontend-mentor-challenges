@@ -20,7 +20,7 @@ function BlogSection() {
                 </div>
 
                 <div className='col-12 order-1'>
-                  <p className='blog-author'>{item.author}</p>
+                  <p className='blog-author'>By {item.author}</p>
                 </div>
               </div>
 

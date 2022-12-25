@@ -194,3 +194,47 @@ p {
   margin: 1rem 0 .3rem;
   padding: 0;
 }
+
+/* footer  */
+.footer {
+  background: var(--Dark-Blue);
+  padding: 4% 9%;
+  color: #fff;
+}
+
+.footer .logo {
+  margin-bottom: 2rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer li:hover {
+  color: var(--Lime-Green);
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.footer .icon-holder {
+  padding: 0;
+}
+
+.footer li.icons {
+  margin: 0 .5rem;
+}
+
+.footer li.icons:hover {
+  scale: 1.1;
+}
+
+.copyright-div {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.copyright-div .invite-btn {
+  width: fit-content;
+  margin-bottom: 1rem;
+}
