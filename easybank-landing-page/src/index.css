@@ -16,6 +16,12 @@ body {
   font-family: 'Public Sans', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--Dark-Blue);
+}
+
 p {
   color: var(--Grayish-Blue);
 }
@@ -92,6 +98,7 @@ p {
 .front-page {
   position: relative;
   top: -7.5rem;
+  bottom: 0;
 }
 
 .front-info {
@@ -103,7 +110,6 @@ p {
 
 .big-heading {
   font-size: 3rem;
-  color: var(--Dark-Blue);
 }
 
 .front-text {
@@ -116,8 +122,27 @@ p {
   margin-top: .5rem;
 }
 
+.main-image {
+  height: 100vh;
+}
+
 .front-info .main-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* feature section  */
+.feature-section {
+  background: var(--Light-Grayish-Blue);
+  padding: 9%;
+}
+
+.feature-section>p {
+  margin: 1% 0 5%;
+}
+
+/* feature section article  */
+.feature-article h3 {
+  margin: 12% 0 8%;
 }
