@@ -32,3 +32,4 @@ This contains the following project:
 - room-homepage
 - url-shortener
 - static-job-listing
+- easy-bank-landing-page
