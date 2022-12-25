@@ -1,7 +1,7 @@
 import logo from './images/logo.svg'
-// background images
-import backDekstop from './images/bg-intro-desktop.svg'
-import backMobile from './images/bg-intro-mobile.svg'
+import logoWhite from './images/logo-white.svg'
+// background main image
+import mockupsImage from './images/image-mockups.png'
 //feature section article logos 
 import onlineLogo from './images/icon-online.svg'
 import budgetLogo from './images/icon-budgeting.svg'
@@ -10,9 +10,17 @@ import apiLogo from './images/icon-api.svg'
 // blog section article image 
 import confettiImage from './images/image-confetti.jpg'
 import currencyImage from './images/image-currency.jpg'
-import mockupsImage from './images/image-mockups.png'
 import planeImage from './images/image-plane.jpg'
 import restaurantImage from './images/image-restaurant.jpg'
+// footer icons 
+import facebookIcon from './images/icon-facebook.svg'
+import youtubeIcon from './images/icon-youtube.svg'
+import twitterIcon from './images/icon-twitter.svg'
+import pinterestIcon from './images/icon-pinterest.svg'
+import instagramIcon from './images/icon-instagram.svg'
+// hamburger menu
+import hamburgerLogo from './images/icon-hamburger.svg'
+import closeIcon from './images/icon-close.svg'
 
 const navData = [
   "Home",
@@ -80,7 +88,31 @@ const blogArticleData = [
     author: "Claire Robinson",
     image: confettiImage,
   },
-
 ]
 
-export { navData, logo, backDekstop, backMobile, featureArticleData, blogArticleData }
+const footerLogos = [
+  facebookIcon,
+  youtubeIcon,
+  twitterIcon,
+  pinterestIcon,
+  instagramIcon,
+]
+
+const footerItems = [
+  "About Us",
+  "Contact",
+  "Blog",
+  "Careers",
+  "Support",
+  "Privacy Policy",
+]
+
+export {
+  navData,
+  logo, logoWhite,
+  mockupsImage,
+  featureArticleData,
+  blogArticleData,
+  footerItems, footerLogos,
+  hamburgerLogo, closeIcon
+}
