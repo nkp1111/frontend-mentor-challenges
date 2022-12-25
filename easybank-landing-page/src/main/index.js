@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { mockupsImage } from '../assets/data'
 import BlogSection from './BlogSection'
 import FeatureSection from './FeatureSection'
