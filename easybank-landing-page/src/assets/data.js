@@ -2,12 +2,17 @@ import logo from './images/logo.svg'
 // background images
 import backDekstop from './images/bg-intro-desktop.svg'
 import backMobile from './images/bg-intro-mobile.svg'
-// article images 
+//feature section article logos 
 import onlineLogo from './images/icon-online.svg'
 import budgetLogo from './images/icon-budgeting.svg'
 import onboardLogo from './images/icon-onboarding.svg'
 import apiLogo from './images/icon-api.svg'
-
+// blog section article image 
+import confettiImage from './images/image-confetti.jpg'
+import currencyImage from './images/image-currency.jpg'
+import mockupsImage from './images/image-mockups.png'
+import planeImage from './images/image-plane.jpg'
+import restaurantImage from './images/image-restaurant.jpg'
 
 const navData = [
   "Home",
@@ -17,7 +22,8 @@ const navData = [
   "Careers",
 ]
 
-const articleData = [
+const featureArticleData = [
+  // feature section articles 
   {
     id: 1,
     heading: "Online Banking",
@@ -44,4 +50,37 @@ const articleData = [
   },
 ]
 
-export { navData, logo, backDekstop, backMobile, articleData }
+const blogArticleData = [
+  // blog section articles 
+  {
+    id: 1,
+    heading: "Receive money in any currency with no fees",
+    description: "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
+    author: "Claire Robinson",
+    image: currencyImage,
+  },
+  {
+    id: 2,
+    heading: "Treat yourself without worrying about money",
+    description: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month.That means you …",
+    author: "Wilson Hutton",
+    image: restaurantImage,
+  },
+  {
+    id: 3,
+    heading: "Take your Easybank card wherever you go",
+    description: "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad.We’ll even show you …",
+    author: "Wilson Hutton",
+    image: planeImage,
+  },
+  {
+    id: 4,
+    heading: "Our invite-only Beta accounts are now live!",
+    description: "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...",
+    author: "Claire Robinson",
+    image: confettiImage,
+  },
+
+]
+
+export { navData, logo, backDekstop, backMobile, featureArticleData, blogArticleData }
