@@ -1,5 +1,5 @@
 import React from 'react'
-import { backDekstop, backMobile } from '../assets/data'
+import { backDekstop, backMobile, mockupsImage } from '../assets/data'
 import BlogSection from './BlogSection'
 import FeatureSection from './FeatureSection'
 
@@ -18,11 +18,8 @@ function index() {
             Request Invite
           </button>
         </div>
-        <div className='col-md-6'>
-          <picture>
-            <source srcSet={backMobile} media="(max-width: 787px)" />
-            <img src={backDekstop} alt="hero background" />
-          </picture>
+        <div className='col-md-6 main-image'>
+          <img src={mockupsImage} alt="hero background" />
         </div>
       </div>
 

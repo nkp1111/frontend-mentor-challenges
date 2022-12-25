@@ -15,3 +15,17 @@
 body {
   font-family: 'Public Sans', sans-serif;
 }
+
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+
+.main-image {
+  background: url("./assets/images/bg-intro-desktop.svg") center bottom /cover;
+}
+
+@media (max-width:787px) {
+  .main-image {
+    background: url("./assets/images/bg-intro-mobile.svg") center bottom /cover;
+  }
+}
