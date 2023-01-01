@@ -93,4 +93,8 @@ export {
   downloadSectionArticle,
   faqSectionData,
   iconArrow,
+  iconArrowDown,
+  iconFacebook,
+  iconTwitter,
+  iconError,
 }

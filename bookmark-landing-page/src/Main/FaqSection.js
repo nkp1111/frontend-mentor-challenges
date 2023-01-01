@@ -42,6 +42,9 @@ function FaqSection() {
             )
           })}
         </ul>
+
+        <button className='btn'>More Info</button>
+
       </div>
 
     </section>
