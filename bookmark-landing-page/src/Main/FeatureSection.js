@@ -7,7 +7,7 @@ function FeatureSection() {
   return (
     <section className='feature-section'>
       <div className='container-fluid'>
-        <div className='row'>
+        <div className='row feature-info-holder'>
           <h2>Features</h2>
           <p>
             Our aim is to make it quick and easy for you to access your favourite websites.
@@ -21,7 +21,7 @@ function FeatureSection() {
           <ul className='tag-holder'>
             {articleData.map(item => {
               return (
-                <li className='tag-items' key={item.id}>{item.tagline}</li>
+                <li className='tag-items active' key={item.id}>{item.tagline}</li>
               )
             })}
           </ul>
@@ -31,15 +31,16 @@ function FeatureSection() {
             <article>
               <div className='row'>
                 {/* article info  */}
-                <div className='col-md-6'>
+                <div className='col-md-6 article-info'>
                   <h3>{activeArticle.heading}</h3>
                   <p>{activeArticle.overview}</p>
                   <button className='btn'>More Info</button>
                 </div>
                 {/* article image  */}
-                <div className='col-md-6'>
+                <div className='col-md-6 article-img'>
                   <div className='row'>
-                    <div className='col-12'>
+                    <div className='col-12 bg-illustration-holder'>
+                      <div className='bg-illustration'></div>
                       <img src={activeArticle.image} alt="illustration background" />
                     </div>
                   </div>
