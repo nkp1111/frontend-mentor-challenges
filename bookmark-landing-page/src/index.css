@@ -155,6 +155,7 @@ p {
   font-weight: 500;
   color: var(--Grayish-Blue);
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
 
 .tag-items.active {

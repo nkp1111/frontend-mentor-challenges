@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { articleData } from '../assets/data'
 
 function FeatureSection() {
 
-  let activeArticle = articleData[0]
+  const [activeArticle, setActiveArticle] = useState(articleData[0])
+
+  useEffect(() => {
+    let tags = document.querySelectorAll(".tag-items")
+    tags.forEach(tag => {
+      tag.addEventListener("click", (e) => {
+
+        tags.forEach(t => t.classList.remove("active"))
+        let text = e.target.innerText
+        tag.classList.add("active")
+
+        articleData.forEach(item => {
+          if (item.tagline === text) {
+            setActiveArticle(item)
+          }
+        })
+      })
+    })
+  })
+
+
   return (
     <section className='feature-section'>
       <div className='container-fluid'>
@@ -19,9 +39,11 @@ function FeatureSection() {
         <div className='row'>
           {/* articles tag  */}
           <ul className='tag-holder row'>
-            {articleData.map(item => {
+            {articleData.map((item, ind) => {
               return (
-                <li className='tag-items active col-md-3' key={item.id}>{item.tagline}</li>
+                <li
+                  className={`tag-items col-md-3 ${ind === 0 ? "active" : ""}`}
+                  key={item.id}>{item.tagline}</li>
               )
             })}
           </ul>
