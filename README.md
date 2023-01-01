@@ -33,3 +33,4 @@ This contains the following project:
 - url-shortener
 - static-job-listing
 - easy-bank-landing-page
+- bookmark-landing-page
