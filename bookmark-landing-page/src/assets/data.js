@@ -28,4 +28,6 @@ export {
   iconHamburger,
   iconClose,
   navData,
+  illustrationHeroImage,
+  bgDotsImage,
 }
