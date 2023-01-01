@@ -18,7 +18,7 @@ function DownloadSection() {
         <div className='row'>
           {downloadSectionArticle.map(item => {
             return (
-              <div className='col-md-4 card-holder'>
+              <div className='col-md-4 card-holder' key={item.id}>
                 <article>
                   {/* article info  */}
                   <div className='col-12'>

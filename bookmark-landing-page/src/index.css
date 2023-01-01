@@ -12,6 +12,55 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--Very-Dark-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
+
+/* header  */
+.header {
+  height: 10vh;
+  padding: 1rem 10%;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-items {
+  margin: 0 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-items:hover {
+  color: var(--Soft-Red);
+}
+
+.login-btn {
+  background: var(--Soft-Red);
+  color: #fff;
+  padding: 0.4rem 2rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: .3s all linear;
+}
+
+.login-btn:hover {
+  color: var(--Soft-Red);
+  border-color: var(--Soft-Red);
+}
+
 .bg-illustration {
   background: aquamarine;
   border-radius: 50% 0 0 50%;

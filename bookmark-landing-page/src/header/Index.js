@@ -4,9 +4,9 @@ import { logoBookmark, iconHamburger, iconClose, navData } from '../assets/data'
 function Index() {
 
   return (
-    <header className='header bg-dark'>
+    <header className='header d-flex align-items-center'>
       <nav className='navbar navbar-expand-md'>
-        <div>
+        <div className='main-logo-holder'>
           <img src={logoBookmark} alt="logo bookmark" className='navbar-brand' />
         </div>
 
@@ -26,7 +26,7 @@ function Index() {
             })}
           </ul>
 
-          <button className='btn'>
+          <button className='btn login-btn btn-outline'>
             Login
           </button>
         </div>
