@@ -368,3 +368,21 @@ p {
   scale: 1.1;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .navbar-brand {
+    margin-top: 1rem;
+  }
+
+  .link-holder {
+    margin: 3% auto;
+  }
+
+  .icon-holder {
+    margin: 1rem auto;
+  }
+}
