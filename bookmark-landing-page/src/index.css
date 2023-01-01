@@ -24,7 +24,7 @@ p {
 
 /* header  */
 .header {
-  height: 10vh;
+  min-height: 10vh;
 }
 
 .navbar {
@@ -35,14 +35,14 @@ p {
   margin-left: auto;
 }
 
-.nav-items {
+.nav-item {
   margin: 0 1.5rem;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.nav-items:hover {
+.nav-item:hover {
   color: var(--Soft-Red);
 }
 
@@ -53,6 +53,7 @@ p {
   margin-left: 1rem;
   font-weight: 500;
   transition: .3s all linear;
+  text-transform: uppercase;
 }
 
 .login-btn:hover {
@@ -370,6 +371,55 @@ p {
 }
 
 @media (max-width: 768px) {
+
+  /* header  */
+  .navbar-collapse {
+    position: absolute;
+    top: -1rem;
+    left: -5rem;
+    right: -5rem;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+    z-index: 10;
+  }
+
+  .navbar-collapse::before {
+    background: var(--Very-Dark-Blue);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  .navbar-collapse .nav-item {
+    border-top: 1px solid var(--Grayish-Blue);
+    border-bottom: 1px solid var(--Grayish-Blue);
+    padding: 1rem 0;
+  }
+
+  .navbar-collapse .login-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    width: auto;
+    margin-top: 2rem;
+  }
+
+  .navbar-collapse .close-icon {
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  .navbar-collapse .close-icon:hover {
+    scale: 1.05;
+  }
+
+  /* footer  */
   .footer {
     text-align: center;
   }

@@ -18,10 +18,20 @@ function Index() {
         </div>
 
         <div className='collapse navbar-collapse' id="headerNav">
+
+          <div
+            className='navbar-toggler close-icon'
+            data-bs-target="#headerNav"
+            data-bs-toggle="collapse"
+          >
+            <img src={iconClose} alt="close-icon" ></img>
+          </div>
+
+
           <ul className='navbar-nav'>
             {navData.map(item => {
               return (
-                <li key={item} className='nav-items'>{item}</li>
+                <li key={item} className='nav-item'>{item}</li>
               )
             })}
           </ul>
