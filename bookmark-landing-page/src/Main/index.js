@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 import DownloadSection from './DownloadSection'
 import FaqSection from './FaqSection'
 import FeatureSection from './FeatureSection'
@@ -15,6 +16,8 @@ function index() {
       <DownloadSection />
       {/* FAQ section  */}
       <FaqSection />
+      {/* Contact Form section  */}
+      <ContactForm />
     </main>
   )
 }
