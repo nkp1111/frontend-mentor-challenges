@@ -7,7 +7,7 @@ function FeatureSection() {
   return (
     <section className='feature-section'>
       <div className='container-fluid'>
-        <div className='row feature-info-holder'>
+        <div className='row info-holder'>
           <h2>Features</h2>
           <p>
             Our aim is to make it quick and easy for you to access your favourite websites.

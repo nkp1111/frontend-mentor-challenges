@@ -129,11 +129,12 @@ p {
   padding: 6% 0;
 }
 
-.feature-info-holder {
+/* feature-section , download-section  */
+.info-holder {
   text-align: center;
 }
 
-.feature-info-holder p {
+.info-holder p {
   width: 40%;
   margin: 1rem auto 2rem;
 }
@@ -159,7 +160,7 @@ p {
   border-bottom: 3px solid var(--Soft-Red);
 }
 
-.feature-section .article-info {
+.article-info {
   order: 2;
   padding: 5% 8%;
 }
@@ -173,7 +174,7 @@ p {
   color: #fff;
 }
 
-.feature-section .article-img {
+.article-img {
   order: 1;
 }
 
@@ -181,4 +182,28 @@ p {
   border-radius: 0 50% 15rem 0;
   left: -30%;
   height: 100%;
+}
+
+/* download section  */
+.download-section {
+  padding: 6% 0;
+}
+
+.download-section article {
+  text-align: center;
+}
+
+.card-holder .btn {
+  background: var(--Soft-Blue);
+  color: #fff;
+  padding: .5rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.card-1 {
+  padding-top: 4%;
+}
+
+.card-2 {
+  padding-top: 8%;
 }
