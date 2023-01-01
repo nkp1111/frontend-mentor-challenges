@@ -193,9 +193,7 @@ p {
   text-align: center;
 }
 
-.card-holder .btn {
-  background: var(--Soft-Blue);
-  color: #fff;
+.card-holder .chrome-btn {
   padding: .5rem 2rem;
   margin-top: 1.5rem;
 }
@@ -206,4 +204,63 @@ p {
 
 .card-2 {
   padding-top: 8%;
+}
+
+/* faq section  */
+.faq-holder {
+  padding: 1% 20%;
+  list-style-type: none;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  border-top: 1px solid var(--Grayish-Blue);
+  padding: 3% 0;
+  transition: all .4s linear;
+}
+
+.faq-item:last-of-type {
+  border-bottom: 1px solid var(--Grayish-Blue);
+}
+
+.faq-item .question {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: inherit;
+}
+
+.faq-item .question:hover {
+  color: var(--Soft-Red);
+}
+
+.faq-item .answer {
+  transition: inherit;
+  padding: 0;
+}
+
+.faq-item .answer-text {
+  display: inline-block;
+  transition: inherit;
+  margin: 3.5% 0 1%;
+  color: var(--Grayish-Blue);
+}
+
+.arrow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon.down {
+  rotate: 180deg;
+}
+
+.faq-section .btn-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-section .chrome-btn {
+  margin: 1.5rem auto;
 }

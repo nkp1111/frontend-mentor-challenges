@@ -25,7 +25,7 @@ function DownloadSection() {
                     <div className='col-12 article-info'>
                       <h3>Add to {item.title}</h3>
                       <p>Minimum Version {item.version}</p>
-                      <button className='btn'>Add & Install Extension</button>
+                      <button className='btn chrome-btn'>Add & Install Extension</button>
                     </div>
                     {/* article image  */}
                     <div className='col-12 article-img'>
