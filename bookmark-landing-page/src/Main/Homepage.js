@@ -24,7 +24,7 @@ function Homepage() {
         </div>
 
         {/* image grid  */}
-        <div className='col-md-6'>
+        <div className='col-md-6 home-main-img'>
           <div className='row'>
             <div className='col-12 bg-illustration-holder'>
               <div className='bg-illustration'></div>

@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -416,7 +417,26 @@ p {
   }
 
   .navbar-collapse .close-icon:hover {
-    scale: 1.05;
+    scale: 1.1;
+  }
+
+  /* main  */
+  /* home page  */
+  .home-page {
+    text-align: center;
+  }
+
+  .home-main-img {
+    order: 1;
+  }
+
+  .home-info-holder {
+    order: 2;
+    margin-top: 2.5rem;
+  }
+
+  .btn {
+    margin: .5rem 0;
   }
 
   /* footer  */
