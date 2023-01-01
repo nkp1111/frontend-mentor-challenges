@@ -4,7 +4,7 @@ import { logoBookmark, iconHamburger, iconClose, navData } from '../assets/data'
 function Index() {
 
   return (
-    <header className='header d-flex align-items-center'>
+    <header className='header d-flex align-items-center container-fluid'>
       <nav className='navbar navbar-expand-md'>
         <div className='main-logo-holder'>
           <img src={logoBookmark} alt="logo bookmark" className='navbar-brand' />
