@@ -18,6 +18,7 @@ import logoChrome from './images/logo-chrome.svg'
 import logoFirefox from './images/logo-firefox.svg'
 import logoOpera from './images/logo-opera.svg'
 
+import logoBookmarkWhite from './images/logo-bookmark-white.svg'
 
 const navData = [
   "feature", "pricing", "contact",
@@ -97,4 +98,5 @@ export {
   iconFacebook,
   iconTwitter,
   iconError,
+  logoBookmarkWhite,
 }

@@ -340,3 +340,31 @@ p {
 .contact-form .login-btn:hover {
   background-color: #fff;
 }
+
+/* footer  */
+.footer .container-fluid {
+  background: var(--Very-Dark-Blue);
+  color: #fff;
+  padding: 3% 10%;
+}
+
+.footer .link-holder {
+  list-style-type: none;
+}
+
+.link-item {
+  cursor: pointer;
+}
+
+.link-item:hover {
+  color: var(--Soft-Red);
+}
+
+.icon-cover {
+  transition: .3s all linear;
+}
+
+.icon-cover:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
