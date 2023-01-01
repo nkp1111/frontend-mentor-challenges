@@ -264,3 +264,79 @@ p {
 .faq-section .chrome-btn {
   margin: 1.5rem auto;
 }
+
+/* contact form section  */
+.contact-form {
+  margin-top: 5%;
+}
+
+.contact-form .container-fluid {
+  background: var(--Soft-Blue);
+  text-align: center;
+  color: #fff;
+  padding: 5% 10%;
+}
+
+.contact-form h2,
+.contact-form p {
+  color: inherit;
+}
+
+.contact-form h2 {
+  width: 35%;
+  margin: 1rem auto 3rem;
+  order: 2;
+}
+
+.contact-form p {
+  order: 1;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  word-spacing: .6rem;
+}
+
+.contact-form form {
+  width: 70%;
+  margin: auto;
+  order: 3;
+}
+
+.email-input-holder {
+  position: relative;
+}
+
+.email-input-holder input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.email-input-holder input:focus {
+  outline: none;
+}
+
+.error-icon {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  display: none;
+}
+
+.error-message {
+  position: absolute;
+  background: var(--Soft-Red);
+  bottom: -50%;
+  left: 2%;
+  right: 2%;
+  padding: 1% 2.5%;
+  border-radius: 0 0 .5rem .5rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  display: none;
+}
+
+.contact-form .login-btn:hover {
+  background-color: #fff;
+}
