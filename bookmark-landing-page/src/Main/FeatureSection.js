@@ -18,10 +18,10 @@ function FeatureSection() {
         {/* article holder */}
         <div className='row'>
           {/* articles tag  */}
-          <ul className='tag-holder'>
+          <ul className='tag-holder row'>
             {articleData.map(item => {
               return (
-                <li className='tag-items active' key={item.id}>{item.tagline}</li>
+                <li className='tag-items active col-md-3' key={item.id}>{item.tagline}</li>
               )
             })}
           </ul>

@@ -36,7 +36,7 @@ function ContactForm() {
           <p className='col-12'>35,000+ already joined</p>
           <form className='col-12' onSubmit={(e) => handleSubmit(e)}>
             <div className='row'>
-              <div className='email-input-holder col-8'>
+              <div className='email-input-holder col-md-8'>
                 <input type="text"
                   name="email"
                   placeholder="Type your email here..."
@@ -49,7 +49,7 @@ function ContactForm() {
                   Whoop's make sure it's an email
                 </span>
               </div>
-              <button className='btn login-btn col-3'>Contact Us</button>
+              <button className='btn login-btn col-md-3'>Contact Us</button>
             </div>
           </form>
         </div>

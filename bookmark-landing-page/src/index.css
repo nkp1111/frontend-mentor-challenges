@@ -435,8 +435,45 @@ p {
     margin-top: 2.5rem;
   }
 
-  .btn {
+  .home-page .btn {
     margin: .5rem 0;
+  }
+
+  /* feature section  */
+  .info-holder p {
+    width: 100%;
+  }
+
+  .article-info {
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+  }
+
+  /* download section  */
+  .card-holder {
+    margin-bottom: 5rem;
+    padding: 3%;
+    box-shadow: 0 2px 2px var(--Grayish-Blue);
+  }
+
+  /* faq section  */
+  .faq-holder {
+    padding: 1%;
+  }
+
+  .faq-item .answer-text {
+    padding: 2% 0 5%;
+  }
+
+  /* contact form section  */
+  .contact-form h2 {
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    margin: 3rem auto;
+    width: auto;
   }
 
   /* footer  */
@@ -454,5 +491,17 @@ p {
 
   .icon-holder {
     margin: 1rem auto;
+  }
+}
+
+@media (max-width:1170px) {
+  .contact-form form {
+    width: 85%;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-form form {
+    width: 100%;
   }
 }
