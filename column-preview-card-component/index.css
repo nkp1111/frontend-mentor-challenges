@@ -11,22 +11,138 @@
   --Very-light-gray: hsl(0, 0%, 95%);
 }
 
-body {
-  font-family: 'Big Shoulders Display', cursive;
-  font-family: 'Lexend Deca', sans-serif;
+h1,
+h2 {
+  font-family: 'Big Shoulders Display', cursive, Arial, Helvetica, sans-serif;
+  color: var(--Very-light-gray);
+  text-transform: uppercase;
 }
 
+p {
+  color: var(--Transparent-white);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background: var(--Very-light-gray);
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+/* h1  */
 .hidden-heading {
   text-align: center;
   opacity: 0;
   display: none;
 }
 
+/* article holder  */
+.container {
+  width: 70%;
+  min-width: 800px;
+  margin: 9% auto;
+}
+
+/* articles  */
+.article {
+  padding: 6%;
+  padding-left: 4%;
+  height: 60vh;
+  margin-left: 0;
+}
+
+.article-logo {
+  order: 1;
+}
+
+.article-info {
+  order: 2;
+}
+
+.article-info h2 {
+  margin: 2rem 0 1rem;
+}
+
+.article-info .btn {
+  background: var(--Transparent-white);
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  border: 2px solid transparent;
+  margin-top: 15%;
+}
+
+.article-info .btn:hover {
+  background: transparent;
+  border: 2px solid var(--Transparent-white);
+  color: var(--Transparent-white);
+}
+
+.article-sedan {
+  background: var(--Bright-orange);
+  border-radius: .6rem 0 0 .6rem;
+}
+
+.article-sedan .btn {
+  color: var(--Bright-orange);
+}
+
+.article-suv {
+  background: var(--Dark-cyan);
+}
+
+.article-suv .btn {
+  color: var(--Dark-cyan);
+}
+
+.article-luxury {
+  background: var(--Very-dark-cyan);
+  border-radius: 0 .6rem .6rem 0;
+}
+
+.article-luxury .btn {
+  color: var(--Very-dark-cyan);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  right: 20vh;
+  bottom: 5vh;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: visible;
+  }
+
+  .container {
+    min-width: 350px;
+    width: 90%;
+  }
+
+  .article {
+    height: max-content;
+    padding: 10%;
+  }
+
+  .article-sedan {
+    border-radius: .6rem .6rem 0 0;
+  }
+
+  .article-luxury {
+    border-radius: 0 0 .6rem .6rem;
+  }
+
+  .article-info .btn {
+    margin-top: 1rem;
+  }
+
+  .attribution {
+    display: none;
+  }
 }

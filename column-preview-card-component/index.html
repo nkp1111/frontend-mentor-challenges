@@ -12,11 +12,12 @@
   <title>3-column preview card component</title>
 </head>
 
-<body class="container-fluid">
+<body>
   <h1 class="hidden-heading">Preview Card Component</h1>
   <div class="container">
     <div class="row">
-      <article class="col-md-4 article">
+
+      <article class="col-md-4 article article-sedan row">
         <div class="article-info">
           <h2>Sedans</h2>
           <p>
@@ -30,8 +31,8 @@
         </div>
       </article>
 
-      <article class="col-md-4">
-        <div>
+      <article class="col-md-4 article article-suv row">
+        <div class="article-info">
           <h2>SUVs</h2>
           <p>
             Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
@@ -39,13 +40,13 @@
           </p>
           <button class="btn">Learn More</button>
         </div>
-        <div>
+        <div class="article-logo">
           <img src="images/icon-suvs.svg" alt="suvs logo">
         </div>
       </article>
 
-      <article class="col-md-4">
-        <div>
+      <article class="col-md-4 article article-luxury row">
+        <div class="article-info">
           <h2>Luxury</h2>
           <p>
             Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
@@ -53,10 +54,11 @@
           </p>
           <button class="btn">Learn More</button>
         </div>
-        <div>
+        <div class="article-logo">
           <img src="images/icon-luxury.svg" alt="luxury logo">
         </div>
       </article>
+
     </div>
   </div>
 
