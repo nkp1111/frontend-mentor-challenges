@@ -34,3 +34,4 @@ This contains the following project:
 - static-job-listing
 - easy-bank-landing-page
 - bookmark-landing-page
+- column-preview-card-component

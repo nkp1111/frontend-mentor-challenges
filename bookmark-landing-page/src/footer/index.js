@@ -18,7 +18,7 @@ function index() {
             })}
           </ul>
 
-          <div className='icon-holder col-4 row'>
+          <div className='icon-holder col-3 row'>
             <div className='icon-cover col-6'>
               <img src={iconFacebook} alt="facebook icon" />
             </div>
