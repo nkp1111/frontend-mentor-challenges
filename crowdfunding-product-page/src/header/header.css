@@ -1,4 +1,6 @@
 .header {
   background: transparent;
   position: absolute;
+  top: 0;
+  width: 100%;
 }

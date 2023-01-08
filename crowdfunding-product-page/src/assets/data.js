@@ -24,4 +24,5 @@ export {
   logoMasterCraft,
   iconHamburgerMenu,
   navItems,
+  iconBookmark,
 }
