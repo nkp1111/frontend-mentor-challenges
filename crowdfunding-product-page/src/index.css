@@ -46,9 +46,3 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
-/* general styles  */
-.header {
-  background: transparent;
-  position: absolute;
-}

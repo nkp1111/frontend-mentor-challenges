@@ -1,4 +1,5 @@
 import React from 'react'
+import "./header.css"
 import { logoMain, iconHamburgerMenu, navItems } from '../assets/data'
 
 function Index() {

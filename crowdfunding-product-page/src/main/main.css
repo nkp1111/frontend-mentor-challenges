@@ -1,0 +1,23 @@
+/* hero background image */
+.main::before {
+  content: '';
+  background: url("../assets/images/image-hero-mobile.jpg") center center/ cover;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media (min-width: 767px) {
+
+  /* bootstrap media width medium */
+  .main::before {
+    background: url("../assets/images/image-hero-desktop.jpg") center center/ cover;
+  }
+}
+
+/* main content  */
+.main {
+  background: #fff;
+}
