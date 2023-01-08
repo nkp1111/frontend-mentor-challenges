@@ -35,3 +35,4 @@ This contains the following project:
 - easy-bank-landing-page
 - bookmark-landing-page
 - column-preview-card-component
+- crowdfunding-product-page
