@@ -12,8 +12,16 @@ import logoMasterCraft from './images/logo-mastercraft.svg'
 import logoMain from './images/logo.svg'
 
 
+const navItems = [
+  "About",
+  "Discover",
+  "Get Started",
+]
+
 
 export {
   logoMain,
   logoMasterCraft,
+  iconHamburgerMenu,
+  navItems,
 }
