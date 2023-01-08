@@ -4,7 +4,7 @@ import { logoMain, iconHamburgerMenu, navItems } from '../assets/data'
 
 function Index() {
   return (
-    <header className='header'>
+    <header className='header bg-dark'>
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-md'>
           {/* navbar logo  */}

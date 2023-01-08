@@ -17,7 +17,7 @@ function StatsInfo() {
         <span className='stat-head'>56</span>
         <span className='stat-info'>days left</span>
       </div>
-      <div class="amount-left-bar"></div>
+      <div className="amount-left-bar"></div>
     </div>
   )
 }
