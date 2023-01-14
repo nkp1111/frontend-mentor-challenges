@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
 /* css reset  */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
-
 *,
 *::before,
 *::after {
@@ -45,4 +46,16 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/* general styles  */
+:root {
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+
+  --Dark-gray: hsl(0, 0%, 48%);
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
 }

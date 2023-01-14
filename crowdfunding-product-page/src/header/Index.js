@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./header.css"
-import { logoMain, iconHamburgerMenu, navItems } from '../assets/data'
+import { logoMain, iconHamburgerMenu, navItems, iconCloseMenu } from '../assets/data'
 
 function Index() {
+  const imgRef = useRef()
+
+  const changeImage = (img) => {
+    if (img.alt === "hamburger-menu") {
+      img.alt = "close-menu"
+      img.src = iconCloseMenu
+    } else {
+      img.alt = "hamburger-menu"
+      img.src = iconHamburgerMenu
+    }
+  }
+
+  useEffect(() => {
+    let img = imgRef.current
+    img.addEventListener("click", (e) => changeImage(img))
+    // return () => img.removeEventListener("click", (e) => changeImage(e))
+  })
+
   return (
-    <header className='header bg-dark'>
+    <header className='header'>
       <div className='container-fluid'>
         <nav className='navbar navbar-expand-md'>
           {/* navbar logo  */}
@@ -13,8 +31,10 @@ function Index() {
           </div>
 
           {/* navbar toggler btn  */}
-          <div className='navbar-toggler' data-bs-target="#headerNav" data-bs-toggle="collapse" role="button">
-            <img src={iconHamburgerMenu} alt=""></img>
+          <div className='navbar-toggler' data-bs-target="#headerNav" data-bs-toggle="collapse"
+            role="button">
+            <img src={iconHamburgerMenu} alt="hamburger-menu"
+              ref={imgRef}></img>
           </div>
 
           {/* navbar items  */}

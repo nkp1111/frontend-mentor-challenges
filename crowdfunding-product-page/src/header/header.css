@@ -4,3 +4,21 @@
   top: 0;
   width: 100%;
 }
+
+.collapse {
+  background: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.nav-item {
+  font-weight: 500;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .collapse {
+    background: transparent;
+  }
+}

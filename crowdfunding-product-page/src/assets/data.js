@@ -51,4 +51,6 @@ export {
   navItems,
   iconBookmark,
   articleItems,
+  iconCloseMenu,
+  iconCloseModal,
 }
