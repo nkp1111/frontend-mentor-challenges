@@ -1,5 +1,5 @@
 import React from 'react'
-import { iconBookmark } from '../assets/data'
+import { iconBookmark, logoMasterCraft } from '../assets/data'
 
 function frontPage() {
   return (
@@ -15,6 +15,9 @@ function frontPage() {
         <a href="#">
           <img src={iconBookmark} alt="bookmark icon"></img>
         </a>
+      </div>
+      <div className='master-logo-holder'>
+        <img src={logoMasterCraft} alt="mastercraft logo"></img>
       </div>
     </div>
   )

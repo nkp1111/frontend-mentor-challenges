@@ -1,3 +1,8 @@
+/* main content  */
+.main {
+  margin: 40vh 5% 5%;
+}
+
 /* hero background image */
 .main::before {
   content: '';
@@ -10,25 +15,51 @@
   z-index: -1;
 }
 
+.front-page,
+.stats-page {
+  background: #fff;
+  border-radius: .5rem;
+  padding: 5%;
+  margin-bottom: 7%;
+  position: relative;
+}
+
+/* master craft logo  */
+.front-page {
+  padding: 2.3rem 1rem 2rem;
+  text-align: center;
+}
+
+.front-page .main-heading+p {
+  margin: 1.3rem 0;
+}
+
+.master-logo-holder {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-page .btn {
+  background: var(--Moderate-cyan);
+  color: #fff;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  font-weight: 700;
+  flex: 1;
+  margin-right: .5rem;
+}
+
 @media (min-width: 48rem) {
 
   /* bootstrap media width medium */
   .main::before {
     background: url("../assets/images/image-hero-desktop.jpg") center center/ cover;
   }
-}
-
-/* main content  */
-.main {
-  margin: 40vh 5% 5%;
-}
-
-.front-page,
-.stats-page {
-  background: #fff;
-  border-radius: .5rem;
-  padding: 5%;
-  margin-bottom: 5%;
-  /* to remove */
-  border: 1px solid;
 }

@@ -46,7 +46,6 @@ function Index() {
                 )
               })}
             </ul>
-
           </div>
 
         </nav>
