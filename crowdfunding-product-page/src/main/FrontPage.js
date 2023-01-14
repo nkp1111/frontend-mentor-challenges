@@ -14,6 +14,7 @@ function frontPage() {
         <button className='btn' >Back this project</button>
         <a href="#" className='bookmark-logo'>
           <img src={iconBookmark} alt="bookmark icon"></img>
+          <span className='lg-icon-text'>Bookmarked</span>
         </a>
       </div>
       <div className='master-logo-holder'>

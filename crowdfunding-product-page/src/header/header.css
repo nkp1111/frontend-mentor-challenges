@@ -15,10 +15,20 @@
 .nav-item {
   font-weight: 500;
   margin: 1rem;
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .collapse {
     background: transparent;
+    padding: 0 1rem;
+    margin: 0;
   }
+
+  .navbar-nav {
+    margin-left: auto;
+    color: #fff;
+    font-weight: 500;
+  }
+
 }

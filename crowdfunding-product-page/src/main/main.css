@@ -71,6 +71,10 @@
   opacity: .9;
 }
 
+.lg-icon-text {
+  display: none;
+}
+
 /* stats page div  */
 .stats-page {
   text-align: center;
@@ -166,15 +170,51 @@
   font-size: .9rem;
 }
 
-.last-div {
-  margin: 5rem;
-  height: 1rem;
-}
-
 @media (min-width: 48rem) {
 
   /* bootstrap media width medium */
   .main::before {
     background: url("../assets/images/image-hero-desktop.jpg") center center/ cover;
+  }
+
+  #root .main {
+    max-width: 55rem;
+    margin: 40vh auto 5vh;
+  }
+
+  .main .front-page,
+  .main .stats-page {
+    padding: 4rem;
+    padding-top: 2rem;
+  }
+
+  /* front page  */
+  .front-page .main-heading+p {
+    margin: 1rem 0 2rem;
+  }
+
+  .front-page .btn {
+    flex: none;
+  }
+
+  /* bookmark icon  */
+  .bookmark-logo {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    text-decoration: none;
+    border-radius: 2rem;
+  }
+
+  .lg-icon-text {
+    display: inline-block;
+    height: auto;
+    margin: 0 1.5rem;
+    color: var(--Moderate-cyan);
+    font-weight: 700;
+  }
+
+  .last-div {
+    height: 2vh;
   }
 }
