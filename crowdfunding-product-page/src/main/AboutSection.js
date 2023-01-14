@@ -10,7 +10,6 @@ function AboutSection() {
         to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
         your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
       </p>
-
       <p>
         Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
         to allow notepads, pens, and USB sticks to be stored under the stand.
@@ -18,14 +17,14 @@ function AboutSection() {
 
       {articleItems.map(item => {
         return (
-          <article key={item.id}>
+          <article key={item.id} className={`article ${item.item_left === 0 ? "stock-out" : ""}`}>
             <h3>{item.name}</h3>
             <span className='article-cost'>Pledge ${item.cost} or more</span>
             <p>
               {item.description}
             </p>
-            <p>{item.item_left} <span>left</span></p>
-            <a className='btn'>Select Reward</a>
+            <p className='article-quantity'>{item.item_left} <span>left</span></p>
+            <a className='btn'>{item.item_left === 0 ? "Out of Stock" : "Select Reward"}</a>
           </article>
         )
       })}
