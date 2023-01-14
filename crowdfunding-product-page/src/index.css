@@ -77,3 +77,15 @@ p {
 section {
   background: #fff;
 }
+
+body.modal-view::before {
+  content: '';
+  background: #000;
+  opacity: .7;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}

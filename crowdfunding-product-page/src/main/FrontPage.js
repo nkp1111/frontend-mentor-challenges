@@ -1,7 +1,7 @@
 import React from 'react'
 import { iconBookmark, logoMasterCraft } from '../assets/data'
 
-function frontPage() {
+function frontPage({ setShowModal }) {
   return (
     <div className='front-page'>
       <h1 className='main-heading'>
@@ -11,7 +11,11 @@ function frontPage() {
         A beautiful & handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <div className='btn-holder'>
-        <button className='btn' >Back this project</button>
+        <button className='btn'
+          onClick={() => {
+            setShowModal(true)
+            document.querySelector("body").classList.add("modal-view")
+          }}>Back this project</button>
         <a href="#" className='bookmark-logo'>
           <img src={iconBookmark} alt="bookmark icon"></img>
           <span className='lg-icon-text'>Bookmarked</span>

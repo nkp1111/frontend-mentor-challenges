@@ -53,4 +53,5 @@ export {
   articleItems,
   iconCloseMenu,
   iconCloseModal,
+  iconCheck,
 }

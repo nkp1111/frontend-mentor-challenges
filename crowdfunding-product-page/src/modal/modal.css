@@ -1,0 +1,35 @@
+.modal-holder {
+  position: absolute;
+  z-index: 200;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+}
+
+.close-modal {
+  text-align: center;
+  max-width: 35rem;
+  background: #fff;
+  margin: auto;
+  padding: 2rem 1rem;
+  border-radius: .8rem;
+}
+
+.close-modal img {
+  margin: auto;
+}
+
+.close-modal-head {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.close-modal .btn {
+  background: var(--Moderate-cyan);
+  color: white;
+  font-weight: 500;
+  padding: .5rem 1.5rem;
+  border-radius: 2rem;
+}
