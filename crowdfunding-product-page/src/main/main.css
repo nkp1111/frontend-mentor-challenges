@@ -217,4 +217,20 @@
   .last-div {
     height: 2vh;
   }
+
+  /* about section  */
+  .article {
+    padding: 2rem;
+  }
+
+  .article-info-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article .btn {
+    padding: auto;
+    height: min-content;
+  }
+
 }

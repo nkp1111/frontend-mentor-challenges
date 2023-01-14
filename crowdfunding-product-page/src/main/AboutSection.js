@@ -18,13 +18,17 @@ function AboutSection() {
       {articleItems.map(item => {
         return (
           <article key={item.id} className={`article ${item.item_left === 0 ? "stock-out" : ""}`}>
-            <h3>{item.name}</h3>
-            <span className='article-cost'>Pledge ${item.cost} or more</span>
+            <div className='article-info-head'>
+              <h3>{item.name}</h3>
+              <span className='article-cost'>Pledge ${item.cost} or more</span>
+            </div>
             <p>
               {item.description}
             </p>
-            <p className='article-quantity'>{item.item_left} <span>left</span></p>
-            <a className='btn'>{item.item_left === 0 ? "Out of Stock" : "Select Reward"}</a>
+            <div className='article-info-head'>
+              <p className='article-quantity'>{item.item_left} <span>left</span></p>
+              <a className='btn'>{item.item_left === 0 ? "Out of Stock" : "Select Reward"}</a>
+            </div>
           </article>
         )
       })}
