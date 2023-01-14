@@ -5,20 +5,18 @@ import { logoMain, iconHamburgerMenu, navItems, iconCloseMenu } from '../assets/
 function Index() {
   const imgRef = useRef()
 
-  const changeImage = (img) => {
-    if (img.alt === "hamburger-menu") {
-      img.alt = "close-menu"
-      img.src = iconCloseMenu
-    } else {
-      img.alt = "hamburger-menu"
-      img.src = iconHamburgerMenu
-    }
-  }
 
   useEffect(() => {
     let img = imgRef.current
-    img.addEventListener("click", (e) => changeImage(img))
-    // return () => img.removeEventListener("click", (e) => changeImage(e))
+    img.addEventListener("click", (e) => {
+      if (img.alt === "hamburger-menu") {
+        img.alt = "close-menu"
+        img.src = iconCloseMenu
+      } else {
+        img.alt = "hamburger-menu"
+        img.src = iconHamburgerMenu
+      }
+    })
   })
 
   return (

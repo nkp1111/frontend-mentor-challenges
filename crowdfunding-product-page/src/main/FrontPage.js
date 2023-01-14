@@ -12,7 +12,7 @@ function frontPage() {
       </p>
       <div className='btn-holder'>
         <button className='btn' >Back this project</button>
-        <a href="#">
+        <a href="#" className='bookmark-logo'>
           <img src={iconBookmark} alt="bookmark icon"></img>
         </a>
       </div>

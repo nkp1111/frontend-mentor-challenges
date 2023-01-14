@@ -3,6 +3,11 @@
   margin: 40vh 5% 5%;
 }
 
+.main .btn:hover {
+  background: var(--Dark-cyan);
+  color: #fff;
+}
+
 /* hero background image */
 .main::before {
   content: '';
@@ -55,6 +60,15 @@
   font-weight: 700;
   flex: 1;
   margin-right: .5rem;
+}
+
+/* bookmark logo  */
+.main .bookmark-logo {
+  transition: .3s all linear;
+}
+
+.main .bookmark-logo:hover {
+  opacity: .9;
 }
 
 /* stats page div  */
