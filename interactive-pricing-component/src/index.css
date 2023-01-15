@@ -120,6 +120,7 @@ h1+p {
   object-position: center;
   top: 5%;
   left: 20%;
+  z-index: -1;
 }
 
 /* card holder  */
@@ -230,6 +231,39 @@ h1+p {
   display: none;
 }
 
+/* card body  */
+.card-body ul {
+  list-style-type: none;
+}
+
+.card-body li {
+  position: relative;
+  margin: .5rem 0;
+  color: var(--Grayish-Blue);
+}
+
+.card-body li img {
+  position: absolute;
+  left: -1rem;
+  top: .5rem;
+}
+
+.card-body .btn {
+  background: var(--Dark-Desaturated-Blue);
+  color: #fff;
+  padding: .5rem 2.5rem;
+  border-radius: 2rem;
+}
+
+/* footer  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 
 @media (min-width: 48rem) {

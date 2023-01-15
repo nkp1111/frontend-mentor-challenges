@@ -40,7 +40,10 @@ function main() {
         <hr></hr>
 
         <div className='card-body'>
-          <ul>
+          <ul className='d-flex 
+          flex-column 
+          justify-content-center 
+          align-items-center'>
             {featureData.map(item => {
               return (
                 <li key={item}>
