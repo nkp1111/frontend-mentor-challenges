@@ -125,7 +125,7 @@ h1+p {
 /* card holder  */
 .card-holder {
   background: #fff;
-  margin-top: 5rem;
+  margin-top: 4rem;
   z-index: 10;
   border-radius: .5rem;
   padding: 1rem;
@@ -179,4 +179,65 @@ h1+p {
   font-size: 2rem;
   font-weight: 800;
   color: var(--Dark-Desaturated-Blue);
+}
+
+/* card neck  */
+.card-neck {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.card-neck label {
+  color: var(--Grayish-Blue);
+  font-size: .9rem;
+}
+
+.switch-box {
+  width: 3.5rem;
+  height: 2rem;
+  background: var(--Light-Grayish-Blue2);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #fff;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.discount {
+  background: var(--Light-Grayish-Red);
+  color: var(--Light-Red);
+  margin: 0;
+  padding: .3rem;
+  font-size: .8rem;
+}
+
+.discount::before {
+  content: '-'
+}
+
+.hid-discount {
+  display: none;
+}
+
+
+
+@media (min-width: 48rem) {
+  .discount::before {
+    display: none;
+  }
+
+  .hid-discount {
+    display: block;
+  }
 }

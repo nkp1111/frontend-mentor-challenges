@@ -30,11 +30,11 @@ function main() {
         <div className='card-neck'>
           <label for="month-year">Monthly Billing</label>
           <div className='switch-box'>
-            <input name="month-year" id="month-year" type="checkbox"></input>
+            <input name="month-year" id="month-year" type="checkbox" className='d-none' />
             <span className="switch"></span>
           </div>
           <label for="month-year">Yearly Billing</label>
-          <span className='discount'>25% discount</span>
+          <p className='discount'>25% <span className='hid-discount'>discount</span></p>
         </div>
 
         <hr></hr>
