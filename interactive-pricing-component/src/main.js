@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { featureData, iconCheck, patternCircles, iconSlider } from './assets/data'
 
-function main() {
+function Main() {
+
+  const handleSwitch = (switchBtn) => {
+    if (switchBtn.classList.contains("switchOn")) {
+      switchBtn.classList.remove("switchOn")
+    } else {
+      switchBtn.classList.add("switchOn")
+    }
+  }
+
   return (
     <main>
       <h1>Simple, traffic-based pricing</h1>
@@ -29,8 +38,13 @@ function main() {
 
         <div className='card-neck'>
           <label htmlFor="month-year">Monthly Billing</label>
-          <div className='switch-box'>
-            <input name="month-year" id="month-year" type="checkbox" className='d-none' />
+
+          <div className="switch-box" onClick={(e) => handleSwitch(e.target)}>
+            <input name="month-year" id="month-year" type="checkbox" className='d-none'
+              onChange={() => {
+                let switchBtn = document.querySelector(".switch-box")
+                handleSwitch(switchBtn)
+              }} />
             <span className="switch"></span>
           </div>
           <label htmlFor="month-year">Yearly Billing</label>
@@ -60,4 +74,4 @@ function main() {
   )
 }
 
-export default main
+export default Main

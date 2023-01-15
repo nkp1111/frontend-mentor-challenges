@@ -198,6 +198,7 @@ h1+p {
 .card-neck label {
   color: var(--Grayish-Blue);
   font-size: .9rem;
+  cursor: pointer;
 }
 
 .switch-box {
@@ -223,6 +224,12 @@ h1+p {
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  transition: .3s all linear;
+}
+
+/* switch on position  */
+.switch-box.switchOn .switch {
+  left: 50%;
 }
 
 .discount {
