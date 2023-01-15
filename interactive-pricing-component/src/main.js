@@ -1,5 +1,5 @@
 import React from 'react'
-import { featureData } from './assets/data'
+import { featureData, iconCheck, patternCircles } from './assets/data'
 
 function main() {
   return (
@@ -8,6 +8,7 @@ function main() {
       <p>
         Sign-up for our 30-day trial. No credit card required.
       </p>
+      <img src={patternCircles} alt="pattern circles" aria-hidden="true" />
 
       <div className='card-holder'>
         <div className='card-header'>
@@ -30,13 +31,13 @@ function main() {
             {featureData.map(item => {
               return (
                 <li key={item}>
-                  <img src={ } alt="checkmark icon"></img>
+                  <img src={iconCheck} alt="checkmark icon" />
                   {item}
                 </li>
               )
             })}
           </ul>
-
+          <button className='btn'>Start my trial </button>
         </div>
       </div>
     </main>
