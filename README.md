@@ -36,3 +36,4 @@ This contains the following project:
 - bookmark-landing-page
 - column-preview-card-component
 - crowdfunding-product-page
+- interactive-pricing-component
