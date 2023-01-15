@@ -104,8 +104,9 @@ footer {
 
 /* main  */
 h1 {
-  margin: 10% auto 2%;
+  margin: 8% auto 2%;
   font-size: 1.5rem;
+  color: var(--Dark-Desaturated-Blue);
 }
 
 h1+p {
@@ -117,20 +118,21 @@ h1+p {
 .bg-pattern-circle {
   position: absolute;
   object-fit: cover;
-  object-position: center;
   top: 5%;
-  left: 20%;
+  left: 45%;
   z-index: -1;
 }
 
 /* card holder  */
 .card-holder {
   background: #fff;
-  margin-top: 4rem;
+  margin: auto;
+  margin-top: 3.2rem;
   z-index: 10;
   border-radius: .5rem;
   padding: 1rem;
   box-shadow: 1px 1px 5px #fff;
+  max-width: 40rem;
 }
 
 /* card header  */
@@ -141,6 +143,7 @@ h1+p {
 .views {
   text-transform: uppercase;
   letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
 /* progress bar  */
@@ -174,6 +177,7 @@ h1+p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .price {
@@ -185,7 +189,7 @@ h1+p {
 /* card neck  */
 .card-neck {
   display: flex;
-  max-width: 500px;
+  max-width: 30rem;
   justify-content: space-between;
   margin: 2rem auto;
   align-items: center;
@@ -202,6 +206,12 @@ h1+p {
   background: var(--Light-Grayish-Blue2);
   border-radius: 1rem;
   position: relative;
+  cursor: pointer;
+  transition: .3s all linear;
+}
+
+.switch-box:hover {
+  background: var(--Strong-Cyan);
 }
 
 .switch {
@@ -250,9 +260,14 @@ h1+p {
 
 .card-body .btn {
   background: var(--Dark-Desaturated-Blue);
-  color: #fff;
+  color: var(--Light-Grayish-Blue2);
   padding: .5rem 2.5rem;
   border-radius: 2rem;
+  height: min-content;
+}
+
+.card-body .btn:hover {
+  color: #fff;
 }
 
 /* footer  */
@@ -267,11 +282,49 @@ h1+p {
 
 
 @media (min-width: 48rem) {
+
+  body {
+    padding: 3%;
+  }
+
+  h1 {
+    margin-top: 1%;
+  }
+
+  .card-holder {
+    padding: 1rem 3rem;
+  }
+
+  .views {
+    order: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-holder {
+    order: 2;
+  }
+
+  .progress-bar {
+    order: 3;
+  }
+
+  .discount {
+    display: flex;
+  }
+
   .discount::before {
     display: none;
   }
 
   .hid-discount {
     display: block;
+    margin-left: .5rem;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

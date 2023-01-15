@@ -15,25 +15,25 @@ function main() {
 
       <div className='card-holder'>
 
-        <div className='card-header'>
-          <p className='views'>100K Pageviews</p>
+        <div className='card-header row'>
+          <p className='views col-md-6'>100K Pageviews</p>
           {/* progress bar  */}
-          <div className='progress-bar'>
+          <div className='progress-bar col'>
             <div className='progress-box'>
               <img src={iconSlider} alt="progress moving icon"></img>
             </div>
           </div>
-          <p>
+          <p className='price-holder  col-md-6'>
             <span className='price'>$16.00</span> /month</p>
         </div>
 
         <div className='card-neck'>
-          <label for="month-year">Monthly Billing</label>
+          <label htmlFor="month-year">Monthly Billing</label>
           <div className='switch-box'>
             <input name="month-year" id="month-year" type="checkbox" className='d-none' />
             <span className="switch"></span>
           </div>
-          <label for="month-year">Yearly Billing</label>
+          <label htmlFor="month-year">Yearly Billing</label>
           <p className='discount'>25% <span className='hid-discount'>discount</span></p>
         </div>
 
