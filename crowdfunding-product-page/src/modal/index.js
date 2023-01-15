@@ -4,7 +4,7 @@ import MainModal from "./MainModal"
 import CloseModal from './CloseModal'
 
 
-function Index({ setShowModal }) {
+function Index({ handleModal }) {
 
   const [pledge, setPledge] = useState(0)
   const [closeModal, setCloseModal] = useState(false)
@@ -14,13 +14,13 @@ function Index({ setShowModal }) {
   }
 
   if (closeModal) {
-    return <CloseModal setShowModal={setShowModal} />
+    return <CloseModal handleModal={handleModal} />
   } else {
     return <MainModal
       pledge={pledge}
       selectPledge={selectPledge}
-      setShowModal={setShowModal}
-      setCloseModal={setCloseModal} />
+      setCloseModal={setCloseModal}
+      handleModal={handleModal} />
   }
 }
 

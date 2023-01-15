@@ -2,15 +2,12 @@ import React from 'react'
 import { iconCloseModal, articleItems } from '../assets/data'
 import ModalArticle from './ModalArticle'
 
-function MainModal({ setShowModal, pledge, selectPledge, setCloseModal }) {
+function MainModal({ handleModal, pledge, selectPledge, setCloseModal }) {
   return (
     <section className="main-modal">
       <div className="main-modal-head">
         <h2>Back this project</h2>
-        <div className="close-icon-holder" onClick={() => {
-          setShowModal(false)
-          document.querySelector("body").classList.remove("modal-view")
-        }}>
+        <div className="close-icon-holder" onClick={() => handleModal()}>
           <img src={iconCloseModal} alt="close-icon"></img>
         </div>
       </div>

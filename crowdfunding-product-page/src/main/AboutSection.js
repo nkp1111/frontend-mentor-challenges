@@ -1,7 +1,7 @@
 import React from 'react'
 import { articleItems } from '../assets/data'
 
-function AboutSection({ setShowModal }) {
+function AboutSection({ handleModal }) {
   return (
     <section className='about-section'>
       <h2>About this project</h2>
@@ -29,10 +29,8 @@ function AboutSection({ setShowModal }) {
               <p className='article-quantity'>{item.item_left} <span>left</span></p>
 
               <a className='btn'
-                onClick={() => {
-                  setShowModal(true)
-                  document.querySelector("body").classList.add("modal-view")
-                }}>{item.item_left === 0 ? "Out of Stock" : "Select Reward"}
+                onClick={() => handleModal()}>
+                {item.item_left === 0 ? "Out of Stock" : "Select Reward"}
               </a>
 
             </div>

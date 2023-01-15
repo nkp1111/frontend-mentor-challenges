@@ -2,7 +2,7 @@ import React from 'react'
 import { iconCheck } from '../assets/data'
 import "./modal.css"
 
-function CloseModal({ setShowModal }) {
+function CloseModal({ handleModal }) {
   return (
     <div className='close-modal'>
       <div className='checkmark-holder'>
@@ -13,10 +13,7 @@ function CloseModal({ setShowModal }) {
         Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.
       </p>
       <button className='btn'
-        onClick={() => {
-          setShowModal(false)
-          document.querySelector("body").classList.remove("modal-view")
-        }}>
+        onClick={() => handleModal()}>
         Got it!
       </button>
     </div>

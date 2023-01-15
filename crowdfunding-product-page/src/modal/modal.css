@@ -55,7 +55,7 @@
 }
 
 .close-icon-holder:hover {
-  scale: 1.03;
+  scale: 1.05;
 }
 
 .radio-btn {
@@ -100,5 +100,10 @@
 
   .pledge-input {
     margin-left: auto;
+  }
+
+  .close-modal,
+  .main-modal {
+    padding: 4rem;
   }
 }

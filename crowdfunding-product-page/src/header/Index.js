@@ -6,6 +6,7 @@ function Index() {
   const imgRef = useRef()
 
   useEffect(() => {
+    // to change hamburger image on click
     let img = imgRef.current
     img.addEventListener("click", (e) => {
       if (img.alt === "hamburger-menu") {
@@ -44,7 +45,6 @@ function Index() {
               })}
             </ul>
           </div>
-
         </nav>
       </div>
     </header>

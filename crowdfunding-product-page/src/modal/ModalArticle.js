@@ -19,9 +19,7 @@ function ModalArticle({ item, pledge, selectPledge, setCloseModal }) {
             selectPledge(item.id)
           }}></input>
       </div>
-      <p className='article-description'>
-        {item.description}
-      </p>
+      <p className='article-description'>{item.description}</p>
       <div className='article-info-head'>
         <p className='article-quantity'>{item.item_left} <span>left</span></p>
 
@@ -35,29 +33,35 @@ function ModalArticle({ item, pledge, selectPledge, setCloseModal }) {
       </div>
 
       {pledge === item.id &&
-        <div >
-          <hr></hr>
-          <div className="pledge-holder">
-            <p>Enter your pledge</p>
-            <div className="pledge-input">
-              <input
-                type="number"
-                min={item.cost}
-                className="pledge-number" placeholder={`$${item.cost}`}
-                value={currentPledge}
-                onChange={(e) => setCurrentPledge(e.target.value)}
-              >
-              </input>
-              <button
-                className="btn"
-                onClick={() => {
-                  setCloseModal(true)
-                }}>Continue</button>
-            </div>
-          </div>
-        </div>
+        <PledgeArea {...{ item, currentPledge, setCurrentPledge, setCloseModal }} />
       }
     </article>
+  )
+}
+
+const PledgeArea = ({ item, currentPledge, setCurrentPledge, setCloseModal }) => {
+  return (
+    <div>
+      <hr></hr>
+      <div className="pledge-holder">
+        <p>Enter your pledge</p>
+        <div className="pledge-input">
+          <input
+            type="number"
+            min={item.cost}
+            className="pledge-number" placeholder={`$${item.cost}`}
+            value={currentPledge}
+            onChange={(e) => setCurrentPledge(e.target.value)}
+          >
+          </input>
+          <button
+            className="btn"
+            onClick={() => {
+              setCloseModal(true)
+            }}>Continue</button>
+        </div>
+      </div>
+    </div>
   )
 }
 
