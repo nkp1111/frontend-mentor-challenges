@@ -77,6 +77,9 @@ h6 {
 
 body {
   font-family: 'Manrope', sans-serif;
+  background: var(--Very-Pale-Blue);
+  text-align: center;
+  padding: 5%;
 }
 
 h1,
@@ -90,4 +93,90 @@ h6 {
 
 p {
   font-size: 15px;
+  color: var(--Grayish-Blue);
+}
+
+footer {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+}
+
+/* main  */
+h1 {
+  margin: 10% auto 2%;
+  font-size: 1.5rem;
+}
+
+h1+p {
+  width: 60%;
+  margin: auto;
+}
+
+/* background pattern image  */
+.bg-pattern-circle {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  top: 5%;
+  left: 20%;
+}
+
+/* card holder  */
+.card-holder {
+  background: #fff;
+  margin-top: 5rem;
+  z-index: 10;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px #fff;
+}
+
+/* card header  */
+.card-header {
+  font-size: .9rem;
+}
+
+.views {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* progress bar  */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--Light-Grayish-Blue);
+  border-radius: 3px;
+  margin: 2rem 0;
+  overflow: visible;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  background: var(--Soft-Cyan);
+  height: 100%;
+  left: 0;
+  width: 50%;
+}
+
+.progress-box {
+  background: var(--Strong-Cyan);
+  width: 3rem;
+  padding: .3rem;
+  border-radius: 50%;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--Dark-Desaturated-Blue);
 }
