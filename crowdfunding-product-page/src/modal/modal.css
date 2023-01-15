@@ -78,3 +78,27 @@
   border: none;
   margin-bottom: .5rem;
 }
+
+.main-modal .article-info-head {
+  align-items: center;
+}
+
+
+.main-modal .article-cost {
+  margin: 0;
+}
+
+.main-modal .article-description {
+  margin-top: .5rem;
+}
+
+@media (min-width: 48rem) {
+  .pledge-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  .pledge-input {
+    margin-left: auto;
+  }
+}

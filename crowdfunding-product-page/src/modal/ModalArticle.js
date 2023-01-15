@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ModalArticle({ item, pledge, selectPledge }) {
+function ModalArticle({ item, pledge, selectPledge, setCloseModal }) {
+
+  const [currentPledge, setCurrentPledge] = useState(item.cost)
   return (
-    <article key={item.id}
+    <article
       className={`article ${item.item_left === 0 ? "stock-out" : ""} ${pledge === item.id ? "pledge-selected" : ""}`}>
       <div className="row">
         <div className='article-info-head col-8 order-2'>
           <h3>{item.name}</h3>
-          <span className='article-cost'>{item.cost} or more</span>
+          <span className='article-cost'>Pledge ${item.cost} or more</span>
         </div>
         <input
           type="radio"
@@ -17,7 +19,7 @@ function ModalArticle({ item, pledge, selectPledge }) {
             selectPledge(item.id)
           }}></input>
       </div>
-      <p>
+      <p className='article-description'>
         {item.description}
       </p>
       <div className='article-info-head'>
@@ -33,17 +35,25 @@ function ModalArticle({ item, pledge, selectPledge }) {
       </div>
 
       {pledge === item.id &&
-        <div className="pledge-holder">
+        <div >
           <hr></hr>
-          <p>Enter your pledge</p>
-          <div className="pledge-input">
-            <input
-              type="number"
-              min={item.cost}
-              className="pledge-number" placeholder={`$${item.cost}`}
-            >
-            </input>
-            <button className="btn">Continue</button>
+          <div className="pledge-holder">
+            <p>Enter your pledge</p>
+            <div className="pledge-input">
+              <input
+                type="number"
+                min={item.cost}
+                className="pledge-number" placeholder={`$${item.cost}`}
+                value={currentPledge}
+                onChange={(e) => setCurrentPledge(e.target.value)}
+              >
+              </input>
+              <button
+                className="btn"
+                onClick={() => {
+                  setCloseModal(true)
+                }}>Continue</button>
+            </div>
           </div>
         </div>
       }

@@ -22,7 +22,8 @@ function MainModal({ setShowModal, pledge, selectPledge, setCloseModal }) {
         <NoCostArticle setCloseModal={setCloseModal} />
         {articleItems.map(item => {
           return (
-            <ModalArticle {...{ item, pledge, selectPledge, setCloseModal }} />
+            <ModalArticle key={item.id}
+              {...{ item, pledge, selectPledge, setCloseModal }} />
           )
         })}
       </div>
@@ -35,7 +36,7 @@ const NoCostArticle = ({ setCloseModal }) => {
     <article key="0" className="article">
       <div className="row">
         <div className='article-info-head col-8 order-2'>
-          <h3>Pledget with no reward</h3>
+          <h3>Pledge with no reward</h3>
         </div>
         <input
           type="radio"

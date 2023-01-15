@@ -5,7 +5,6 @@ import { logoMain, iconHamburgerMenu, navItems, iconCloseMenu } from '../assets/
 function Index() {
   const imgRef = useRef()
 
-
   useEffect(() => {
     let img = imgRef.current
     img.addEventListener("click", (e) => {
