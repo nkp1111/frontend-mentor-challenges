@@ -4,6 +4,7 @@ import FrontPage from './FrontPage'
 import StatsInfo from './StatsInfo'
 import AboutSection from './AboutSection'
 import CloseModal from '../modal/CloseModal'
+import Modal from '../modal/index'
 
 function Index() {
 
@@ -15,7 +16,7 @@ function Index() {
       <StatsInfo />
       <AboutSection setShowModal={setShowModal} />
       <div className='modal-holder'>
-        {showModal && <CloseModal setShowModal={setShowModal} />}
+        {showModal && <Modal setShowModal={setShowModal} />}
       </div>
     </main>
   )
