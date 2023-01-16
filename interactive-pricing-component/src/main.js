@@ -11,6 +11,48 @@ function Main() {
     }
   }
 
+  useEffect(() => {
+
+    let progressBar = document.querySelector(".progress-bar")
+    let progressBox = document.querySelector(".progress-box")
+    let pageViews = document.querySelector(".views")
+    let price = document.querySelector(".price")
+    let percent = [0, 25, 50, 75, 95]
+    let current = 0
+    let pagePriceRatio = {
+      0: { page: "<100k", price: "$12.00" },
+      1: { page: "100K", price: "$16.00" },
+      2: { page: "200K", price: "$25.00" },
+      3: { page: "500K", price: "$50.00" },
+      4: { page: "1M", price: "$80.00" },
+    }
+
+    const handleProgress = (e) => {
+
+      console.log(progressBar.clientWidth, e.clientX, e.currentTarget.offsetLeft + progressBar.offsetLeft);
+      if (e.clientX - e.currentTarget.offsetLeft + progressBar.offsetLeft >= 90) {
+        if (current < 4) {
+          current += 1
+        }
+      } else {
+        if (current > 0) {
+          current -= 1
+        }
+      }
+
+      progressBar.classList = "progress-bar col"
+      progressBar.classList.add(`percent-${percent[current]}`)
+      e.currentTarget.style.left = percent[current] + "%"
+      pageViews.innerText = `${pagePriceRatio[current].page} Pageviews`
+      price.innerText = `${pagePriceRatio[current].price}`
+    }
+
+    progressBox.addEventListener("mousedown", (e) => handleProgress(e))
+
+  }, [])
+
+
+
   return (
     <main>
       <h1>Simple, traffic-based pricing</h1>

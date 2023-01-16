@@ -155,6 +155,7 @@ h1+p {
   margin: 2rem 0;
   overflow: visible;
   position: relative;
+  transition: .3s all linear;
 }
 
 .progress-bar::before {
@@ -163,7 +164,24 @@ h1+p {
   background: var(--Soft-Cyan);
   height: 100%;
   left: 0;
+  width: 0;
+  transition: .6s all linear;
+}
+
+.progress-bar.percent-25::before {
+  width: 25%;
+}
+
+.progress-bar.percent-50::before {
   width: 50%;
+}
+
+.progress-bar.percent-75::before {
+  width: 75%;
+}
+
+.progress-bar.percent-95::before {
+  width: 100%;
 }
 
 .progress-box {
@@ -173,11 +191,12 @@ h1+p {
   border-radius: 50%;
   height: 3rem;
   position: absolute;
-  left: 50%;
+  left: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: .5s all linear;
 }
 
 .price {
