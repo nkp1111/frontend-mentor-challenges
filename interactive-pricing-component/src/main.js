@@ -18,7 +18,7 @@ function Main() {
     let pageViews = document.querySelector(".views")
     let price = document.querySelector(".price")
     let percent = [0, 25, 50, 75, 95]
-    let current = 0
+    let current = 1
     let pagePriceRatio = {
       0: { page: "<100k", price: "$12.00" },
       1: { page: "100K", price: "$16.00" },
@@ -69,13 +69,13 @@ function Main() {
         <div className='card-header row'>
           <p className='views col-md-6'>100K Pageviews</p>
           {/* progress bar  */}
-          <div className='progress-bar col'>
+          <div className='progress-bar col percent-25'>
             <div className='progress-box'>
               <img src={iconSlider} alt="progress moving icon"></img>
             </div>
           </div>
           <p className='price-holder  col-md-6'>
-            <span className='price'>$16.00</span> /month</p>
+            <span className='price'>$16 .00</span> /month</p>
         </div>
 
         <div className='card-neck'>
