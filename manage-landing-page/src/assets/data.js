@@ -15,6 +15,7 @@ import iconYoutube from './images/icon-youtube.svg'
 import bgDesktop from './images/bg-simplify-section-desktop.svg'
 import bgMobile from './images/bg-simplify-section-mobile.svg'
 import bgTablet from './images/bg-tablet-pattern.svg'
+import illustrationImage from './images/illustration-intro.svg'
 // logo
 import logo from './images/logo.svg'
 
@@ -34,4 +35,5 @@ export {
   iconHamburger,
   iconClose,
   navItem,
+  illustrationImage,
 }
