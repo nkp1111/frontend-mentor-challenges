@@ -4,12 +4,26 @@ import { testimonialSectionItems } from '../assets/data'
 function TestimonialSection() {
 
   useEffect(() => {
-
-
-
     let current = 0
+    let carouselChangeTime = 3000
     let carouselItem = document.querySelectorAll(".carousel-item")
-    carouselItem[current].classList.add("active")
+
+    const removeActive = () => {
+      // remove active class from each carousel item
+      carouselItem.forEach(item => item.classList.remove("active"))
+    }
+
+    setInterval(() => {
+      removeActive()
+      carouselItem[current].classList.add("active")
+      if (current < carouselItem.length - 1) {
+        current += 1
+      } else {
+        current = 0
+      }
+
+    }, carouselChangeTime)
+
   }, [])
 
   return (
