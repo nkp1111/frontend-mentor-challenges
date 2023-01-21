@@ -37,3 +37,4 @@ This contains the following project:
 - column-preview-card-component
 - crowdfunding-product-page
 - interactive-pricing-component
+- testimonials-grid-section-main
