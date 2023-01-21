@@ -85,19 +85,55 @@ body {
 }
 
 .dark-black-bg {
-  background: var(--Very-dark-blackish-blue);
+  background: var(--Very-dark-grayish-blue);
 }
 
 /* article holder  */
 .article-holder {
-  margin: 6rem;
+  margin: 6rem 5rem;
 }
 
 .row {
-  padding: .8rem;
+  padding: .8rem 0;
+}
+
+.row .row {
+  padding: 0 .8rem .8rem;
 }
 
 
+/* article  */
+.row article {
+  border-radius: .5rem;
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+
+article h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.row article.white-bg {
+  color: #000;
+}
+
+article h2+p {
+  opacity: .7;
+}
+
+.profile p {
+  opacity: .5;
+}
+
+.author {
+  font-weight: 600;
+}
+
+.author+p {
+  font-size: .9rem;
+  letter-spacing: .7px;
+}
 
 
 /* footer  */
