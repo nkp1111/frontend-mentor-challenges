@@ -38,3 +38,4 @@ This contains the following project:
 - crowdfunding-product-page
 - interactive-pricing-component
 - testimonials-grid-section-main
+- manage-landing-page
