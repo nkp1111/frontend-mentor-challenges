@@ -18,7 +18,7 @@ import bgTablet from './images/bg-tablet-pattern.svg'
 import illustrationImage from './images/illustration-intro.svg'
 // logo
 import logo from './images/logo.svg'
-import TestimonialSection from '../main/TestimonialSection'
+import logoFooter from './images/logo-footer.svg'
 
 
 // navbar items 
@@ -104,4 +104,5 @@ export {
   testimonialSectionItems,
   footerIcons,
   footerItems,
+  logoFooter,
 }
