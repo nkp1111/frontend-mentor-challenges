@@ -22,7 +22,9 @@ function index() {
             <ul className='navbar-nav'>
               {navItem.map(item => {
                 return (
-                  <li key={item}>{item}</li>
+                  <li key={item.id} className="nav-item">
+                    <a className='nav-link' href={item.link}>{item.item}</a>
+                  </li>
                 )
               })}
             </ul>

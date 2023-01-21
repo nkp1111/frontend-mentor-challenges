@@ -23,11 +23,11 @@ import TestimonialSection from '../main/TestimonialSection'
 
 // navbar items 
 const navItem = [
-  "Pricing",
-  "Product",
-  "About Us",
-  "Careers",
-  "Community",
+  { id: 1, item: "Pricing", link: "", },
+  { id: 2, item: "Product", link: "", },
+  { id: 3, item: "About Us", link: "", },
+  { id: 4, item: "Careers", link: "", },
+  { id: 5, item: "Community", link: "", },
 ]
 
 // feature section : features
@@ -78,6 +78,22 @@ const testimonialSectionItems = [
   },
 ]
 
+
+// footer icons 
+const footerIcons = [
+  iconFacebook,
+  iconYoutube,
+  iconTwitter,
+  iconPinterest,
+  iconInstagram,
+]
+
+const footerItems = [
+  { id: 0, item: "Home", link: "", },
+  ...navItem,
+  { id: navItem.length + 1, item: "Privacy policy", link: "", },
+]
+
 export {
   logo,
   iconHamburger,
@@ -86,4 +102,6 @@ export {
   illustrationImage,
   featureSectionItems,
   testimonialSectionItems,
+  footerIcons,
+  footerItems,
 }
