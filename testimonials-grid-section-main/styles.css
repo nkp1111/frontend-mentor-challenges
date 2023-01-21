@@ -61,6 +61,7 @@ h6 {
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background: var(--Light-grayish-blue);
 }
 
 
@@ -69,6 +70,37 @@ body {
   opacity: 0;
   text-align: center;
 }
+
+/* article backgrounds  */
+.violet-bg {
+  background: var(--Moderate-violet);
+}
+
+.white-bg {
+  background: var(--White);
+}
+
+.light-black-bg {
+  background: var(--Very-dark-grayish-blue);
+}
+
+.dark-black-bg {
+  background: var(--Very-dark-blackish-blue);
+}
+
+/* article holder  */
+.article-holder {
+  margin: 6rem;
+}
+
+.row {
+  padding: .8rem;
+}
+
+
+
+
+/* footer  */
 
 .attribution {
   font-size: 11px;
