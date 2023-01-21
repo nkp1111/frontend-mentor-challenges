@@ -19,6 +19,19 @@ import bgTablet from './images/bg-tablet-pattern.svg'
 import logo from './images/logo.svg'
 
 
+// navbar items 
+const navItem = [
+  "Pricing",
+  "Product",
+  "About Us",
+  "Careers",
+  "Community",
+]
+
+
 export {
-  logo
+  logo,
+  iconHamburger,
+  iconClose,
+  navItem,
 }
