@@ -49,3 +49,46 @@ main {
   opacity: 1;
   box-shadow: none;
 }
+
+/* testimonial section  */
+.carousel-item.active {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.carousel-item img {
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem auto 1rem;
+}
+
+.carousel-item .article-heading+p {
+  text-align: center;
+}
+
+.c-2 {
+  top: 2rem;
+  z-index: 50;
+}
+
+.c-2 button {
+  border: 1px solid var(--Bright-Red) !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+}
+
+.c-2 button.active {
+  background: var(--Bright-Red);
+}
+
+.testimonial-section .btn-holder {
+  margin: 3rem auto 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-section .btn {
+  font-size: .85rem;
+  padding: .7rem 3rem;
+}
