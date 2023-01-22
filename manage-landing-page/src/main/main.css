@@ -2,3 +2,27 @@ main {
   background: url("/src/assets/images/bg-tablet-pattern.svg") center left;
   padding-top: 4rem;
 }
+
+.main-heading {
+  font-size: 2.3rem;
+}
+
+/* home page  */
+.home-page p {
+  text-align: center;
+}
+
+.home-page .btn-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.home-page {
+  margin-bottom: 2.3rem;
+}
+
+/* feature section  */
+.feature-section .btn-orange:hover {
+  opacity: 1;
+  box-shadow: none;
+}

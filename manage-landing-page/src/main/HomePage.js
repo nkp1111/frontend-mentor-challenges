@@ -11,8 +11,10 @@ function HomePage() {
           Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.
         </p>
+        <div className='btn-holder'>
+          <button className='btn btn-orange'>Get Started</button>
+        </div>
 
-        <button className='btn btn-orange'>Get Started</button>
       </div>
 
       <div className='image-portion col-md-6 order-1'>
