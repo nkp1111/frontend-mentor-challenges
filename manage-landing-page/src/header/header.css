@@ -30,6 +30,10 @@
 
 @media (min-width: 48rem) {
 
+  .header {
+    padding: 3% 5%;
+  }
+
   .navbar-collapse {
     background: transparent;
     border-radius: 0;
@@ -44,5 +48,9 @@
 
   .nav-item {
     font-weight: 500;
+  }
+
+  .nav-link {
+    padding-top: 0;
   }
 }

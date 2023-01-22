@@ -4,6 +4,10 @@ main {
 }
 
 /* home page  */
+.home-page {
+  margin-bottom: 5rem;
+}
+
 .home-page p {
   text-align: center;
 }
@@ -13,8 +17,13 @@ main {
   justify-content: center;
 }
 
-.home-page {
-  margin-bottom: 5rem;
+/* home page component order*/
+.text-portion {
+  order: 2;
+}
+
+.image-portion {
+  order: 1;
 }
 
 /* feature section  */
@@ -118,4 +127,36 @@ main {
 .end-page .btn-orange:hover {
   opacity: 1;
   box-shadow: 0 0 3px var(--Dark-Blue);
+}
+
+@media (min-width: 48rem) {
+  main {
+    padding-top: 10%;
+  }
+
+
+  /* home page  */
+  .home-page h1,
+  .home-page p {
+    text-align: left;
+    margin: 2rem 0;
+  }
+
+  .home-page .btn-holder {
+    justify-content: start;
+  }
+
+  /* home page component order*/
+  .text-portion {
+    order: 1;
+  }
+
+  .image-portion {
+    order: 2;
+  }
+
+  .text-portion {
+    padding: 3% 10%;
+  }
+
 }

@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div className='home-page container-fluid'>
       <div className='row'>
-        <div className='text-portion col-md-6 order-2'>
+        <div className='text-portion col-md-6'>
           <h1 className='main-heading'>Bring everyone together to build better products.</h1>
           <p>
             Manage makes it simple for software teams to plan day-to-day
@@ -17,7 +17,7 @@ function HomePage() {
 
         </div>
 
-        <div className='image-portion col-md-6 order-1'>
+        <div className='image-portion col-md-6'>
           {/* home page images */}
           <div className='image-holder'>
             <img src={illustrationImage} alt="illustration"></img>
