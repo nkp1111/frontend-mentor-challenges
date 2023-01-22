@@ -6,7 +6,7 @@ function TestimonialSection() {
   useEffect(() => {
     // change carousel article after certain time
     let current = 0
-    let carouselChangeTime = 10000
+    let carouselChangeTime = 3000
     let carouselItem = document.querySelectorAll(".carousel-item")
 
     const removeActive = () => {
