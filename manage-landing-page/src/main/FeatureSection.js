@@ -3,7 +3,7 @@ import { featureSectionItems } from '../assets/data'
 
 function FeatureSection() {
   return (
-    <section className='feature-section'>
+    <section className='feature-section container-fluid'>
 
       <div className='head-portion'>
         <h2 className='section-heading'>What’s different about Manage?</h2>

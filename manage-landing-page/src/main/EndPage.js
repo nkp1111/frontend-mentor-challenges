@@ -3,8 +3,13 @@ import React from 'react'
 function EndPage() {
   return (
     <section className='end-page'>
-      <h2>Simplify how your team works today.</h2>
-      <button className='btn btn-orange-white'>Get Started</button>
+      <div className='container-fluid'>
+        <h2 className='main-heading'>Simplify how your team works today.</h2>
+
+        <div className='btn-holder'>
+          <button className='btn btn-orange btn-orange-white'>Get Started</button>
+        </div>
+      </div>
     </section>
   )
 }

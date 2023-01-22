@@ -7,7 +7,7 @@ import "./main.css"
 
 function index() {
   return (
-    <main className='container-fluid'>
+    <main >
       <HomePage />
       <FeatureSection />
       <TestimonialSection />

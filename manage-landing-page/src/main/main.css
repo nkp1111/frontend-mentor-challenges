@@ -28,7 +28,7 @@ main {
   justify-content: start;
   background: var(--Very-Pale-Red);
   align-items: center;
-  border-radius: 3rem;
+  border-radius: 3rem 0 0 3rem;
   box-shadow: 15px 0 var(--Very-Pale-Red);
 }
 
@@ -91,4 +91,31 @@ main {
 .testimonial-section .btn {
   font-size: .85rem;
   padding: .7rem 3rem;
+}
+
+/* end page  */
+.end-page {
+  background: var(--Bright-Red);
+  padding: 5rem 0;
+}
+
+.end-page .main-heading {
+  color: #fff;
+}
+
+.end-page .btn-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.end-page .btn-orange {
+  background: var(--Very-Pale-Red);
+  color: var(--Bright-Red);
+  margin: 1rem auto;
+  padding: .7rem 3rem;
+}
+
+.end-page .btn-orange:hover {
+  opacity: 1;
+  box-shadow: 0 0 3px var(--Dark-Blue);
 }
