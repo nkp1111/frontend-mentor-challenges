@@ -1,5 +1,6 @@
 import React from 'react'
 import { logo, iconClose, iconHamburger, navItem } from '../assets/data'
+import "./header.css"
 
 function index() {
   return (

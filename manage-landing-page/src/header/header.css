@@ -1,0 +1,47 @@
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-collapse {
+  background: #fff;
+  text-align: center;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.nav-item {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.nav-link:hover {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.navbar .btn {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+
+  .navbar-collapse {
+    background: transparent;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .navbar .btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-item {
+    font-weight: 500;
+  }
+}
