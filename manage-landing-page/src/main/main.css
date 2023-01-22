@@ -1,10 +1,6 @@
 main {
-  background: url("/src/assets/images/bg-tablet-pattern.svg") center left;
+  background: url("/src/assets/images/bg-tablet-pattern.svg") top center no-repeat;
   padding-top: 4rem;
-}
-
-.main-heading {
-  font-size: 2.3rem;
 }
 
 /* home page  */
@@ -18,10 +14,37 @@ main {
 }
 
 .home-page {
-  margin-bottom: 2.3rem;
+  margin-bottom: 5rem;
 }
 
 /* feature section  */
+.feature-section .section-heading+p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature-section .article-head {
+  flex-direction: row-reverse;
+  justify-content: start;
+  background: var(--Very-Pale-Red);
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 15px 0 var(--Very-Pale-Red);
+}
+
+.feature-section .article-heading {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.feature-section .btn-orange {
+  margin-right: .5rem;
+}
+
+.feature-section .article-body {
+  margin: .5rem 0 2rem;
+}
+
 .feature-section .btn-orange:hover {
   opacity: 1;
   box-shadow: none;
