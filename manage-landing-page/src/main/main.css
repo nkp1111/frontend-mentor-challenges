@@ -1,5 +1,6 @@
 main {
-  background: url("/src/assets/images/bg-tablet-pattern.svg") top center no-repeat;
+  background: url("/src/assets/images/bg-tablet-pattern.svg") no-repeat;
+  background-position: -10% -30%;
   padding-top: 4rem;
 }
 
@@ -132,6 +133,7 @@ main {
 @media (min-width: 48rem) {
   main {
     padding-top: 10%;
+    background-position: 100% -10%;
   }
 
 
@@ -159,4 +161,21 @@ main {
     padding: 3% 10%;
   }
 
+  /* feature section  */
+  .feature-section {
+    padding: 2% 0;
+  }
+
+  .feature-section .head-portion {
+    padding: 0 10%;
+  }
+
+  .feature-section .head-portion p {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .feature-section .article-head {
+    background: none;
+  }
 }
