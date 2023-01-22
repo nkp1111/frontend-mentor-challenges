@@ -65,3 +65,22 @@ body {
   background-color: var(--Vary-Light-Gray);
   background: url("./assets/images/bg-simplify-section-desktop.svg") center center/cover;
 }
+
+/* orange button  */
+.btn-orange {
+  background: var(--Bright-Red);
+  padding: .5rem 1.5rem;
+  height: fit-content;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 3rem;
+  transition: .3s all linear;
+  border: none;
+}
+
+.btn-orange:hover {
+  background: var(--Bright-Red);
+  color: #fff;
+  opacity: .9;
+  box-shadow: 0 2px 1px rgb(242, 95, 58, 0.7);
+}
