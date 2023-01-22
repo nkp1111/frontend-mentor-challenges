@@ -178,4 +178,31 @@ main {
   .feature-section .article-head {
     background: none;
   }
+
+  /* testimonial section  */
+  .testimonial-section {
+    text-align: center;
+  }
+
+  .carousel-item {
+    width: 30%;
+    padding: 1rem 5%;
+  }
+
+  .carousel-item2 {
+    margin-left: 35%;
+  }
+
+  .carousel-item3 {
+    margin-left: 66%;
+  }
+
+  .c-2 {
+    display: none;
+  }
+
+  /* footer  */
+  .footer-icons {
+    padding-left: 2%;
+  }
 }

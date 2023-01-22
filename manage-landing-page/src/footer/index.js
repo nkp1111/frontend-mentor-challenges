@@ -27,7 +27,7 @@ function index() {
 
         {/* footer form  */}
         <div className='footer-form col-md-4'>
-          <input type="text" placeholder="Updates in your inbox..." />
+          <input type="email" placeholder="Updates in your inbox..." required />
           <button className='btn btn-orange'>GO</button>
         </div>
 

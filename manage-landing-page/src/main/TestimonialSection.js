@@ -4,25 +4,35 @@ import { testimonialSectionItems } from '../assets/data'
 function TestimonialSection() {
 
   useEffect(() => {
-    // change carousel article after certain time
-    let current = 0
-    let carouselChangeTime = 3000
     let carouselItem = document.querySelectorAll(".carousel-item")
 
-    const removeActive = () => {
-      // remove active class from each carousel item
-      carouselItem.forEach(item => item.classList.remove("active"))
-    }
+    // on small width
+    if (window.innerWidth < 787) {
+      // change carousel article after certain time
+      let current = 0
+      let carouselChangeTime = 3000
 
-    let interval = setInterval(() => {
-      removeActive()
-      carouselItem[current].classList.add("active")
-      if (current < carouselItem.length - 1) {
-        current += 1
-      } else {
-        current = 0
+
+      const removeActive = () => {
+        // remove active class from each carousel item
+        carouselItem.forEach(item => item.classList.remove("active"))
       }
-    }, carouselChangeTime)
+
+      setInterval(() => {
+        removeActive()
+        carouselItem[current].classList.add("active")
+        if (current < carouselItem.length - 1) {
+          current += 1
+        } else {
+          current = 0
+        }
+      }, carouselChangeTime)
+
+    } else {
+      carouselItem[0].classList.add("active")
+      carouselItem[1].classList.add("active")
+      carouselItem[2].classList.add("active")
+    }
 
   }, [])
 
@@ -35,7 +45,7 @@ function TestimonialSection() {
           {testimonialSectionItems.map(item => {
             return (
               <div key={item.id}
-                className="carousel-item">
+                className={`carousel-item carousel-item${item.id}`}>
                 <div className='carousel-info'>
                   <h3 className='article-heading'>{item.user}</h3>
                   <p>{item.review}</p>
