@@ -65,6 +65,13 @@ body {
   background-color: var(--Vary-Light-Gray);
   background: url("./assets/images/bg-simplify-section-desktop.svg") center center/cover;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+@media (max-width:350px) {
+  body {
+    overflow: visible;
+  }
 }
 
 h1,
