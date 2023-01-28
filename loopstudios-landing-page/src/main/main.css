@@ -18,16 +18,42 @@
 
 /* info section  */
 .info-section {
-  padding: 5rem 0;
+  padding: 5rem 0 1.5rem;
   text-align: center;
-}
-
-.info-section .section-heading {
-  margin-top: 1.5rem;
 }
 
 .info-text {
   padding: 1.5rem;
+}
+
+/* feature section  */
+.feature-section {
+  text-align: center;
+}
+
+.feature-article {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.article-heading {
+  position: absolute;
+  text-transform: uppercase;
+  color: var(--Dark-Gray);
+  top: 60%;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.feature-section .btn {
+  text-transform: uppercase;
+  border: 2px solid #000;
+  font-family: 'Alata', sans-serif;
+  font-size: 1rem;
+  padding: .5rem 2rem;
+  border-radius: .1rem;
+  margin: 1rem auto 3rem;
+  letter-spacing: 3px;
 }
 
 @media (min-width: 49rem) {

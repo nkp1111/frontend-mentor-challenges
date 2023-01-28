@@ -3,9 +3,10 @@
   color: #fff;
   padding: 3rem;
   margin-top: 1rem;
+  z-index: 100;
 }
 
-.nav-link {
+.header .nav-link {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
