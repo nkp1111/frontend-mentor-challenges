@@ -14,7 +14,6 @@ function FeatureSection() {
                 <h3 className='article-heading'>{item.title}</h3>
                 <picture>
                   <source srcSet={item.image.desktop}
-                    alt={`${item.title} desktop`}
                     media="(min-width: 49rem)"></source>
                   <img src={item.image.mobile}
                     alt={`${item.title} mobile`}></img>
