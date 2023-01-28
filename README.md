@@ -40,3 +40,4 @@ This contains the following project:
 - testimonials-grid-section-main
 - manage-landing-page
 - loopstudios-landing-page
+- social-media-dashboard
