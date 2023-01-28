@@ -52,12 +52,48 @@ h6 {
 
 /* general styles  */
 :root {
-  --Dark-Gray: hsl(0, 0%, 55%);
-  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  /* primary color  */
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --YouTube: hsl(348, 97%, 39%);
+
+  /* dark theme  */
+  /* (BG) */
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+  /* (Top BG Pattern) */
+  --Very-Dark-Blue2: hsl(232, 19%, 15%);
+  /* (Card BG) */
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  /* (Text) */
+  --Desaturated-Blue: hsl(228, 34%, 66%);
+  /* (Text) */
+  --White: hsl(0, 0%, 100%);
+  /*dark theme toggle  */
+  --Dark-Toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+
+  /* light theme  */
+  /* (BG) */
+  --White: hsl(0, 0%, 100%);
+  /* (Top BG Pattern) */
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  /* (Card BG) */
+  --Light-Grayish-Blue: hsl(227, 47%, 96%);
+  /* (Text) */
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+  /* (Text) */
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+  /* light theme toggle  */
+  --light-Toggle: hsl(230, 22%, 74%);
 }
 
 body {
   font-family: 'Inter', sans-serif;
+  background: var(--Very-Dark-Blue);
+  color: var(--White);
 }
 
 h1,
@@ -67,4 +103,65 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+
+p {
+  color: var(--Desaturated-Blue);
+}
+
+main {
+  padding: 0 5%;
+}
+
+/* front info  */
+.front-info {
+  background: var(--Very-Dark-Blue2);
+  border-radius: 0 0 2rem 2rem;
+  padding: 20% 5% 10%;
+}
+
+.main-heading {
+  font-size: 1.5rem;
+}
+
+.info {
+  order: 1;
+  padding-left: 0;
+}
+
+/* switch to change mode  */
+.switch-box {
+  width: 3rem;
+  height: 1.6rem;
+  border-radius: 1rem;
+  background: var(--Dark-Toggle);
+  margin-left: auto;
+  position: relative;
+  order: 3;
+}
+
+.current-mode {
+  position: absolute;
+  white-space: nowrap;
+  left: -575%;
+}
+
+.ball {
+  position: absolute;
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--Very-Dark-Blue);
+  border-radius: 50%;
+}
+
+.divider {
+  background: var(--Dark-Desaturated-Blue);
+  width: 100%;
+  height: .1rem;
+  margin: 1rem auto;
+  order: 2;
 }

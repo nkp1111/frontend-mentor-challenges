@@ -19,10 +19,10 @@ function OverallStat() {
 
                 <div className='follower'>
                   {/* follower  */}
-                  <p>{item.count}</p>
-                  <span>
+                  <span>{item.count}</span>
+                  <p>
                     {item.id === 3 ? "Subscribers" : "Followers"}
-                  </span>
+                  </p>
                 </div>
 
                 <div
