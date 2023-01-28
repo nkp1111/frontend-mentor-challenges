@@ -244,6 +244,12 @@ article {
   border-radius: 0;
   padding: 1rem 2rem;
   text-align: center;
+  cursor: pointer;
+  transition: .3s all linear;
+}
+
+.inner-article:hover {
+  opacity: 0.9;
 }
 
 /* light-theme  */
