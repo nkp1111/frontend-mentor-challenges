@@ -1,4 +1,5 @@
 import React from 'react'
+import DetailStat from './components/DetailStat';
 import FrontInfo from './components/FrontInfo'
 import OverallStat from './components/OverallStat';
 
@@ -8,6 +9,7 @@ function App() {
     <main className="App container-fluid">
       <FrontInfo />
       <OverallStat />
+      <DetailStat />
     </main>
   );
 }
