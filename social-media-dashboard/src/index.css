@@ -117,7 +117,7 @@ main {
 .front-info {
   background: var(--Very-Dark-Blue2);
   border-radius: 0 0 2rem 2rem;
-  padding: 20% 5% 10%;
+  padding: 3rem 5%;
 }
 
 .main-heading {
@@ -294,4 +294,29 @@ article {
   font-size: 2rem;
   color: var(--White);
   font-weight: 700;
+}
+
+@media (min-width: 49rem) {
+
+  .overall-stat,
+  .detail-stat {
+    padding: 0 10%;
+  }
+
+  .front-info {
+    padding: 3% 12%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .current-mode {
+    left: -200%;
+  }
+
+  .detail-stat h2 {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
 }
