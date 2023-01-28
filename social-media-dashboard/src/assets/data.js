@@ -18,7 +18,7 @@ let dashboardCurrentInfo = [
   },
   {
     id: 2,
-    socialPlatform: "facebook",
+    socialPlatform: "twitter",
     author: "@nathanf",
     count: "1044",
     countOfToday: "99",
@@ -27,7 +27,7 @@ let dashboardCurrentInfo = [
   },
   {
     id: 3,
-    socialPlatform: "facebook",
+    socialPlatform: "instagram",
     author: "@realnathanf",
     count: "11K",
     countOfToday: "1099",
@@ -36,7 +36,7 @@ let dashboardCurrentInfo = [
   },
   {
     id: 4,
-    socialPlatform: "facebook",
+    socialPlatform: "youtube",
     author: "Nathan F.",
     count: "8239",
     countOfToday: "144",

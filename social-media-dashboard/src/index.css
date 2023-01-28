@@ -57,7 +57,7 @@ h6 {
   --Bright-Red: hsl(356, 69%, 56%);
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --Instagram: linear-gradient(75deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
 
   /* dark theme  */
@@ -138,6 +138,7 @@ main {
   margin-left: auto;
   position: relative;
   order: 3;
+  cursor: pointer;
 }
 
 .current-mode {
@@ -164,4 +165,133 @@ main {
   height: .1rem;
   margin: 1rem auto;
   order: 2;
+}
+
+/* overall stat  */
+.overall-stat>.row,
+.detail-stat>.row {
+  margin: 0;
+  padding: .5rem;
+}
+
+.article-holder {
+  padding: 1rem;
+}
+
+/* articles */
+article {
+  margin-bottom: 1.5rem;
+  border-radius: .4rem;
+  overflow: hidden;
+  padding-top: .3rem;
+}
+
+/* article borders  */
+.article-facebook {
+  background: var(--Facebook);
+}
+
+.article-twitter {
+  background: var(--Twitter);
+}
+
+.article-instagram {
+  background: var(--Instagram);
+}
+
+.article-youtube {
+  background: var(--YouTube);
+}
+
+/* inner article  */
+.inner-article {
+  background: var(--Dark-Desaturated-Blue);
+  border-radius: 0;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* author div */
+.author {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: .7rem 0 1rem;
+}
+
+.author h2 {
+  margin: 0;
+  font-size: .8rem;
+  color: var(--Desaturated-Blue);
+}
+
+.author img {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: .5rem;
+}
+
+/* follower div  */
+.follower span {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.follower p {
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+/* activity  */
+.activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.activity img {
+  margin-right: .5rem;
+}
+
+.activity.up {
+  color: var(--Lime-Green);
+}
+
+.activity.down {
+  color: var(--Bright-Red);
+}
+
+
+/* detail stat  */
+.detail-stat h2 {
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.activity-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.detail-stat h3 {
+  font-size: 1rem;
+  color: var(--Desaturated-Blue);
+  padding-top: 1rem;
+}
+
+.change-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change-stat p {
+  font-size: 2rem;
+  color: var(--White);
+  font-weight: 700;
 }
