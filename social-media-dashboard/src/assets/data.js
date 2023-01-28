@@ -14,6 +14,7 @@ let dashboardCurrentInfo = [
     count: "1987",
     countOfToday: "12",
     icon: facebookIcon,
+    action: "+"
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ let dashboardCurrentInfo = [
     count: "1044",
     countOfToday: "99",
     icon: twitterIcon,
+    action: "+"
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ let dashboardCurrentInfo = [
     count: "11K",
     countOfToday: "1099",
     icon: instagramIcon,
+    action: "+"
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ let dashboardCurrentInfo = [
     count: "8239",
     countOfToday: "144",
     icon: youtubeIcon,
+    action: "-"
   },
 ]
 
