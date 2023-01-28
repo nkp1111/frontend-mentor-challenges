@@ -41,6 +41,83 @@ const navItems = [
   { id: 5, title: "Support", link: "", },
 ]
 
+// feature images
+const featureArticles = [
+  {
+    id: 1,
+    title: "Deep earth",
+    description: "",
+    image: {
+      desktop: deepEarthDesktop,
+      mobile: deepEarthMobile,
+    },
+  },
+  {
+    id: 2,
+    title: "Night arcade",
+    description: "",
+    image: {
+      desktop: nightArcadeDesktop,
+      mobile: nightArcadeMobile,
+    },
+  },
+  {
+    id: 3,
+    title: "Soccer team VR",
+    description: "",
+    image: {
+      desktop: soccerTeamDesktop,
+      mobile: soccerTeamMobile,
+    },
+  },
+  {
+    id: 4,
+    title: "The grid",
+    description: "",
+    image: {
+      desktop: gridDesktop,
+      mobile: gridMobile,
+    },
+  },
+  {
+    id: 5,
+    title: "From up above VR",
+    description: "",
+    image: {
+      desktop: fromAboveDesktop,
+      mobile: fromAboveMobile,
+    },
+  },
+  {
+    id: 6,
+    title: "Pocket borealis",
+    description: "",
+    image: {
+      desktop: pocketBorealisDesktop,
+      mobile: pocketBorealisMobile,
+    },
+  },
+  {
+    id: 7,
+    title: "The curiosity",
+    description: "",
+    image: {
+      desktop: curiosityDesktop,
+      mobile: curiosityMobile,
+    },
+  },
+  {
+    id: 8,
+    title: "Make it fisheye",
+    description: "",
+    image: {
+      desktop: fisheyeDesktop,
+      mobile: fisheyeMobile,
+    },
+  },
+]
+
+
 export {
   logo,
   hamburgerIcon,
@@ -50,4 +127,5 @@ export {
   heroDesktop,
   interactiveMobile,
   interactiveDesktop,
+  featureArticles,
 }
