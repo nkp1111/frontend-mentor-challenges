@@ -1,0 +1,25 @@
+/* main  */
+/* front page  */
+.outer-border {
+  position: absolute;
+  top: 25vh;
+  left: 5%;
+  border: 2px solid var(--Dark-Gray);
+  right: 5%;
+  color: #fff;
+  padding: 1rem;
+}
+
+.main-heading {
+  font-weight: 300;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 49rem) {
+  .outer-border {
+    left: 10%;
+    border: 3px solid var(--Dark-Gray);
+    right: 60%;
+  }
+}
