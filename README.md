@@ -39,3 +39,4 @@ This contains the following project:
 - interactive-pricing-component
 - testimonials-grid-section-main
 - manage-landing-page
+- loopstudios-landing-page
