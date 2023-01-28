@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FrontInfo() {
+function FrontInfo({ mode, setMode }) {
   return (
     <div className='front-info row'>
       {/* info  */}
@@ -11,7 +11,7 @@ function FrontInfo() {
         </p>
       </div>
       {/* switch  */}
-      <div className='col-md-5 switch-box'>
+      <div className='col-md-5 switch-box' onClick={() => setMode(!mode)}>
         <p className='current-mode'>Dark Mode</p>
         <span className='ball'></span>
       </div>

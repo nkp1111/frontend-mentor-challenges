@@ -87,13 +87,19 @@ h6 {
   /* (Text) */
   --Very-Dark-Blue: hsl(230, 17%, 14%);
   /* light theme toggle  */
-  --light-Toggle: hsl(230, 22%, 74%);
+  --Light-Toggle: hsl(230, 22%, 74%);
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background: var(--Very-Dark-Blue);
   color: var(--White);
+}
+
+/* light theme  */
+body.light {
+  background: var(--White);
+  color: var(--Very-Dark-Blue);
 }
 
 h1,
@@ -109,6 +115,11 @@ p {
   color: var(--Desaturated-Blue);
 }
 
+/* light theme  */
+body.light p {
+  color: var(--Dark-Desaturated-Blue);
+}
+
 main {
   padding: 0 5%;
 }
@@ -118,6 +129,11 @@ main {
   background: var(--Very-Dark-Blue2);
   border-radius: 0 0 2rem 2rem;
   padding: 3rem 5%;
+}
+
+/* light theme  */
+body.light .front-info {
+  background: var(--Very-Pale-Blue);
 }
 
 .main-heading {
@@ -139,6 +155,12 @@ main {
   position: relative;
   order: 3;
   cursor: pointer;
+  transition: .3s all linear;
+}
+
+/* light theme  */
+body.light .switch-box {
+  background: var(--Light-Toggle);
 }
 
 .current-mode {
@@ -157,6 +179,14 @@ main {
   transform: translateY(-50%);
   background: var(--Very-Dark-Blue);
   border-radius: 50%;
+  transition: .3s all ease-in-out;
+}
+
+/* light-theme  */
+body.light .ball {
+  left: unset;
+  right: 5%;
+  background: var(--White);
 }
 
 .divider {
@@ -165,6 +195,11 @@ main {
   height: .1rem;
   margin: 1rem auto;
   order: 2;
+}
+
+/* light-theme  */
+body.light .divider {
+  background: var(--Light-Toggle);
 }
 
 /* overall stat  */
@@ -211,6 +246,11 @@ article {
   text-align: center;
 }
 
+/* light-theme  */
+body.light .inner-article {
+  background: var(--Light-Grayish-Blue);
+}
+
 /* author div */
 .author {
   display: flex;
@@ -224,6 +264,11 @@ article {
   margin: 0;
   font-size: .8rem;
   color: var(--Desaturated-Blue);
+}
+
+/* light-theme  */
+body.light .author h2 {
+  color: var(--Very-Dark-Blue);
 }
 
 .author img {
@@ -282,6 +327,11 @@ article {
   font-size: 1rem;
   color: var(--Desaturated-Blue);
   padding-top: 1rem;
+}
+
+/* light theme */
+body.light .detail-stat h3 {
+  color: var(--Very-Dark-Blue);
 }
 
 .change-stat {
