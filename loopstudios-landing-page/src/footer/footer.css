@@ -1,0 +1,34 @@
+.footer {
+  padding: 3rem 1rem;
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+/* footer logo  */
+.logo-holder img {
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* footer items  */
+.nav-link {
+  font-weight: 700;
+  margin-top: .3rem;
+}
+
+/* footer icons  */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 1rem;
+}
+
+.footer-icons img {
+  margin: 0 .5rem;
+  transition: .3s all linear;
+}
+
+.footer-icons img:hover {
+  scale: 1.05;
+}
