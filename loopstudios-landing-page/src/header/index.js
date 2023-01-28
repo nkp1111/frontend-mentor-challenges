@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { logo, hamburgerIcon, closeIcon, navItems } from '../assets/data'
+import "./header.css"
 
-function index() {
+function Index() {
+
   return (
-    <header className='header bg-dark'>
+    <header className="header">
       <nav className='navbar navbar-expand-md'>
         {/* navbar logo  */}
-        <div>
+        <div className='navbar-logo-holder'>
           <img src={logo} alt="loopstudios logo"
             className='navbar-brand'></img>
         </div>
@@ -31,4 +33,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

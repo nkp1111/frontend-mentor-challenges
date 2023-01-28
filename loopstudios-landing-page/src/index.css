@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+
+
 /* css reset  */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 *,
@@ -48,8 +52,14 @@ h6 {
 
 
 /* general styles  */
-:root {}
+:root {
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 h1,
 h2,
@@ -58,4 +68,23 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+
+p {
+  font-family: 'Alata', sans-serif;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: transparent;
+  padding: 2% 5%;
+}
+
+@media (min-width:49rem) {
+  header {
+    padding: 1rem 5%;
+  }
 }
