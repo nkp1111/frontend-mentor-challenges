@@ -46,6 +46,8 @@ export {
   hamburgerIcon,
   closeIcon,
   navItems,
-  heroDesktop,
   heroMobile,
+  heroDesktop,
+  interactiveMobile,
+  interactiveDesktop,
 }
