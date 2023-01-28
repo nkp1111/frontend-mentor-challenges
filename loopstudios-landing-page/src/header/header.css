@@ -11,10 +11,12 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   transition: .3s all linear;
+  border-bottom: 3px solid transparent;
 }
 
-.nav-link:hover {
+.header .nav-link:hover {
   color: #ddd;
+  border-bottom: 3px solid #ddd;
 }
 
 @media (min-width:49rem) {
@@ -28,9 +30,11 @@
     margin-left: auto;
   }
 
-  .nav-link {
+  .header .nav-link {
     font-size: 1rem;
     text-transform: capitalize;
     font-family: 'Alata', sans-serif;
+    margin: 0 1rem;
+    font-weight: 400;
   }
 }

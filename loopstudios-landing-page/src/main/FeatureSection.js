@@ -4,9 +4,9 @@ import { featureArticles } from '../assets/data'
 function FeatureSection() {
   return (
     <section className='feature-section'>
-      <h2 className='section-heading'>Our creations</h2>
 
       <div className='container-fluid'>
+        <h2 className='section-heading'>Our creations</h2>
         <div className='article-holder row'>
           {featureArticles.map(item => {
             return (

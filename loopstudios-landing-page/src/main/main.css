@@ -33,7 +33,7 @@
 
 .feature-article {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .article-heading {
@@ -56,10 +56,90 @@
   letter-spacing: 3px;
 }
 
+.feature-section .btn:hover {
+  background: #000;
+  color: #fff;
+}
+
 @media (min-width: 49rem) {
+
+  /* front page  */
+  .outer-border {
+    left: 10%;
+    border: 3px solid var(--Dark-Gray);
+    right: 30%;
+  }
+
+  .front-page picture {
+    background: linear-gradient(-45deg, #5D3891, #CF4DCE);
+  }
+
+  .info-section .container-fluid,
+  .feature-section .container-fluid {
+    padding: 1% 10%;
+    position: relative;
+  }
+
+  /* info section  */
+  .info-text {
+    position: absolute;
+    background: #fff;
+    left: 41%;
+    top: 40%;
+    height: 70%;
+    padding: 5%;
+    text-align: left;
+    width: 50%;
+  }
+
+  /* feature section  */
+  .feature-section {
+    margin-top: 10%;
+    padding-top: 10%;
+  }
+
+  .feature-section .section-heading {
+    z-index: 100;
+    text-align: left;
+  }
+
+  .feature-section .btn-holder {
+    position: absolute;
+    top: 0;
+    right: 12.5%;
+  }
+
+  .article-holder {
+    margin: 3% 0;
+  }
+
+  .article-heading {
+    top: 80%;
+  }
+}
+
+@media (min-width: 62.5rem) {
+
+  /* front page  */
   .outer-border {
     left: 10%;
     border: 3px solid var(--Dark-Gray);
     right: 60%;
+    padding: 2% 4%;
+  }
+
+  .section-heading {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .feature-section {
+    padding-top: 2%;
+  }
+
+  .feature-section .btn-holder {
+    position: absolute;
+    top: 2%;
+    right: 12.5%;
   }
 }
