@@ -35,10 +35,10 @@ import logo from './images/logo.svg'
 // navbar nav items 
 const navItems = [
   { id: 1, title: "About", link: "", },
-  { id: 1, title: "Careers", link: "", },
-  { id: 1, title: "Events", link: "", },
-  { id: 1, title: "Products", link: "", },
-  { id: 1, title: "Support", link: "", },
+  { id: 2, title: "Careers", link: "", },
+  { id: 3, title: "Events", link: "", },
+  { id: 4, title: "Products", link: "", },
+  { id: 5, title: "Support", link: "", },
 ]
 
 export {
@@ -46,4 +46,6 @@ export {
   hamburgerIcon,
   closeIcon,
   navItems,
+  heroDesktop,
+  heroMobile,
 }
