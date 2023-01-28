@@ -32,6 +32,18 @@ import twitterIcon from './images/icon-twitter.svg'
 import logo from './images/logo.svg'
 
 
+// navbar nav items 
+const navItems = [
+  { id: 1, title: "About", link: "", },
+  { id: 1, title: "Careers", link: "", },
+  { id: 1, title: "Events", link: "", },
+  { id: 1, title: "Products", link: "", },
+  { id: 1, title: "Support", link: "", },
+]
+
 export {
   logo,
+  hamburgerIcon,
+  closeIcon,
+  navItems,
 }
