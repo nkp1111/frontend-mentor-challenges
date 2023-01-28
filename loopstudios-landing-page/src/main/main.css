@@ -16,6 +16,20 @@
   text-transform: uppercase;
 }
 
+/* info section  */
+.info-section {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.info-section .section-heading {
+  margin-top: 1.5rem;
+}
+
+.info-text {
+  padding: 1.5rem;
+}
+
 @media (min-width: 49rem) {
   .outer-border {
     left: 10%;

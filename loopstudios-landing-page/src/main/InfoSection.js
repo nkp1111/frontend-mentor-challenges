@@ -6,8 +6,8 @@ function InfoSection() {
     <section className='info-section'>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='info-text col-md-6'>
-            <h2>The leader in interactive VR</h2>
+          <div className='info-text col-md-6 order-2'>
+            <h2 className='section-heading'>The leader in interactive VR</h2>
             <p>
               Founded in 2011, Loopstudios has been producing world-class virtual reality
               projects for some of the best companies around the globe. Our award-winning
@@ -15,7 +15,7 @@ function InfoSection() {
               to their brand.
             </p>
           </div>
-          <div className='info-image col-md-6'>
+          <div className='info-image col-md-6 order-1'>
             <picture>
               <source srcSet={interactiveDesktop}
                 media="(min-width:49rem)"></source>

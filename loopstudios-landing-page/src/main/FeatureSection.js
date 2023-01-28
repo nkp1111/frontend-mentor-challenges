@@ -4,7 +4,7 @@ import { featureArticles } from '../assets/data'
 function FeatureSection() {
   return (
     <section className='feature-section'>
-      <h2>Our creations</h2>
+      <h2 className='section-heading'>Our creations</h2>
 
       <div className='container-fluid'>
         <div className='article-holder row'>

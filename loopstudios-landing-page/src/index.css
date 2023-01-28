@@ -72,6 +72,7 @@ h6 {
 
 p {
   font-family: 'Alata', sans-serif;
+  color: var(--Very-Dark-Gray);
 }
 
 header {
@@ -81,6 +82,11 @@ header {
   right: 0;
   background: transparent;
   padding: 2% 5%;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 @media (min-width:49rem) {
