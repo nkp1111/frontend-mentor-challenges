@@ -117,6 +117,33 @@ const featureArticles = [
   },
 ]
 
+// footer icons
+const footerIcons = [
+  {
+    id: 1,
+    title: "facebook",
+    icon: facebookIcon,
+    link: "",
+  },
+  {
+    id: 2,
+    title: "twitter",
+    icon: twitterIcon,
+    link: "",
+  },
+  {
+    id: 3,
+    title: "pinterest",
+    icon: pinterestIcon,
+    link: "",
+  },
+  {
+    id: 4,
+    title: "instagram",
+    icon: instagramIcon,
+    link: "",
+  },
+]
 
 export {
   logo,
@@ -128,4 +155,5 @@ export {
   interactiveMobile,
   interactiveDesktop,
   featureArticles,
+  footerIcons,
 }
