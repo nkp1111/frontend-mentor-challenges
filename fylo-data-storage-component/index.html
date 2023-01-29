@@ -21,16 +21,16 @@
   <title>Fylo data storage component</title>
 </head>
 
-<body class="container-fluid d-flex align-items-center justify-content-center">
+<body class="d-flex align-items-center justify-content-center">
   <h1 class="hidden-heading">Fylo Data Storage component</h1>
 
   <!-- background image  -->
   <div class="background-style"></div>
 
-  <div class="row data-viewer">
-    <div class="col-md-6 content-div row">
+  <div class="data-viewer">
+    <div class="content-div">
       <!-- content  -->
-      <div class="col-12 inner-div image-div">
+      <div class="inner-div image-div">
         <img src="./images/logo.svg" alt="logo">
         <!-- image icons  -->
         <div class="img-holder d-flex align-items-center">
@@ -47,21 +47,24 @@
       </div>
     </div>
 
-    <div class="col-md-6 content-div row">
+    <div class="content-div">
       <!-- content  -->
-      <div class="col-12 inner-div progress-div">
-        <p>You’ve used 815 GB of your storage</p>
+      <div class="inner-div progress-div">
+        <p>You’ve used
+          <span>815 GB</span>
+          of your storage
+        </p>
         <!-- progress bar  -->
         <div class="progress-bar">
           <div class="progress-ball"></div>
         </div>
-        <div class="data-rep">
-          <span>0 GB</span>
+        <div class="data-rep d-flex justify-content-between">
+          <span cl>0 GB</span>
           <span>1000 GB</span>
         </div>
         <!-- data left div -->
-        <div class="data-left">
-          <span>185</span>
+        <div class="data-left d-flex align-items-center">
+          <span class="highlight">185</span>
           GB Left
         </div>
       </div>
