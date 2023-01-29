@@ -87,13 +87,14 @@ body {
 
 /* content  */
 .data-viewer {
-  z-index: 100;
+
   display: flex;
   align-items: flex-end;
 }
 
 .content-div {
   padding: 2rem;
+  z-index: 100;
 }
 
 .inner-div {
