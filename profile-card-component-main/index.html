@@ -15,23 +15,33 @@
 </head>
 
 <body class="container-fluid">
-  <main>
+  <div class="top-background">
+    <img src="./images/bg-pattern-top.svg">
+  </div>
+
+  <div class="bottom-background">
+    <img src="./images/bg-pattern-bottom.svg">
+  </div>
+
+  <main class="d-flex align-items-center">
     <h1 class="hidden-heading">Profile Card Component</h1>
 
-    <div class="card">
+    <div class="card d-flex">
       <div class="card-top">
         <img src="./images/image-victor.jpg">
       </div>
-      <p>Victor Crest <span>26</span></p>
-      <p>London</p>
-      <hr>
-      <div class="row">
-        <div class="col-4">80K</div>
-        <div class="col-4">803K</div>
-        <div class="col-4">1.4K</div>
-        <div class="col-4">Followers</div>
-        <div class="col-4">Likes</div>
-        <div class="col-4">Photos</div>
+      <div class="card-bottom">
+        <p class="author">Victor Crest <span>26</span></p>
+        <p>London</p>
+        <hr>
+        <div class="row">
+          <div class="col-4 stat">80K</div>
+          <div class="col-4 stat">803K</div>
+          <div class="col-4 stat">1.4K</div>
+          <div class="col-4">Followers</div>
+          <div class="col-4">Likes</div>
+          <div class="col-4 ">Photos</div>
+        </div>
       </div>
     </div>
 
