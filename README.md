@@ -41,3 +41,4 @@ This contains the following project:
 - manage-landing-page
 - loopstudios-landing-page
 - social-media-dashboard
+- fylo-data-storage-component
