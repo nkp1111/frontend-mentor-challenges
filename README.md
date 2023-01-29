@@ -42,3 +42,4 @@ This contains the following project:
 - loopstudios-landing-page
 - social-media-dashboard
 - fylo-data-storage-component
+- profile-card-component
