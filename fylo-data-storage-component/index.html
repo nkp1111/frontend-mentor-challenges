@@ -21,38 +21,52 @@
   <title>Fylo data storage component</title>
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid d-flex align-items-center justify-content-center">
   <h1 class="hidden-heading">Fylo Data Storage component</h1>
 
-  <div class="row">
-    <div class="col-md-6">
-      <img src="./images/logo.svg" alt="logo">
-      <div class="img-holder">
-        <img src="./images/icon-document.svg" alt="document icon">
-        <img src="./images/icon-folder.svg" alt="folder icon">
-        <img src="./images/icon-upload.svg" alt="upload icon">
+  <!-- background image  -->
+  <div class="background-style"></div>
+
+  <div class="row data-viewer">
+    <div class="col-md-6 content-div row">
+      <!-- content  -->
+      <div class="col-12 inner-div image-div">
+        <img src="./images/logo.svg" alt="logo">
+        <!-- image icons  -->
+        <div class="img-holder d-flex align-items-center">
+          <div class="img-cover">
+            <img src="./images/icon-document.svg" alt="document icon">
+          </div>
+          <div class="img-cover">
+            <img src="./images/icon-folder.svg" alt="folder icon">
+          </div>
+          <div class="img-cover">
+            <img src="./images/icon-upload.svg" alt="upload icon">
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <p>You’ve used 815 GB of your storage</p>
-      <!-- progress bar  -->
-      <div class="progress-bar">
-        <div class="progress-ball"></div>
-      </div>
-      <div class="data-rep">
-        <span>0 GB</span>
-        <span>1000 GB</span>
-      </div>
-      <!-- data left div -->
-      <div class="data-left">
-        <span>185</span>
-        GB Left
+    <div class="col-md-6 content-div row">
+      <!-- content  -->
+      <div class="col-12 inner-div progress-div">
+        <p>You’ve used 815 GB of your storage</p>
+        <!-- progress bar  -->
+        <div class="progress-bar">
+          <div class="progress-ball"></div>
+        </div>
+        <div class="data-rep">
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
+        <!-- data left div -->
+        <div class="data-left">
+          <span>185</span>
+          GB Left
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="background-style"></div>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
