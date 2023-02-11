@@ -43,3 +43,4 @@ This contains the following project:
 - social-media-dashboard
 - fylo-data-storage-component
 - profile-card-component
+- faq-accordion-card
