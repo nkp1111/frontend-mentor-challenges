@@ -22,30 +22,31 @@
 </head>
 
 <body>
+
   <main>
     <h1 class="hidden-heading">FAQ accordion card</h1>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 picture-div">
           <picture>
             <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 48rem)">
             <img src="./images/illustration-woman-online-mobile.svg" alt="hero">
           </picture>
         </div>
-        <section class="col-md-6">
-          <h2>FAQ</h2>
 
+        <section class="col-md-6">
+          <h2 class="section-heading">FAQ</h2>
           <!-- bootstrap accordion  -->
           <div class="accordion" id="accordion">
             <!-- accordion item 1 -->
             <div class="accordion-item">
               <!-- accordion question-box  -->
-              <h3 class="accordion-header" id="headingOne">
+              <p class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
                   How many team members can I invite?
                 </button>
-              </h3>
+              </p>
               <!-- accordion answer-box  -->
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
@@ -57,12 +58,12 @@
             </div>
             <!-- accordion item 2 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
+              <p class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   What is the maximum file upload size?
                 </button>
-              </h2>
+              </p>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
@@ -72,12 +73,12 @@
             </div>
             <!-- accordion item 3 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
+              <p class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   How do I reset my password?
                 </button>
-              </h2>
+              </p>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
@@ -88,12 +89,12 @@
             </div>
             <!-- accordion item 4 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
+              <p class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Can I cancel my subscription?
                 </button>
-              </h2>
+              </p>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
@@ -103,12 +104,12 @@
             </div>
             <!-- accordion item 5 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
+              <p class="accordion-header" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Do you provide additional support?
                 </button>
-              </h2>
+              </p>
               <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
@@ -124,8 +125,9 @@
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/nkp1111">Neeraj Parmar</a>.
   </footer>
+
 </body>
 
 </html>
