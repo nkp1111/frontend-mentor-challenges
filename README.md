@@ -44,3 +44,4 @@ This contains the following project:
 - fylo-data-storage-component
 - profile-card-component
 - faq-accordion-card
+- social-proof-section
