@@ -48,7 +48,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-
 :root {
   --Very-Dark-Magenta: hsl(300, 43%, 22%);
   --Soft-Pink: hsl(333, 80%, 67%);
@@ -58,16 +57,93 @@ h6 {
 
 body {
   font-family: 'League Spartan', sans-serif;
+  padding: 3rem 0;
 }
 
+main {
+  padding-bottom: 2rem;
+}
+
+.main-heading {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.main-heading+p {
+  color: var(--Dark-Grayish-Magenta);
+  text-align: center;
+}
+
+/* reviews  */
+.review-holder div {
+  background: var(--Light-Grayish-Magenta);
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.review-holder span>img {
+  margin: 0 .2rem;
+}
+
+.review-holder p {
+  text-align: center;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+}
+
+/* card  */
+.card-cover {
+  padding: 1rem;
+}
+
+.card {
+  background: var(--Very-Dark-Magenta);
+  color: #fff;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.info {
+  font-weight: 500;
+}
+
+/* author  */
+.avatar {
+  border-radius: 50%;
+  margin: 0 1rem 1.5rem 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+.info p {
+  font-weight: 500;
+  margin: 0;
+}
+
+.info p:last-child {
+  color: var(--Soft-Pink);
+}
+
+/* footer  */
 .attribution {
   font-size: 11px;
   text-align: center;
   position: absolute;
   bottom: 5vh;
   right: 5vw;
+  opacity: 0;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  .attribution {
+    opacity: 1;
+  }
 }
