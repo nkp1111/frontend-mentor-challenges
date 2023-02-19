@@ -1,6 +1,7 @@
 import React from 'react'
 import TopSection from './TopSection'
 import BottomSection from './BottomSection'
+import "./main.css"
 
 function index() {
   return (

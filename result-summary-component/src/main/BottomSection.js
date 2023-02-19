@@ -14,6 +14,8 @@ function BottomSection() {
           </div>
         )
       })}
+
+      <button className='btn w-100'>Continue</button>
     </section>
   )
 }

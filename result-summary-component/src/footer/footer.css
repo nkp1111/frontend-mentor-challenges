@@ -1,0 +1,19 @@
+/* footer  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  opacity: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:49rem) {
+  .attribution {
+    opacity: 1;
+  }
+}
