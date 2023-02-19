@@ -68,7 +68,7 @@ body {
 /* header  */
 header img {
   margin: auto;
-  padding: 10% 5%;
+  padding: 2.5rem 0;
 }
 
 .main-heading {
@@ -82,9 +82,16 @@ header img {
 }
 
 /* form  */
+form {
+  width: 40%;
+  min-width: 17rem;
+}
+
 .form-control,
 .btn {
   border-radius: 2rem;
+  padding: .7rem;
+  white-space: nowrap;
 }
 
 .valid-feedback,
@@ -98,7 +105,6 @@ header img {
   background: var(--Blue);
   color: #fff;
   font-weight: 600;
-  padding: .7rem;
   transition: .3s all linear;
 }
 
@@ -110,6 +116,7 @@ header img {
 /* illustration image  */
 .main-img-holder {
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* icons  */
@@ -139,7 +146,7 @@ header img {
   color: #fff;
 }
 
-main .footer-text {
+main .footer p {
   font-size: .9rem;
   color: var(--Gray);
   text-align: center;
@@ -152,8 +159,26 @@ main .footer-text {
   position: absolute;
   bottom: 2vh;
   right: 5vw;
+  opacity: 0;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:49rem) {
+
+  header img {
+    padding: 2.5%;
+  }
+
+  form {
+    min-width: 25rem;
+  }
+
+  .main-img-holder {
+    width: 40%;
+    margin: auto;
+  }
+
 }
