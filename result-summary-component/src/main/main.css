@@ -1,0 +1,59 @@
+/* top section  */
+
+/* bottom section  */
+.score-section {
+  padding: 1rem 2rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--Very-Light-red);
+  border: none;
+}
+
+.card img {
+  margin-right: .7rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.score {
+  font-weight: 700;
+}
+
+.score::after {
+  content: " /100";
+  color: var(--Dark-gray-blue-1);
+}
+
+/* category diff colors  */
+.cat-reaction {
+  color: var(--Light-red);
+}
+
+.cat-memory {
+  color: var(--Orangey-yellow);
+}
+
+.cat-verbal {
+  color: var(--Green-teal);
+}
+
+.cat-visual {
+  color: var(--Cobalt-blue);
+}
+
+.score-section .btn {
+  background: var(--Dark-gray-blue);
+  color: #fff;
+  border-radius: 2rem;
+  padding: .8rem;
+}
