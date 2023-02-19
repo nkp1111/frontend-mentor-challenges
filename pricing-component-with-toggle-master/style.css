@@ -102,6 +102,7 @@ label {
   color: var(--Light-Grayish-Blue);
   font-size: .9rem;
   transition: .3s all linear;
+  cursor: pointer;
 }
 
 .switch {
@@ -165,13 +166,17 @@ article h2 {
 
 article .price {
   transition: .3s all linear;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article .price::after {
   transition: .3s all linear;
   font-size: 3rem;
+  margin-left: .3rem;
 }
 
 article.pro {
@@ -276,7 +281,35 @@ article.pro .btn {
 }
 
 @media (min-width:49rem) {
+  .row {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .article-cover {
+    margin-top: 1%;
+    padding: 1.5rem 2rem;
+  }
+
+  .article-cover:nth-child(2) {
+    background: var(--Linear-Gradient);
+    border-radius: .5rem;
+    margin-top: 0;
+  }
+
+  article.pro {
+    background: transparent;
+  }
+
   .attribution {
     opacity: 1;
+  }
+}
+
+@media (min-width:60rem) {
+  .row {
+    width: 80%;
   }
 }
