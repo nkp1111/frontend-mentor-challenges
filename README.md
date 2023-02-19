@@ -45,3 +45,4 @@ This contains the following project:
 - profile-card-component
 - faq-accordion-card
 - social-proof-section
+- result-summary-component
