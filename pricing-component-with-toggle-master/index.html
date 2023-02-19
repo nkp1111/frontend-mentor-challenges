@@ -16,19 +16,24 @@
   <div class="container-fluid">
     <div class="row">
       <main>
-        <h1>Our Pricing</h1>
+        <h1 class="main-heading">Our Pricing</h1>
+
         <!-- custom switch  -->
-        <div class="switch">
-          <label for="plan">Annually</label>
-          <span class="control">
-            <input type="checkbox" name="plan" id="plan" value="monthly" class="d-none">
-          </span>
-          <label for="plan">Monthly</label>
+        <div class="plan-control d-flex justify-content-center align-items-center">
+          <label for="plan" class="annually">Annually</label>
+          <div class="switch">
+            <span class="control">
+              <input type="checkbox" name="plan" id="plan" value="monthly" class="d-none">
+            </span>
+          </div>
+          <label for="plan" class="monthly">Monthly</label>
         </div>
 
+        <!-- articles: pricing component -->
         <div class="row">
+          <!-- pricing component start  -->
           <div class="col-md-4">
-            <article>
+            <article class="basic">
               <h2>Basic</h2>
               <p class="price">&dollar;19.99</p>
               <ul>
@@ -39,8 +44,10 @@
               <button>Learn More</button>
             </article>
           </div>
+          <!-- pricing component end  -->
+          <!-- pricing component start  -->
           <div class="col-md-4">
-            <article>
+            <article class="pro">
               <h2>Professional</h2>
               <p class="price">&dollar;24.99</p>
               <ul>
@@ -51,8 +58,10 @@
               <button>Learn More</button>
             </article>
           </div>
+          <!-- pricing component end  -->
+          <!-- pricing component start  -->
           <div class="col-md-4">
-            <article>
+            <article class="master">
               <h2>Master</h2>
               <p class="price">&dollar;39.99</p>
               <ul>
@@ -63,6 +72,7 @@
               <button>Learn More</button>
             </article>
           </div>
+         <!-- pricing component end  -->
         </div>
       </main>
     </div>
