@@ -46,3 +46,4 @@ This contains the following project:
 - faq-accordion-card
 - social-proof-section
 - result-summary-component
+- pricing-component-with-toggle
