@@ -47,3 +47,4 @@ This contains the following project:
 - social-proof-section
 - result-summary-component
 - pricing-component-with-toggle
+- ping-coming-soon-page
