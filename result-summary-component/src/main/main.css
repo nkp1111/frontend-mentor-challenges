@@ -1,4 +1,48 @@
 /* top section  */
+.front-page {
+  padding: 1rem;
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  text-align: center;
+  color: var(--Pale-blue);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.main-heading {
+  font-size: 1rem;
+}
+
+.final-score {
+  border-radius: 50%;
+  background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 1.2rem 2.5rem;
+}
+
+.final-score span {
+  font-size: 3rem;
+  color: var(--White);
+  color: #fff;
+  font-weight: 800;
+}
+
+.final-score p {
+  margin: 0;
+  color: var(--Light-lavender);
+  font-size: .9rem;
+}
+
+.msg-box span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.msg-box p {
+  color: var(--Light-lavender);
+  line-height: 1.3rem;
+  margin-top: .5rem;
+}
 
 /* bottom section  */
 .score-section {
@@ -6,12 +50,13 @@
 }
 
 .section-heading {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .card {
-  padding: 1rem;
+  padding: .8rem 1rem;
   margin-bottom: 1rem;
   background-color: var(--Very-Light-red);
   border: none;
