@@ -72,6 +72,7 @@
 
 .score {
   font-weight: 700;
+  color: var(--Dark-gray-blue);
 }
 
 .score::after {
@@ -82,18 +83,23 @@
 /* category diff colors  */
 .cat-reaction {
   color: var(--Light-red);
+  background: var(--Light-red-bg);
 }
 
 .cat-memory {
   color: var(--Orangey-yellow);
+  background: var(--Orangey-yellow-bg);
+  ;
 }
 
 .cat-verbal {
   color: var(--Green-teal);
+  background: var(--Green-teal-bg);
 }
 
 .cat-visual {
   color: var(--Cobalt-blue);
+  background: var(--Cobalt-blue-bg);
 }
 
 .score-section .btn {
@@ -101,4 +107,33 @@
   color: #fff;
   border-radius: 2rem;
   padding: .8rem;
+}
+
+@media (min-width: 48rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    box-shadow: 0 10px 10px 5px var(--Light-slate-blue-bs);
+    border-radius: 2rem;
+  }
+
+  .front-page {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .score-section {
+    border-radius: 0 2rem 2rem 0;
+  }
 }

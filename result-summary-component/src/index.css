@@ -72,9 +72,13 @@ h6 {
   --Light-lavender: hsl(241, 100%, 89%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
 
-  /* diff  */
-  --Very-Light-red: hsl(0, 47%, 97%);
+  /* different shade for background  */
   --Dark-gray-blue-1: hsla(224, 30%, 27%, 0.5);
+  --Light-red-bg: hsla(0, 100%, 97%, 0.9);
+  --Orangey-yellow-bg: hsla(39, 100%, 97%, 0.9);
+  --Green-teal-bg: hsla(166, 100%, 97%, 0.9);
+  --Cobalt-blue-bg: hsla(234, 85%, 97%, 0.9);
+  --Light-slate-blue-bs: hsl(251, 100%, 96%);
 }
 
 body {
