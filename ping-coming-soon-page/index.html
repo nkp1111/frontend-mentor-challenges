@@ -16,15 +16,28 @@
   <header>
     <img src="./images/logo.svg" alt="logo">
   </header>
-  <main>
+  <main class="d-flex flex-column justify-content-center align-items-center">
     <h1 class="main-heading">
       We are launching <span>soon!</span>
     </h1>
     <p>Subscribe and get notified</p>
 
-    <form action="#">
-      <input type="email" name="email">
-      <button class="btn">Notify Me</button>
+    <form action="#" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <input type="email" name="email" class="form-control">
+            <!-- feedback message  -->
+            <div class="valid-feedback">
+              Looks good
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid email address
+            </div>
+        </div>
+        <div class="mb-3 col-md-6">
+          <button class="btn w-100">Notify Me</button>
+        </div>
+      </div>
     </form>
 
     <div>
@@ -55,6 +68,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <!-- font awesome script  -->
   <script src="https://kit.fontawesome.com/6036f5d002.js" crossorigin="anonymous"></script>
-
+  <!-- custom script  -->
+  <script src="./script.js"></script>
 </body>
 </html>
