@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 /* css reset  */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
@@ -54,21 +54,42 @@ h6 {
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
   --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --Norm-Blue: hsl(237, 63%, 64%);
 
   /* gradient  */
   --Linear-Gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--Very-Light-Grayish-Blue);
+  background-color: var(--Very-Light-Grayish-Blue);
   text-align: center;
+  color: var(--Grayish-Blue);
+  padding: 2rem 0;
+}
+
+.container-fluid {
+  background: url("/images/bg-top.svg") no-repeat;
+  /* background-position: right; */
+}
+
+/* bottom background  */
+.container-fluid::after {
+  content: '';
+  background: url("/images/bg-bottom.svg") no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: bottom right;
+  z-index: -1;
 }
 
 /* h1  */
 .main-heading {
   font-weight: 700;
-  color: var(--Dark-Grayish-Blue);
   font-size: 2rem;
 }
 
@@ -80,7 +101,7 @@ body {
 label {
   color: var(--Light-Grayish-Blue);
   font-size: .9rem;
-  font-weight: 700;
+  transition: .3s all linear;
 }
 
 .switch {
@@ -91,7 +112,6 @@ label {
   border-radius: 1rem;
   position: relative;
 }
-
 
 .control {
   display: inline-block;
@@ -116,7 +136,7 @@ label.monthly {
 
 /* annual plan css  */
 .control:has(>input:checked) {
-  left: 5%;
+  left: 8%;
 }
 
 .plan-control:has(input:checked) label.annually {
@@ -128,8 +148,30 @@ label.monthly {
 }
 
 /* articles  */
+.row {
+  padding: .5rem;
+}
+
 article {
   background: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+article h2 {
+  font-size: 1rem;
+}
+
+article .price {
+  transition: .3s all linear;
+  font-size: 1.5rem;
+  color: var(--Dark-Grayish-Blue);
+}
+
+article .price::after {
+  transition: .3s all linear;
+  font-size: 3rem;
 }
 
 article.pro {
@@ -137,10 +179,86 @@ article.pro {
   color: #fff;
 }
 
+article.pro .price {
+  color: #fff;
+}
+
+/* different articles prices through css  */
+article.basic .price::after {
+  content: '19.99';
+}
+
+article.pro .price::after {
+  content: '24.99';
+}
+
+article.master .price::after {
+  content: '39.99';
+}
+
+/* changed price  */
+main:has(input:checked) article.basic .price::after {
+  content: '199.99';
+}
+
+main:has(input:checked) article.pro .price::after {
+  content: '249.99';
+}
+
+main:has(input:checked) article.master .price::after {
+  content: '399.99';
+}
 
 /* list items  */
 ul {
   list-style-type: none;
+}
+
+li {
+  font-size: .9rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--Light-Grayish-Blue);
+}
+
+li:last-of-type {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+
+article.pro li {
+  border-top: 1px solid var(--Very-Light-Grayish-Blue);
+}
+
+article.pro li:last-of-type {
+  border-bottom: 1px solid var(--Very-Light-Grayish-Blue);
+}
+
+/* article button */
+article .btn {
+  background: var(--Linear-Gradient);
+  border: 1px solid transparent;
+  padding: .7rem 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+
+article .btn:hover {
+  background: #fff;
+  border: 1px solid var(--Norm-Blue);
+  color: var(--Norm-Blue);
+}
+
+article.pro .btn:hover {
+  background: transparent;
+  border: 1px solid var(--Very-Light-Grayish-Blue);
+  color: var(--Very-Light-Grayish-Blue);
+}
+
+article.pro .btn {
+  background: #fff;
+  border: 1px solid #fff;
+  color: var(--Norm-Blue);
 }
 
 /* footer  */
