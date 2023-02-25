@@ -4,6 +4,8 @@
   position: absolute;
   bottom: 5vh;
   right: 5vw;
+  opacity: 0;
+  display: none;
 }
 
 .attribution a {

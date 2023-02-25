@@ -27,6 +27,7 @@
   max-width: 22rem;
   left: 10%;
   top: 10%;
+  margin-bottom: 3rem;
 }
 
 /* card head  */
@@ -50,7 +51,7 @@
 
 /* author info  */
 .name {
-  color: var(--Pale-Violet);
+  color: var(--White);
   font-size: 1rem;
   white-space: nowrap;
   margin: 0;
@@ -58,6 +59,7 @@
 
 .name+p {
   font-size: .75rem;
+  color: var(--Pale-Violet);
 }
 
 .author-img {
@@ -83,3 +85,76 @@
   height: 1.7rem;
   padding: .5rem;
 }
+
+
+/* card body  */
+.card-body {
+  padding: .5rem;
+}
+
+.card-body .content {
+  margin: .5rem 0 0;
+  max-width: 80%;
+  border-radius: 0.8rem;
+  padding: .5rem .8rem;
+  font-size: .8rem;
+}
+
+.msg-receive {
+  color: var(--Desaturated-Dark-Violet);
+  align-self: flex-end;
+  background: var(--White);
+}
+
+.msg-send {
+  color: var(--Moderate-Violet);
+  background: var(--Pale-Violet-1);
+}
+
+/* card images  */
+.content.type-img {
+  padding-bottom: 0;
+  background: transparent;
+}
+
+.content .img-holder>img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  margin-right: .5rem;
+  border-radius: .5rem;
+}
+
+/* business message  */
+.type-business {
+  background: linear-gradient(30deg, var(--Light-Magenta), var(--Light-Violet));
+}
+
+.content.type-business {
+  border-radius: .8rem .3rem;
+}
+
+.radio-holder {
+  background: var(--Very-Light-Magenta);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-business label {
+  color: var(--White);
+}
+
+.type-business span.price {
+  color: var(--White);
+  font-weight: 700;
+  font-size: .9rem;
+  display: inline-block;
+}
+
+
+/* card footer  */
