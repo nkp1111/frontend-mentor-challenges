@@ -2,6 +2,7 @@ import React from 'react'
 import { avatarImg, BsChevronLeft, SlOptionsVertical, chatData } from '../assets/data'
 import AuthorInfo from './AuthorInfo'
 import ChatView from './ChatView'
+import SendMessageForm from './SendMessageForm'
 
 function CardIllustration() {
   return (
@@ -22,6 +23,9 @@ function CardIllustration() {
 
       {/* card body  */}
       <ChatView chatData={chatData} />
+
+      {/* card footer  */}
+      <SendMessageForm />
 
     </article>
   )
