@@ -1,0 +1,55 @@
+.main-heading {
+  color: var(--Very-Dark-Desaturated-Violet);
+}
+
+/* background strip  */
+.back-strip {
+  background: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 70vh;
+  border-radius: 0 0 25rem 0;
+}
+
+/* main content  */
+
+
+
+/* chat illustration  card*/
+.illustration-box {
+  position: absolute;
+  border: 1rem solid var(--White);
+  border-radius: 2.5rem;
+  background: var(--Light-Grayish-Violet);
+  width: 80%;
+  max-width: 22rem;
+  left: 10%;
+  top: 10%;
+}
+
+/* card head  */
+.card-head {
+  background: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
+  border-radius: 2rem;
+  --bs-gutter-x: 0;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.card-head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background: #fff;
+  width: 60%;
+  left: 20%;
+  height: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+/* author info  */
+.name {
+  color: var(--Pale-Violet);
+}

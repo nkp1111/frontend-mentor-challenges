@@ -6,7 +6,7 @@ import SendMessageForm from './SendMessageForm'
 
 function CardIllustration() {
   return (
-    <article className='illustration-box card'>
+    <article className='illustration-box card fluid-container'>
       {/* card-head  */}
       <div className="card-head row">
         {/* author  */}

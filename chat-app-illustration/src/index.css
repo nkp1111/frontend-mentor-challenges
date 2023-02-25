@@ -84,3 +84,8 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
 }
+
+p {
+  margin: 0;
+  color: var(--Dark-Grayish-Violet);
+}

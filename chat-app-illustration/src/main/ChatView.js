@@ -5,7 +5,7 @@ function ChatView({ chatData }) {
     <div className="card-body">
       {chatData.map(item => {
         return (
-          <div className="content">
+          <div className="content" key={item.id}>
             {item.type === "img"
               // image message 
               ? <ImageMessage item={item} />
@@ -35,7 +35,8 @@ const ImageMessage = ({ item }) => {
 
 const BusinessMessage = ({ item }) => {
   return (
-    <div className="business">
+    <div className="business d-flex align-items-center">
+      <input type="radio" value={item.price}></input>
       <p>{item.message} <span>${item.price}</span></p>
     </div>
   )
