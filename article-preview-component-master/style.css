@@ -105,11 +105,21 @@ article {
   margin: 0;
 }
 
+.share-icon-holder {
+  padding: 0.8rem;
+  background: var(--Light-Grayish-Blue);
+  border-radius: 50%;
+}
 
-/* share info div  */
-.share-div {
+/* show and hide different element on click  */
+.show {
+  display: flex;
+}
+
+.hide {
   display: none;
 }
+
 
 /* footer  */
 .attribution {
