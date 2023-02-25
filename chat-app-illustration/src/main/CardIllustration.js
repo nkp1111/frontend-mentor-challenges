@@ -1,4 +1,7 @@
 import React from 'react'
+import { avatarImg, BsChevronLeft, SlOptionsVertical } from '../assets/data'
+import AuthorInfo from './AuthorInfo'
+import ChatView from './ChatView'
 
 function CardIllustration() {
   return (
@@ -6,33 +9,19 @@ function CardIllustration() {
       {/* card-head  */}
       <div className="card-head row">
         {/* author  */}
-        <div className="author col-9 order-2">
-          {/* author info */}
-          <div className="author-info">
-            <h2 className='name'>Samuel Green</h2>
-            <p>Available to Walk</p>
-          </div>
-          {/* author image  */}
-          <div className="author-img">
-            <img src="" alt="" />
-          </div>
-        </div>
-
+        <AuthorInfo avatarImg={avatarImg} />
         {/* back arrow  */}
         <div className="back-arrow col-2 order-1">
-          <img src="" alt="" />
+          <BsChevronLeft className='back-arrow-icon' />
         </div>
-
         {/* more options  */}
         <div className="options col-1 order-3">
-          <img src="" alt="" />
+          <SlOptionsVertical className='option-menu-icon' />
         </div>
       </div>
 
       {/* card body  */}
-      <div className="card-body">
-
-      </div>
+      <ChatView />
 
     </article>
   )
