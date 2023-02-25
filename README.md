@@ -2,6 +2,8 @@
 
 This is done following the challenges on the site Frontend Mentor <https://www.frontendmentor.io/home>
 
+This projects are done using vanilla javascript, react and bootstrap
+
 This contains the following project:
 
 - product-preview-card
@@ -48,3 +50,4 @@ This contains the following project:
 - result-summary-component
 - pricing-component-with-toggle
 - ping-coming-soon-page
+- chat-app-illustration
