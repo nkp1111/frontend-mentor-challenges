@@ -110,6 +110,8 @@ main {
 .card-body {
   padding: .5rem;
   background: transparent;
+  /* overflow-y: scroll;
+  height: 50vh; */
 }
 
 .card-body .content {
@@ -221,4 +223,55 @@ main {
 
 .submit-btn-icon {
   color: var(--White);
+}
+
+@media (min-width: 48rem) {
+  main {
+    padding: 30vh 0 3rem 55vw;
+  }
+
+  .back-strip {
+    width: 45vw;
+    height: 80vh;
+  }
+
+  .illustration-box {
+    left: 9%;
+  }
+}
+
+@media (min-width: 55rem) {
+  .illustration-box {
+    left: 13%;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  main {
+    padding: 30vh 10vw 3rem 55vw;
+  }
+
+  .main-heading,
+  .main-heading+p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .back-strip {
+    left: -10vw;
+    top: 0;
+    width: 40vw;
+    height: 90vh;
+    border-radius: 0 0 25rem 25rem;
+  }
+
+  .illustration-box {
+    left: 18%;
+  }
+}
+
+@media (min-width: 69.5rem) {
+  .illustration-box {
+    left: 25%;
+  }
 }
