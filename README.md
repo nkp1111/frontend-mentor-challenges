@@ -51,3 +51,4 @@ This contains the following project:
 - pricing-component-with-toggle
 - ping-coming-soon-page
 - chat-app-illustration
+- article-preview-component
