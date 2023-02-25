@@ -90,6 +90,7 @@
 /* card body  */
 .card-body {
   padding: .5rem;
+  background: transparent;
 }
 
 .card-body .content {
@@ -158,3 +159,47 @@
 
 
 /* card footer  */
+.card-foot {
+  border-top: 0;
+  background: transparent;
+  padding: .5rem .5rem 1rem;
+}
+
+.card-foot form {
+  position: relative;
+}
+
+.card-foot form input {
+  width: 100%;
+  border-radius: 1.5rem;
+  border: none;
+  padding: .5rem 1rem;
+  outline: none;
+}
+
+.card-foot form input:focus {
+  box-shadow: 0 1px 2px var(--Moderate-Violet);
+}
+
+.card-foot form input::placeholder {
+  color: var(--Grayish-Blue);
+}
+
+.card-foot button {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--Very-Dark-Desaturated-Violet);
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn-icon {
+  color: var(--White);
+}
