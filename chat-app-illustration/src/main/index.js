@@ -1,4 +1,6 @@
 import React from 'react'
+import CardIllustration from './CardIllustration'
+import "./main.css"
 
 function index() {
   return (
@@ -9,6 +11,10 @@ function index() {
         discuss arrangements and make bookings. Once the walk has been completed you can rate
         your walker and book again all through the chat.
       </p>
+
+      <div className='back-strip'></div>
+
+      <CardIllustration />
     </main>
   )
 }
