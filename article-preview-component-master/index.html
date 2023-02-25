@@ -13,22 +13,55 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
   <title>Article preview component</title>
 </head>
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <article class="row">
+    <!-- article info  -->
+    <div class="head order-2">
+      <h1>
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p>
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+      </p>
+      <!-- author info  -->
+      <div class="author d-flex">
+        <img src="./images/avatar-michelle.jpg" alt="avatar">
+        <div>
+          <p class="name">Michelle Appleton</p>
+          <p>28 Jun 2020</p>
+        </div>
+        <div class="share-icon" role="button">
+          <img src="./images/icon-share.svg" alt="share icon">
+        </div>
+      </div>
+    </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <!-- share page  appear with js -->
+    <div class="share-div d-flex">
+      <span>Share</span>
+      <ul class="social-icons d-flex">
+        <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
+        <li><img src="./images/icon-twitter.svg" alt="twitter icon"></li>
+        <li><img src="./images/icon-pinterest.svg" alt="pinterest icon"></li>
+      </ul>
+      <div class="share-icon ms-auto" role="button">
+        <img src="./images/icon-share.svg" alt="share icon">
+      </div>
+    </div>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
+    <!-- hero image  -->
+    <div class="img-holder order-1">
+      <img src="./images/drawers.jpg" alt="drawer" aria-hidden="true">
+    </div>
+  </article>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
