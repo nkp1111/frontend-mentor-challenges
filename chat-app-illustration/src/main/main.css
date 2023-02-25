@@ -20,8 +20,8 @@
 /* chat illustration  card*/
 .illustration-box {
   position: absolute;
-  border: 1rem solid var(--White);
-  border-radius: 2.5rem;
+  border: 0.7rem solid var(--White);
+  border-radius: 2rem;
   background: var(--Light-Grayish-Violet);
   width: 80%;
   max-width: 22rem;
@@ -31,20 +31,19 @@
 
 /* card head  */
 .card-head {
-  background: linear-gradient(var(--Light-Magenta), var(--Light-Violet));
-  border-radius: 2rem;
-  --bs-gutter-x: 0;
+  background: linear-gradient(-75deg, var(--Light-Magenta), var(--Light-Violet));
+  border-radius: 1.5rem 1.5rem .5rem .5rem;
   position: relative;
-  padding-top: 2rem;
+  padding: 2rem 0 1rem;
 }
 
 .card-head::before {
   content: '';
   position: absolute;
   top: 0;
+  left: 20%;
   background: #fff;
   width: 60%;
-  left: 20%;
   height: 1.5rem;
   border-radius: 0 0 1rem 1rem;
 }
@@ -52,4 +51,35 @@
 /* author info  */
 .name {
   color: var(--Pale-Violet);
+  font-size: 1rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.name+p {
+  font-size: .75rem;
+}
+
+.author-img {
+  background: #fff;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .1rem;
+  margin-right: .5rem;
+}
+
+.author-img img {
+  border-radius: 50%;
+}
+
+/* icons  */
+.back-arrow-icon,
+.option-menu-icon {
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: .5rem;
 }

@@ -4,7 +4,7 @@ import dogImg2 from './images/dog-image-2.jpg'
 import dogImg3 from './images/dog-image-3.jpg'
 import { BsChevronLeft } from 'react-icons/bs'
 import { SlOptionsVertical } from 'react-icons/sl'
-import { FaChevronRight } from 'react-icons/fa'
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 
 
 const chatData = [
@@ -67,4 +67,5 @@ export {
   BsChevronLeft,
   SlOptionsVertical,
   FaChevronRight,
+  FaChevronLeft,
 }
