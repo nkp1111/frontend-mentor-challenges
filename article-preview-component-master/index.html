@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="style.css">
   <title>Article preview component</title>
 </head>
-<body>
+<body class="container-fluid d-flex align-items-center justify-content-center">
 
   <article class="row">
     <!-- article info  -->
-    <div class="head order-2">
-      <h1>
+    <div class="article-head order-2">
+      <h1 class="article-heading">
         Shift the overall look and feel by adding these wonderful
         touches to furniture in your home
       </h1>
@@ -32,20 +32,20 @@
           to help you make any room feel complete.
       </p>
       <!-- author info  -->
-      <div class="author d-flex">
-        <img src="./images/avatar-michelle.jpg" alt="avatar">
+      <div class="author d-flex align-items-center">
+        <img src="./images/avatar-michelle.jpg" alt="avatar" class="avatar-img">
         <div>
           <p class="name">Michelle Appleton</p>
           <p>28 Jun 2020</p>
         </div>
-        <div class="share-icon" role="button">
+        <div class="share-icon ms-auto" role="button">
           <img src="./images/icon-share.svg" alt="share icon">
         </div>
       </div>
     </div>
 
     <!-- share page  appear with js -->
-    <div class="share-div d-flex">
+    <div class="share-div">
       <span>Share</span>
       <ul class="social-icons d-flex">
         <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
