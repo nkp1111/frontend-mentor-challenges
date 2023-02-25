@@ -1,5 +1,28 @@
+/* main content  */
+main {
+  padding: 103vh 1rem 5rem;
+}
+
+@media (max-width:20.625rem) {
+  main {
+    padding: 110vh 1rem 5rem;
+  }
+}
+
+.main-heading,
+.main-heading+p {
+  text-align: center;
+  margin: auto;
+}
+
+.main-heading+p {
+  width: 95%;
+}
+
 .main-heading {
   color: var(--Very-Dark-Desaturated-Violet);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 /* background strip  */
@@ -12,10 +35,6 @@
   height: 70vh;
   border-radius: 0 0 25rem 0;
 }
-
-/* main content  */
-
-
 
 /* chat illustration  card*/
 .illustration-box {
