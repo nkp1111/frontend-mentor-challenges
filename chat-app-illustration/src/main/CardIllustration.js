@@ -1,5 +1,5 @@
 import React from 'react'
-import { avatarImg, BsChevronLeft, SlOptionsVertical } from '../assets/data'
+import { avatarImg, BsChevronLeft, SlOptionsVertical, chatData } from '../assets/data'
 import AuthorInfo from './AuthorInfo'
 import ChatView from './ChatView'
 
@@ -21,7 +21,7 @@ function CardIllustration() {
       </div>
 
       {/* card body  */}
-      <ChatView />
+      <ChatView chatData={chatData} />
 
     </article>
   )
