@@ -46,3 +46,46 @@
   padding: 0.5rem 2rem;
   margin-top: 2rem;
 }
+
+/* feature section  */
+.feature-section {
+  padding: 10vh 0 0;
+}
+
+.feature-section h2 {
+  margin-bottom: 3rem;
+}
+
+/* article  */
+.feature-section .card {
+  border: none;
+}
+
+.article-img-holder {
+  margin-bottom: 1rem;
+}
+
+/* detail view section  */
+.detail-info-section {
+  padding: 10vh 5vw;
+  background: var(--Dark-Violet);
+  color: var(--Very-Light-Gray);
+  margin: 10vh 0;
+}
+
+.detail-info-section h2 {
+  width: 43%;
+}
+
+.detail-info-section .btn {
+  background: transparent;
+  border: 1px solid var(--Very-Light-Gray);
+  color: var(--Very-Light-Gray);
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+}
+
+.detail-info-section .btn:hover {
+  background: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Violet);
+}

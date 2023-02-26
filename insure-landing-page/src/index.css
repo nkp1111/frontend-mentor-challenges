@@ -78,3 +78,7 @@ h6 {
 button {
   text-transform: uppercase;
 }
+
+.section-heading {
+  font-size: 3rem;
+}

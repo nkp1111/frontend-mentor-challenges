@@ -2,8 +2,8 @@ import React from 'react'
 
 function FeatureSection({ featureSectionArticle }) {
   return (
-    <section>
-      <h2>We’re different</h2>
+    <section className='feature-section'>
+      <h2 className="section-heading">We’re different</h2>
 
       <div className="row">
         {featureSectionArticle.map(item => {
