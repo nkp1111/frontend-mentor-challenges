@@ -70,3 +70,11 @@ h5,
 h6 {
   font-family: 'DM Serif Display', serif;
 }
+
+.container-fluid {
+  padding: 0 10vw;
+}
+
+button {
+  text-transform: uppercase;
+}
