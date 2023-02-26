@@ -1,4 +1,6 @@
 import logo from './images/logo.svg'
+import introDesktop from './images/image-intro-desktop.jpg'
+import introMobile from './images/image-intro-mobile.jpg'
 
 const navData = [
   { id: 1, title: "How we work", link: "" },
@@ -9,4 +11,6 @@ const navData = [
 export {
   logo,
   navData,
+  introDesktop,
+  introMobile,
 }
