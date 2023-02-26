@@ -1,5 +1,6 @@
 import React from 'react'
-import { introDesktop, introMobile } from '../assets/data'
+import { introDesktop, introMobile, featureSectionArticle } from '../assets/data'
+import FeatureSection from './FeatureSection'
 import FrontPage from './FrontPage'
 
 function index() {
@@ -8,6 +9,8 @@ function index() {
       <div className="container-fluid">
         {/* front page  */}
         <FrontPage {...{ introDesktop, introMobile }} />
+        {/* feature section  */}
+        <FeatureSection featureSectionArticle={featureSectionArticle} />
       </div>
     </main>
   )
