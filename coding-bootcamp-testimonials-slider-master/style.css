@@ -77,6 +77,11 @@ main {
   opacity: 0;
 }
 
+/* carousel  */
+.carousel {
+  position: relative;
+}
+
 /* article  */
 .content {
   display: flex;
@@ -134,26 +139,29 @@ main {
 }
 
 /* carousel buttons  */
-.carousel-btn {
-  background: #fff;
-  width: 4rem;
-  height: 3rem;
+.carousel-btn-holder {
   z-index: 10000;
   top: 95%;
+  position: absolute;
+  left: 55%;
+}
+
+.carousel-btn {
+  width: 4rem;
+  height: 3rem;
+  position: static;
+  background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
 .carousel-control-prev {
-  left: 55%;
   border-radius: 2rem 0 0 2rem;
 }
 
 .carousel-control-next {
-  left: 60.2%;
   border-radius: 0 2rem 2rem 0;
 }
-
 
 /* footer  */
 .attribution {
@@ -166,4 +174,112 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 62.5rem) {
+  .author {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  .author-img-holder img {
+    margin: 0;
+  }
+
+  .testimonial-text p {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 49rem) {
+  .content {
+    order: 2;
+    text-align: center;
+  }
+
+  .author {
+    margin: auto;
+    align-items: center;
+  }
+
+  /* testinomial text s */
+  .testimonial-text::before {
+    width: 20%;
+    height: 40%;
+    top: -5vh;
+    left: 40vw;
+    translate: -50%;
+    background-position: center;
+  }
+
+  .testimonial-text p {
+    padding-right: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* author image  */
+  .author-img-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .author-img-holder img {
+    margin: 0;
+    width: 60%;
+  }
+
+  /* carousel buttons  */
+  .carousel-btn-holder {
+    top: 47%;
+    left: 40%;
+  }
+
+  /* author image holder  */
+  .background-pattern {
+    position: absolute;
+    width: 80%;
+    top: 2vh;
+    left: 20vw;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 40rem) {
+  .author-img-holder img {
+    margin: 0;
+    width: 80%;
+  }
+
+  /* author image  */
+  .author-img-holder {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .author-img-holder img {
+    margin: 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 28.125rem) {
+
+  /* carousel buttons  */
+  .carousel-btn-holder {
+    top: 41%;
+    left: 33%;
+  }
+}
+
+@media (max-width: 23.75rem) {
+
+  /* carousel buttons  */
+  .carousel-btn-holder {
+    top: 35%;
+  }
 }
