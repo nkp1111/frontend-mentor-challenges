@@ -53,3 +53,4 @@ This contains the following project:
 - chat-app-illustration
 - article-preview-component
 - coding-bootcamp-testimonials
+- insure-landing-page
