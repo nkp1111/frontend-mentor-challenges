@@ -3,9 +3,11 @@ import React from 'react'
 function FrontPage({ introDesktop, introMobile }) {
 
   return (
-    <div className="row" >
+    <div className="row front-page" >
       {/* main info  */}
-      <div className="col-md-6" >
+      <div className="front-background"></div>
+
+      <div className="col-md-6 front-page-text" >
         <h1 className='main-heading'>Humanizing your insurance.</h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our expertise
@@ -15,7 +17,7 @@ function FrontPage({ introDesktop, introMobile }) {
         <button className="btn">View plans</button>
       </div>
       {/* main image   */}
-      <div className="col-md-6" >
+      <div className="col-md-6 front-page-img">
         <picture>
           <source srcSet={introMobile} media='(max-width: 48rem)' />
           <img src={introDesktop} alt="hero" />

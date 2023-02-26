@@ -1,0 +1,48 @@
+/* front page  */
+.front-page {
+  color: var(--Very-Light-Gray);
+}
+
+.front-background {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: var(--Dark-Violet);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.front-background::before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 1px;
+  background: var(--Very-Light-Gray);
+  top: 25%;
+  left: 12.5%;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  width: 90%;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.front-page-text {
+  padding-top: 7rem;
+}
+
+.front-page-img {
+  padding-top: 5rem;
+}
+
+.front-page .btn {
+  background: transparent;
+  color: var(--Very-Light-Gray);
+  border: 1px solid var(--Very-Light-Gray);
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+}

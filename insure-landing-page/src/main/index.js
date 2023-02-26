@@ -3,6 +3,7 @@ import { introDesktop, introMobile, featureSectionArticle } from '../assets/data
 import DetailInfoSection from './DetailInfoSection'
 import FeatureSection from './FeatureSection'
 import FrontPage from './FrontPage'
+import "./main.css"
 
 function index() {
   return (
