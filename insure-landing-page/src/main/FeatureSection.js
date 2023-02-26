@@ -8,7 +8,7 @@ function FeatureSection({ featureSectionArticle }) {
       <div className="row">
         {featureSectionArticle.map(item => {
           return (
-            <div className="col-md-4">
+            <div className="col-md-4" key={item.id}>
               <article className="card d-flex flex-column">
                 <h3 className='article-heading order-2'>{item.title}</h3>
                 <p className='order-3'>{item.description}</p>
