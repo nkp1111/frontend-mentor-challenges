@@ -52,3 +52,4 @@ This contains the following project:
 - ping-coming-soon-page
 - chat-app-illustration
 - article-preview-component
+- coding-bootcamp-testimonials
