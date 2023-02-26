@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Coding Bootcamp Testimonials Slider</title>
 </head>
-<body>
+<body class="d-flex align-items-center justify-content-center">
 
   <main>
     <h1 class="main-heading hidden">
@@ -27,18 +27,17 @@
 
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-  
         <div class="carousel-item active">
           <!-- testimonial body  -->
           <article class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 content">
               <!-- author  -->
               <div class="author">
                 <h2>Tanya Sinclair</h2>
                 <p>UX Engineer</p>
               </div>
               <!-- text  -->
-              <div class="testimonial">
+              <div class="testimonial-text">
                 <p>
                   “ I’ve been interested in coding for a while but never taken the jump, until now.
                   I couldn’t recommend this course enough. I’m now in the job of my dreams and so
@@ -47,10 +46,9 @@
               </div>
             </div>
             <!-- author image  -->
-            <div class="col-md-6">
+            <div class="col-md-6 author-img-holder">
               <img src="./images/image-tanya.jpg" alt="tanya sinclair">
-            </div>
-            
+            </div> 
           </article>
           <!-- testimonial end  -->
         </div>
@@ -58,14 +56,14 @@
         <div class="carousel-item">
           <!-- testimonial body  -->
           <article class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 content">
               <!-- author  -->
               <div class="author">
                 <h2>John Tarkpor</h2>
                 <p>Junior Front-end Developer</p>
               </div>
               <!-- text  -->
-              <div class="testimonial">
+              <div class="testimonial-text">
                 <p>
                   “ If you want to lay the best foundation possible I’d recommend taking this course.
                   The depth the instructors go into is incredible. I now feel so confident about
@@ -74,24 +72,26 @@
               </div>
             </div>
             <!-- author image  -->
-            <div class="col-md-6">
+            <div class="col-md-6 author-img-holder">
               <img src="./images/image-john.jpg" alt="john tarkapor">
             </div>
-            
           </article>
           <!-- testimonial end  -->
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+      <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <img src="./images/icon-prev.svg" alt="prev-icon" aria-hidden="true">
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <img src="./images/icon-next.svg" alt="next-icon" aria-hidden="true">
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </main>
+
+  <img src="./images/pattern-bg.svg" alt="." class="background-pattern">
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
