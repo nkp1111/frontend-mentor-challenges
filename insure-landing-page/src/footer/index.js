@@ -2,6 +2,7 @@ import React from 'react'
 import { logo, footerContactIcons, footerNavLink } from '../assets/data'
 import FooterBody from './FooterBody'
 import FooterHead from './FooterHead'
+import "./footer.css"
 
 function index() {
   return (

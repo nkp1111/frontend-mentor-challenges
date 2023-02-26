@@ -47,6 +47,11 @@
   margin-top: 2rem;
 }
 
+.front-page .btn:hover {
+  background: var(--Very-Light-Gray);
+  color: var(--Dark-Violet);
+}
+
 /* feature section  */
 .feature-section {
   padding: 10vh 0 0;
@@ -83,6 +88,7 @@
   color: var(--Very-Light-Gray);
   border-radius: 0;
   padding: 0.5rem 2rem;
+  text-transform: uppercase;
 }
 
 .detail-info-section .btn:hover {

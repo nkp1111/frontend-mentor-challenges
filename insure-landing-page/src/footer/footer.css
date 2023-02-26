@@ -1,0 +1,32 @@
+footer {
+  background: var(--Very-Light-Gray);
+  padding: 5vh 0 7vh;
+}
+
+/* footer head  */
+.footer-head {
+  border-bottom: 1px solid var(--Grayish-Blue);
+  padding-bottom: 1rem;
+}
+
+.footer-head .nav-link {
+  margin-left: 1rem;
+}
+
+.footer-head .nav-link:hover {
+  scale: 1.1;
+}
+
+.footer-body {
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer-nav-title {
+  color: var(--Dark-Grayish-Violet);
+}
+
+.footer-body .nav-link:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
