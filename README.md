@@ -55,3 +55,4 @@ This contains the following project:
 - coding-bootcamp-testimonials
 - insure-landing-page
 - four-card-feature-section
+- base-apparel-coming-soon
