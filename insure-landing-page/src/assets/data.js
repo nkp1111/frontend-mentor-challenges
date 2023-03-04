@@ -8,6 +8,8 @@ import iconFacebook from './images/icon-facebook.svg'
 import iconTwitter from './images/icon-twitter.svg'
 import iconPinterest from './images/icon-pinterest.svg'
 import iconInstagram from './images/icon-instagram.svg'
+import iconHamburger from './images/icon-hamburger.svg'
+import iconClose from './images/icon-close.svg'
 
 const navData = [
   { id: 1, title: "How we work", link: "" },
@@ -92,4 +94,6 @@ export {
   featureSectionArticle,
   footerContactIcons,
   footerNavLink,
+  iconHamburger,
+  iconClose,
 }

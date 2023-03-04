@@ -1,21 +1,37 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./header.css"
-import { logo, navData } from '../assets/data'
+import { logo, navData, iconClose, iconHamburger } from '../assets/data'
 
-function index() {
+function Index() {
+
+  const [currentToggleImage, setCurrentToggleImage] = useState(iconHamburger)
+
+  useEffect(() => {
+    const toggler = document.querySelector(".navbar-toggler")
+    toggler.addEventListener("click", () => {
+      if (toggler.classList.contains("collapsed")) {
+        setCurrentToggleImage(iconHamburger)
+      } else {
+        setCurrentToggleImage(iconClose)
+      }
+    })
+  })
+
   return (
     <header className='header'>
       <nav className="navbar navbar-expand-md">
         <div className="container-fluid">
-          {/* header logo  */}
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo" />
-          </a>
+          <div className="pad-area d-flex align-items-center">
+            {/* header logo  */}
+            <a className="navbar-brand" href="#">
+              <img src={logo} alt="logo" />
+            </a>
 
-          {/* toggle button */}
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+            {/* toggle button */}
+            <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src={currentToggleImage} alt="hamburger-icon" />
+            </button>
+          </div>
 
           {/* navbar items  */}
           <div className="collapse navbar-collapse ms-auto" id="navbarNav">
@@ -40,4 +56,4 @@ function index() {
   )
 }
 
-export default index
+export default Index
