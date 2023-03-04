@@ -82,3 +82,10 @@ button {
 .section-heading {
   font-size: 3rem;
 }
+
+@media (max-width: 48rem) {
+  .container-fluid {
+    padding: 0;
+    text-align: center;
+  }
+}
