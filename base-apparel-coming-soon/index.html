@@ -18,20 +18,60 @@
   <link rel="stylesheet" href="style.css">
   <title>Base Apparel coming soon page</title>
 </head>
-<body>
+<body class="container-fluid">
 
-  We're coming soon
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <main>
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="main-heading"> 
+          <span>We're </span>
+          coming soon
+        </h1>
 
-  Email Address
-  
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-10">
+            <input type="email" 
+            class="form-control" 
+            id="email" 
+            placeholder="Email Address" 
+            required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid email
+            </div>
+          </div>
+          
+          <div class="col-2">
+            <button class="btn btn-primary w-100"></button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-md-5 hero-image">
+        <!-- hero image  -->
+      </div>
+    </div>
+  </main>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
