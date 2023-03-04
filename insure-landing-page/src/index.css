@@ -84,6 +84,11 @@ button {
   font-size: 3rem;
 }
 
+.btn-holder {
+  z-index: 1000;
+  position: relative;
+}
+
 @media (max-width: 48rem) {
   .container-fluid {
     padding: 0;

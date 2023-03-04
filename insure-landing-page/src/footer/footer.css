@@ -1,6 +1,7 @@
 footer {
   background: var(--Very-Light-Gray);
   padding: 5vh 0 7vh;
+  position: relative;
 }
 
 /* footer head  */

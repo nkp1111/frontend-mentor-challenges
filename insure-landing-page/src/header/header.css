@@ -3,6 +3,7 @@
   padding: 0.8rem 0;
   text-transform: uppercase;
   color: var(--Dark-Grayish-Violet);
+  z-index: 100;
 }
 
 .navbar-collapse {
@@ -24,6 +25,7 @@
   color: var(--Very-Light-Gray);
   margin-left: 1.5rem;
   padding: 0.5rem 1.5rem;
+  font-weight: inherit
 }
 
 .header .btn:hover {
@@ -56,8 +58,8 @@
 
   .navbar-collapse {
     background: var(--Very-Dark-Violet);
-    padding: 2rem;
-    padding-bottom: 5rem;
+    padding: 3rem 2rem;
+    padding-bottom: 30vh;
     font-weight: 700;
     color: var(--Very-Light-Gray);
   }
@@ -76,9 +78,14 @@
     margin: 0;
     margin-top: 1rem;
   }
+
+  .navbar-collapse .btn:hover {
+    background: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Violet);
+  }
 }
 
-@media (max-width: 23rem) {
+@media (max-width: 24rem) {
   .pad-area {
     padding: 1rem 2rem;
   }

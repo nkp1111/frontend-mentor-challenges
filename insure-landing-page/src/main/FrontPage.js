@@ -14,7 +14,10 @@ function FrontPage({ introDesktop, introMobile }) {
           and technology to help you find the plan that’s right for you. Ensure you
           and your loved ones are protected.
         </p>
-        <button className="btn">View plans</button>
+        <div className="btn-holder">
+          <button className="btn">View plans</button>
+        </div>
+
       </div>
       {/* main image   */}
       <div className="col-md-6 front-page-img">

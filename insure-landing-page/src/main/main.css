@@ -76,6 +76,7 @@
   background: var(--Dark-Violet);
   color: var(--Very-Light-Gray);
   margin: 10vh 0;
+  position: relative;
 }
 
 .detail-info-section h2 {
@@ -157,6 +158,13 @@
   }
 
   /* feature section  */
+  .feature-section .section-heading {
+    text-decoration: overline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--Grayish-Blue);
+    -moz-text-decoration-color: var(--Grayish-Blue);
+  }
+
   .card {
     padding: 0 4rem;
     margin-bottom: 1.5rem;
