@@ -20,47 +20,53 @@
 </head>
 <body class="container-fluid">
 
-  <header>
-    <img src="./images/logo.svg" alt="logo">
-  </header>
-
   <main>
     <div class="row">
-      <div class="col-md-7">
-        <h1 class="main-heading"> 
-          <span>We're </span>
-          coming soon
-        </h1>
+      <div class="col-md-6">
+        <!-- header logo image  -->
+        <header>
+          <img src="./images/logo.svg" alt="logo">
+        </header>
 
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
+        <div class="main-content">
+          <h1 class="main-heading"> 
+            <span>We're </span>
+            coming soon
+          </h1>
 
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-10">
-            <input type="email" 
-            class="form-control" 
-            id="email" 
-            placeholder="Email Address" 
-            required>
-            <div class="valid-feedback">
-              Looks good!
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+
+          <form class="row needs-validation" novalidate>
+            <div class="col-md-12">
+              <input type="email" 
+              class="form-control" 
+              id="email" 
+              placeholder="Email Address" 
+              required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid email
+              </div>
             </div>
-            <div class="invalid-feedback">
-              Please provide a valid email
-            </div>
-          </div>
-          
-          <div class="col-2">
-            <button class="btn btn-primary w-100"></button>
-          </div>
-        </form>
-
+            
+            <!-- submit button  -->
+            <button class="submit-btn" 
+            role="button" 
+            aria-label="submit button">
+              <img src="./images/icon-arrow.svg" alt="arrow icon">
+            </button>
+          </form>
+        </div>
       </div>
 
-      <div class="col-md-5 hero-image">
+      <div class="col-md-6 hero-image">
         <!-- hero image  -->
+        <img src="./images/hero-desktop.jpg" alt="">
       </div>
     </div>
   </main>
@@ -68,7 +74,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/nkp1111">Neeraj Parmar</a>.
     </p>
   </footer>
 

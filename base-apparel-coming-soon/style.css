@@ -53,17 +53,110 @@ h6 {
   --Desaturated-Red: hsl(0, 36%, 70%);
   --Soft-Red: hsl(0, 93%, 68%);
   --Dark-Grayish-Red: hsl(0, 6%, 24%);
-  --Linear1: (135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --Linear2: (135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --Linear1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --Linear2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
+  overflow: hidden;
+  background: var(--Linear1);
 }
 
+p {
+  color: var(--Desaturated-Red);
+  margin: 2rem auto 3rem;
+}
+
+/* main  */
+main+.row {
+  height: 100vh;
+}
+
+.row>.col-md-6 {
+  padding: 0;
+}
+
+/* header  */
+header {
+  padding: 8vh 10vw;
+}
+
+.main-content {
+  padding: 0 10vw;
+}
+
+/* h1  */
+.main-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
+  font-weight: 600;
+}
+
+.main-heading span {
+  font-weight: 200;
+  color: var(--Desaturated-Red);
+}
+
+/* form  */
+form.row {
+  position: relative;
+}
+
+form.row>.col-md-12 {
+  padding: 0;
+  height: max-content;
+}
+
+.form-control {
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--Desaturated-Red);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--Desaturated-Red);
+}
+
+/* submit button  */
+.submit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
+  height: 3.125rem;
+  background: var(--Linear2);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px var(--Desaturated-Red);
+}
+
+/* change bootstrap image to custom image  */
 .was-validated .form-control:invalid {
   background-image: url("./images/icon-error.svg");
+  background-position: right calc(0.375em + 5.5rem) center;
+}
+
+.valid-feedback,
+.invalid-feedback {
+  padding-left: 1.3rem;
+  padding-top: 0.5rem;
+}
+
+/* hero image desktop  */
+.hero-image img {
+  margin-left: auto;
 }
 
 /* footer  */
