@@ -54,3 +54,4 @@ This contains the following project:
 - article-preview-component
 - coding-bootcamp-testimonials
 - insure-landing-page
+- four-card-feature-section
