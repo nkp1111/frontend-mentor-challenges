@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterHead({ logo, footerContactIcons }) {
   return (
-    <div className="footer-head d-flex justify-content-between">
+    <div className="footer-head d-flex justify-content-between align-items-center">
       <div className="footer-img-holder d-flex align-items-center">
         <img src={logo} alt="logo" />
       </div>

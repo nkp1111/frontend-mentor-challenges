@@ -155,6 +155,28 @@
   .front-page-img img {
     margin: auto;
   }
+
+  /* feature section  */
+  .card {
+    padding: 0 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-img-holder img {
+    margin: auto;
+  }
+
+  /* detail info section  */
+  .detail-info-section {
+    margin: 10vh 0;
+    padding: 10vh 4rem;
+    flex-direction: column;
+  }
+
+  .detail-info-section h2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 23.75rem) {
@@ -166,5 +188,15 @@
 @media (max-width:23rem) {
   .front-page-text {
     padding: 2rem;
+  }
+
+  /* feature section  */
+  .card {
+    padding: 0 2rem;
+  }
+
+  /* detail-info-section */
+  .detail-info-section {
+    padding: 10vh 2rem;
   }
 }

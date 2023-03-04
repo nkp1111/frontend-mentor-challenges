@@ -30,3 +30,32 @@ footer {
   text-decoration: underline;
   font-weight: 500;
 }
+
+@media (max-width: 48rem) {
+
+  /* footer head  */
+  .footer-head {
+    flex-direction: column;
+  }
+
+  .footer-img-holder {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+  }
+
+  .navbar-nav img {
+    margin: auto;
+  }
+
+  .footer-head .nav-link {
+    margin: 0 0.5rem;
+  }
+
+  /* footer-body */
+  .footer-nav-title {
+    margin: 1.2rem 0 0.5rem;
+  }
+}
