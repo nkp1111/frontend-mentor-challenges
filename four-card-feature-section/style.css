@@ -63,6 +63,88 @@ h6 {
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  color: var(--Grayish-Blue);
+  background-color: var(--Very-Light-Gray);
+  overflow-x: hidden;
+}
+
+.container-fluid.inner {
+  padding: 3rem 1rem;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+
+main {
+  width: 70%;
+  min-width: 22rem;
+  padding: 3rem 1rem;
+}
+
+.main-heading {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.main-heading span {
+  font-weight: 600;
+  display: block;
+}
+
+.main-heading+p {
+  margin: 1rem auto;
+}
+
+/* article  */
+.card {
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #fff;
+  border-top: 4px solid;
+  box-shadow: var(--Grayish-Blue) 0px 3px 8px;
+  text-align: left;
+}
+
+.article-heading {
+  font-size: 1.2rem;
+}
+
+/* different articles container order */
+.team-builder-article {
+  order: 2;
+}
+
+.supervisor-article {
+  order: 1;
+}
+
+.calculator-article {
+  order: 4;
+}
+
+.karma-article {
+  order: 3;
+}
+
+/* article different color  */
+.team-builder-article article {
+  border-top-color: var(--Red);
+}
+
+.supervisor-article article {
+  border-top-color: var(--Cyan);
+}
+
+.calculator-article article {
+  border-top-color: var(--Blue);
+}
+
+.karma-article article {
+  border-top-color: var(--Orange);
 }
 
 /* footer  */
@@ -75,4 +157,16 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:48rem) {
+  .attribution {
+    display: none;
+  }
+}
+
+@media (max-width:20rem) {
+  body {
+    overflow-x: visible;
+  }
 }

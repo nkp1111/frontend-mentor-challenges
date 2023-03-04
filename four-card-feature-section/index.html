@@ -18,7 +18,10 @@
   <link rel="stylesheet" href="style.css">
   <title>Four card feature section</title>
 </head>
-<body class="container-fluid text-center">
+<body class="container-fluid 
+              text-center 
+              d-flex 
+              justify-content-center">
 
   <main>
     <h1 class="main-heading">
@@ -31,54 +34,56 @@
       to ensure that your project is successful
     </p>
 
-    <div class="row">
-      <!-- article item  -->
-      <div class="col-md-6 offset-3">
-        <article>
-          <h2>Team Builder</h2>
-          <p>
-            Scans our talent network to create the optimal team for your project
-          </p>
-          <div class="img-holder">
-            <img src="./images/icon-team-builder.svg" alt="animated building icon">
-          </div>
-        </article>
-      </div>
-      <!-- article item  -->
-      <div class="col-md-6">
-        <article>
-          <h2>Supervisor</h2>
-          <p>
-            Monitors activity to identify project roadblocks
-          </p>
-          <div class="img-holder">
-            <img src="./images/icon-supervisor.svg" alt="animated magnifying glass">
-          </div>
-        </article>
-      </div>
-      <!-- article item  -->
-      <div class="col-md-6">
-        <article>
-          <h2>Calculator</h2>
-          <p>
-            Uses data from past projects to provide better delivery estimates
-          </p>
-          <div class="img-holder">
-            <img src="./images/icon-calculator.svg" alt="animated calculator">
-          </div>
-        </article>
-      </div>
-      <!-- article item  -->
-      <div class="col-md-6 offset-3">
-        <article>
-          <h2>Karma</h2>
-          <p>
-            Regularly evaluates our talent to ensure quality
-          </p>
-          <div class="img-holder">
-            <img src="./images/icon-karma.svg" alt="animated light bulb">
-          </div>
-        </article>
+    <div class="container-fluid inner">
+      <div class="row">
+        <!-- article item  -->
+        <div class="col-md-6 offset-md-3 team-builder-article">
+          <article class="card">
+            <h2 class="article-heading">Team Builder</h2>
+            <p>
+              Scans our talent network to create the optimal team for your project
+            </p>
+            <div class="img-holder">
+              <img src="./images/icon-team-builder.svg" alt="animated building icon" class="ms-auto">
+            </div>
+          </article>
+        </div>
+        <!-- article item  -->
+        <div class="col-md-6 supervisor-article">
+          <article class="card">
+            <h2 class="article-heading">Supervisor</h2>
+            <p>
+              Monitors activity to identify project roadblocks
+            </p>
+            <div class="img-holder">
+              <img src="./images/icon-supervisor.svg" alt="animated magnifying glass" class="ms-auto">
+            </div>
+          </article>
+        </div>
+        <!-- article item  -->
+        <div class="col-md-6 calculator-article">
+          <article class="card">
+            <h2 class="article-heading">Calculator</h2>
+            <p>
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <div class="img-holder">
+              <img src="./images/icon-calculator.svg" alt="animated calculator" class="ms-auto">
+            </div>
+          </article>
+        </div>
+        <!-- article item  -->
+        <div class="col-md-6 offset-md-3 karma-article">
+          <article class="card">
+            <h2 class="article-heading">Karma</h2>
+            <p>
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="img-holder">
+              <img src="./images/icon-karma.svg" alt="animated light bulb" class="ms-auto">
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </main>
