@@ -58,3 +58,4 @@ This contains the following project:
 - base-apparel-coming-soon
 - project-tracking-intro-component
 - intro-component-with-signup-form
+- single-price-grid-component
