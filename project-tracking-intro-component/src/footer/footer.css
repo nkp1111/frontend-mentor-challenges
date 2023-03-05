@@ -1,0 +1,11 @@
+/* footer  */
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0.5vh;
+  right: 5vw;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
