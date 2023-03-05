@@ -9,14 +9,17 @@
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
 
-      // change invalid feedback
+      // change invalid feedback message
       const emailDiv = document.querySelector(".email-div")
-      const emailInput = emailDiv.querySelector("input")
-      const emailInvalidFeed = emailDiv.querySelector(".invalid-feedback")
-      if (!emailInput.value) {
-        emailInvalidFeed.innerText = "Email cannot be empty"
-      } else {
-        emailInvalidFeed.innerText = "Looks like this is not an email"
+      if (emailDiv) {
+        const emailInput = emailDiv.querySelector("input")
+        const emailInvalidFeed = emailDiv.querySelector(".invalid-feedback")
+
+        if (!emailInput.value) {
+          emailInvalidFeed.innerText = "Email cannot be empty"
+        } else {
+          emailInvalidFeed.innerText = "Looks like this is not an email"
+        }
       }
 
       if (!form.checkValidity()) {

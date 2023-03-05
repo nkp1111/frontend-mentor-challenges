@@ -90,7 +90,7 @@ main .col-md-6 {
   padding-left: 10vw;
 }
 
-/* footer  div */
+/* form  div */
 .form-div {
   padding-right: 10vw;
 }
@@ -108,6 +108,7 @@ form {
   color: var(--Grayish-Blue);
   padding: 0.8rem 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid var(--Red);
 }
 
 .info span {
@@ -135,6 +136,10 @@ form>div {
   padding: 0.5rem 1.5rem;
 }
 
+.invalid-feedback {
+  text-align: right;
+}
+
 /* submit button  */
 form .btn {
   background: var(--Green);
@@ -152,7 +157,7 @@ form .btn:hover {
 }
 
 .term-and-service {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--Grayish-Blue);
 }
@@ -173,4 +178,65 @@ form .btn:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 48rem) {
+
+  body {
+    text-align: center;
+    background: url("./images/bg-intro-mobile.png");
+    background-color: var(--Red);
+  }
+
+  main .col-md-6 {
+    height: auto;
+  }
+
+  .content-div {
+    padding: 10%;
+    padding-bottom: 0;
+  }
+
+  .form-div {
+    padding: 10%;
+  }
+
+  .info {
+    margin-bottom: 1.3rem;
+  }
+
+  /* footer  */
+  .attribution {
+    display: none;
+  }
+}
+
+@media (max-width:34rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .content-div {
+    padding: 15% 5% 5%;
+  }
+
+  .form-div {
+    padding: 5%;
+  }
+
+}
+
+@media (max-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+
 }
