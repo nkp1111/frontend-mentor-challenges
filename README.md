@@ -56,3 +56,4 @@ This contains the following project:
 - insure-landing-page
 - four-card-feature-section
 - base-apparel-coming-soon
+- project-tracking-intro-component
