@@ -1,12 +1,12 @@
 header {
   z-index: 10;
   padding: 2rem var(--main-padding-x);
-  text-transform: uppercase;
   font-weight: 700;
 }
 
 .nav-link {
   margin-right: 2rem;
+  color: var(--Very-Dark-Blue);
 }
 
 .nav-link:hover {
@@ -16,9 +16,10 @@ header {
 .header .btn {
   margin-left: 4rem;
   font-weight: inherit;
+  color: var(--Grayish-Blue);
+  border: none;
 }
 
 .header .btn:hover {
   text-decoration: underline;
-  color: var(--Grayish-Blue);
 }

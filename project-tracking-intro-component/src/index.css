@@ -57,13 +57,17 @@ h6 {
   --Grayish-Blue: hsl(231, 7%, 65%);
   --Light-Grayish-Blue: hsl(207, 33%, 95%);
 
+  /* padding applied to header and main for x direction */
   --main-padding-x: 10vw;
+  /* padding applied to main for y direction  */
+  --main-padding-y: 10vh;
 }
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 p {
@@ -80,4 +84,8 @@ body::before {
   background: var(--Light-Grayish-Blue);
   border-radius: 0 0 0 10rem;
   z-index: -1;
+}
+
+.btn {
+  text-transform: uppercase;
 }

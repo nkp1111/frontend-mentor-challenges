@@ -1,6 +1,7 @@
 import React from 'react'
 import MainContent from './MainContent'
 import { imageIllustration } from '../assets/data'
+import "./main.css"
 
 function index() {
   return (
