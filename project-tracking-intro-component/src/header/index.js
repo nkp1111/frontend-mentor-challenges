@@ -8,7 +8,7 @@ import NavbarCollapsableItems from './NavbarCollapsableItems'
 function index() {
   return (
     <header className='header'>
-      <nav className="navbar navbar-expand-sm">
+      <nav className="navbar navbar-expand-md">
         <div className="container-fluid">
           {/* navbar logo  */}
           <NavbarLogo logo={logo} />

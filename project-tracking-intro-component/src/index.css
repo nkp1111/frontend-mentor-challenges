@@ -12,11 +12,6 @@
   margin: 0;
 }
 
-*::before,
-*::after {
-  content: '';
-}
-
 html,
 body {
   height: 100%;
@@ -61,15 +56,22 @@ h6 {
   --Dark-Grayish-Blue: hsl(230, 11%, 40%);
   --Grayish-Blue: hsl(231, 7%, 65%);
   --Light-Grayish-Blue: hsl(207, 33%, 95%);
+
+  --main-padding-x: 10vw;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
 }
 
 body::before {
+  content: '';
   position: absolute;
   width: 50%;
   height: 50%;
