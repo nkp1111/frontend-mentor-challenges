@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](./images/Screenshot%202023-03-05%20094907.png)
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/nkp1111/frontend-mentor-challenges/tree/main/base-apparel-coming-soon)
+- Live Site URL: [Netlify](https://nkp1111-base-apparel-coming-soon.netlify.app/)
 
 ## My process
 
@@ -41,10 +41,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Bootstrap
 
 ## Author
 
