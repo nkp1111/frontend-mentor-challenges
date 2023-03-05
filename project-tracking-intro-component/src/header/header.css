@@ -23,3 +23,12 @@ header {
 .header .btn:hover {
   text-decoration: underline;
 }
+
+/* navbar toggler button  */
+.navbar-toggler,
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+}
