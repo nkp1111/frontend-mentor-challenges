@@ -40,41 +40,46 @@
         <form class="needs-validation" novalidate>
           <!-- first name  -->
           <div>
-            <label for="first-name" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+            <!-- label  -->
+            <label for="first-name" class="form-label  visually-hidden">First Name</label>
+            <!-- input  -->
+            <input type="text" class="form-control" id="first-name" placeholder="First Name" required autofocus>
             <div class="invalid-feedback">
               First Name cannot be empty
             </div>
           </div>
           <!-- last name  -->
           <div>
-            <label for="last-name" class="form-label">Last Name</label>
+            <!-- label  -->
+            <label for="last-name" class="form-label visually-hidden">Last Name</label>
             <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
             <div class="invalid-feedback">
               Last Name cannot be empty
             </div>
           </div>
           <!-- Email   -->
-          <div>
-            <label for="email" class="form-label">Email Address</label>
+          <div class="email-div">
+            <!-- label  -->
+            <label for="email" class="form-label visually-hidden">Email Address</label>
             <input type="email" class="form-control" id="email" placeholder="Email Address" required>
             <div class="invalid-feedback">
-              Email cannot be empty
               Looks like this is not an email
             </div>
           </div>
           <!-- Password   -->
           <div>
-            <label for="password" class="form-label">Password</label>
+            <!-- label  -->
+            <label for="password" class="form-label visually-hidden">Password</label>
             <input type="password" class="form-control" id="password" placeholder="Password" required>
             <div class="invalid-feedback">
               Password cannot be empty
             </div>
           </div>
+          <!-- submit button  -->
           <div>
             <button class="btn w-100" type="submit">Claim your free trial</button>
           </div>
-          <span class="term-and-service">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></span>
+          <div class="term-and-service">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></div>
         </form>
       </div>
     </div>
