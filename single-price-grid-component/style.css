@@ -55,10 +55,89 @@ h6 {
 
   --Light-Gray: hsl(204, 43%, 93%);
   --Grayish-Blue: hsl(218, 22%, 67%);
+
+  --main-pad-x: 5vw;
+  --main-pad-y: 8vh;
 }
 
 body {
   font-family: 'Karla', sans-serif;
+  background: #fff;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  color: inherit;
+}
+
+/* layouts  */
+.row>* {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--main-pad-y) var(--main-pad-x);
+  padding-right: calc(var(--main-pad-x) + 15vw);
+}
+
+.row .col-md-6 {
+  background: var(--Cyan);
+  color: #fff;
+}
+
+.row .col-md-6:last-child {
+  opacity: 0.8;
+}
+
+/* first structure  */
+/* h1  */
+.main-heading {
+  color: var(--Cyan);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.main-heading+p {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-heading+p+p {
+  color: var(--Grayish-Blue);
+}
+
+/* section  */
+/* second structure  */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-heading+p {
+  color: var(--Light-Gray);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.section-heading+p span {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+section .btn {
+  background: var(--Bright-Yellow);
+  font-weight: 700;
+  padding: 0.7rem;
+  font-size: 1.5rem;
 }
 
 /* footer  */
@@ -71,4 +150,74 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 81.25rem) {
+  .row>* {
+    padding-right: calc(var(--main-pad-x) + 10vw);
+  }
+}
+
+@media (max-width: 70rem) {
+  .row>* {
+    padding-right: calc(var(--main-pad-x) + 5vw);
+  }
+}
+
+@media (max-width: 59.5rem) {
+  .row>* {
+    padding-right: var(--main-pad-x);
+  }
+}
+
+@media (max-width: 48rem) {
+  p {
+    font-size: 1rem;
+  }
+
+  .row>* {
+    height: auto;
+    padding: 2rem;
+    min-height: 33.33vh;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-heading+p {
+    font-size: 1.3rem;
+  }
+
+  .section-heading+p span {
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  section .btn {
+    font-size: 1rem;
+  }
+
+  section:last-of-type {
+    height: auto;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+
+@media (max-width: 26.875rem) {
+  body {
+    overflow: visible;
+  }
+
+  .row>* {
+    min-height: auto;
+  }
 }
