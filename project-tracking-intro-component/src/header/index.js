@@ -1,5 +1,9 @@
 import React from 'react'
-import { logo, navData } from '../assets/data'
+import { logo, navData, iconClose, iconHamburger } from '../assets/data'
+import "./header.css"
+import NavbarLogo from './NavbarLogo'
+import NavbarTogglerBtn from './NavbarTogglerBtn'
+import NavbarCollapsableItems from './NavbarCollapsableItems'
 
 function index() {
   return (
@@ -7,30 +11,14 @@ function index() {
       <nav className="navbar navbar-expand-sm">
         <div className="container-fluid">
           {/* navbar logo  */}
-          <a className="navbar-brand" href="##">
-            <img src={logo} alt="logo" />
-          </a>
+          <NavbarLogo logo={logo} />
 
           {/* navbar toggler  */}
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <NavbarTogglerBtn {...{ iconClose, iconHamburger }} />
 
           {/* navbar items  */}
-          <div className="collapse navbar-collapse" id="navbar">
-            <div className="navbar-nav ms-auto">
-              {navData.map(item => {
-                return (
-                  <a key={item.id} className="nav-link" href={item.link}>{item.title}</a>
-                )
-              })}
-            </div>
+          <NavbarCollapsableItems navData={navData} />
 
-            <div className="btn-holder">
-              <a href="##"
-                className="btn login-btn">Login</a>
-            </div>
-          </div>
         </div>
       </nav>
     </header>

@@ -79,7 +79,3 @@ body::before {
   border-radius: 0 0 0 10rem;
   z-index: -1;
 }
-
-header {
-  z-index: 10;
-}
