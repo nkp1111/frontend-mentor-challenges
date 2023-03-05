@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+*::before,
+*::after {
+  content: '';
+}
+
 html,
 body {
   height: 100%;
@@ -62,4 +67,19 @@ body {
   font-family: 'Barlow', sans-serif;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
+}
+
+body::before {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  background: var(--Light-Grayish-Blue);
+  border-radius: 0 0 0 10rem;
+  z-index: -1;
+}
+
+header {
+  z-index: 10;
 }
