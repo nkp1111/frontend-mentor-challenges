@@ -13,7 +13,7 @@ function MainContent() {
 
       <div className="btn-holder d-flex align-items-center">
         <button className="btn">Schedule a demo</button>
-        <span>to see a live preview</span>
+        <span>to see a preview</span>
       </div>
     </div>
   )

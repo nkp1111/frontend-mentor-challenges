@@ -12,7 +12,7 @@ function index() {
             {/* main content  */}
             <MainContent />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 illustration-holder d-flex align-items-center">
             {/* hero image  */}
             <img src={imageIllustration} alt="illustration" />
           </div>

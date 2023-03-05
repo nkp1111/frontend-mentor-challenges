@@ -89,3 +89,9 @@ body::before {
 .btn {
   text-transform: uppercase;
 }
+
+@media (max-width: 21.875rem) {
+  body {
+    overflow: visible;
+  }
+}

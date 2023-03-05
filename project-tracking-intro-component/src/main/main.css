@@ -58,3 +58,76 @@ main {
   color: var(--Grayish-Blue);
   letter-spacing: 0.2rem;
 }
+
+@media (max-width:78.125rem) {
+  main {
+    padding-top: 4vh;
+  }
+
+  .main-content {
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 60.7rem) {
+  .main-content {
+    padding-left: 4vw;
+  }
+}
+
+@media (max-width:51.25rem) {
+
+  .main-content {
+    padding-right: 2rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  main {
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 0 5%;
+  }
+
+  main .col-md-6:first-child {
+    order: 2;
+  }
+
+  .main-heading+p {
+    margin: 1.5rem 0 1rem;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:31.25rem) {
+
+  .description {
+    width: 80%;
+  }
+
+  .btn-holder span {
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media (max-width: 25rem) {
+
+  .main-heading+p {
+    letter-spacing: 0.1rem;
+    margin: 2rem 0 1.5rem;
+  }
+
+  .main-content .btn {
+    padding: 0.7rem 1rem;
+    margin-right: 0.7rem;
+  }
+}
