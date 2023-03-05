@@ -57,3 +57,4 @@ This contains the following project:
 - four-card-feature-section
 - base-apparel-coming-soon
 - project-tracking-intro-component
+- intro-component-with-signup-form
