@@ -12,4 +12,7 @@ const navData = [
 export {
   logo,
   navData,
+  iconClose,
+  iconHamburger,
+  imageIllustration,
 }

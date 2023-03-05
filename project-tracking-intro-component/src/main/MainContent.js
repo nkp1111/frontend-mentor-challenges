@@ -1,0 +1,23 @@
+import React from 'react'
+
+function MainContent() {
+  return (
+    <div>
+      <div className="d-flex flex-column">
+        <h1 className='main-heading order-2'>Powerful insights into your team</h1>
+        <p><span>New</span>Monograph Dashboard</p>
+      </div>
+      <p>
+        Powerful insights into your team
+        Project planning and time tracking for agile teams
+      </p>
+
+      <div className="btn-holder">
+        <button className="btn">Schedule a demo</button>
+        <span>to see a live preview</span>
+      </div>
+    </div>
+  )
+}
+
+export default MainContent
