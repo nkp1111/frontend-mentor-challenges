@@ -3,7 +3,7 @@ import { additionalInfoIcons } from '../../../assets/data'
 
 function ClientIcons() {
   return (
-    <div className='client-icons d-flex justify-content-evenly'>
+    <div className='client-icons d-flex justify-content-between'>
       {additionalInfoIcons.map(item => {
         return (
           <div className="icon-holder" key={item.id}>

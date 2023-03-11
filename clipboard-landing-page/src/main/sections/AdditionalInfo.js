@@ -12,9 +12,8 @@ function AdditionalInfo() {
 
       <div className="container-fluid">
         <AdditionalInfoArticles />
+        <ClientIcons />
       </div>
-
-      <ClientIcons />
 
     </section>
   )

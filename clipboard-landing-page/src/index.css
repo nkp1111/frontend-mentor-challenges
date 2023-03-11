@@ -57,6 +57,7 @@ h6 {
   --Grayish-Blue: hsl(201, 11%, 66%);
 
   --footer-background: hsl(201, 62%, 93%);
+  --content-main-padding: 8vw;
 }
 
 body {
