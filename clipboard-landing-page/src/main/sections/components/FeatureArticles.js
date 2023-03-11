@@ -1,5 +1,5 @@
 import React from 'react'
-import { featureSectionArticles } from '../../assets/data'
+import { featureSectionArticles } from '../../../assets/data'
 
 function FeatureArticles() {
   return (

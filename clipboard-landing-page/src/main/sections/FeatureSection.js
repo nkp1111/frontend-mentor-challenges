@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureArticles from '../components/FeatureArticles'
+import FeatureArticles from './components/FeatureArticles'
 import { imageComputer } from '../../assets/data'
 
 function FeatureSection() {
