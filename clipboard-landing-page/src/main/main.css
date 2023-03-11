@@ -53,8 +53,47 @@
   margin: 2rem auto;
 }
 
+.client-icons {
+  flex-wrap: wrap;
+}
+
+.icon-holder {
+  margin-top: 2rem;
+}
+
 /* section 4  */
 /* download section  */
 .download-section {
   padding: 15vh 0;
+}
+
+@media (max-width: 48rem) {
+  .feature-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-section .article-heading+p {
+    width: 100%;
+  }
+
+  .feature-img img {
+    position: static;
+    margin-bottom: 3rem;
+  }
+
+  /* additional info section  */
+  .additional-info-section .section-heading+p {
+    margin-bottom: 2rem;
+  }
+
+  .client-icons {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .icon-holder {
+    margin: 2rem 0;
+  }
 }
