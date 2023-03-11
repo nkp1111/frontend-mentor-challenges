@@ -1,0 +1,5 @@
+/* front page  */
+.main-heading+p {
+  margin: 1rem auto 2rem;
+  padding: 0 20%;
+}

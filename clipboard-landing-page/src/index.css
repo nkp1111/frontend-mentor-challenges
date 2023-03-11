@@ -55,9 +55,68 @@ h6 {
 
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
+
+  --footer-background: hsl(201, 62%, 93%);
 }
 
 body {
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 18px;
+  background: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
+
+.main-heading,
+.section-heading,
+.main-heading+p,
+.section-heading+p {
+  text-align: center;
+}
+
+.btn-holder {
+  width: max-content;
+  margin: auto;
+}
+
+.btn-holder .btn {
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  margin: 0 0.5rem;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+}
+
+.btn-holder .btn:hover {
+  opacity: 0.9;
+}
+
+.ios-btn {
+  background: var(--Strong-Cyan);
+  border-bottom-color: var(--Strong-Cyan);
+}
+
+.ios-btn:hover {
+  background: var(--Strong-Cyan);
+  box-shadow: 0 1px 2px var(--Strong-Cyan);
+}
+
+.mac-btn {
+  background: var(--Light-Blue);
+  border-bottom-color: var(--Light-Blue);
+}
+
+.mac-btn:hover {
+  background: var(--Light-Blue);
+  box-shadow: 0 1px 2px var(--Light-Blue);
 }

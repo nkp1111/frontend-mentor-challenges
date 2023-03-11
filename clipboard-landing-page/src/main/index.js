@@ -4,6 +4,7 @@ import FeatureSection from './sections/FeatureSection'
 import AccessInfoSection from './sections/AccessInfoSection'
 import AdditionalInfo from './sections/AdditionalInfo'
 import DownloadSection from './sections/DownloadSection'
+import "./main.css"
 
 function index() {
   return (
