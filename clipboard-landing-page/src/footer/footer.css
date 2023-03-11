@@ -1,7 +1,7 @@
 footer {
   background: var(--footer-background);
   padding: 5vh var(--content-main-padding);
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 /* logo  */
@@ -10,6 +10,10 @@ footer {
 }
 
 /* nav links  */
+.footer-link-holder {
+  margin-right: auto;
+}
+
 .footer-link {
   flex-wrap: wrap;
   margin-left: 3rem;
@@ -33,4 +37,20 @@ footer {
 
 .footer-icons img:hover {
   scale: 1.1;
+}
+
+@media (max-width: 48rem) {
+  footer {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .footer-link-holder {
+    margin: auto;
+  }
+
+  .footer-link {
+    flex-direction: column;
+    align-items: center;
+  }
 }

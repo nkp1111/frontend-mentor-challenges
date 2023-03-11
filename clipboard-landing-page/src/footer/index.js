@@ -6,14 +6,14 @@ import "./footer.css"
 
 function index() {
   return (
-    <footer className='d-flex align-items-center'>
+    <footer className='d-flex align-items-center justify-content-center'>
       <div>
         <img src={logo} alt="logo" className='footer-logo' />
       </div>
-      <div>
+      <div className='footer-link-holder'>
         <NavLinks footerLinks={footerLinks} />
       </div>
-      <div className='ms-auto'>
+      <div>
         <SVG footerIcons={footerIcons}></SVG>
       </div>
     </footer>
