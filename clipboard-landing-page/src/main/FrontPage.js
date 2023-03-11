@@ -12,8 +12,8 @@ function FrontPage() {
           copy. Instantly access your clipboard on all your devices.
         </p>
         <div className="btn-holder">
-          <button className="btn">Download for iOS</button>
-          <button className="btn">Download for Mac</button>
+          <button className="btn ios-btn">Download for iOS</button>
+          <button className="btn mac-btn">Download for Mac</button>
         </div>
       </div>
       {/* front page image  */}

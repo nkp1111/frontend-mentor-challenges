@@ -16,7 +16,10 @@ import logoIBM from './images/logo-ibm.png'
 import logoMicrosoft from './images/logo-microsoft.png'
 import logoHP from './images/logo-hp.png'
 import logoVectorGraphics from './images/logo-vector-graphics.png'
-
+// footer icons 
+import iconFacebook from './images/icon-facebook.svg'
+import iconTwitter from './images/icon-twitter.svg'
+import iconInstagram from './images/icon-instagram.svg'
 
 const featureSectionArticles = [
   {
@@ -86,6 +89,57 @@ const additionalInfoIcons = [
   },
 ]
 
+
+const footerLinks = [
+  {
+    id: 1,
+    title: "FAQs",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Contact Us",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Privacy Policy",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Press Kit",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "Install Guide",
+    link: "",
+  },
+
+]
+
+const footerIcons = [
+  {
+    id: 1,
+    title: "facebook",
+    link: "",
+    icon: iconFacebook
+  },
+  {
+    id: 2,
+    title: "twitter",
+    link: "",
+    icon: iconTwitter
+  },
+  {
+    id: 3,
+    title: "instagram",
+    link: "",
+    icon: iconInstagram
+  },
+]
+
 export {
   headerLogoDesktop,
   headerLogoMobile,
@@ -95,4 +149,6 @@ export {
   imageDevices,
   additionalInfoArticlesData,
   additionalInfoIcons,
+  footerLinks,
+  footerIcons,
 }
