@@ -2,7 +2,7 @@ import headerLogoDesktop from './images/bg-header-desktop.png'
 import headerLogoMobile from './images/bg-header-mobile.png'
 import logo from './images/logo.svg'
 import imageComputer from './images/image-computer.png'
-
+import imageDevices from '../assets/images/image-devices.png'
 
 const featureSectionArticles = [
   {
@@ -29,4 +29,5 @@ export {
   logo,
   imageComputer,
   featureSectionArticles,
+  imageDevices,
 }
