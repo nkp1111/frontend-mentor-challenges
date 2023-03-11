@@ -1,5 +1,26 @@
 /* front page  */
 .main-heading+p {
   margin: 1rem auto 2rem;
-  padding: 0 20%;
+}
+
+/* feature section  */
+.feature-section {
+  padding: 4rem 0;
+}
+
+.feature-img img {
+  position: relative;
+  left: -5%;
+}
+
+/* feature section articles  */
+.feature-articles {
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.feature-section .article-heading+p {
+  margin-bottom: 3rem;
+  width: 60%;
 }

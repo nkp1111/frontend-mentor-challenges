@@ -77,10 +77,22 @@ p {
 }
 
 .main-heading,
-.section-heading,
+.section-heading {
+  text-align: center;
+}
+
 .main-heading+p,
 .section-heading+p {
   text-align: center;
+  padding: 0 27%;
+}
+
+.section-heading+p {
+  margin-bottom: 3rem;
+}
+
+.article-heading {
+  font-size: 1.5rem;
 }
 
 .btn-holder {

@@ -7,7 +7,7 @@ function FeatureArticles() {
       {featureSectionArticles.map(item => {
         return (
           <article key={item.id}>
-            <h3>{item.title}</h3>
+            <h3 className='article-heading'>{item.title}</h3>
             <p>{item.description}</p>
           </article>
         )
