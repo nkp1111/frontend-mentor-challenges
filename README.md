@@ -59,3 +59,4 @@ This contains the following project:
 - project-tracking-intro-component
 - intro-component-with-signup-form
 - single-price-grid-component
+- clipboard-landing-page
