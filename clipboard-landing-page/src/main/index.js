@@ -1,14 +1,12 @@
 import React from 'react'
 import FrontPage from './FrontPage'
-
+import FeatureSection from './sections/FeatureSection'
 
 function index() {
   return (
     <main>
-      {/* front page  */}
       <FrontPage />
-
-
+      <FeatureSection />
     </main>
   )
 }
