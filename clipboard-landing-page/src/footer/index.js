@@ -6,17 +6,15 @@ import "./footer.css"
 
 function index() {
   return (
-    <footer className='container-fluid'>
-      <div className="row">
-        <div className="col-md-2">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="col-md-6">
-          <NavLinks footerLinks={footerLinks} />
-        </div>
-        <div className="col-md-4">
-          <SVG footerIcons={footerIcons}></SVG>
-        </div>
+    <footer className='d-flex align-items-center'>
+      <div>
+        <img src={logo} alt="logo" className='footer-logo' />
+      </div>
+      <div>
+        <NavLinks footerLinks={footerLinks} />
+      </div>
+      <div className='ms-auto'>
+        <SVG footerIcons={footerIcons}></SVG>
       </div>
     </footer>
   )

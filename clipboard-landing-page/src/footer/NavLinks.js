@@ -7,7 +7,7 @@ function NavLinks({ footerLinks }) {
         return (
           <a href={item.link}
             key={item.id}
-            className="footer-link">{item.title}</a>
+            className="footer-nav-link">{item.title}</a>
         )
       })}
     </div>
