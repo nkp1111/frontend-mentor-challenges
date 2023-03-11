@@ -2,10 +2,11 @@ import React from 'react'
 import { logo, footerIcons, footerLinks } from '../assets/data'
 import SVG from './SVG'
 import NavLinks from './NavLinks'
+import "./footer.css"
 
 function index() {
   return (
-    <footer>
+    <footer className='container-fluid'>
       <div className="row">
         <div className="col-md-2">
           <img src={logo} alt="logo" />

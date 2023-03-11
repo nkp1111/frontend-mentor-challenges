@@ -1,11 +1,10 @@
 import React from 'react'
-import { headerLogoDesktop, headerLogoMobile, logo } from '../assets/data'
 
 function FrontPage() {
   return (
-    <div className='front-page d-flex flex-column'>
+    <div className='front-page'>
       {/* front page info  */}
-      <div className="info order-2">
+      <div className="info">
         <h1 className='main-heading'>A history of everything you copy</h1>
         <p>
           Clipboard allows you to track and organize everything you
@@ -15,14 +14,6 @@ function FrontPage() {
           <button className="btn ios-btn">Download for iOS</button>
           <button className="btn mac-btn">Download for Mac</button>
         </div>
-      </div>
-      {/* front page image  */}
-      <div className="img-holder">
-        <img src={logo} alt="logo" className='logo' />
-        <picture>
-          <source srcSet={headerLogoMobile} media="(max-width: 48rem)" />
-          <img src={headerLogoDesktop} alt="header background" />
-        </picture>
       </div>
     </div>
   )
