@@ -3,6 +3,7 @@
   margin: 1rem auto 2rem;
 }
 
+/* section 1  */
 /* feature section  */
 .feature-section {
   padding: 4rem 0;
@@ -23,4 +24,37 @@
 .feature-section .article-heading+p {
   margin-bottom: 3rem;
   width: 60%;
+}
+
+/* section 2  */
+/* access info section  */
+.access-info-section img {
+  margin: auto;
+}
+
+/* section 3  */
+/* additional info section  */
+.additional-info-section {
+  padding: 3rem 0 0;
+}
+
+.additional-info-section .container-fluid {
+  width: 85%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* additional info section article  */
+.additional-info-section .article-heading+p {
+  padding: 0 1rem;
+}
+
+.article-img {
+  margin: 2rem auto;
+}
+
+/* section 4  */
+/* download section  */
+.download-section {
+  padding: 15vh 0;
 }
