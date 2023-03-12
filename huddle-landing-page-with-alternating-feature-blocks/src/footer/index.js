@@ -3,6 +3,7 @@ import Logo from '../component/logo'
 import ContactInfo from './ContactInfo'
 import FooterNavLinks from './FooterNavLinks'
 import SocialLinks from './SocialLinks'
+import "./footer.css"
 
 function index() {
   return (

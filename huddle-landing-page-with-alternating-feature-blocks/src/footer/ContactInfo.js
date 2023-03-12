@@ -6,7 +6,7 @@ function ContactInfo() {
     <div className='footer-contacts'>
       {footerContacts.map(item => {
         return (
-          <div className="contact-item d-flex justify-content-between"
+          <div className="contact-item d-flex"
             title={item.type} key={item.id}>
             <div>
               <img src={item.icon} alt={item.type} className="contact-icon" />
