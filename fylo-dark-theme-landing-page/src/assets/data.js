@@ -12,7 +12,10 @@ import iconSecurity from './images/icon-security.svg'
 import avatar1 from './images/profile-1.jpg'
 import avatar2 from './images/profile-2.jpg'
 import avatar3 from './images/profile-3.jpg'
-
+// footer contacts icons 
+import iconLocation from './images/icon-location.svg'
+import iconPhone from './images/icon-phone.svg'
+import iconEmail from './images/icon-email.svg'
 
 const navbarLinks = [
   {
@@ -83,6 +86,65 @@ const testimonialSectionArticles = [
   },
 ]
 
+const footerContacts = [
+  {
+    id: 1,
+    type: "location",
+    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    icon: iconLocation,
+  },
+  {
+    id: 2,
+    type: "phone",
+    info: "+1-543-123-4567",
+    icon: iconPhone,
+  },
+  {
+    id: 3,
+    type: "email",
+    info: "example@fylo.com",
+    icon: iconEmail,
+  },
+]
+
+const footerLinks = [
+  {
+    id: 1,
+    title: "About Us",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Contact Us",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Jobs",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Terms",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "Press",
+    link: "",
+  },
+  {
+    id: 6,
+    title: "Privacy",
+    link: "",
+  },
+  {
+    id: 7,
+    title: "Blog",
+    link: "",
+  },
+]
+
 export {
   logo,
   navbarLinks,
@@ -90,4 +152,6 @@ export {
   illustrationProductive,
   featureSectionArticles,
   testimonialSectionArticles,
+  footerContacts,
+  footerLinks,
 }
