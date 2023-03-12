@@ -20,7 +20,7 @@ footer .logo {
 }
 
 .contact-item:first-of-type .contact-icon {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .contact-item {
@@ -73,4 +73,49 @@ footer .nav-link:hover {
 
 .social-links a:hover .social-icon-img {
   fill: var(--Pink);
+}
+
+footer p.text-center {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 48rem) {
+  footer {
+    padding-bottom: 5vh;
+    position: relative;
+  }
+
+  footer::before {
+    content: "";
+    background: var(--Very-Dark-Cyan);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -1rem;
+    z-index: -1;
+  }
+
+  footer .container-fluid {
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    margin-top: 1rem;
+    padding-right: 0;
+    align-items: start;
+  }
+
+  .nav-links {
+    margin: 3rem 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer p.text-center {
+    margin-top: 1.5rem;
+  }
 }

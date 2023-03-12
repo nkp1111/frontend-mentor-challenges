@@ -59,3 +59,47 @@ article .col-md-6:first-of-type {
 .article-heading {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 48rem) {
+  main {
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 1.75rem;
+  }
+
+  .front-page .huddle-btn {
+    margin-bottom: 4rem;
+  }
+
+  /* feature section  */
+  .feature-section {
+    padding-top: 8vh;
+    padding-bottom: 15vh;
+  }
+
+  .article-holder {
+    padding: 1rem;
+  }
+
+  .article-holder article {
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--Grayish-Blue);
+    margin-bottom: 2rem;
+  }
+
+  .article-holder .col-md-6:first-of-type {
+    order: 2;
+  }
+
+  /* floating text  */
+  .floating {
+    width: 100%;
+    padding: 2rem 0.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.35rem;
+  }
+}

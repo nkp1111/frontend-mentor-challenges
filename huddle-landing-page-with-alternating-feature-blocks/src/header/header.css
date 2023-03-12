@@ -16,3 +16,13 @@ header .btn:hover {
   box-shadow: 0 0 5px var(--Grayish-Blue);
   opacity: 0.9;
 }
+
+@media (max-width:31.25rem) {
+  header {
+    padding: 2.5rem 0;
+  }
+
+  header .btn-holder {
+    display: none;
+  }
+}
