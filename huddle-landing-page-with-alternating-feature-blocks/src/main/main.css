@@ -1,14 +1,15 @@
 /* front page  */
 .front-page {
   position: relative;
+  padding-bottom: 3rem;
 }
 
 .front-page::before {
   content: "";
   position: absolute;
   top: -20vh;
-  left: -10vw;
-  width: 150%;
+  left: -5vw;
+  right: -5vw;
   bottom: 0;
   background: var(--Very-Pale-Cyan);
   z-index: -1;
@@ -25,4 +26,36 @@
 .main-heading+P {
   color: var(--Very-Dark-Cyan);
   margin: 1.5rem 0;
+}
+
+/* feature section  */
+.feature-section {
+  padding-top: 10vh;
+  padding-bottom: 25vh;
+  position: relative;
+}
+
+.floating {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  display: flex;
+  border-radius: 1rem;
+  padding: 3rem;
+  z-index: 10;
+  background: #fff;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+article .col-md-6:first-of-type {
+  padding: var(--section-padding-x);
+}
+
+.article-heading {
+  margin-bottom: 2rem;
 }
