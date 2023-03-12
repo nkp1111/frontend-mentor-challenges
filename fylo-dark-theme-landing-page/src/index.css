@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* css reset  */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* general styles  */
+:root {
+  /* (intro and email sign up background) */
+  --Dark-Blue: hsl(217, 28%, 15%);
+  /* (main background) */
+  --Dark-Blue2: hsl(218, 28%, 13%);
+  /* (footer background) */
+  --Dark-Blue3: hsl(216, 53%, 9%);
+  /* (testimonials background) */
+  --Dark-Blue4: hsl(219, 30%, 18%);
+
+  /* accent */
+  /* (inside call-to-action gradient) */
+  --Cyan: hsl(176, 68%, 64%);
+  /* (inside call-to-action gradient) */
+  --Blue: hsl(198, 60%, 50%);
+  /* (error) */
+  --Light-Red: hsl(0, 100%, 63%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
 }
