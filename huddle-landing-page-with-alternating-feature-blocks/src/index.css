@@ -80,11 +80,20 @@ p {
   padding: 0 var(--main-padding-x);
 }
 
+.btn {
+  transition: 0.2s all linear;
+}
+
 .huddle-btn {
   background: var(--Pink);
   color: var(--Very-Pale-Cyan);
   font-weight: 700;
   border-radius: 2rem;
   padding: 1rem 3.5rem;
-  font-size: 1.2rem;
+}
+
+.huddle-btn:hover {
+  background: var(--Pink);
+  opacity: 0.8;
+  color: #fff;
 }

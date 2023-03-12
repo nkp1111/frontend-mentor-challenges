@@ -8,4 +8,11 @@ header .btn {
   border-radius: 2rem;
   background: #fff;
   box-shadow: 0 0 3px var(--Grayish-Blue);
+  color: var(--Very-Dark-Cyan);
+}
+
+header .btn:hover {
+  background: #fff;
+  box-shadow: 0 0 5px var(--Grayish-Blue);
+  opacity: 0.9;
 }
