@@ -2,6 +2,7 @@ import React from 'react'
 import FrontPage from './FrontPage'
 import FeatureSection from './sections/FeatureSection'
 import TestimonialsSection from './sections/TestimonialsSection'
+import FormSection from './sections/FormSection'
 
 function index() {
   return (
@@ -9,6 +10,7 @@ function index() {
       <FrontPage />
       <FeatureSection />
       <TestimonialsSection />
+      <FormSection />
     </main>
   )
 }
