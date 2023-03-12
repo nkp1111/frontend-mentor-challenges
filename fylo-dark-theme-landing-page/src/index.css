@@ -66,11 +66,15 @@ h6 {
   --Blue: hsl(198, 60%, 50%);
   /* (error) */
   --Light-Red: hsl(0, 100%, 63%);
+
+  --White: #fff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  background: var(--Dark-Blue2);
+  color: var(--White);
 }
 
 h1,

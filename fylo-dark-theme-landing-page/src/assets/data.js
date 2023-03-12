@@ -1,4 +1,5 @@
 import logo from './images/logo.svg'
+import illustrationIntro from './images/illustration-intro.png'
 
 const navbarLinks = [
   {
@@ -21,4 +22,5 @@ const navbarLinks = [
 export {
   logo,
   navbarLinks,
+  illustrationIntro,
 }
