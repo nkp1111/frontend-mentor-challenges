@@ -8,6 +8,10 @@ import iconAccessAnywhere from './images/icon-access-anywhere.svg'
 import iconAnyFile from './images/icon-any-file.svg'
 import iconCollaboration from './images/icon-collaboration.svg'
 import iconSecurity from './images/icon-security.svg'
+// testimonial section users avatar
+import avatar1 from './images/profile-1.jpg'
+import avatar2 from './images/profile-2.jpg'
+import avatar3 from './images/profile-3.jpg'
 
 
 const navbarLinks = [
@@ -55,10 +59,35 @@ const featureSectionArticles = [
   },
 ]
 
+const testimonialSectionArticles = [
+  {
+    id: 1,
+    user: "Satish Patel",
+    position: "Founder & CEO, Huddle",
+    text: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well- oiled collaboration machine.",
+    image: avatar1,
+  },
+  {
+    id: 2,
+    user: "Bruce McKenzie",
+    position: "Founder & CEO, Huddle",
+    text: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well- oiled collaboration machine.",
+    image: avatar2,
+  },
+  {
+    id: 3,
+    user: "Iva Boyd",
+    position: "Founder & CEO, Huddle",
+    text: "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well- oiled collaboration machine.",
+    image: avatar3,
+  },
+]
+
 export {
   logo,
   navbarLinks,
   illustrationIntro,
   illustrationProductive,
   featureSectionArticles,
+  testimonialSectionArticles,
 }
