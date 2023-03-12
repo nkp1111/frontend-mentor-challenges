@@ -61,3 +61,4 @@ This contains the following project:
 - single-price-grid-component
 - clipboard-landing-page
 - huddle-landing-page-with-alternating-feature-blocks
+- fylo-dark-theme-landing-page
