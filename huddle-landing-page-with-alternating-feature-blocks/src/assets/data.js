@@ -4,6 +4,10 @@ import illustrationMockups from './images/illustration-mockups.svg'
 import illustrationFlowConversation from './images/illustration-flowing-conversation.svg'
 import illustrationGrowTogether from './images/illustration-grow-together.svg'
 import illustrationYourUser from './images/illustration-your-users.svg'
+// footer contacts icons 
+import iconLocation from './images/icon-location.svg'
+import iconPhone from './images/icon-phone.svg'
+import iconEmail from './images/icon-email.svg'
 
 
 // feature section articles data
@@ -28,8 +32,65 @@ const featureSectionArticles = [
   },
 ]
 
+const footerContacts = [
+  {
+    id: 1,
+    type: "location",
+    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    icon: iconLocation,
+  },
+  {
+    id: 2,
+    type: "phone",
+    info: "+1-543-123-4567",
+    icon: iconPhone,
+  },
+  {
+    id: 3,
+    type: "email",
+    info: "example@huddle.com",
+    icon: iconEmail,
+  },
+]
+
+const footerLinks = [
+  {
+    id: 1,
+    title: "About Us",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Career",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "What We Do",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Blog",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "FAQ",
+    link: "",
+  },
+  {
+    id: 6,
+    title: "Contact Us",
+    link: "",
+  },
+
+]
+
 export {
   logo,
   illustrationMockups,
   featureSectionArticles,
+  footerContacts,
+  footerLinks,
 }
