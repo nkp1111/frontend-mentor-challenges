@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo } from '../assets/data'
+import Logo from '../component/logo'
 
 function index() {
   return (
@@ -7,7 +7,7 @@ function index() {
       <div className="container-fluid">
         <nav className="navbar navbar-expand-sm">
           <div className="nav-logo">
-            <img src={logo} alt="logo" className='navbar-brand' />
+            <Logo />
           </div>
           <div className="btn-holder ms-auto">
             <button className="btn">Try It Free</button>
