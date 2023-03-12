@@ -60,3 +60,4 @@ This contains the following project:
 - intro-component-with-signup-form
 - single-price-grid-component
 - clipboard-landing-page
+- huddle-landing-page-with-alternating-feature-blocks
