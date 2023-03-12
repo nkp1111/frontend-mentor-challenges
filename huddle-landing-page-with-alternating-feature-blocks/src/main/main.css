@@ -13,3 +13,16 @@
   background: var(--Very-Pale-Cyan);
   z-index: -1;
 }
+
+.front-page .col-md-6:first-of-type {
+  padding-right: var(--section-padding-x);
+}
+
+.main-heading {
+  font-size: 3rem;
+}
+
+.main-heading+P {
+  color: var(--Very-Dark-Cyan);
+  margin: 1.5rem 0;
+}

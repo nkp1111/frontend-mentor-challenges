@@ -4,7 +4,7 @@ import { illustrationMockups } from '../assets/data'
 function FrontPage() {
   return (
     <div className='front-page'>
-      <div className="row">
+      <div className="row align-items-center">
         <div className="col-md-6">
           {/* front page info  */}
           <h1 className='main-heading'>Build The Community Your Fans Will Love</h1>

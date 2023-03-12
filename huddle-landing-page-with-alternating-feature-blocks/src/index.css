@@ -56,6 +56,7 @@ h6 {
   --Grayish-Blue: hsl(208, 11%, 55%);
 
   --main-padding-x: 5vw;
+  --section-padding-x: 5vw;
 }
 
 body {
@@ -69,6 +70,11 @@ h2,
 h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+
+p {
+  color: var(--Grayish-Blue);
 }
 
 .container-fluid {
