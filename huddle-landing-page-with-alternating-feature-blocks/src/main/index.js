@@ -1,6 +1,7 @@
 import React from 'react'
 import FrontPage from './FrontPage'
 import FeatureSection from './FeatureSection'
+import "./main.css"
 
 function index() {
   return (

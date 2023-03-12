@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../component/logo'
+import "./header.css"
 
 function index() {
   return (

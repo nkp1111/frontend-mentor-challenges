@@ -1,0 +1,15 @@
+/* front page  */
+.front-page {
+  position: relative;
+}
+
+.front-page::before {
+  content: "";
+  position: absolute;
+  top: -20vh;
+  left: -10vw;
+  width: 150%;
+  bottom: 0;
+  background: var(--Very-Pale-Cyan);
+  z-index: -1;
+}

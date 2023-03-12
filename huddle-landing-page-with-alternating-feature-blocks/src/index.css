@@ -54,10 +54,31 @@ h6 {
   --Very-Pale-Cyan: hsl(193, 100%, 96%);
   --Very-Dark-Cyan: hsl(192, 100%, 9%);
   --Grayish-Blue: hsl(208, 11%, 55%);
+
+  --main-padding-x: 5vw;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container-fluid {
+  padding: 0 var(--main-padding-x);
+}
+
+.huddle-btn {
+  background: var(--Pink);
+  color: var(--Very-Pale-Cyan);
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.8rem 3rem;
 }
