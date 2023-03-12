@@ -4,10 +4,7 @@ import { illustrationIntro } from '../assets/data'
 function FrontPage() {
   return (
     <div className='front-page 
-    d-flex 
-    flex-column 
-    justify-content-center 
-    align-items-center 
+    flex-body-center 
     text-center'>
       {/* front page info  */}
       <div className="info order-2">
