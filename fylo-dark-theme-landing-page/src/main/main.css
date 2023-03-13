@@ -1,3 +1,7 @@
+main {
+  position: relative;
+}
+
 /* front page  */
 .front-page {
   padding: 0 25vw;
@@ -86,4 +90,44 @@
 .info h3,
 .info h3+p {
   margin: 0;
+}
+
+/* form section  */
+.form-section {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: var(--Dark-Blue);
+  padding: 4vh 5vw;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.form-section p {
+  margin: 1rem 0 2rem;
+}
+
+.form-item {
+  position: relative;
+  flex-grow: 1;
+}
+
+.form-item .invalid-feedback {
+  position: absolute;
+  text-align: left;
+  margin: 0.5;
+  margin-left: 1.5rem;
+}
+
+.form-section input {
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-section .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 2rem;
 }

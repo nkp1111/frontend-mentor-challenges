@@ -17,8 +17,8 @@ function FormSection() {
       </p>
 
       <form className="needs-validation d-flex align-items-center" noValidate>
-        <div className="flex-fill">
-          <label htmlFor="email" className="form-label invisible">First name</label>
+        <div className='form-item'>
+          <label htmlFor="email" className="form-label visually-hidden">First name</label>
           <input type="email" className="form-control" id="email" placeholder='example@fylo.com'
             required />
           <div className="invalid-feedback">
@@ -26,7 +26,7 @@ function FormSection() {
           </div>
         </div>
         <div>
-          <button className="btn">Get Started For Free</button>
+          <button className="btn fylo-btn">Get Started For Free</button>
         </div>
       </form>
     </section>
