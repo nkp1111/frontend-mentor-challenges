@@ -13,7 +13,7 @@ function TestimonialsSection() {
               <article className="col-md-4" key={item.id}>
                 <div className="card">
                   {/* user info  */}
-                  <div className="profile d-flex flex-row-reverse justify-content-end order-2">
+                  <div className="profile d-flex flex-row-reverse justify-content-end align-items-center order-2">
                     {/* profile info  */}
                     <div className="info">
                       <h3>{item.user}</h3>
@@ -26,7 +26,7 @@ function TestimonialsSection() {
                   </div>
                   {/* user text  */}
                   <div className="text">
-                    {item.text}
+                    <p>{item.text}</p>
                   </div>
                 </div>
               </article>

@@ -19,10 +19,6 @@
 }
 
 /* feature section  */
-.feature-section {
-  background: var(--Dark-Blue2);
-}
-
 .feature-articles {
   padding: 0 10vw;
   text-align: center;
@@ -51,4 +47,43 @@
 
 .feature-info a:hover {
   color: inherit;
+}
+
+/* testimonial section  */
+.testimonial-section {
+  padding: 15vh 0 20vh;
+}
+
+.testimonial-section .container-fluid {
+  padding-top: 2rem;
+  background: url("../assets/images/bg-quotes.png") no-repeat;
+  background-position: top left 4vw;
+}
+
+/* articles  */
+.testimonial-section article {
+  padding: 0 1.5rem;
+}
+
+.testimonial-section .card {
+  background: var(--Dark-Blue4);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-section .avatar img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--Dark-Blue2);
+  margin-right: 1rem;
+}
+
+.info h3 {
+  font-size: 1rem;
+}
+
+.info h3,
+.info h3+p {
+  margin: 0;
 }

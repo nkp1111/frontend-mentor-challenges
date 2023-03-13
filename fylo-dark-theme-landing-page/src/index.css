@@ -132,3 +132,9 @@ p {
   background: var(--Cyan);
   color: inherit;
 }
+
+/* section background  */
+.feature-section,
+.testimonial-section {
+  background-color: var(--Dark-Blue2);
+}
