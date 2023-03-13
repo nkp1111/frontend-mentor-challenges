@@ -56,6 +56,9 @@ h6 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background: url("./images/bg-desktop.svg") no-repeat;
+  background-color: var(--Violet);
+  color: #fff;
 }
 
 h1,
@@ -65,6 +68,68 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container-fluid {
+  padding: 0 10vw;
+}
+
+/* header  */
+header {
+  padding: 5vh 0;
+}
+
+/* main  */
+main {
+  padding: 5vh 0;
+}
+
+main .order-2 {
+  /* padding: 5vh 5vw; */
+  padding-left: 3vw;
+}
+
+main p {
+  margin: 2rem 0;
+}
+
+main .btn {
+  background: #fff;
+  padding: 0.7rem 4rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px var(--Violet);
+}
+
+main .btn:hover {
+  background: var(--Soft-Magenta);
+  box-shadow: 1px 1px 10px var(--Violet);
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa {
+  margin-left: 1rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  padding: 1rem 1.2rem;
+}
+
+.fa-instagram {
+  padding: 0.9rem 1rem;
+}
+
+.fa:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
 }
 
 /* footer  */
@@ -76,5 +141,5 @@ h6 {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(96, 48%, 88%);
 }
