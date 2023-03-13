@@ -1,6 +1,7 @@
 /* front page  */
 .front-page {
   padding: 0 25vw;
+  padding-bottom: 14vh;
 }
 
 .main-heading {
@@ -15,4 +16,39 @@
 .front-page .btn {
   margin-top: 1.5rem;
   padding: 0.5rem 3rem;
+}
+
+/* feature section  */
+.feature-section {
+  background: var(--Dark-Blue2);
+}
+
+.feature-articles {
+  padding: 0 10vw;
+  text-align: center;
+}
+
+.feature-articles article {
+  padding: 2rem 4rem;
+}
+
+.feature-articles .article-img {
+  margin-bottom: 2rem;
+}
+
+.feature-info .col-md-6:first-of-type {
+  padding-right: 12vw;
+}
+
+.feature-section .section-heading {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.feature-info a {
+  color: var(--Cyan);
+}
+
+.feature-info a:hover {
+  color: inherit;
 }

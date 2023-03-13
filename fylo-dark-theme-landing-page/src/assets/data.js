@@ -20,6 +20,7 @@ import iconEmail from './images/icon-email.svg'
 import backgroundCurvyDesktop from './images/bg-curvy-desktop.svg'
 import backgroundCurvyMobile from './images/bg-curvy-mobile.svg'
 import backgroundQuotes from './images/bg-quotes.png'
+import iconArrow from './images/icon-arrow.svg'
 
 const navbarLinks = [
   {
@@ -158,4 +159,5 @@ export {
   testimonialSectionArticles,
   footerContacts,
   footerLinks,
+  iconArrow,
 }
