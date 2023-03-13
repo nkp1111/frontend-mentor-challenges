@@ -88,6 +88,7 @@ main {
 main .order-2 {
   /* padding: 5vh 5vw; */
   padding-left: 3vw;
+  min-height: 50vh;
 }
 
 main p {
@@ -142,4 +143,45 @@ main .btn:hover {
 
 .attribution a {
   color: hsl(96, 48%, 88%);
+}
+
+@media (max-width:49rem) {
+  .main-img {
+    margin-bottom: 3rem;
+  }
+
+  main .order-2 {
+    min-height: max-content;
+  }
+
+  .icons {
+    margin: 1rem 0;
+    margin-top: 3rem;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+@media (max-width:31.25rem) {
+  body {
+    text-align: center;
+  }
+
+  header img {
+    width: 13rem;
+  }
+
+  .container-fluid {
+    padding: 0 7vw;
+  }
+
+  main {
+    padding: 1rem 0;
+  }
+
+  .icons {
+    justify-content: center;
+  }
 }
