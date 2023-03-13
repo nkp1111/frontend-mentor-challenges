@@ -70,7 +70,7 @@ h6 {
   --White: #fff;
 
   --main-padding-x: 5vw;
-  --section-padding-x: 10vw;
+  --section-padding-x: 20vw;
 }
 
 body {
@@ -87,8 +87,14 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
+p {
+  opacity: 0.9;
+}
+
+/* for applying flex display with property  */
 .flex-body-center {
   display: flex;
   justify-content: center;
@@ -96,6 +102,31 @@ h6 {
   flex-direction: column;
 }
 
+/* for general padding  */
 .container-fluid {
   padding: 0 var(--main-padding-x);
+}
+
+/* navigation link at header and footer  */
+.nav-link {
+  color: inherit;
+  opacity: 0.65;
+}
+
+.nav-link:hover {
+  color: inherit;
+  opacity: 1;
+}
+
+/* button with similar styles  */
+.fylo-btn {
+  background: var(--Blue);
+  border-radius: 2rem;
+  color: inherit;
+  font-weight: 700;
+}
+
+.fylo-btn:hover {
+  background: var(--Cyan);
+  color: inherit;
 }

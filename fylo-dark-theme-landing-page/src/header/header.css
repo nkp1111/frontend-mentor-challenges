@@ -6,14 +6,10 @@ header {
   --bs-nav-link-hover-color: inherit;
 }
 
-.nav-link {
-  color: inherit;
-  opacity: 0.65;
+header .nav-link {
   margin-left: 3rem;
 }
 
-.nav-link:hover {
-  color: inherit;
-  opacity: 1;
+header .nav-link:hover {
   text-decoration: underline;
 }
