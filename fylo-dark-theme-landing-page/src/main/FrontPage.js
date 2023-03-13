@@ -15,7 +15,7 @@ function FrontPage() {
           Fylo stores all your most important files in one secure location. Access them wherever
           you need, share and collaborate with friends family, and co-workers.
         </p>
-        <button className="btn">Get Started</button>
+        <button className="btn fylo-btn">Get Started</button>
       </div>
       {/* front page image  */}
       <div className="hero-img">

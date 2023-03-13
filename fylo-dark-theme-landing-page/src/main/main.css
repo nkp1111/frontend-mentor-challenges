@@ -1,0 +1,18 @@
+/* front page  */
+.front-page {
+  padding: 0 25vw;
+}
+
+.main-heading {
+  margin: 2rem 0;
+}
+
+.main-heading+p {
+  width: 55%;
+  margin: auto;
+}
+
+.front-page .btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 3rem;
+}

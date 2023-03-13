@@ -16,6 +16,10 @@ import avatar3 from './images/profile-3.jpg'
 import iconLocation from './images/icon-location.svg'
 import iconPhone from './images/icon-phone.svg'
 import iconEmail from './images/icon-email.svg'
+// backgrounds
+import backgroundCurvyDesktop from './images/bg-curvy-desktop.svg'
+import backgroundCurvyMobile from './images/bg-curvy-mobile.svg'
+import backgroundQuotes from './images/bg-quotes.png'
 
 const navbarLinks = [
   {
