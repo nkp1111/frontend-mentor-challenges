@@ -55,7 +55,7 @@ main {
 
 /* testimonial section  */
 .testimonial-section {
-  padding: 15vh 0 20vh;
+  padding: 15vh 0 30vh;
 }
 
 .testimonial-section .container-fluid {
@@ -99,7 +99,7 @@ main {
   left: 50%;
   transform: translate(-50%, 50%);
   background: var(--Dark-Blue);
-  padding: 4vh 5vw;
+  padding: 5vh 5vw;
   text-align: center;
   border-radius: 0.5rem;
 }
@@ -118,6 +118,7 @@ main {
   text-align: left;
   margin: 0.5;
   margin-left: 1.5rem;
+  font-weight: 700;
 }
 
 .form-section input {

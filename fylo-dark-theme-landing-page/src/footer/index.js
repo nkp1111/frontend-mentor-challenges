@@ -3,15 +3,16 @@ import Logo from '../component/logo'
 import ContactInfo from './ContactInfo'
 import FooterNavLinks from './FooterNavLinks'
 import SocialLinks from './SocialLinks'
+import "./footer.css"
 
 function index() {
   return (
     <footer>
       <div className="container-fluid">
-        <div className="row align-items-center">
+        <Logo />
+        <div className="row align-items-start">
           {/* contact icons  */}
           <div className="col-md-6 contacts">
-            <Logo />
             <ContactInfo />
           </div>
           {/* nav links  */}

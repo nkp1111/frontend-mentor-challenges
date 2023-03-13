@@ -5,8 +5,8 @@ function ContactInfo() {
   return (
     <div className='footer-contacts'>
 
-      <div className="row">
-        <div className="contact-item col-md-6 d-flex"
+      <div className="row gap-5">
+        <div className="contact-item col-md-5 d-flex"
           title={footerContacts[0].type} key={footerContacts[0].id}>
           <div>
             <img src={footerContacts[0].icon} alt={footerContacts[0].type} className="contact-icon" />
