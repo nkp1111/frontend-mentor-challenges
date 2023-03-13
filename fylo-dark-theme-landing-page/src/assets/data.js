@@ -21,17 +21,17 @@ const navbarLinks = [
   {
     id: 1,
     title: "Features",
-    link: "",
+    link: "#",
   },
   {
     id: 2,
     title: "Team",
-    link: "",
+    link: "#",
   },
   {
     id: 3,
     title: "Sign In",
-    link: "",
+    link: "#",
   },
 ]
 

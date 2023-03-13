@@ -68,6 +68,9 @@ h6 {
   --Light-Red: hsl(0, 100%, 63%);
 
   --White: #fff;
+
+  --main-padding-x: 5vw;
+  --section-padding-x: 10vw;
 }
 
 body {
@@ -91,4 +94,8 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.container-fluid {
+  padding: 0 var(--main-padding-x);
 }

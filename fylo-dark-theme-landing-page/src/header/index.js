@@ -2,6 +2,7 @@ import React from 'react'
 import FyloLogo from '../component/logo'
 import TogglerBtn from './TogglerBtn'
 import NavItems from './NavItems'
+import "./header.css"
 
 function index() {
   return (

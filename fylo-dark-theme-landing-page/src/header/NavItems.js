@@ -8,7 +8,7 @@ function NavItems() {
         {navbarLinks.map(item => {
           return (
             <li className="nav-item" key={item.id}>
-              <a className="nav-link active" aria-current="page" href={item.link}>{item.title}</a>
+              <a className="nav-link" href={item.link}>{item.title}</a>
             </li>
           )
         })}

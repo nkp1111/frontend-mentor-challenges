@@ -1,0 +1,19 @@
+header {
+  padding: 1.5rem 0;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: inherit;
+}
+
+.nav-link {
+  color: inherit;
+  opacity: 0.65;
+  margin-left: 3rem;
+}
+
+.nav-link:hover {
+  color: inherit;
+  opacity: 1;
+  text-decoration: underline;
+}
