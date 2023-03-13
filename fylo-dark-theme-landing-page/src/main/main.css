@@ -132,3 +132,103 @@ main {
   margin-left: 1rem;
   padding: 0.5rem 2rem;
 }
+
+
+@media (max-width:48rem) {
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .front-page,
+  .feature-section {
+    padding: 0 1rem;
+  }
+
+  .front-page {
+    padding-bottom: 14vh;
+  }
+
+  .main-heading+p {
+    width: 80%;
+  }
+
+  /* feature section  */
+  .feature-section {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+
+  .section-heading {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .feature-articles {
+    padding: 0;
+  }
+
+  .feature-articles article {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  .feature-articles h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-articles .article-img {
+    margin-bottom: 1rem;
+  }
+
+  .feature-info {
+    margin-top: 5rem;
+    padding: 0;
+  }
+
+  .feature-info .col-md-6,
+  .feature-info .col-md-6:first-of-type {
+    padding: 0;
+  }
+
+  /* testimonial-section */
+  .testimonial-section {
+    padding-top: 1rem;
+  }
+
+  /* form section  */
+  .form-section {
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    transform: translate(0, 50%);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form>div {
+    width: 100%;
+  }
+
+  .form-section .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .main-heading+p {
+    width: 100%;
+  }
+
+  .front-page {
+    padding-bottom: 8vh;
+  }
+}

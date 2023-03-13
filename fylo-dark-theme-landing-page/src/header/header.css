@@ -4,6 +4,7 @@ header {
 
 .navbar-nav {
   --bs-nav-link-hover-color: inherit;
+  --bs-navbar-toggler-border-color: #fff;
 }
 
 header .nav-link {
@@ -12,4 +13,19 @@ header .nav-link {
 
 header .nav-link:hover {
   text-decoration: underline;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+  background: #fff;
+  border-width: 1px;
+}
+
+.navbar-toggler:hover {
+  scale: 1.05;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }

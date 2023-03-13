@@ -76,7 +76,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   background: url("./assets/images/bg-curvy-desktop.svg") no-repeat;
-  background-position: center top 150%;
+  background-position: center top 80vh;
   background-size: contain;
   background-color: var(--Dark-Blue);
   color: var(--White);
@@ -137,4 +137,47 @@ p {
 .feature-section,
 .testimonial-section {
   background-color: var(--Dark-Blue2);
+}
+
+/* media queries  */
+@media (max-width:75.625rem) {
+
+  /* bg patterns  */
+  body {
+    background-position: center top 90vh;
+  }
+}
+
+@media (max-width: 48rem) {
+
+  /* bg patterns  */
+  body {
+    background: url("./assets/images/bg-curvy-mobile.svg") no-repeat;
+    background-color: var(--Dark-Blue);
+    background-size: contain;
+    background-position: center bottom -21vh;
+  }
+
+  .container-fluid {
+    padding: 0 7vw;
+  }
+}
+
+@media (max-width:31.25rem) {
+  .navbar-brand img {
+    width: 8rem;
+  }
+
+  /* bg patterns  */
+  body {
+    background-position: center bottom -5vh;
+  }
+}
+
+@media (max-width: 25rem) {
+
+  /* bg patterns  */
+  body {
+    background-position: center bottom 5vh;
+  }
 }

@@ -7,7 +7,7 @@ import "./header.css"
 function index() {
   return (
     <header>
-      <nav className="navbar navbar-expand-sm">
+      <nav className="navbar navbar-expand-md">
         <div className="container-fluid">
           {/* navbar logo */}
           <FyloLogo />
