@@ -35,3 +35,24 @@ footer .row {
   color: var(--Cyan);
   border-color: var(--Cyan);
 }
+
+@media (max-width: 48rem) {
+  footer {
+    padding-top: 25vh;
+  }
+
+  .social-links div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  footer {
+    padding-top: 28vh;
+  }
+
+  .footer .container {
+    margin: 2rem 0;
+  }
+
+}

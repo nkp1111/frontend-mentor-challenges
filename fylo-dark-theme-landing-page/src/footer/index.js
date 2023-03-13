@@ -17,7 +17,9 @@ function index() {
           </div>
           {/* nav links  */}
           <div className="col-md-4 nav-links">
-            <FooterNavLinks />
+            <div className="container">
+              <FooterNavLinks />
+            </div>
           </div>
           {/* social links  */}
           <div className="col-md-2 social-links">
