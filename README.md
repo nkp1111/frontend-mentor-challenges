@@ -63,3 +63,4 @@ This contains the following project:
 - huddle-landing-page-with-alternating-feature-blocks
 - fylo-dark-theme-landing-page
 - huddle-landing-page-with-single-introductory-section
+- fylo-landing-page-with-two-column-layout
