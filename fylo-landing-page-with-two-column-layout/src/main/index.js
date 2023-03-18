@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionOne from './SectionOne'
+import SectionThree from './SectionThree'
 import SectionTwo from './SectionTwo'
 
 function index() {
@@ -9,6 +10,7 @@ function index() {
       <div className="container-fluid">
         <SectionOne />
         <SectionTwo />
+        <SectionThree />
       </div>
     </main>
   )
