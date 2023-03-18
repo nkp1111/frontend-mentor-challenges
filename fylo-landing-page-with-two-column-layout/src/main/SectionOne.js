@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from '../component/form'
+import { illustration1 } from '../assets/data'
 
 function SectionOne() {
   return (
@@ -18,8 +19,8 @@ function SectionOne() {
       </div>
       <div className="col-md-6">
         {/* section image  */}
+        <img src={illustration1} alt="illustration" />
       </div>
-
     </section>
   )
 }
