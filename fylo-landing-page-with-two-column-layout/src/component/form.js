@@ -16,7 +16,7 @@ function Form() {
           Looks good!
         </div>
       </div>
-      <div className='ms-auto'>
+      <div>
         <button className="btn fylo-btn">
           Get Started
         </button>

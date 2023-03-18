@@ -11,8 +11,8 @@ function index() {
       <div className="container-fluid">
         <SectionOne />
         <SectionTwo />
-        <SectionThree />
       </div>
+      <SectionThree />
     </main>
   )
 }
