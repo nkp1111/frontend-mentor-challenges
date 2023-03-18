@@ -112,7 +112,11 @@
 }
 
 .section-three form>div:first-child {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-three form .invalid-feedback {
+  color: #fff;
 }
 
 .section-three form>div:last-child {
