@@ -77,6 +77,10 @@ h6 {
   color: var(--Very-Dark-Blue);
 }
 
+p {
+  color: var(--Very-Dark-Blue);
+}
+
 .container-fluid {
   padding: 0 5vw;
 }
