@@ -74,4 +74,24 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.container-fluid {
+  padding: 0 5vw;
+}
+
+.fylo-btn {
+  background: var(--Bright-Blue);
+  color: #fff;
+  border-radius: 0.2rem;
+  padding: 0.5rem 3rem;
+  height: max-content;
+  transition: 0.3s all linear;
+}
+
+.fylo-btn:hover {
+  background: var(--Bright-Blue);
+  color: #fff;
+  opacity: 0.8;
 }

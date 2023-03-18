@@ -25,7 +25,6 @@ const navbarLinks = [
   },
 ]
 
-
 const footerContacts = [
   {
     id: 2,
