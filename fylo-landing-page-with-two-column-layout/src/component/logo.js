@@ -1,10 +1,10 @@
 import React from 'react'
-import { logo } from '../assets/data'
+import { logo, logoWhite } from '../assets/data'
 
-function Fylologo() {
+function Fylologo({ color = "normal" }) {
   return (
     <a className="navbar-brand" href="#">
-      <img src={logo} alt="logo" />
+      <img src={color === "normal" ? logo : logoWhite} alt="logo" />
     </a>
   )
 }

@@ -6,6 +6,7 @@ import iconQuotes from './images/icon-quotes.svg'
 import avatar from './images/avatar-testimonial.jpg'
 import iconPhone from './images/icon-phone.svg'
 import iconEmail from './images/icon-email.svg'
+import logoWhite from './images/logo-white.svg'
 
 const navbarLinks = [
   {
@@ -88,4 +89,5 @@ export {
   avatar,
   footerContacts,
   footerLinks,
+  logoWhite,
 }
