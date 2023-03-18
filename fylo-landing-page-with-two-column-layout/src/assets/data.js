@@ -1,4 +1,9 @@
 import logo from './images/logo.svg'
+import illustration1 from './images/illustration-1.svg'
+import illustration2 from './images/illustration-2.svg'
+import iconArrow from './images/icon-arrow.svg'
+import iconQuotes from './images/icon-quotes.svg'
+import avatar from './images/avatar-testimonial.jpg'
 
 const navbarLinks = [
   {
@@ -22,4 +27,9 @@ const navbarLinks = [
 export {
   logo,
   navbarLinks,
+  illustration1,
+  illustration2,
+  iconArrow,
+  iconQuotes,
+  avatar,
 }
