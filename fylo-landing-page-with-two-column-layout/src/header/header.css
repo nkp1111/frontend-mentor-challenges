@@ -11,6 +11,7 @@ header .nav-link {
   margin-left: 3rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 header .nav-link:hover {

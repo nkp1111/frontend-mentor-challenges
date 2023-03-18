@@ -29,7 +29,7 @@
   margin: 1.5rem 0;
 }
 
-.section-one div:first-child {
+.section-one form div:first-child {
   flex: 1;
   margin-right: 1rem;
 }
@@ -127,4 +127,72 @@
 
 .section-three form .btn:hover {
   opacity: 0.7;
+}
+
+@media (width<75rem) {
+
+  /* section 2 */
+  .card {
+    width: 80%;
+  }
+}
+
+@media (width< 68.75rem) {
+
+  /* section 1  */
+  .section-one .col-md-6:first-child {
+    padding-top: 2vh;
+    padding-right: 2vw;
+  }
+
+  /* section 2 */
+  .card {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:48rem) {
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-one .col-md-6:first-of-type,
+  .section-two .col-md-6:first-of-type {
+    order: 2;
+  }
+
+  .section-one form {
+    flex-direction: column;
+  }
+
+  .section-one form div:first-child {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .section-two {
+    margin: 10vh 0;
+  }
+
+  .section-three {
+    text-align: center;
+  }
+
+  .section-one form>div:last-child,
+  .section-three form>div:last-child {
+    width: 100%;
+  }
+
+  form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width:31.25rem) {
+  .section-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }

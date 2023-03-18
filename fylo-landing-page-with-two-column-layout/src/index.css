@@ -99,3 +99,17 @@ p {
   color: #fff;
   opacity: 0.8;
 }
+
+@media (max-width: 48rem) {
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .container-fluid {
+    padding: 0 7vw;
+  }
+}
