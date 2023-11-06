@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub]([https://your-solution-url.com](https://github.com/nkp1111/frontend-mentor-challenges/edit/main/rest-api-country-info-react))
+- Live Site URL: [Netlify]([https://your-live-site-url.com](https://nkp1111-rest-country-api.netlify.app/))
 
 ## My process
 
