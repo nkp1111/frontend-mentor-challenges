@@ -11,7 +11,7 @@ fetch("https://type.fit/api/quotes")
   });
 
 const setAdvice = (data) => {
-  const randomNum = Math.floor(Math.random() * 500)
+  const randomNum = Math.floor(Math.random() * data.length)
   const randomAdvice = data[randomNum]
   article.innerText = `"${randomAdvice.text}"`
   adviceNum.innerText = ` #${randomNum + 1}`
